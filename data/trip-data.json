@@ -1,1 +1,320 @@
-{}
+{
+  "itinerary" : [
+    {
+      "activities" : [
+        {
+          "duration" : "15 min",
+          "name" : "Bridge Between Continents"
+        },
+        {
+          "duration" : "30 min",
+          "name" : "Gunnuhver geothermal"
+        },
+        {
+          "duration" : "30 min",
+          "name" : "Reykjanesviti lighthouse"
+        },
+        {
+          "duration" : "45 min",
+          "name" : "Krýsuvík \/ Seltún geothermal"
+        },
+        {
+          "duration" : "15 min",
+          "name" : "Brimketill lava pool"
+        },
+        {
+          "duration" : "3 hrs",
+          "name" : "Blue Lagoon & LAVA Restaurant"
+        }
+      ],
+      "activityCount" : 6,
+      "date" : "Mon Jul 13",
+      "driving" : "~80 km",
+      "foodCount" : 2,
+      "id" : 1,
+      "route" : "Keflavík → Reykjanes loop → Reykjavík",
+      "stayName" : "Guesthouse Galtafell",
+      "title" : "Arrival & Reykjanes"
+    },
+    {
+      "activities" : [
+        {
+          "duration" : "2 hrs",
+          "name" : "Silfra fissure snorkeling"
+        },
+        {
+          "duration" : "2 hrs",
+          "name" : "Þingvellir National Park"
+        },
+        {
+          "duration" : "45 min",
+          "name" : "Geysir & Strokkur"
+        },
+        {
+          "duration" : "45 min",
+          "name" : "Gullfoss waterfall"
+        },
+        {
+          "duration" : "30 min",
+          "name" : "Kerið crater lake"
+        }
+      ],
+      "activityCount" : 5,
+      "date" : "Tue Jul 14",
+      "driving" : "~200 km",
+      "foodCount" : 4,
+      "id" : 2,
+      "route" : "Reykjavík → Silfra → Þingvellir → Geysir → Gullfoss → Kerið → Reykjavík",
+      "stayName" : "Guesthouse Galtafell",
+      "title" : "Golden Circle"
+    },
+    {
+      "activities" : [
+        {
+          "duration" : "1 hr",
+          "name" : "Lava Centre Hvolsvöllur"
+        },
+        {
+          "duration" : "15 min",
+          "name" : "Gljúfrabúi"
+        },
+        {
+          "duration" : "1 hr",
+          "name" : "Seljalandsfoss"
+        },
+        {
+          "duration" : "1 hr",
+          "name" : "Skógafoss"
+        }
+      ],
+      "activityCount" : 4,
+      "date" : "Wed Jul 15",
+      "driving" : "~187 km",
+      "foodCount" : 2,
+      "id" : 3,
+      "route" : "Reykjavík → Hella → Seljalandsfoss → Skógafoss → Vík",
+      "stayName" : "Vik House",
+      "title" : "Waterfalls & South Coast"
+    },
+    {
+      "activities" : [
+        {
+          "duration" : "~4 hrs",
+          "name" : "Þakgil–Mælifell hike"
+        },
+        {
+          "duration" : "45 min",
+          "name" : "Reynisfjara black sand beach"
+        },
+        {
+          "duration" : "1.5 hrs",
+          "name" : "Dyrhólaey"
+        },
+        {
+          "duration" : "1 hr",
+          "name" : "Hjörleifshöfði \/ Yoda Cave"
+        },
+        {
+          "duration" : "30 min",
+          "name" : "Reyniskirkja church"
+        }
+      ],
+      "activityCount" : 5,
+      "date" : "Thu Jul 16",
+      "driving" : "~80 km local",
+      "foodCount" : 3,
+      "id" : 4,
+      "route" : "Vík area",
+      "stayName" : "Vik House",
+      "title" : "Vík Explorer Day"
+    },
+    {
+      "activities" : [
+        {
+          "duration" : "45 min",
+          "name" : "Fjaðrárgljúfur canyon"
+        },
+        {
+          "duration" : "2 hrs",
+          "name" : "Svartifoss hike (Skaftafell)"
+        },
+        {
+          "duration" : "3 hrs",
+          "name" : "Fjallsárlón Glacier Hike & Boat Tour"
+        },
+        {
+          "duration" : "45 min",
+          "name" : "Jökulsárlón glacier lagoon"
+        },
+        {
+          "duration" : "30 min",
+          "name" : "Diamond Beach"
+        },
+        {
+          "duration" : "1.5 hrs",
+          "name" : "Vestrahorn \/ Stokksnes"
+        }
+      ],
+      "activityCount" : 6,
+      "date" : "Fri Jul 17",
+      "driving" : "~270 km",
+      "foodCount" : 3,
+      "id" : 5,
+      "route" : "Vík → Fjaðrárgljúfur → Skaftafell → Fjallsárlón → Jökulsárlón → Höfn",
+      "stayName" : "Fosshotel Vatnajökull",
+      "title" : "Glaciers & Icebergs"
+    },
+    {
+      "activities" : [
+        {
+          "duration" : "5 min",
+          "name" : "Lómagnúpur viewpoint"
+        },
+        {
+          "duration" : "15 min",
+          "name" : "Dverghamrar \"Dwarf Cliffs\""
+        },
+        {
+          "duration" : "30 min",
+          "name" : "Fagrifoss waterfall"
+        },
+        {
+          "duration" : "4–5 hrs",
+          "name" : "Laki \/ Lakagígar craters"
+        }
+      ],
+      "activityCount" : 4,
+      "date" : "Sat Jul 18",
+      "driving" : "~200 km + F-road",
+      "foodCount" : 3,
+      "id" : 6,
+      "route" : "Höfn → Klaustur → Laki via F206 → Klaustur",
+      "stayName" : "Stracta Apartments",
+      "title" : "Laki & the Highlands"
+    },
+    {
+      "activities" : [
+        {
+          "duration" : "1.5 hrs",
+          "name" : "DC-3 plane wreck Sólheimasandur"
+        },
+        {
+          "duration" : "1.5 hrs",
+          "name" : "Secret Lagoon (Gamla Laugin)"
+        },
+        {
+          "duration" : "30 min",
+          "name" : "Hjálparfoss"
+        }
+      ],
+      "activityCount" : 3,
+      "date" : "Sun Jul 19",
+      "driving" : "~225 km",
+      "foodCount" : 2,
+      "id" : 7,
+      "route" : "Klaustur → Sólheimasandur → Flúðir → Selfoss",
+      "stayName" : "Heima Holiday Homes",
+      "title" : "Plane Wreck & Secret Lagoon"
+    },
+    {
+      "activities" : [
+        {
+          "duration" : "~5 hrs",
+          "name" : "Brennisteinsalda + Bláhnúkur loop"
+        },
+        {
+          "duration" : "45 min",
+          "name" : "Landmannalaugar hot spring"
+        },
+        {
+          "duration" : "45 min add-on",
+          "name" : "Ljótipollur red crater lake (optional)"
+        }
+      ],
+      "activityCount" : 3,
+      "date" : "Mon Jul 20",
+      "driving" : "~400 km round trip, 10–12 hrs",
+      "foodCount" : 2,
+      "id" : 8,
+      "route" : "Selfoss → F208 → Landmannalaugar → Selfoss",
+      "stayName" : "Heima Holiday Homes",
+      "title" : "Landmannalaugar"
+    },
+    {
+      "activities" : [
+        {
+          "duration" : "15 min",
+          "name" : "Gerðuberg basalt columns"
+        },
+        {
+          "duration" : "30 min",
+          "name" : "Ytri Tunga seal beach"
+        },
+        {
+          "duration" : "15 min",
+          "name" : "Búðakirkja black church"
+        },
+        {
+          "duration" : "1.5 hrs",
+          "name" : "Arnarstapi cliff walk to Hellnar"
+        }
+      ],
+      "activityCount" : 4,
+      "date" : "Tue Jul 21",
+      "driving" : "~250 km",
+      "foodCount" : 4,
+      "id" : 9,
+      "route" : "Selfoss → Borgarnes → Snæfellsnes south → Arnarstapi",
+      "stayName" : "Arnarstapi Hotel",
+      "title" : "Snæfellsnes South"
+    },
+    {
+      "activities" : [
+        {
+          "duration" : "45 min",
+          "name" : "Vatnshellir lava cave"
+        },
+        {
+          "duration" : "45 min",
+          "name" : "Djúpalónssandur black pebble beach"
+        },
+        {
+          "duration" : "1 hr",
+          "name" : "Kirkjufell + Kirkjufellsfoss"
+        }
+      ],
+      "activityCount" : 3,
+      "date" : "Wed Jul 22",
+      "driving" : "~300 km",
+      "foodCount" : 2,
+      "id" : 10,
+      "route" : "Arnarstapi → Snæfellsnes north → Borgarnes → Keflavík → Boston",
+      "title" : "Snæfellsnes North & Home"
+    }
+  ],
+  "lastUpdated" : "2026-07-11T23:20:38Z",
+  "photos" : [
+
+  ],
+  "travelers" : [
+    {
+      "checkIns" : [
+
+      ],
+      "colorHex" : "#3180A8",
+      "customEvents" : [
+
+      ],
+      "gpsPointCount" : 0,
+      "hikesCompleted" : 0,
+      "name" : "Chris",
+      "notes" : [
+
+      ],
+      "ratings" : [
+
+      ],
+      "totalHikeDistanceKm" : 0
+    }
+  ]
+}
