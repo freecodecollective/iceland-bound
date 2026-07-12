@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-12T21:38:59Z",
+  "lastUpdated" : "2026-07-12T21:41:16Z",
   "photos" : [
     {
       "activityName" : "World Cup with family",
@@ -648,6 +648,12 @@
       "checkIns" : [
         {
           "dayID" : 0,
+          "itemName" : "custom-9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
+          "key" : "custom-9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
+          "timestamp" : "2026-07-12T21:39:48Z"
+        },
+        {
+          "dayID" : 0,
           "itemName" : "custom-A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
           "key" : "custom-A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
           "timestamp" : "2026-07-12T18:24:16Z"
@@ -711,16 +717,26 @@
       ],
       "colorHex" : "#B87A40",
       "customEvents" : [
-
+        {
+          "activityCategory" : "Waterfall",
+          "createdBy" : "Chris",
+          "dayID" : 0,
+          "id" : "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
+          "latitude" : 42.66676509874512,
+          "longitude" : -71.5897970483974,
+          "name" : "Waterfall",
+          "notes" : "",
+          "type" : "Activity"
+        }
       ],
       "deletedEventIDs" : [
+        "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
         "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
         "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
-        "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
-        "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
-        "hike-7666B985-19D6-4937-8B38-1659089A4DB0"
+        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
+        "A1FA3647-B0AE-4B53-B589-B9F10A0B035D"
       ],
-      "gpsPointCount" : 344,
+      "gpsPointCount" : 346,
       "gpsTrack" : [
         {
           "acc" : 14788.177814332172,
@@ -2785,6 +2801,18 @@
           "lat" : 42.66676509874512,
           "lng" : -71.5897970483974,
           "ts" : "2026-07-12T21:38:50Z"
+        },
+        {
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:38:59Z"
+        },
+        {
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:41:14Z"
         }
       ],
       "hikes" : [
@@ -2846,7 +2874,7 @@
           "dayID" : 0,
           "itemName" : "Flight Boston to Reykjavík",
           "key" : "d0-a0",
-          "text" : "Test "
+          "text" : "Test tests "
         },
         {
           "dayID" : 1,
@@ -2906,7 +2934,7 @@
         }
       ],
       "totalHikeDistanceKm" : 0,
-      "waterfallsVisited" : 0
+      "waterfallsVisited" : 1
     }
   ]
 }
