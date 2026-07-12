@@ -1,19 +1,9 @@
 {
-  "lastUpdated": "2026-07-12T20:50:13.164Z",
+  "lastUpdated": "2026-07-12T20:56:59.854Z",
   "hikes": [
-    {
-      "name": "Test hike 223",
-      "distanceKm": 80.46722489462817,
-      "isOverride": true
-    },
     {
       "name": "test hike 444",
       "distanceKm": 80.46722489462817,
-      "isOverride": true
-    },
-    {
-      "name": "Test",
-      "distanceKm": 48.2803349367769,
       "isOverride": true
     },
     {
@@ -22,15 +12,25 @@
       "isOverride": false
     },
     {
+      "name": "Test",
+      "distanceKm": 0.02,
+      "isOverride": false
+    },
+    {
+      "name": "Test hike 223",
+      "distanceKm": 0.02,
+      "isOverride": false
+    },
+    {
       "name": "Test 434",
       "distanceKm": 0,
       "isOverride": false
     }
   ],
-  "totalHikeKm": 214.7,
-  "waterfallsVisited": 4,
-  "extraWaterfalls": [
-    "waterfall test 418pm sat"
-  ],
-  "hiddenWaterfalls": []
+  "totalHikeKm": 86,
+  "waterfallsVisited": 0,
+  "extraWaterfalls": [],
+  "hiddenWaterfalls": [
+    "d5-a1"
+  ]
 }
