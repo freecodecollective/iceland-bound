@@ -216,6 +216,27 @@ async function deletePhotos(filenames) {
     }).then(function(r) { return r.json(); }).then(function(j) { if (j.content) tripDataSha = j.content.sha; });
   } catch (e) { errors.push('trip-data.json'); }
 
+  try {
+    var delRes = await fetch(API + '/contents/data/deleted-photos.json?ref=main', { headers: headers() });
+    var existingDeleted = [];
+    var delSha = null;
+    if (delRes.ok) {
+      var delJson = await delRes.json();
+      delSha = delJson.sha;
+      existingDeleted = JSON.parse(atob(delJson.content));
+    }
+    filenames.forEach(function(fn) {
+      if (existingDeleted.indexOf(fn) === -1) existingDeleted.push(fn);
+    });
+    var delBody = { message: 'Admin: track deleted photos', content: btoa(JSON.stringify(existingDeleted)), branch: 'main' };
+    if (delSha) delBody.sha = delSha;
+    await fetch(API + '/contents/data/deleted-photos.json', {
+      method: 'PUT',
+      headers: Object.assign({ 'Content-Type': 'application/json' }, headers()),
+      body: JSON.stringify(delBody)
+    });
+  } catch (e) { console.error('Error tracking deleted photos', e); }
+
   return errors;
 }
 
