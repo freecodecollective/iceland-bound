@@ -68,10 +68,7 @@ tr:hover td { background: #243044; }
 
 <div id="content"><div class="loading">Loading trip data...</div></div>
 
-<div class="save-bar" id="saveBar">
-  <span class="msg">You have unsaved changes</span>
-  <button onclick="saveSharedStats()">Save &amp; Publish</button>
-</div>
+<div class="save-bar" id="saveBar" style="display:none"></div>
 
 <div class="toast" id="toast"></div>
 
@@ -341,14 +338,19 @@ function esc(s) {
   return d.innerHTML;
 }
 
+var _saveTimer = null;
+function autoSave() {
+  clearTimeout(_saveTimer);
+  _saveTimer = setTimeout(function() { saveSharedStats(); }, 600);
+}
+
 function markChanged(input) {
-  hasChanges = true;
-  document.getElementById('saveBar').classList.add('active');
   if (input.value !== input.dataset.original) {
     input.style.borderColor = '#fb923c';
   } else {
     input.style.borderColor = '#475569';
   }
+  autoSave();
 }
 
 function addManualHike() {
@@ -364,9 +366,8 @@ function addManualHike() {
   sharedStats.hikes.push({ name: name, distanceKm: miles / 0.621371, isOverride: true });
   nameInput.value = '';
   miInput.value = '';
-  hasChanges = true;
-  document.getElementById('saveBar').classList.add('active');
   render();
+  saveSharedStats();
 }
 
 function addExtraWaterfall() {
@@ -379,21 +380,18 @@ function addExtraWaterfall() {
   if (!sharedStats.extraWaterfalls) sharedStats.extraWaterfalls = [];
   sharedStats.extraWaterfalls.push(name);
   input.value = '';
-  hasChanges = true;
-  document.getElementById('saveBar').classList.add('active');
   render();
+  saveSharedStats();
 }
 
 function removeExtraWaterfall(index) {
   if (!sharedStats || !sharedStats.extraWaterfalls) return;
   sharedStats.extraWaterfalls.splice(index, 1);
-  hasChanges = true;
-  document.getElementById('saveBar').classList.add('active');
   render();
+  saveSharedStats();
 }
 
 function hideItineraryWaterfall(key) {
-  if (!confirm('Hide "' + (ITINERARY_WATERFALLS[key] || key) + '" from waterfall count?')) return;
   if (!sharedStats) {
     sharedStats = { lastUpdated: '', hikes: [], totalHikeKm: 0, waterfallsVisited: 0, extraWaterfalls: [], hiddenWaterfalls: [] };
   }
@@ -401,13 +399,11 @@ function hideItineraryWaterfall(key) {
   if (sharedStats.hiddenWaterfalls.indexOf(key) === -1) {
     sharedStats.hiddenWaterfalls.push(key);
   }
-  hasChanges = true;
-  document.getElementById('saveBar').classList.add('active');
   render();
+  saveSharedStats();
 }
 
 function removeHike(name, source, eventId) {
-  if (!confirm('Remove "' + name + '"?')) return;
   if (source === 'app' && eventId) {
     deleteCustomEvent(eventId);
     return;
@@ -422,9 +418,8 @@ function removeHike(name, source, eventId) {
   if (sharedStats.hiddenHikes.indexOf(name) === -1) {
     sharedStats.hiddenHikes.push(name);
   }
-  hasChanges = true;
-  document.getElementById('saveBar').classList.add('active');
   render();
+  saveSharedStats();
 }
 
 async function autoSyncIfDrifted() {
@@ -554,10 +549,10 @@ function aggregateOtherEvents() {
 }
 
 async function deleteCustomEvent(eventId) {
-  if (!confirm('Delete this event from all devices and pages?')) return;
   if (adminDeletedEvents.indexOf(eventId) === -1) {
     adminDeletedEvents.push(eventId);
   }
+  render();
   try {
     var encoded = btoa(unescape(encodeURIComponent(JSON.stringify(adminDeletedEvents, null, 2))));
     var body = { message: 'Admin: delete custom event ' + eventId.substring(0, 8), content: encoded, branch: 'main' };
@@ -569,13 +564,11 @@ async function deleteCustomEvent(eventId) {
     });
     var json = await res.json();
     if (json.content) adminDeletedSha = json.content.sha;
-    showToast('Deleted — will be removed from all apps on next sync');
+    await saveSharedStats();
+    showToast('Deleted');
   } catch (e) {
     showToast('Error: ' + e.message, true);
   }
-  hasChanges = true;
-  document.getElementById('saveBar').classList.add('active');
-  render();
 }
 
 load();
