@@ -176,6 +176,13 @@ function aggregateWaterfalls() {
           visited[key] = ITINERARY_WATERFALLS[key];
         }
       }
+      var customEvents = syncData.travelers[ti].customEvents || [];
+      for (var ei = 0; ei < customEvents.length; ei++) {
+        var ev = customEvents[ei];
+        if (ev.activityCategory === 'waterfall') {
+          visited['custom-' + (ev.id || ei)] = ev.name;
+        }
+      }
     }
   }
   if (sharedStats && sharedStats.extraWaterfalls) {
@@ -243,9 +250,20 @@ function render() {
     html += '<div class="empty">No waterfalls checked in yet</div>';
   } else {
     for (var wi = 0; wi < wfKeys.length; wi++) {
-      html += '<div class="waterfall-row"><span class="check">&#10003;</span> ' + esc(waterfalls[wfKeys[wi]]) + '</div>';
+      var wfKey = wfKeys[wi];
+      html += '<div class="waterfall-row"><span class="check">&#10003;</span> <span style="flex:1">' + esc(waterfalls[wfKey]) + '</span>';
+      if (wfKey.indexOf('extra-') === 0) {
+        var extraIdx = parseInt(wfKey.replace('extra-', ''));
+        html += '<button class="remove-btn" onclick="removeExtraWaterfall(' + extraIdx + ')">x</button>';
+      }
+      html += '</div>';
     }
   }
+
+  html += '<div class="add-row" style="margin-top:8px">';
+  html += '<input name="wf-name" placeholder="Add waterfall name..." style="flex:1">';
+  html += '<button onclick="addExtraWaterfall()">Add</button>';
+  html += '</div>';
 
   document.getElementById('content').innerHTML = html;
 }
@@ -279,6 +297,29 @@ function addManualHike() {
   sharedStats.hikes.push({ name: name, distanceKm: miles / 0.621371, isOverride: true });
   nameInput.value = '';
   miInput.value = '';
+  hasChanges = true;
+  document.getElementById('saveBar').classList.add('active');
+  render();
+}
+
+function addExtraWaterfall() {
+  var input = document.querySelector('.add-row input[name="wf-name"]');
+  var name = input.value.trim();
+  if (!name) return;
+  if (!sharedStats) {
+    sharedStats = { lastUpdated: '', hikes: [], totalHikeKm: 0, waterfallsVisited: 0, extraWaterfalls: [] };
+  }
+  if (!sharedStats.extraWaterfalls) sharedStats.extraWaterfalls = [];
+  sharedStats.extraWaterfalls.push(name);
+  input.value = '';
+  hasChanges = true;
+  document.getElementById('saveBar').classList.add('active');
+  render();
+}
+
+function removeExtraWaterfall(index) {
+  if (!sharedStats || !sharedStats.extraWaterfalls) return;
+  sharedStats.extraWaterfalls.splice(index, 1);
   hasChanges = true;
   document.getElementById('saveBar').classList.add('active');
   render();
@@ -341,11 +382,14 @@ async function saveSharedStats() {
   var totalKm = 0;
   for (var i = 0; i < finalHikes.length; i++) totalKm += finalHikes[i].distanceKm;
 
+  var extras = (sharedStats && sharedStats.extraWaterfalls) ? sharedStats.extraWaterfalls : [];
+
   var payload = {
     lastUpdated: new Date().toISOString(),
     hikes: finalHikes,
     totalHikeKm: Math.round(totalKm * 10) / 10,
-    waterfallsVisited: Object.keys(waterfalls).length
+    waterfallsVisited: Object.keys(waterfalls).length,
+    extraWaterfalls: extras
   };
 
   var encoded = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2))));
