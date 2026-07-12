@@ -1026,6 +1026,7 @@ const TRIP_DATA = [
 
 // ─── STATE ────────────────────────────────────────────────────────
 let syncData = null;
+let adminDeletedEvents = [];
 let lastFetchTime = null;
 let tripMap = null;
 let mapInitialized = false;
@@ -1040,8 +1041,9 @@ let currentMapStyle = 'standard';
 
 const TRIP_START = new Date('2026-07-11T00:00:00');
 const TRIP_END = new Date('2026-07-22T23:59:59');
-const PHOTO_BASE = 'https://raw.githubusercontent.com/freecodecollective/becahs-iceland-trip/main/data/photos/';
-const SYNC_URL = 'https://raw.githubusercontent.com/freecodecollective/becahs-iceland-trip/main/data/trip-data.json';
+const PHOTO_BASE = 'https://raw.githubusercontent.com/freecodecollective/iceland-bound/main/data/photos/';
+const SYNC_URL = 'https://raw.githubusercontent.com/freecodecollective/iceland-bound/main/data/trip-data.json';
+const DEL_EVENTS_URL = 'https://raw.githubusercontent.com/freecodecollective/iceland-bound/main/data/admin-deleted-events.json';
 
 // ─── HELPERS ──────────────────────────────────────────────────────
 function handlePhotoError(el) {
@@ -1363,6 +1365,7 @@ function initMap() {
       if (!t.customEvents) return;
       t.customEvents.forEach(function(ev) {
         if (!ev.latitude || !ev.longitude) return;
+        if (adminDeletedEvents.indexOf(ev.id) !== -1) return;
         var cat = ev.activityCategory || ev.type || 'Activity';
         var catInfo = getCustomEventCategory(cat);
         if (!categories[catInfo.cat]) categories[catInfo.cat] = catInfo.color;
@@ -2039,7 +2042,9 @@ function getCustomEventsForDay(dayId) {
   const events = [];
   for (const t of syncData.travelers) {
     for (const ce of (t.customEvents || [])) {
-      if (ce.dayID === dayId) events.push({ ...ce, travelerName: t.name });
+      if (ce.dayID === dayId && adminDeletedEvents.indexOf(ce.id) === -1) {
+        events.push({ ...ce, travelerName: t.name });
+      }
     }
   }
   return events;
@@ -2057,9 +2062,15 @@ function toggleStay(el) { el.classList.toggle('expanded'); }
 // ─── SYNC FETCH ───────────────────────────────────────────────────
 async function fetchSyncData() {
   try {
-    const resp = await fetch(SYNC_URL + '?t=' + Date.now());
+    const [resp, delResp] = await Promise.all([
+      fetch(SYNC_URL + '?t=' + Date.now()),
+      fetch(DEL_EVENTS_URL + '?t=' + Date.now()).catch(function() { return { ok: false }; })
+    ]);
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     syncData = await resp.json();
+    if (delResp.ok) {
+      try { adminDeletedEvents = await delResp.json(); } catch(e) { adminDeletedEvents = []; }
+    }
     lastFetchTime = new Date();
     updateSyncStatus(true);
     render();
