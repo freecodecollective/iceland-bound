@@ -1044,6 +1044,11 @@ const PHOTO_BASE = 'https://raw.githubusercontent.com/freecodecollective/becahs-
 const SYNC_URL = 'https://raw.githubusercontent.com/freecodecollective/becahs-iceland-trip/main/data/trip-data.json';
 
 // ─── HELPERS ──────────────────────────────────────────────────────
+function handlePhotoError(el) {
+  var card = el.closest('.photo-card') || el.closest('.photo-card-md') || el.closest('.photo-card-sm');
+  if (card) card.remove();
+}
+
 function getCurrentDayNum() {
   const now = new Date();
   if (now < TRIP_START) return -2;
@@ -1714,7 +1719,7 @@ function renderPhotos() {
         if (!sName && sParsed.schedule) sName = sParsed.schedule.title;
         var sUrl = PHOTO_BASE + encodeURIComponent(sPhoto.filename);
         html += '<div class="photo-card-sm" onclick="openLightbox(\'' + sUrl + '\')">' +
-          '<img src="' + sUrl + '" alt="' + escHtml(sName) + '" loading="lazy">' +
+          '<img src="' + sUrl + '" alt="' + escHtml(sName) + '" loading="lazy" onerror="handlePhotoError(this)">' +
           '<div class="sm-label">' + escHtml(sName) + '</div></div>';
       }
       html += '</div>';
@@ -1729,7 +1734,7 @@ function renderPhotos() {
         if (!mName && mParsed.schedule) mName = mParsed.schedule.title;
         var mUrl = PHOTO_BASE + encodeURIComponent(mPhoto.filename);
         html += '<div class="photo-card-md">' +
-          '<img src="' + mUrl + '" alt="' + escHtml(mName) + '" onclick="openLightbox(\'' + mUrl + '\')" loading="lazy">' +
+          '<img src="' + mUrl + '" alt="' + escHtml(mName) + '" onclick="openLightbox(\'' + mUrl + '\')" loading="lazy" onerror="handlePhotoError(this)">' +
           '<div class="md-info"><div class="md-place">📍 ' + escHtml(mName) + '</div>' +
           '<div class="md-day">' + dayLabel(day.id) + ': ' + escHtml(day.title) + '</div></div></div>';
       }
@@ -1766,7 +1771,7 @@ function renderPhotos() {
           '<span class="photo-card-place">' + escHtml(placeName) + '</span>' +
           (traveler ? '<span class="photo-card-traveler">&#128248; ' + escHtml(traveler) + '</span>' : '') +
           '</div>' +
-          '<img class="photo-card-img" src="' + photoUrl + '" alt="' + escHtml(placeName) + '" onclick="openLightbox(\'' + photoUrl + '\')" loading="lazy">' +
+          '<img class="photo-card-img" src="' + photoUrl + '" alt="' + escHtml(placeName) + '" onclick="openLightbox(\'' + photoUrl + '\')" loading="lazy" onerror="handlePhotoError(this)">' +
           '<div class="photo-card-footer">' +
           miniMapHtml(lat, lng) +
           '<div class="photo-card-meta">' +
