@@ -326,7 +326,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-12T16:36:43Z",
+  "lastUpdated" : "2026-07-12T16:37:48Z",
   "photos" : [
     {
       "activityName" : "World Cup with family",
@@ -390,6 +390,20 @@
       "filename" : "1AC7C75C-1948-4635-A433-E7665B9733AA.jpg",
       "key" : "d3-s12",
       "timestamp" : "2026-07-12T15:35:01Z"
+    },
+    {
+      "activityName" : "World Cup matches with family",
+      "dayID" : -1,
+      "filename" : "4340379D-A0F5-49AC-B4E7-3D9DE7AE711A.jpg",
+      "key" : "d-1-a1",
+      "timestamp" : "2026-07-12T16:36:59Z"
+    },
+    {
+      "activityName" : "Flight SFO to Boston",
+      "dayID" : -1,
+      "filename" : "EB860714-9767-41FE-9B9A-C0DA1E586E0A.jpg",
+      "key" : "d-1-a0",
+      "timestamp" : "2026-07-12T16:37:38Z"
     }
   ],
   "travelers" : [
@@ -1666,6 +1680,12 @@
       "hikesCompleted" : 0,
       "name" : "Chris",
       "notes" : [
+        {
+          "dayID" : -1,
+          "itemName" : "Flight SFO to Boston",
+          "key" : "d-1-a0",
+          "text" : "We flew"
+        },
         {
           "dayID" : -1,
           "itemName" : "Flight SFO → Boston",
