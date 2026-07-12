@@ -121,6 +121,8 @@ var API = 'https://api.github.com/repos/' + REPO;
 var tripData = null;
 var adminData = { renames: {}, hidden: [] };
 var adminSha = null;
+var adminDeletedEvents = [];
+var adminDeletedSha = null;
 var editingKey = null;
 var openDays = {};
 var saving = false;
@@ -138,9 +140,10 @@ function decodeB64(b64) {
 
 async function load() {
   try {
-    var [tripRes, adminRes] = await Promise.all([
-      fetch(API + '/contents/data/trip-data.json?ref=main', { headers: headers() }),
-      fetch(API + '/contents/data/schedule-admin.json?ref=main', { headers: headers() })
+    var [tripRes, adminRes, delEvRes] = await Promise.all([
+      fetch(API + '/contents/data/trip-data.json?ref=main&_t=' + Date.now(), { headers: headers(), cache: 'no-store' }),
+      fetch(API + '/contents/data/schedule-admin.json?ref=main&_t=' + Date.now(), { headers: headers(), cache: 'no-store' }),
+      fetch(API + '/contents/data/admin-deleted-events.json?ref=main&_t=' + Date.now(), { headers: headers(), cache: 'no-store' })
     ]);
 
     var tripJson = await tripRes.json();
@@ -152,6 +155,12 @@ async function load() {
       adminData = JSON.parse(decodeB64(adminJson.content));
       if (!adminData.renames) adminData.renames = {};
       if (!adminData.hidden) adminData.hidden = [];
+    }
+
+    if (delEvRes.ok) {
+      var delEvJson = await delEvRes.json();
+      adminDeletedSha = delEvJson.sha;
+      adminDeletedEvents = JSON.parse(decodeB64(delEvJson.content));
     }
 
     openDays = {};
@@ -205,6 +214,9 @@ function getAllEvents() {
     tripData.travelers.forEach(function(t) {
       if (!t.customEvents) return;
       t.customEvents.forEach(function(e) {
+        var evId = e.id || ('custom-' + e.name);
+        if (adminDeletedEvents.indexOf(evId) !== -1) return;
+
         var cat = (e.activityCategory || '').toLowerCase();
         var eType = 'custom';
         if (cat === 'hiking') eType = 'hike';
@@ -213,7 +225,7 @@ function getAllEvents() {
         var dayInfo = tripData.itinerary.find(function(d) { return d.id === e.dayID; });
 
         events.push({
-          key: e.id || ('custom-' + e.name),
+          key: evId,
           name: e.name,
           type: eType,
           dayId: e.dayID,
@@ -414,6 +426,30 @@ async function saveEdit(key, originalName) {
 }
 
 async function hideEvent(key) {
+  var events = getAllEvents();
+  var ev = events.find(function(e) { return e.key === key; });
+
+  if (ev && ev.isCustom) {
+    if (adminDeletedEvents.indexOf(key) === -1) {
+      adminDeletedEvents.push(key);
+    }
+    try {
+      var encoded = btoa(unescape(encodeURIComponent(JSON.stringify(adminDeletedEvents, null, 2))));
+      var body = { message: 'Admin: delete custom event ' + key.substring(0, 8), content: encoded, branch: 'main' };
+      if (adminDeletedSha) body.sha = adminDeletedSha;
+      var res = await fetch(API + '/contents/data/admin-deleted-events.json', {
+        method: 'PUT',
+        headers: Object.assign({ 'Content-Type': 'application/json' }, headers()),
+        body: JSON.stringify(body)
+      });
+      var json = await res.json();
+      if (json.content) adminDeletedSha = json.content.sha;
+    } catch (e) { console.error('Error saving admin-deleted-events', e); }
+    render();
+    showToast('Deleted — will be removed from all apps on next sync');
+    return;
+  }
+
   if (adminData.hidden.indexOf(key) === -1) {
     adminData.hidden.push(key);
   }
