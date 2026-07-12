@@ -7,6 +7,10 @@
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f172a; color: #f1f5f9; padding: 20px; }
+.admin-nav { display: flex; gap: 8px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid #334155; }
+.admin-nav a { color: #94a3b8; text-decoration: none; font-size: 0.85rem; padding: 5px 12px; border-radius: 6px; }
+.admin-nav a:hover { color: #f1f5f9; background: #1e293b; }
+.admin-nav a.active { color: #60a5fa; background: #1e3a5f; }
 h1 { font-size: 1.4rem; margin-bottom: 4px; }
 .subtitle { color: #94a3b8; font-size: 0.85rem; margin-bottom: 20px; }
 .total-card { background: linear-gradient(135deg, #166534 0%, #15803d 100%); border-radius: 16px; padding: 24px; margin-bottom: 24px; }
@@ -50,6 +54,12 @@ tr:hover td { background: #243044; }
 </style>
 </head>
 <body>
+
+<nav class="admin-nav">
+  <a href="index.html">Dashboard</a>
+  <a href="admin.html">Photos</a>
+  <a href="hikes.html" class="active">Hikes</a>
+</nav>
 
 <h1>Hike Admin</h1>
 <p class="subtitle">Manage shared hike miles and waterfalls for the whole family. Changes sync to all apps.</p>
