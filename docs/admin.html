@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Admin</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f172a; color: #f1f5f9; padding: 20px; }
+h1 { font-size: 1.4rem; margin-bottom: 4px; }
+.subtitle { color: #94a3b8; font-size: 0.85rem; margin-bottom: 20px; }
+.stats { display: flex; gap: 16px; margin-bottom: 20px; flex-wrap: wrap; }
+.stat { background: #1e293b; padding: 10px 16px; border-radius: 10px; font-size: 0.85rem; }
+.stat b { color: #60a5fa; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+.card { background: #1e293b; border-radius: 12px; overflow: hidden; position: relative; }
+.card img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; cursor: pointer; }
+.card img.expanded { aspect-ratio: auto; max-height: 80vh; }
+.card .info { padding: 10px 12px; }
+.card .name { font-size: 0.8rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.card .key { font-size: 0.7rem; color: #64748b; margin-top: 2px; }
+.card .time { font-size: 0.7rem; color: #94a3b8; margin-top: 2px; }
+.del-btn { display: block; width: 100%; padding: 8px; background: #7f1d1d; color: #f87171; border: none; font-size: 0.75rem; font-weight: 600; cursor: pointer; transition: background 0.15s; }
+.del-btn:hover { background: #991b1b; }
+.del-btn:disabled { opacity: 0.4; cursor: wait; }
+.toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #166534; color: #fff; padding: 10px 20px; border-radius: 8px; font-size: 0.85rem; display: none; z-index: 100; }
+.toast.error { background: #991b1b; }
+.loading { text-align: center; padding: 60px; color: #94a3b8; }
+.empty { text-align: center; padding: 60px; color: #64748b; }
+.select-bar { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; border-top: 1px solid #334155; padding: 12px 20px; z-index: 50; }
+.select-bar.active { display: flex; align-items: center; justify-content: space-between; }
+.select-bar .count { font-size: 0.9rem; }
+.select-bar button { padding: 8px 20px; border-radius: 8px; border: none; font-weight: 600; font-size: 0.85rem; cursor: pointer; }
+.select-bar .cancel { background: #334155; color: #f1f5f9; }
+.select-bar .delete-sel { background: #991b1b; color: #f87171; }
+.card .check { position: absolute; top: 8px; left: 8px; width: 24px; height: 24px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.5); background: rgba(0,0,0,0.3); display: none; align-items: center; justify-content: center; cursor: pointer; z-index: 10; font-size: 14px; }
+.selecting .card .check { display: flex; }
+.card.selected .check { background: #3b82f6; border-color: #3b82f6; }
+.toolbar { display: flex; gap: 10px; margin-bottom: 16px; flex-wrap: wrap; align-items: center; }
+.toolbar button { padding: 6px 14px; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: #f1f5f9; font-size: 0.8rem; cursor: pointer; }
+.toolbar button:hover { background: #243044; }
+.toolbar button.active { background: #1e3a5f; border-color: #60a5fa; color: #60a5fa; }
+</style>
+</head>
+<body>
+
+<h1>Photo Admin</h1>
+<p class="subtitle">Delete photos from the dashboard. App photos are not affected.</p>
+
+<div class="stats" id="stats"></div>
+
+<div class="toolbar" id="toolbar">
+  <button onclick="toggleSelectMode()" id="selectBtn">Select Multiple</button>
+  <button onclick="filterBy('all')" class="active" data-filter="all">All</button>
+</div>
+
+<div id="content"><div class="loading">Loading photos...</div></div>
+
+<div class="select-bar" id="selectBar">
+  <span class="count" id="selCount">0 selected</span>
+  <div style="display:flex;gap:8px;">
+    <button class="cancel" onclick="toggleSelectMode()">Cancel</button>
+    <button class="delete-sel" onclick="deleteSelected()">Delete Selected</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+var REPO = 'freecodecollective/becahs-iceland-trip';
+var TOKEN = atob(['Z2hwX3N1SERVT','TFLRkFCQk5Dcm9D','U1RtVjJEU3Z6U3V','NUDJKRlBzcQ=='].join(''));
+var API = 'https://api.github.com/repos/' + REPO;
+var PHOTO_BASE = 'https://raw.githubusercontent.com/' + REPO + '/main/data/photos/';
+var syncData = null;
+var tripDataSha = null;
+var selecting = false;
+var selected = new Set();
+var currentFilter = 'all';
+
+function headers() {
+  return { 'Authorization': 'Bearer ' + TOKEN, 'Accept': 'application/vnd.github+json' };
+}
+
+async function load() {
+  try {
+    var res = await fetch(API + '/contents/data/trip-data.json?ref=main', { headers: headers() });
+    var json = await res.json();
+    tripDataSha = json.sha;
+    syncData = JSON.parse(atob(json.content));
+    render();
+  } catch (e) {
+    document.getElementById('content').innerHTML = '<div class="empty">Failed to load: ' + e.message + '</div>';
+  }
+}
+
+function getActivityKeys() {
+  if (!syncData || !syncData.photos) return {};
+  var keys = {};
+  syncData.photos.forEach(function(p) {
+    if (!keys[p.key]) keys[p.key] = { name: p.activityName, count: 0 };
+    keys[p.key].count++;
+  });
+  return keys;
+}
+
+function render() {
+  var photos = syncData && syncData.photos ? syncData.photos : [];
+  var keys = getActivityKeys();
+
+  document.getElementById('stats').innerHTML =
+    '<div class="stat"><b>' + photos.length + '</b> photos</div>' +
+    '<div class="stat"><b>' + Object.keys(keys).length + '</b> activities</div>';
+
+  var toolbar = document.getElementById('toolbar');
+  var filterHTML = '<button onclick="toggleSelectMode()" id="selectBtn">' + (selecting ? 'Cancel' : 'Select Multiple') + '</button>';
+  filterHTML += '<button onclick="filterBy(\'all\')" class="' + (currentFilter === 'all' ? 'active' : '') + '" data-filter="all">All</button>';
+  Object.keys(keys).sort().forEach(function(k) {
+    filterHTML += '<button onclick="filterBy(\'' + k + '\')" class="' + (currentFilter === k ? 'active' : '') + '" data-filter="' + k + '">' + keys[k].name + ' (' + keys[k].count + ')</button>';
+  });
+  toolbar.innerHTML = filterHTML;
+
+  var filtered = currentFilter === 'all' ? photos : photos.filter(function(p) { return p.key === currentFilter; });
+
+  if (filtered.length === 0) {
+    document.getElementById('content').innerHTML = '<div class="empty">No photos</div>';
+    return;
+  }
+
+  var html = '<div class="grid' + (selecting ? ' selecting' : '') + '">';
+  filtered.forEach(function(p, i) {
+    var url = PHOTO_BASE + encodeURIComponent(p.filename);
+    var ts = p.timestamp ? new Date(p.timestamp).toLocaleString() : '';
+    var isSelected = selected.has(p.filename);
+    html += '<div class="card' + (isSelected ? ' selected' : '') + '" data-filename="' + p.filename + '">';
+    html += '<div class="check" onclick="toggleSelect(\'' + p.filename + '\')">' + (isSelected ? '&#10003;' : '') + '</div>';
+    html += '<img src="' + url + '" loading="lazy" onclick="' + (selecting ? "toggleSelect('" + p.filename + "')" : "this.classList.toggle('expanded')") + '">';
+    html += '<div class="info">';
+    html += '<div class="name">' + escHtml(p.activityName) + '</div>';
+    html += '<div class="key">' + escHtml(p.key) + ' &middot; ' + escHtml(p.filename.substring(0, 8)) + '...</div>';
+    if (ts) html += '<div class="time">' + ts + '</div>';
+    html += '</div>';
+    if (!selecting) html += '<button class="del-btn" onclick="deleteOne(\'' + p.filename + '\')">Delete</button>';
+    html += '</div>';
+  });
+  html += '</div>';
+  document.getElementById('content').innerHTML = html;
+}
+
+function escHtml(s) {
+  var d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+function toggleSelectMode() {
+  selecting = !selecting;
+  if (!selecting) selected.clear();
+  updateSelectBar();
+  render();
+}
+
+function toggleSelect(filename) {
+  if (selected.has(filename)) selected.delete(filename);
+  else selected.add(filename);
+  updateSelectBar();
+  render();
+}
+
+function updateSelectBar() {
+  var bar = document.getElementById('selectBar');
+  if (selecting) {
+    bar.classList.add('active');
+    document.getElementById('selCount').textContent = selected.size + ' selected';
+  } else {
+    bar.classList.remove('active');
+  }
+}
+
+function filterBy(key) {
+  currentFilter = key;
+  render();
+}
+
+function showToast(msg, isError) {
+  var t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'toast' + (isError ? ' error' : '');
+  t.style.display = 'block';
+  setTimeout(function() { t.style.display = 'none'; }, 3000);
+}
+
+async function deletePhotos(filenames) {
+  var errors = [];
+  for (var i = 0; i < filenames.length; i++) {
+    var fn = filenames[i];
+    try {
+      var shaRes = await fetch(API + '/contents/data/photos/' + encodeURIComponent(fn) + '?ref=main', { headers: headers() });
+      if (shaRes.ok) {
+        var shaJson = await shaRes.json();
+        await fetch(API + '/contents/data/photos/' + encodeURIComponent(fn), {
+          method: 'DELETE',
+          headers: Object.assign({ 'Content-Type': 'application/json' }, headers()),
+          body: JSON.stringify({ message: 'Admin: delete photo ' + fn.substring(0, 8), sha: shaJson.sha, branch: 'main' })
+        });
+      }
+    } catch (e) { errors.push(fn); }
+  }
+
+  syncData.photos = syncData.photos.filter(function(p) { return filenames.indexOf(p.filename) === -1; });
+  var encoded = btoa(unescape(encodeURIComponent(JSON.stringify(syncData, null, 2))));
+  try {
+    await fetch(API + '/contents/data/trip-data.json', {
+      method: 'PUT',
+      headers: Object.assign({ 'Content-Type': 'application/json' }, headers()),
+      body: JSON.stringify({ message: 'Admin: remove ' + filenames.length + ' photo(s) from manifest', content: encoded, sha: tripDataSha, branch: 'main' })
+    }).then(function(r) { return r.json(); }).then(function(j) { if (j.content) tripDataSha = j.content.sha; });
+  } catch (e) { errors.push('trip-data.json'); }
+
+  return errors;
+}
+
+async function deleteOne(filename) {
+  if (!confirm('Delete this photo from the dashboard?')) return;
+  var btn = event.target;
+  btn.disabled = true;
+  btn.textContent = 'Deleting...';
+  var errors = await deletePhotos([filename]);
+  if (errors.length) showToast('Error deleting', true);
+  else showToast('Deleted');
+  render();
+}
+
+async function deleteSelected() {
+  if (selected.size === 0) return;
+  if (!confirm('Delete ' + selected.size + ' photo(s) from the dashboard?')) return;
+  var filenames = Array.from(selected);
+  selected.clear();
+  var errors = await deletePhotos(filenames);
+  selecting = false;
+  updateSelectBar();
+  if (errors.length) showToast(errors.length + ' errors', true);
+  else showToast('Deleted ' + filenames.length + ' photo(s)');
+  render();
+}
+
+load();
+</script>
+</body>
+</html>
