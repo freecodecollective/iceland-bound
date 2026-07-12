@@ -549,8 +549,36 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-12T21:16:06Z",
+  "lastUpdated" : "2026-07-12T21:17:49Z",
   "photos" : [
+    {
+      "activityName" : "World Cup with family",
+      "dayID" : -1,
+      "filename" : "18E48D66-F47C-4C16-AF5B-A5853CF6D4F0.jpg",
+      "key" : "d-1-s2",
+      "timestamp" : "2026-07-12T02:46:24Z"
+    },
+    {
+      "activityName" : "World Cup with family",
+      "dayID" : -1,
+      "filename" : "38746A01-E082-4A34-9F3C-79715443EAF0.jpg",
+      "key" : "d-1-s2",
+      "timestamp" : "2026-07-12T02:46:31Z"
+    },
+    {
+      "activityName" : "World Cup with family",
+      "dayID" : -1,
+      "filename" : "C75879FC-F403-48B6-A12C-77D07BA97BFE.jpg",
+      "key" : "d-1-s2",
+      "timestamp" : "2026-07-12T02:46:45Z"
+    },
+    {
+      "activityName" : "Waterfall Test",
+      "dayID" : 0,
+      "filename" : "099A825F-652B-4D16-914A-67BB70B8076A.jpg",
+      "key" : "custom-A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
+      "timestamp" : "2026-07-12T18:24:16Z"
+    },
     {
       "activityName" : "Flight SFO to Boston",
       "dayID" : -1,
@@ -629,13 +657,13 @@
 
       ],
       "deletedEventIDs" : [
-        "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
-        "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
-        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
-        "A1FA3647-B0AE-4B53-B589-B9F10A0B035D"
+        "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
+        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
+        "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
+        "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE"
       ],
-      "gpsPointCount" : 332,
+      "gpsPointCount" : 334,
       "gpsTrack" : [
         {
           "acc" : 14788.177814332172,
@@ -2628,6 +2656,18 @@
           "lat" : 42.707911333333335,
           "lng" : -71.4561425,
           "ts" : "2026-07-12T21:13:11Z"
+        },
+        {
+          "acc" : 5,
+          "lat" : 42.70517100000001,
+          "lng" : -71.49760383333334,
+          "ts" : "2026-07-12T21:17:49Z"
+        },
+        {
+          "acc" : 5,
+          "lat" : 42.70510550000001,
+          "lng" : -71.49779816666667,
+          "ts" : "2026-07-12T21:17:49Z"
         }
       ],
       "hikes" : [
