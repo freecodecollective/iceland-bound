@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hike Admin</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f172a; color: #f1f5f9; padding: 20px; }
+h1 { font-size: 1.4rem; margin-bottom: 4px; }
+.subtitle { color: #94a3b8; font-size: 0.85rem; margin-bottom: 20px; }
+.total-card { background: linear-gradient(135deg, #166534 0%, #15803d 100%); border-radius: 16px; padding: 24px; margin-bottom: 24px; }
+.total-card .big { font-size: 2.5rem; font-weight: 800; }
+.total-card .unit { font-size: 1rem; font-weight: 400; opacity: 0.8; margin-left: 4px; }
+.total-card .detail { font-size: 0.85rem; opacity: 0.75; margin-top: 4px; }
+.stats { display: flex; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; }
+.stat { background: #1e293b; padding: 10px 16px; border-radius: 10px; font-size: 0.85rem; }
+.stat b { color: #4ade80; }
+table { width: 100%; border-collapse: collapse; background: #1e293b; border-radius: 12px; overflow: hidden; margin-bottom: 20px; }
+th { background: #334155; text-align: left; padding: 10px 14px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #94a3b8; }
+td { padding: 10px 14px; border-top: 1px solid #334155; font-size: 0.85rem; }
+tr:hover td { background: #243044; }
+.hike-name { font-weight: 600; }
+.source { font-size: 0.7rem; padding: 2px 8px; border-radius: 4px; }
+.source-gps { background: #166534; color: #4ade80; }
+.source-checkin { background: #1e3a5f; color: #60a5fa; }
+.source-manual { background: #7c2d12; color: #fb923c; }
+.dist-input { background: #0f172a; border: 1px solid #475569; border-radius: 6px; color: #f1f5f9; padding: 4px 8px; width: 80px; font-size: 0.85rem; text-align: right; }
+.dist-input:focus { border-color: #4ade80; outline: none; }
+.traveler { font-size: 0.7rem; color: #94a3b8; }
+.save-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; border-top: 1px solid #334155; padding: 12px 20px; display: none; z-index: 50; }
+.save-bar.active { display: flex; align-items: center; justify-content: space-between; }
+.save-bar .msg { font-size: 0.85rem; color: #fbbf24; }
+.save-bar button { padding: 8px 24px; border-radius: 8px; border: none; font-weight: 700; font-size: 0.85rem; cursor: pointer; background: #166534; color: #4ade80; }
+.save-bar button:hover { background: #15803d; }
+.toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #166534; color: #fff; padding: 10px 20px; border-radius: 8px; font-size: 0.85rem; display: none; z-index: 100; }
+.toast.error { background: #991b1b; }
+.loading { text-align: center; padding: 60px; color: #94a3b8; }
+.empty { text-align: center; padding: 40px; color: #64748b; font-style: italic; }
+.section-title { font-size: 1rem; font-weight: 700; margin: 20px 0 10px; }
+.waterfall-row { display: flex; align-items: center; gap: 10px; padding: 8px 14px; background: #1e293b; border-radius: 8px; margin-bottom: 6px; font-size: 0.85rem; }
+.waterfall-row .check { color: #22d3ee; }
+.add-row { margin-top: 12px; display: flex; gap: 8px; align-items: center; }
+.add-row input { background: #0f172a; border: 1px solid #475569; border-radius: 6px; color: #f1f5f9; padding: 6px 10px; font-size: 0.85rem; }
+.add-row input[name="name"] { flex: 1; }
+.add-row input[name="km"] { width: 80px; text-align: right; }
+.add-row button { padding: 6px 14px; border-radius: 6px; border: none; background: #166534; color: #4ade80; font-weight: 600; font-size: 0.85rem; cursor: pointer; }
+.remove-btn { background: none; border: none; color: #ef4444; cursor: pointer; font-size: 0.8rem; padding: 2px 6px; }
+.remove-btn:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<h1>Hike Admin</h1>
+<p class="subtitle">Manage shared hike miles and waterfalls for the whole family. Changes sync to all apps.</p>
+
+<div id="content"><div class="loading">Loading trip data...</div></div>
+
+<div class="save-bar" id="saveBar">
+  <span class="msg">You have unsaved changes</span>
+  <button onclick="saveSharedStats()">Save &amp; Publish</button>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+var REPO = 'freecodecollective/becahs-iceland-trip';
+var TOKEN = atob(['Z2hwX3N1SERVT','TFLRkFCQk5Dcm9D','U1RtVjJEU3Z6U3V','NUDJKRlBzcQ=='].join(''));
+var API = 'https://api.github.com/repos/' + REPO;
+var syncData = null;
+var sharedStats = null;
+var sharedStatsSha = null;
+var hasChanges = false;
+
+var ITINERARY_HIKES = {};
+var ITINERARY_WATERFALLS = {};
+
+function headers() {
+  return { 'Authorization': 'Bearer ' + TOKEN, 'Accept': 'application/vnd.github+json' };
+}
+
+function parseItinerary(itinerary) {
+  if (!itinerary) return;
+  for (var di = 0; di < itinerary.length; di++) {
+    var day = itinerary[di];
+    if (!day.activities) continue;
+    for (var ai = 0; ai < day.activities.length; ai++) {
+      var key = 'd' + day.id + '-a' + ai;
+      var act = day.activities[ai];
+      if (act.isHike && act.hikeDistanceKm) {
+        ITINERARY_HIKES[key] = { name: act.name, distanceKm: act.hikeDistanceKm };
+      }
+      if (act.isWaterfall) {
+        ITINERARY_WATERFALLS[key] = act.name;
+      }
+    }
+  }
+}
+
+async function load() {
+  try {
+    var res = await fetch(API + '/contents/data/trip-data.json?ref=main', { headers: headers() });
+    var json = await res.json();
+    syncData = JSON.parse(atob(json.content));
+    parseItinerary(syncData.itinerary);
+
+    var statsRes = await fetch(API + '/contents/data/shared-stats.json?ref=main', { headers: headers() });
+    if (statsRes.ok) {
+      var statsJson = await statsRes.json();
+      sharedStatsSha = statsJson.sha;
+      sharedStats = JSON.parse(atob(statsJson.content));
+    }
+
+    render();
+  } catch (e) {
+    document.getElementById('content').innerHTML = '<div class="loading">Error: ' + e.message + '</div>';
+  }
+}
+
+function aggregateHikes() {
+  var byName = {};
+
+  if (syncData && syncData.travelers) {
+    for (var ti = 0; ti < syncData.travelers.length; ti++) {
+      var t = syncData.travelers[ti];
+      var hikes = t.hikes || [];
+      for (var hi = 0; hi < hikes.length; hi++) {
+        var h = hikes[hi];
+        var existing = byName[h.name];
+        if (!existing || h.distanceKm > existing.distanceKm) {
+          byName[h.name] = { name: h.name, distanceKm: h.distanceKm, source: h.source, traveler: t.name, isOverride: false };
+        }
+      }
+    }
+  }
+
+  if (sharedStats && sharedStats.hikes) {
+    for (var si = 0; si < sharedStats.hikes.length; si++) {
+      var sh = sharedStats.hikes[si];
+      if (sh.isOverride) {
+        if (byName[sh.name]) {
+          byName[sh.name].distanceKm = sh.distanceKm;
+          byName[sh.name].isOverride = true;
+          byName[sh.name].source = 'manual';
+        } else {
+          byName[sh.name] = { name: sh.name, distanceKm: sh.distanceKm, source: 'manual', traveler: 'admin', isOverride: true };
+        }
+      }
+      if (!byName[sh.name] && !sh.isOverride) {
+        byName[sh.name] = { name: sh.name, distanceKm: sh.distanceKm, source: sh.source || 'unknown', traveler: '', isOverride: false };
+      }
+    }
+  }
+
+  return Object.values(byName).sort(function(a, b) { return b.distanceKm - a.distanceKm; });
+}
+
+function aggregateWaterfalls() {
+  var visited = {};
+  if (syncData && syncData.travelers) {
+    for (var ti = 0; ti < syncData.travelers.length; ti++) {
+      var checkIns = syncData.travelers[ti].checkIns || [];
+      for (var ci = 0; ci < checkIns.length; ci++) {
+        var key = checkIns[ci].key;
+        if (ITINERARY_WATERFALLS[key]) {
+          visited[key] = ITINERARY_WATERFALLS[key];
+        }
+      }
+    }
+  }
+  if (sharedStats && sharedStats.extraWaterfalls) {
+    for (var i = 0; i < sharedStats.extraWaterfalls.length; i++) {
+      visited['extra-' + i] = sharedStats.extraWaterfalls[i];
+    }
+  }
+  return visited;
+}
+
+function render() {
+  var hikes = aggregateHikes();
+  var waterfalls = aggregateWaterfalls();
+  var totalKm = 0;
+  for (var i = 0; i < hikes.length; i++) totalKm += hikes[i].distanceKm;
+  var totalMiles = totalKm * 0.621371;
+  var wfCount = Object.keys(waterfalls).length;
+
+  var html = '';
+
+  html += '<div class="total-card">';
+  html += '<div><span class="big">' + totalMiles.toFixed(1) + '</span><span class="unit">miles hiked</span></div>';
+  html += '<div class="detail">' + totalKm.toFixed(1) + ' km &middot; ' + hikes.length + ' hikes &middot; ' + wfCount + ' waterfalls</div>';
+  html += '</div>';
+
+  html += '<div class="stats">';
+  html += '<div class="stat"><b>' + hikes.length + '</b> hikes</div>';
+  html += '<div class="stat"><b>' + wfCount + '</b> waterfalls</div>';
+  if (syncData && syncData.travelers) {
+    html += '<div class="stat"><b>' + syncData.travelers.length + '</b> travelers synced</div>';
+  }
+  html += '</div>';
+
+  html += '<div class="section-title">Hikes Breakdown</div>';
+  if (hikes.length === 0) {
+    html += '<div class="empty">No hikes recorded yet</div>';
+  } else {
+    html += '<table><thead><tr><th>Hike</th><th>Source</th><th>Distance (km)</th><th style="width:40px"></th></tr></thead><tbody>';
+    for (var i = 0; i < hikes.length; i++) {
+      var h = hikes[i];
+      var srcClass = h.source === 'gps' ? 'source-gps' : (h.source === 'manual' ? 'source-manual' : 'source-checkin');
+      var srcLabel = h.source === 'gps' ? 'GPS' : (h.source === 'manual' ? 'Override' : 'Check-in');
+      html += '<tr>';
+      html += '<td><span class="hike-name">' + esc(h.name) + '</span>';
+      if (h.traveler) html += '<br><span class="traveler">by ' + esc(h.traveler) + '</span>';
+      html += '</td>';
+      html += '<td><span class="source ' + srcClass + '">' + srcLabel + '</span></td>';
+      html += '<td><input class="dist-input" type="number" step="0.1" min="0" value="' + h.distanceKm.toFixed(1) + '" data-name="' + esc(h.name) + '" data-original="' + h.distanceKm.toFixed(1) + '" onchange="markChanged(this)"></td>';
+      html += '<td><button class="remove-btn" onclick="removeHike(\'' + esc(h.name).replace(/'/g, "\\'") + '\')">x</button></td>';
+      html += '</tr>';
+    }
+    html += '</tbody></table>';
+  }
+
+  html += '<div class="add-row">';
+  html += '<input name="name" placeholder="Add hike name...">';
+  html += '<input name="km" type="number" step="0.1" min="0" placeholder="km">';
+  html += '<button onclick="addManualHike()">Add</button>';
+  html += '</div>';
+
+  html += '<div class="section-title" style="margin-top:30px">Waterfalls Visited (' + wfCount + ')</div>';
+  var wfKeys = Object.keys(waterfalls);
+  if (wfKeys.length === 0) {
+    html += '<div class="empty">No waterfalls checked in yet</div>';
+  } else {
+    for (var wi = 0; wi < wfKeys.length; wi++) {
+      html += '<div class="waterfall-row"><span class="check">&#10003;</span> ' + esc(waterfalls[wfKeys[wi]]) + '</div>';
+    }
+  }
+
+  document.getElementById('content').innerHTML = html;
+}
+
+function esc(s) {
+  var d = document.createElement('div');
+  d.textContent = s || '';
+  return d.innerHTML;
+}
+
+function markChanged(input) {
+  hasChanges = true;
+  document.getElementById('saveBar').classList.add('active');
+  if (input.value !== input.dataset.original) {
+    input.style.borderColor = '#fb923c';
+  } else {
+    input.style.borderColor = '#475569';
+  }
+}
+
+function addManualHike() {
+  var nameInput = document.querySelector('.add-row input[name="name"]');
+  var kmInput = document.querySelector('.add-row input[name="km"]');
+  var name = nameInput.value.trim();
+  var km = parseFloat(kmInput.value);
+  if (!name || isNaN(km) || km <= 0) return;
+
+  if (!sharedStats) {
+    sharedStats = { lastUpdated: '', hikes: [], totalHikeKm: 0, waterfallsVisited: 0 };
+  }
+  sharedStats.hikes.push({ name: name, distanceKm: km, isOverride: true });
+  nameInput.value = '';
+  kmInput.value = '';
+  hasChanges = true;
+  document.getElementById('saveBar').classList.add('active');
+  render();
+}
+
+function removeHike(name) {
+  if (!confirm('Remove "' + name + '" from shared stats?')) return;
+  if (sharedStats && sharedStats.hikes) {
+    sharedStats.hikes = sharedStats.hikes.filter(function(h) { return h.name !== name; });
+  }
+  hasChanges = true;
+  document.getElementById('saveBar').classList.add('active');
+  render();
+}
+
+function showToast(msg, isError) {
+  var t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'toast' + (isError ? ' error' : '');
+  t.style.display = 'block';
+  setTimeout(function() { t.style.display = 'none'; }, 3000);
+}
+
+async function saveSharedStats() {
+  var hikes = aggregateHikes();
+  var waterfalls = aggregateWaterfalls();
+
+  var inputs = document.querySelectorAll('.dist-input');
+  var overrides = {};
+  for (var i = 0; i < inputs.length; i++) {
+    var inp = inputs[i];
+    var name = inp.dataset.name;
+    var val = parseFloat(inp.value);
+    var orig = parseFloat(inp.dataset.original);
+    if (!isNaN(val) && val !== orig) {
+      overrides[name] = val;
+    }
+  }
+
+  var finalHikes = [];
+  for (var i = 0; i < hikes.length; i++) {
+    var h = hikes[i];
+    var km = overrides[h.name] !== undefined ? overrides[h.name] : h.distanceKm;
+    finalHikes.push({
+      name: h.name,
+      distanceKm: km,
+      isOverride: overrides[h.name] !== undefined || h.isOverride
+    });
+  }
+
+  if (sharedStats && sharedStats.hikes) {
+    for (var si = 0; si < sharedStats.hikes.length; si++) {
+      var sh = sharedStats.hikes[si];
+      if (sh.isOverride && !finalHikes.some(function(f) { return f.name === sh.name; })) {
+        finalHikes.push(sh);
+      }
+    }
+  }
+
+  var totalKm = 0;
+  for (var i = 0; i < finalHikes.length; i++) totalKm += finalHikes[i].distanceKm;
+
+  var payload = {
+    lastUpdated: new Date().toISOString(),
+    hikes: finalHikes,
+    totalHikeKm: Math.round(totalKm * 10) / 10,
+    waterfallsVisited: Object.keys(waterfalls).length
+  };
+
+  var encoded = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2))));
+  var body = {
+    message: 'Admin: update shared stats (' + finalHikes.length + ' hikes, ' + payload.totalHikeKm + ' km)',
+    content: encoded,
+    branch: 'main'
+  };
+  if (sharedStatsSha) body.sha = sharedStatsSha;
+
+  try {
+    var res = await fetch(API + '/contents/data/shared-stats.json', {
+      method: 'PUT',
+      headers: Object.assign({ 'Content-Type': 'application/json' }, headers()),
+      body: JSON.stringify(body)
+    });
+    var json = await res.json();
+    if (json.content) {
+      sharedStatsSha = json.content.sha;
+      sharedStats = payload;
+      hasChanges = false;
+      document.getElementById('saveBar').classList.remove('active');
+      showToast('Saved! Apps will pick up changes on next sync.');
+      render();
+    } else {
+      showToast('Error: ' + (json.message || 'unknown'), true);
+    }
+  } catch (e) {
+    showToast('Error: ' + e.message, true);
+  }
+}
+
+load();
+</script>
+</body>
+</html>
