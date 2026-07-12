@@ -196,14 +196,19 @@ function aggregateHikes() {
   return Object.values(byName).sort(function(a, b) { return b.distanceKm - a.distanceKm; });
 }
 
+function getHiddenWaterfalls() {
+  return (sharedStats && sharedStats.hiddenWaterfalls) ? sharedStats.hiddenWaterfalls : [];
+}
+
 function aggregateWaterfalls() {
   var visited = {};
+  var hidden = getHiddenWaterfalls();
   if (syncData && syncData.travelers) {
     for (var ti = 0; ti < syncData.travelers.length; ti++) {
       var checkIns = syncData.travelers[ti].checkIns || [];
       for (var ci = 0; ci < checkIns.length; ci++) {
         var key = checkIns[ci].key;
-        if (ITINERARY_WATERFALLS[key]) {
+        if (ITINERARY_WATERFALLS[key] && hidden.indexOf(key) === -1) {
           visited[key] = ITINERARY_WATERFALLS[key];
         }
       }
@@ -292,6 +297,8 @@ function render() {
       } else if (wfKey.indexOf('custom-') === 0) {
         var evId = wfKey.replace('custom-', '');
         html += '<button class="remove-btn" onclick="deleteCustomEvent(\'' + esc(evId) + '\')">x</button>';
+      } else {
+        html += '<button class="remove-btn" onclick="hideItineraryWaterfall(\'' + esc(wfKey) + '\')">x</button>';
       }
       html += '</div>';
     }
@@ -378,6 +385,20 @@ function removeExtraWaterfall(index) {
   render();
 }
 
+function hideItineraryWaterfall(key) {
+  if (!confirm('Hide "' + (ITINERARY_WATERFALLS[key] || key) + '" from waterfall count?')) return;
+  if (!sharedStats) {
+    sharedStats = { lastUpdated: '', hikes: [], totalHikeKm: 0, waterfallsVisited: 0, extraWaterfalls: [], hiddenWaterfalls: [] };
+  }
+  if (!sharedStats.hiddenWaterfalls) sharedStats.hiddenWaterfalls = [];
+  if (sharedStats.hiddenWaterfalls.indexOf(key) === -1) {
+    sharedStats.hiddenWaterfalls.push(key);
+  }
+  hasChanges = true;
+  document.getElementById('saveBar').classList.add('active');
+  render();
+}
+
 function removeHike(name) {
   if (!confirm('Remove "' + name + '" from shared stats?')) return;
   if (sharedStats && sharedStats.hikes) {
@@ -436,13 +457,15 @@ async function saveSharedStats() {
   for (var i = 0; i < finalHikes.length; i++) totalKm += finalHikes[i].distanceKm;
 
   var extras = (sharedStats && sharedStats.extraWaterfalls) ? sharedStats.extraWaterfalls : [];
+  var hidden = getHiddenWaterfalls();
 
   var payload = {
     lastUpdated: new Date().toISOString(),
     hikes: finalHikes,
     totalHikeKm: Math.round(totalKm * 10) / 10,
     waterfallsVisited: Object.keys(waterfalls).length,
-    extraWaterfalls: extras
+    extraWaterfalls: extras,
+    hiddenWaterfalls: hidden
   };
 
   var encoded = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2))));
