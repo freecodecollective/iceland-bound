@@ -370,8 +370,15 @@ body {
 @keyframes where-glow {
   0%, 100% { box-shadow: 0 0 0 0 rgba(96,165,250,0.3); }
   50% { box-shadow: 0 0 8px 2px rgba(96,165,250,0.4); }
-  white-space: nowrap;
 }
+.map-style-toggle {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 6px 12px; border-radius: 20px; border: 1px solid var(--border);
+  background: var(--card); color: var(--text2); font-size: 0.76rem; font-weight: 600;
+  cursor: pointer; font-family: var(--font); transition: all 0.15s;
+}
+.map-style-toggle:hover { border-color: var(--accent); color: var(--accent); }
+.map-style-toggle.active { background: var(--accent-bg); color: var(--accent); border-color: var(--accent); }
 .map-day-filter {
   display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 20px 0; padding: 10px 14px;
   background: var(--card); border-radius: var(--radius-sm); border: 1px solid var(--border);
@@ -586,7 +593,12 @@ body {
 
   <div class="tab-panel" id="panel-map">
     <div class="map-day-filter" id="mapDayFilter"></div>
-    <div style="margin:8px 20px 0;display:flex;justify-content:flex-end;">
+    <div style="margin:8px 20px 0;display:flex;align-items:center;gap:8px;justify-content:space-between;flex-wrap:wrap;">
+      <div style="display:flex;gap:6px;">
+        <button class="map-style-toggle active" id="mapStyleStd" onclick="setMapStyle('standard', this)">🗺 Map</button>
+        <button class="map-style-toggle" id="mapStyleSat" onclick="setMapStyle('satellite', this)">🛰 Satellite</button>
+        <button class="map-style-toggle" id="mapStyleHyb" onclick="setMapStyle('hybrid', this)">🌐 Hybrid</button>
+      </div>
       <button class="where-btn" onclick="whereAreTheyNow()"><img src="puffin.png"> Where are they now?</button>
     </div>
     <div id="mapContainer"></div>
@@ -1034,6 +1046,9 @@ let activeMapDay = 'all';
 let gpsTrackLayer = null;
 let gpsDotsLayer = null;
 let puffinMarker = null;
+let currentTileLayer = null;
+let currentLabelsLayer = null;
+let currentMapStyle = 'standard';
 
 const TRIP_START = new Date('2026-07-11T00:00:00');
 const TRIP_END = new Date('2026-07-22T23:59:59');
@@ -1234,7 +1249,7 @@ function initMap() {
     : 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
 
   tripMap = L.map('mapContainer', { zoomControl: true }).setView([64.5, -19.0], 6);
-  L.tileLayer(tileUrl, {
+  currentTileLayer = L.tileLayer(tileUrl, {
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OSM</a> © <a href="https://carto.com/">CARTO</a>',
     maxZoom: 18, subdomains: 'abcd'
   }).addTo(tripMap);
@@ -1521,6 +1536,33 @@ function resolveKeyCoords(key) {
   }
   if (key.indexOf('-stay') !== -1 && day.stay && day.stay.lat) return [day.stay.lat, day.stay.lng];
   return null;
+}
+
+function setMapStyle(style, btn) {
+  if (!tripMap || style === currentMapStyle) return;
+  currentMapStyle = style;
+  document.querySelectorAll('.map-style-toggle').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+
+  if (currentTileLayer) tripMap.removeLayer(currentTileLayer);
+  if (currentLabelsLayer) { tripMap.removeLayer(currentLabelsLayer); currentLabelsLayer = null; }
+  var isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  var url, attr;
+  if (style === 'satellite' || style === 'hybrid') {
+    url = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}';
+    attr = '© Esri, Maxar, Earthstar, USDA, USGS, AeroGRID';
+  } else {
+    url = isDark
+      ? 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
+      : 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
+    attr = '© <a href="https://www.openstreetmap.org/copyright">OSM</a> © <a href="https://carto.com/">CARTO</a>';
+  }
+  currentTileLayer = L.tileLayer(url, { attribution: attr, maxZoom: 18, subdomains: 'abcd' }).addTo(tripMap);
+  if (style === 'hybrid') {
+    currentLabelsLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png', {
+      maxZoom: 18, subdomains: 'abcd', pane: 'overlayPane'
+    }).addTo(tripMap);
+  }
 }
 
 function whereAreTheyNow() {
