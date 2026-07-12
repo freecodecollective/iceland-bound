@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-12T22:31:48Z",
+  "lastUpdated" : "2026-07-12T22:37:09Z",
   "photos" : [
     {
       "activityName" : "World Cup with family",
@@ -613,6 +613,13 @@
       "filename" : "821169F0-B13C-4D07-99EA-B3CBF24C0B87.jpg",
       "key" : "d-1-a1",
       "timestamp" : "2026-07-12T21:20:49Z"
+    },
+    {
+      "activityName" : "Flight Boston to Reykjavík",
+      "dayID" : 0,
+      "filename" : "9A978179-B621-44FF-A12A-1E95BE017536.jpg",
+      "key" : "d0-a0",
+      "timestamp" : "2026-07-12T22:36:59Z"
     },
     {
       "activityName" : "Flight Boston to Reykjavík",
@@ -728,7 +735,7 @@
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "A1FA3647-B0AE-4B53-B589-B9F10A0B035D"
       ],
-      "gpsPointCount" : 416,
+      "gpsPointCount" : 418,
       "gpsTrack" : [
         {
           "acc" : 14788.177814332172,
@@ -3225,6 +3232,18 @@
           "lat" : 42.66676509874512,
           "lng" : -71.5897970483974,
           "ts" : "2026-07-12T22:30:15Z"
+        },
+        {
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:35:13Z"
+        },
+        {
+          "acc" : 15.395014000000002,
+          "lat" : 42.66675945324179,
+          "lng" : -71.58976299735856,
+          "ts" : "2026-07-12T22:35:13Z"
         }
       ],
       "hikes" : [
