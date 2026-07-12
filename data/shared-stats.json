@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-07-12T19:30:17.472Z",
+  "lastUpdated": "2026-07-12T20:18:44.300Z",
   "hikes": [
+    {
+      "name": "test hike 444",
+      "distanceKm": 16.093444978925632,
+      "isOverride": true
+    },
     {
       "name": "Test",
       "distanceKm": 0.02,
@@ -12,7 +17,7 @@
       "isOverride": false
     }
   ],
-  "totalHikeKm": 0,
-  "waterfallsVisited": 0,
+  "totalHikeKm": 16.1,
+  "waterfallsVisited": 1,
   "extraWaterfalls": []
 }
