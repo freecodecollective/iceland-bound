@@ -82,6 +82,8 @@ var syncData = null;
 var sharedStats = null;
 var sharedStatsSha = null;
 var hasChanges = false;
+var adminDeletedEvents = [];
+var adminDeletedSha = null;
 
 var ITINERARY_HIKES = {};
 var ITINERARY_WATERFALLS = {};
@@ -127,6 +129,13 @@ async function load() {
       var statsJson = await statsRes.json();
       sharedStatsSha = statsJson.sha;
       sharedStats = JSON.parse(decodeB64(statsJson.content));
+    }
+
+    var delEvRes = await fetch(API + '/contents/data/admin-deleted-events.json?ref=main&_t=' + Date.now(), { headers: headers(), cache: 'no-store' });
+    if (delEvRes.ok) {
+      var delEvJson = await delEvRes.json();
+      adminDeletedSha = delEvJson.sha;
+      adminDeletedEvents = JSON.parse(decodeB64(delEvJson.content));
     }
 
     render();
@@ -188,7 +197,10 @@ function aggregateWaterfalls() {
       for (var ei = 0; ei < customEvents.length; ei++) {
         var ev = customEvents[ei];
         if (ev.activityCategory && ev.activityCategory.toLowerCase() === 'waterfall') {
-          visited['custom-' + (ev.id || ei)] = ev.name;
+          var evId = ev.id || ('custom-' + ei);
+          if (adminDeletedEvents.indexOf(evId) === -1) {
+            visited['custom-' + evId] = ev.name;
+          }
         }
       }
     }
@@ -263,6 +275,9 @@ function render() {
       if (wfKey.indexOf('extra-') === 0) {
         var extraIdx = parseInt(wfKey.replace('extra-', ''));
         html += '<button class="remove-btn" onclick="removeExtraWaterfall(' + extraIdx + ')">x</button>';
+      } else if (wfKey.indexOf('custom-') === 0) {
+        var evId = wfKey.replace('custom-', '');
+        html += '<button class="remove-btn" onclick="deleteCustomEvent(\'' + esc(evId) + '\')">x</button>';
       }
       html += '</div>';
     }
@@ -272,6 +287,22 @@ function render() {
   html += '<input name="wf-name" placeholder="Add waterfall name..." style="flex:1">';
   html += '<button onclick="addExtraWaterfall()">Add</button>';
   html += '</div>';
+
+  var otherEvents = aggregateOtherEvents();
+  html += '<div class="section-title" style="margin-top:30px">Other Custom Events (' + otherEvents.length + ')</div>';
+  if (otherEvents.length === 0) {
+    html += '<div class="empty">No other custom events</div>';
+  } else {
+    for (var oi = 0; oi < otherEvents.length; oi++) {
+      var oe = otherEvents[oi];
+      html += '<div class="waterfall-row">';
+      html += '<span style="font-size:0.7rem;padding:2px 8px;border-radius:4px;background:#2e1065;color:#a78bfa;">' + esc(oe.category || oe.type) + '</span>';
+      html += '<span style="flex:1">' + esc(oe.name) + '</span>';
+      if (oe.createdBy) html += '<span class="traveler">by ' + esc(oe.createdBy) + '</span>';
+      html += '<button class="remove-btn" onclick="deleteCustomEvent(\'' + esc(oe.id) + '\')">x</button>';
+      html += '</div>';
+    }
+  }
 
   document.getElementById('content').innerHTML = html;
 }
@@ -428,6 +459,51 @@ async function saveSharedStats() {
   } catch (e) {
     showToast('Error: ' + e.message, true);
   }
+}
+
+function aggregateOtherEvents() {
+  var others = [];
+  if (!syncData || !syncData.travelers) return others;
+  var seen = {};
+  for (var ti = 0; ti < syncData.travelers.length; ti++) {
+    var customEvents = syncData.travelers[ti].customEvents || [];
+    for (var ei = 0; ei < customEvents.length; ei++) {
+      var ev = customEvents[ei];
+      var cat = (ev.activityCategory || '').toLowerCase();
+      if (cat === 'waterfall' || cat === 'hiking') continue;
+      var evId = ev.id || ('other-' + ei);
+      if (seen[evId]) continue;
+      if (adminDeletedEvents.indexOf(evId) !== -1) continue;
+      seen[evId] = true;
+      others.push({ id: evId, name: ev.name, type: ev.type || 'activity', category: ev.activityCategory || '', createdBy: ev.createdBy || syncData.travelers[ti].name });
+    }
+  }
+  return others;
+}
+
+async function deleteCustomEvent(eventId) {
+  if (!confirm('Delete this event from all devices and pages?')) return;
+  if (adminDeletedEvents.indexOf(eventId) === -1) {
+    adminDeletedEvents.push(eventId);
+  }
+  try {
+    var encoded = btoa(unescape(encodeURIComponent(JSON.stringify(adminDeletedEvents, null, 2))));
+    var body = { message: 'Admin: delete custom event ' + eventId.substring(0, 8), content: encoded, branch: 'main' };
+    if (adminDeletedSha) body.sha = adminDeletedSha;
+    var res = await fetch(API + '/contents/data/admin-deleted-events.json', {
+      method: 'PUT',
+      headers: Object.assign({ 'Content-Type': 'application/json' }, headers()),
+      body: JSON.stringify(body)
+    });
+    var json = await res.json();
+    if (json.content) adminDeletedSha = json.content.sha;
+    showToast('Deleted — will be removed from all apps on next sync');
+  } catch (e) {
+    showToast('Error: ' + e.message, true);
+  }
+  hasChanges = true;
+  document.getElementById('saveBar').classList.add('active');
+  render();
 }
 
 load();
