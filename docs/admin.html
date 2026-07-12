@@ -92,12 +92,19 @@ function headers() {
   return { 'Authorization': 'Bearer ' + TOKEN, 'Accept': 'application/vnd.github+json' };
 }
 
+function decodeB64(b64) {
+  var bin = atob(b64.replace(/\n/g, ''));
+  var bytes = new Uint8Array(bin.length);
+  for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+  return new TextDecoder().decode(bytes);
+}
+
 async function load() {
   try {
     var res = await fetch(API + '/contents/data/trip-data.json?ref=main', { headers: headers() });
     var json = await res.json();
     tripDataSha = json.sha;
-    syncData = JSON.parse(atob(json.content));
+    syncData = JSON.parse(decodeB64(json.content));
     render();
   } catch (e) {
     document.getElementById('content').innerHTML = '<div class="empty">Failed to load: ' + e.message + '</div>';
@@ -234,7 +241,7 @@ async function deletePhotos(filenames) {
     if (delRes.ok) {
       var delJson = await delRes.json();
       delSha = delJson.sha;
-      existingDeleted = JSON.parse(atob(delJson.content));
+      existingDeleted = JSON.parse(decodeB64(delJson.content));
     }
     filenames.forEach(function(fn) {
       if (existingDeleted.indexOf(fn) === -1) existingDeleted.push(fn);
