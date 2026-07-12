@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-12T18:18:28.750Z",
+  "lastUpdated": "2026-07-12T18:22:24.635Z",
   "hikes": [
     {
       "name": "Test",
-      "distanceKm": 10,
+      "distanceKm": 13,
       "isOverride": true
     }
   ],
-  "totalHikeKm": 10,
+  "totalHikeKm": 13,
   "waterfallsVisited": 0
 }
