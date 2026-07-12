@@ -1,3282 +1,3340 @@
 {
-  "itinerary": [
+  "itinerary" : [
     {
-      "activities": [
+      "activities" : [
         {
-          "duration": "~5.5 hrs",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Flight SFO to Boston"
+          "duration" : "~5.5 hrs",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Flight SFO to Boston"
         },
         {
-          "duration": "Evening",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "World Cup with family"
+          "duration" : "Evening",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "World Cup with family"
         },
         {
-          "duration": "~5 hrs",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Fly Boston to Iceland"
+          "duration" : "~5 hrs",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Fly Boston to Iceland"
         }
       ],
-      "activityCount": 3,
-      "date": "Sat Jul 11",
-      "driving": "Flight",
-      "foodCount": 0,
-      "id": -1,
-      "route": "SFO → Boston Logan",
-      "title": "Travel to Boston"
+      "activityCount" : 3,
+      "date" : "Sat Jul 11",
+      "driving" : "Flight",
+      "foodCount" : 0,
+      "id" : -1,
+      "route" : "SFO → Boston Logan",
+      "title" : "Travel to Boston"
     },
     {
-      "activities": [
+      "activities" : [
         {
-          "duration": "~5 hrs",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Flight Boston to Reykjavík"
+          "duration" : "~5 hrs",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Flight Boston to Reykjavík"
         }
       ],
-      "activityCount": 1,
-      "date": "Sun Jul 12",
-      "driving": "Flight",
-      "foodCount": 0,
-      "id": 0,
-      "route": "Boston Logan → Keflavík",
-      "title": "Travel to Iceland"
+      "activityCount" : 1,
+      "date" : "Sun Jul 12",
+      "driving" : "Flight",
+      "foodCount" : 0,
+      "id" : 0,
+      "route" : "Boston Logan → Keflavík",
+      "title" : "Travel to Iceland"
     },
     {
-      "activities": [
+      "activities" : [
         {
-          "duration": "15 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Bridge Between Continents"
+          "duration" : "15 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Bridge Between Continents"
         },
         {
-          "duration": "30 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Gunnuhver geothermal"
+          "duration" : "30 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Gunnuhver geothermal"
         },
         {
-          "duration": "30 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Reykjanesviti lighthouse"
+          "duration" : "30 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Reykjanesviti lighthouse"
         },
         {
-          "duration": "45 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Krýsuvík / Seltún geothermal"
+          "duration" : "45 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Krýsuvík \/ Seltún geothermal"
         },
         {
-          "duration": "15 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Brimketill lava pool"
+          "duration" : "15 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Brimketill lava pool"
         },
         {
-          "duration": "3 hrs",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Blue Lagoon & LAVA Restaurant"
+          "duration" : "3 hrs",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Blue Lagoon & LAVA Restaurant"
         },
         {
-          "duration": "30 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Pickup Land Cruiser"
+          "duration" : "30 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Pickup Land Cruiser"
         },
         {
-          "duration": "30 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Check in Galtafell"
+          "duration" : "30 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Check in Galtafell"
         }
       ],
-      "activityCount": 8,
-      "date": "Mon Jul 13",
-      "driving": "~80 km",
-      "foodCount": 3,
-      "id": 1,
-      "route": "Keflavík → Reykjanes loop → Reykjavík",
-      "stayName": "Guesthouse Galtafell",
-      "title": "Arrival & Reykjanes"
+      "activityCount" : 8,
+      "date" : "Mon Jul 13",
+      "driving" : "~80 km",
+      "foodCount" : 3,
+      "id" : 1,
+      "route" : "Keflavík → Reykjanes loop → Reykjavík",
+      "stayName" : "Guesthouse Galtafell",
+      "title" : "Arrival & Reykjanes"
     },
     {
-      "activities": [
+      "activities" : [
         {
-          "duration": "2 hrs (9:00–11:00 AM)",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Silfra fissure snorkeling"
+          "duration" : "2 hrs (9:00–11:00 AM)",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Silfra fissure snorkeling"
         },
         {
-          "duration": "2 hrs",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Þingvellir National Park"
+          "duration" : "2 hrs",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Þingvellir National Park"
         },
         {
-          "duration": "45 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Geysir & Strokkur"
+          "duration" : "45 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Geysir & Strokkur"
         },
         {
-          "duration": "45 min",
-          "isHike": false,
-          "isWaterfall": true,
-          "name": "Gullfoss waterfall"
+          "duration" : "45 min",
+          "isHike" : false,
+          "isWaterfall" : true,
+          "name" : "Gullfoss waterfall"
         },
         {
-          "duration": "30 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Kerið crater lake"
+          "duration" : "30 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Kerið crater lake"
         },
         {
-          "duration": "2 hrs",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "World Cup Semifinal 1"
+          "duration" : "2 hrs",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "World Cup Semifinal 1"
         }
       ],
-      "activityCount": 6,
-      "date": "Tue Jul 14",
-      "driving": "~200 km",
-      "foodCount": 6,
-      "id": 2,
-      "route": "Reykjavík → Silfra → Þingvellir → Geysir → Gullfoss → Kerið → Reykjavík",
-      "stayName": "Guesthouse Galtafell",
-      "title": "Golden Circle"
+      "activityCount" : 6,
+      "date" : "Tue Jul 14",
+      "driving" : "~200 km",
+      "foodCount" : 6,
+      "id" : 2,
+      "route" : "Reykjavík → Silfra → Þingvellir → Geysir → Gullfoss → Kerið → Reykjavík",
+      "stayName" : "Guesthouse Galtafell",
+      "title" : "Golden Circle"
     },
     {
-      "activities": [
+      "activities" : [
         {
-          "duration": "1 hr",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Lava Centre Hvolsvöllur"
+          "duration" : "1 hr",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Lava Centre Hvolsvöllur"
         },
         {
-          "duration": "15 min",
-          "isHike": false,
-          "isWaterfall": true,
-          "name": "Gljúfrabúi"
+          "duration" : "15 min",
+          "isHike" : false,
+          "isWaterfall" : true,
+          "name" : "Gljúfrabúi"
         },
         {
-          "duration": "1 hr",
-          "isHike": false,
-          "isWaterfall": true,
-          "name": "Seljalandsfoss"
+          "duration" : "1 hr",
+          "isHike" : false,
+          "isWaterfall" : true,
+          "name" : "Seljalandsfoss"
         },
         {
-          "duration": "1 hr",
-          "isHike": false,
-          "isWaterfall": true,
-          "name": "Skógafoss"
+          "duration" : "1 hr",
+          "isHike" : false,
+          "isWaterfall" : true,
+          "name" : "Skógafoss"
         },
         {
-          "duration": "10 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Hella town sign photo"
+          "duration" : "10 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Hella town sign photo"
         },
         {
-          "duration": "2 hrs",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "World Cup Semifinal 2"
+          "duration" : "2 hrs",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "World Cup Semifinal 2"
         },
         {
-          "duration": "30 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Check in Vík"
+          "duration" : "30 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Check in Vík"
         }
       ],
-      "activityCount": 7,
-      "date": "Wed Jul 15",
-      "driving": "~187 km",
-      "foodCount": 4,
-      "id": 3,
-      "route": "Reykjavík → Hella → Seljalandsfoss → Skógafoss → Vík",
-      "stayName": "Vik House",
-      "title": "Waterfalls & South Coast"
+      "activityCount" : 7,
+      "date" : "Wed Jul 15",
+      "driving" : "~187 km",
+      "foodCount" : 4,
+      "id" : 3,
+      "route" : "Reykjavík → Hella → Seljalandsfoss → Skógafoss → Vík",
+      "stayName" : "Vik House",
+      "title" : "Waterfalls & South Coast"
     },
     {
-      "activities": [
+      "activities" : [
         {
-          "duration": "~4 hrs",
-          "hikeDistanceKm": 11.9,
-          "isHike": true,
-          "isWaterfall": false,
-          "name": "Þakgil–Mælifell hike"
+          "duration" : "~4 hrs",
+          "hikeDistanceKm" : 11.9,
+          "isHike" : true,
+          "isWaterfall" : false,
+          "name" : "Þakgil–Mælifell hike"
         },
         {
-          "duration": "45 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Reynisfjara black sand beach"
+          "duration" : "45 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Reynisfjara black sand beach"
         },
         {
-          "duration": "1.5 hrs",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Dyrhólaey"
+          "duration" : "1.5 hrs",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Dyrhólaey"
         },
         {
-          "duration": "1 hr",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Hjörleifshöfði / Yoda Cave"
+          "duration" : "1 hr",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Hjörleifshöfði \/ Yoda Cave"
         },
         {
-          "duration": "30 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Reyniskirkja church"
+          "duration" : "30 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Reyniskirkja church"
         }
       ],
-      "activityCount": 5,
-      "date": "Thu Jul 16",
-      "driving": "~80 km local",
-      "foodCount": 6,
-      "id": 4,
-      "route": "Vík area",
-      "stayName": "Vik House",
-      "title": "Vík Explorer Day"
+      "activityCount" : 5,
+      "date" : "Thu Jul 16",
+      "driving" : "~80 km local",
+      "foodCount" : 6,
+      "id" : 4,
+      "route" : "Vík area",
+      "stayName" : "Vik House",
+      "title" : "Vík Explorer Day"
     },
     {
-      "activities": [
+      "activities" : [
         {
-          "duration": "45 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Fjaðrárgljúfur canyon"
+          "duration" : "45 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Fjaðrárgljúfur canyon"
         },
         {
-          "duration": "2 hrs",
-          "hikeDistanceKm": 5.5,
-          "isHike": true,
-          "isWaterfall": true,
-          "name": "Svartifoss hike (Skaftafell)"
+          "duration" : "2 hrs",
+          "hikeDistanceKm" : 5.5,
+          "isHike" : true,
+          "isWaterfall" : true,
+          "name" : "Svartifoss hike (Skaftafell)"
         },
         {
-          "duration": "4 hrs (2:00 PM start)",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Fjallsárlón Glacier Hike & Boat Tour"
+          "duration" : "4 hrs (2:00 PM start)",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Fjallsárlón Glacier Hike & Boat Tour"
         },
         {
-          "duration": "45 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Jökulsárlón glacier lagoon"
+          "duration" : "45 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Jökulsárlón glacier lagoon"
         },
         {
-          "duration": "30 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Diamond Beach"
+          "duration" : "30 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Diamond Beach"
         },
         {
-          "duration": "1.5 hrs",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Vestrahorn / Stokksnes"
+          "duration" : "1.5 hrs",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Vestrahorn \/ Stokksnes"
         },
         {
-          "duration": "30 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Check in Fosshotel"
+          "duration" : "30 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Check in Fosshotel"
         }
       ],
-      "activityCount": 7,
-      "date": "Fri Jul 17",
-      "driving": "~270 km",
-      "foodCount": 4,
-      "id": 5,
-      "route": "Vík → Fjaðrárgljúfur → Skaftafell → Fjallsárlón → Jökulsárlón → Höfn",
-      "stayName": "Fosshotel Vatnajökull",
-      "title": "Glaciers & Icebergs"
+      "activityCount" : 7,
+      "date" : "Fri Jul 17",
+      "driving" : "~270 km",
+      "foodCount" : 4,
+      "id" : 5,
+      "route" : "Vík → Fjaðrárgljúfur → Skaftafell → Fjallsárlón → Jökulsárlón → Höfn",
+      "stayName" : "Fosshotel Vatnajökull",
+      "title" : "Glaciers & Icebergs"
     },
     {
-      "activities": [
+      "activities" : [
         {
-          "duration": "5 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Lómagnúpur viewpoint"
+          "duration" : "5 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Lómagnúpur viewpoint"
         },
         {
-          "duration": "15 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Dverghamrar \"Dwarf Cliffs\""
+          "duration" : "15 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Dverghamrar \"Dwarf Cliffs\""
         },
         {
-          "duration": "30 min",
-          "isHike": false,
-          "isWaterfall": true,
-          "name": "Fagrifoss waterfall"
+          "duration" : "30 min",
+          "isHike" : false,
+          "isWaterfall" : true,
+          "name" : "Fagrifoss waterfall"
         },
         {
-          "duration": "4–5 hrs",
-          "hikeDistanceKm": 8,
-          "isHike": true,
-          "isWaterfall": false,
-          "name": "Laki / Lakagígar craters"
+          "duration" : "4–5 hrs",
+          "hikeDistanceKm" : 8,
+          "isHike" : true,
+          "isWaterfall" : false,
+          "name" : "Laki \/ Lakagígar craters"
         },
         {
-          "duration": "1.5 hrs",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Laki summit + lunch"
+          "duration" : "1.5 hrs",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Laki summit + lunch"
         },
         {
-          "duration": "1.5 hrs",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Tjarnargígur + lava walks"
+          "duration" : "1.5 hrs",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Tjarnargígur + lava walks"
         },
         {
-          "duration": "30 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Check in Stracta"
+          "duration" : "30 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Check in Stracta"
         }
       ],
-      "activityCount": 7,
-      "date": "Sat Jul 18",
-      "driving": "~200 km + F-road",
-      "foodCount": 5,
-      "id": 6,
-      "route": "Höfn → Klaustur → Laki via F206 → Klaustur",
-      "stayName": "Stracta Apartments",
-      "title": "Laki & the Highlands"
+      "activityCount" : 7,
+      "date" : "Sat Jul 18",
+      "driving" : "~200 km + F-road",
+      "foodCount" : 5,
+      "id" : 6,
+      "route" : "Höfn → Klaustur → Laki via F206 → Klaustur",
+      "stayName" : "Stracta Apartments",
+      "title" : "Laki & the Highlands"
     },
     {
-      "activities": [
+      "activities" : [
         {
-          "duration": "1.5 hrs",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "DC-3 plane wreck Sólheimasandur"
+          "duration" : "1.5 hrs",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "DC-3 plane wreck Sólheimasandur"
         },
         {
-          "duration": "1.5 hrs (1:30 PM start)",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Secret Lagoon (Gamla Laugin)"
+          "duration" : "1.5 hrs (1:30 PM start)",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Secret Lagoon (Gamla Laugin)"
         },
         {
-          "duration": "30 min",
-          "isHike": false,
-          "isWaterfall": true,
-          "name": "Hjálparfoss"
+          "duration" : "30 min",
+          "isHike" : false,
+          "isWaterfall" : true,
+          "name" : "Hjálparfoss"
         },
         {
-          "duration": "3 hrs",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "World Cup Final"
+          "duration" : "3 hrs",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "World Cup Final"
         },
         {
-          "duration": "30 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Check in Heima"
+          "duration" : "30 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Check in Heima"
         }
       ],
-      "activityCount": 5,
-      "date": "Sun Jul 19",
-      "driving": "~225 km",
-      "foodCount": 4,
-      "id": 7,
-      "route": "Klaustur → Sólheimasandur → Flúðir → Selfoss",
-      "stayName": "Heima Holiday Homes",
-      "title": "Plane Wreck & Secret Lagoon"
+      "activityCount" : 5,
+      "date" : "Sun Jul 19",
+      "driving" : "~225 km",
+      "foodCount" : 4,
+      "id" : 7,
+      "route" : "Klaustur → Sólheimasandur → Flúðir → Selfoss",
+      "stayName" : "Heima Holiday Homes",
+      "title" : "Plane Wreck & Secret Lagoon"
     },
     {
-      "activities": [
+      "activities" : [
         {
-          "duration": "~5 hrs",
-          "hikeDistanceKm": 10,
-          "isHike": true,
-          "isWaterfall": false,
-          "name": "Brennisteinsalda + Bláhnúkur loop"
+          "duration" : "~5 hrs",
+          "hikeDistanceKm" : 10,
+          "isHike" : true,
+          "isWaterfall" : false,
+          "name" : "Brennisteinsalda + Bláhnúkur loop"
         },
         {
-          "duration": "45 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Landmannalaugar hot spring"
+          "duration" : "45 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Landmannalaugar hot spring"
         },
         {
-          "duration": "45 min add-on",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Ljótipollur red crater lake (optional)"
+          "duration" : "45 min add-on",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Ljótipollur red crater lake (optional)"
         },
         {
-          "duration": "15 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Hekla viewpoint"
+          "duration" : "15 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Hekla viewpoint"
         },
         {
-          "duration": "15 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Start hike"
+          "duration" : "15 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Start hike"
         },
         {
-          "duration": "30 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Descend to saddle"
+          "duration" : "30 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Descend to saddle"
         },
         {
-          "duration": "30 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Cross lava field"
+          "duration" : "30 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Cross lava field"
         },
         {
-          "duration": "15 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Off F-road"
+          "duration" : "15 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Off F-road"
         }
       ],
-      "activityCount": 8,
-      "date": "Mon Jul 20",
-      "driving": "~400 km round trip, 10–12 hrs",
-      "foodCount": 3,
-      "id": 8,
-      "route": "Selfoss → F208 → Landmannalaugar → Selfoss",
-      "stayName": "Heima Holiday Homes",
-      "title": "Landmannalaugar"
+      "activityCount" : 8,
+      "date" : "Mon Jul 20",
+      "driving" : "~400 km round trip, 10–12 hrs",
+      "foodCount" : 3,
+      "id" : 8,
+      "route" : "Selfoss → F208 → Landmannalaugar → Selfoss",
+      "stayName" : "Heima Holiday Homes",
+      "title" : "Landmannalaugar"
     },
     {
-      "activities": [
+      "activities" : [
         {
-          "duration": "15 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Gerðuberg basalt columns"
+          "duration" : "15 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Gerðuberg basalt columns"
         },
         {
-          "duration": "30 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Ytri Tunga seal beach"
+          "duration" : "30 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Ytri Tunga seal beach"
         },
         {
-          "duration": "15 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Búðakirkja black church"
+          "duration" : "15 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Búðakirkja black church"
         },
         {
-          "duration": "1.5 hrs",
-          "hikeDistanceKm": 5,
-          "isHike": true,
-          "isWaterfall": false,
-          "name": "Arnarstapi cliff walk to Hellnar"
+          "duration" : "1.5 hrs",
+          "hikeDistanceKm" : 5,
+          "isHike" : true,
+          "isWaterfall" : false,
+          "name" : "Arnarstapi cliff walk to Hellnar"
         },
         {
-          "duration": "30 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Check in Arnarstapi"
+          "duration" : "30 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Check in Arnarstapi"
         },
         {
-          "duration": "1.5 hrs",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Optional sunset photography"
+          "duration" : "1.5 hrs",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Optional sunset photography"
         }
       ],
-      "activityCount": 6,
-      "date": "Tue Jul 21",
-      "driving": "~250 km",
-      "foodCount": 6,
-      "id": 9,
-      "route": "Selfoss → Borgarnes → Snæfellsnes south → Arnarstapi",
-      "stayName": "Arnarstapi Hotel",
-      "title": "Snæfellsnes South"
+      "activityCount" : 6,
+      "date" : "Tue Jul 21",
+      "driving" : "~250 km",
+      "foodCount" : 6,
+      "id" : 9,
+      "route" : "Selfoss → Borgarnes → Snæfellsnes south → Arnarstapi",
+      "stayName" : "Arnarstapi Hotel",
+      "title" : "Snæfellsnes South"
     },
     {
-      "activities": [
+      "activities" : [
         {
-          "duration": "45 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Vatnshellir lava cave"
+          "duration" : "45 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Vatnshellir lava cave"
         },
         {
-          "duration": "45 min",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "Djúpalónssandur black pebble beach"
+          "duration" : "45 min",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "Djúpalónssandur black pebble beach"
         },
         {
-          "duration": "1 hr",
-          "isHike": false,
-          "isWaterfall": true,
-          "name": "Kirkjufell + Kirkjufellsfoss"
+          "duration" : "1 hr",
+          "isHike" : false,
+          "isWaterfall" : true,
+          "name" : "Kirkjufell + Kirkjufellsfoss"
         },
         {
-          "duration": "5 hrs",
-          "isHike": false,
-          "isWaterfall": false,
-          "name": "FI633 wheels up"
+          "duration" : "5 hrs",
+          "isHike" : false,
+          "isWaterfall" : false,
+          "name" : "FI633 wheels up"
         }
       ],
-      "activityCount": 4,
-      "date": "Wed Jul 22",
-      "driving": "~300 km",
-      "foodCount": 3,
-      "id": 10,
-      "route": "Arnarstapi → Snæfellsnes north → Borgarnes → Keflavík → Boston",
-      "title": "Snæfellsnes North & Home"
+      "activityCount" : 4,
+      "date" : "Wed Jul 22",
+      "driving" : "~300 km",
+      "foodCount" : 3,
+      "id" : 10,
+      "route" : "Arnarstapi → Snæfellsnes north → Borgarnes → Keflavík → Boston",
+      "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated": "2026-07-12T22:30:15Z",
-  "photos": [
+  "lastUpdated" : "2026-07-12T22:31:48Z",
+  "photos" : [
     {
-      "activityName": "World Cup with family",
-      "dayID": -1,
-      "filename": "C75879FC-F403-48B6-A12C-77D07BA97BFE.jpg",
-      "key": "d-1-s2",
-      "timestamp": "2026-07-12T02:46:45Z"
+      "activityName" : "World Cup with family",
+      "dayID" : -1,
+      "filename" : "C75879FC-F403-48B6-A12C-77D07BA97BFE.jpg",
+      "key" : "d-1-s2",
+      "timestamp" : "2026-07-12T02:46:45Z"
     },
     {
-      "activityName": "Flight SFO to Boston",
-      "dayID": -1,
-      "filename": "4F697389-AFDF-4817-B5C8-3EF0300848AB.jpg",
-      "key": "d-1-a0",
-      "timestamp": "2026-07-12T21:14:05Z"
+      "activityName" : "Flight SFO to Boston",
+      "dayID" : -1,
+      "filename" : "4F697389-AFDF-4817-B5C8-3EF0300848AB.jpg",
+      "key" : "d-1-a0",
+      "timestamp" : "2026-07-12T21:14:05Z"
     },
     {
-      "activityName": "Flight SFO to Boston",
-      "dayID": -1,
-      "filename": "BC7EE9DD-B7CF-4FC3-88EE-C503A057A6A0.jpg",
-      "key": "d-1-a0",
-      "timestamp": "2026-07-12T21:14:06Z"
+      "activityName" : "Flight SFO to Boston",
+      "dayID" : -1,
+      "filename" : "BC7EE9DD-B7CF-4FC3-88EE-C503A057A6A0.jpg",
+      "key" : "d-1-a0",
+      "timestamp" : "2026-07-12T21:14:06Z"
     },
     {
-      "activityName": "World Cup with family",
-      "dayID": -1,
-      "filename": "6F5D50DC-41EA-49E9-B199-9026EDCEDA7C.jpg",
-      "key": "d-1-a1",
-      "timestamp": "2026-07-12T21:20:48Z"
+      "activityName" : "World Cup with family",
+      "dayID" : -1,
+      "filename" : "6F5D50DC-41EA-49E9-B199-9026EDCEDA7C.jpg",
+      "key" : "d-1-a1",
+      "timestamp" : "2026-07-12T21:20:48Z"
     },
     {
-      "activityName": "World Cup with family",
-      "dayID": -1,
-      "filename": "CDF61917-F2B0-4F07-A687-41921C7A00EF.jpg",
-      "key": "d-1-a1",
-      "timestamp": "2026-07-12T21:20:48Z"
+      "activityName" : "World Cup with family",
+      "dayID" : -1,
+      "filename" : "CDF61917-F2B0-4F07-A687-41921C7A00EF.jpg",
+      "key" : "d-1-a1",
+      "timestamp" : "2026-07-12T21:20:48Z"
     },
     {
-      "activityName": "World Cup with family",
-      "dayID": -1,
-      "filename": "B5AC6B9F-E46F-492E-8E98-AD1F923028B8.jpg",
-      "key": "d-1-a1",
-      "timestamp": "2026-07-12T21:20:49Z"
+      "activityName" : "World Cup with family",
+      "dayID" : -1,
+      "filename" : "B5AC6B9F-E46F-492E-8E98-AD1F923028B8.jpg",
+      "key" : "d-1-a1",
+      "timestamp" : "2026-07-12T21:20:49Z"
     },
     {
-      "activityName": "World Cup with family",
-      "dayID": -1,
-      "filename": "768890A7-03F7-4700-8BEC-A2A965DB03D4.jpg",
-      "key": "d-1-a1",
-      "timestamp": "2026-07-12T21:20:49Z"
+      "activityName" : "World Cup with family",
+      "dayID" : -1,
+      "filename" : "768890A7-03F7-4700-8BEC-A2A965DB03D4.jpg",
+      "key" : "d-1-a1",
+      "timestamp" : "2026-07-12T21:20:49Z"
     },
     {
-      "activityName": "World Cup with family",
-      "dayID": -1,
-      "filename": "FC6C3ECE-ADC4-4ABE-BF3E-3754E32318B9.jpg",
-      "key": "d-1-a1",
-      "timestamp": "2026-07-12T21:20:49Z"
+      "activityName" : "World Cup with family",
+      "dayID" : -1,
+      "filename" : "FC6C3ECE-ADC4-4ABE-BF3E-3754E32318B9.jpg",
+      "key" : "d-1-a1",
+      "timestamp" : "2026-07-12T21:20:49Z"
     },
     {
-      "activityName": "World Cup with family",
-      "dayID": -1,
-      "filename": "821169F0-B13C-4D07-99EA-B3CBF24C0B87.jpg",
-      "key": "d-1-a1",
-      "timestamp": "2026-07-12T21:20:49Z"
+      "activityName" : "World Cup with family",
+      "dayID" : -1,
+      "filename" : "821169F0-B13C-4D07-99EA-B3CBF24C0B87.jpg",
+      "key" : "d-1-a1",
+      "timestamp" : "2026-07-12T21:20:49Z"
+    },
+    {
+      "activityName" : "Flight Boston to Reykjavík",
+      "dayID" : 0,
+      "filename" : "7BD85999-550D-43E8-8372-4346FB64E817.jpg",
+      "key" : "d0-a0",
+      "timestamp" : "2026-07-12T22:31:12Z"
+    },
+    {
+      "activityName" : "Flight Boston to Reykjavík",
+      "dayID" : 0,
+      "filename" : "D919FCD4-B2B9-43E5-AA3E-7CFD8AEF7529.jpg",
+      "key" : "d0-a0",
+      "timestamp" : "2026-07-12T22:31:21Z"
+    },
+    {
+      "activityName" : "Flight Boston to Reykjavík",
+      "dayID" : 0,
+      "filename" : "224B6396-51DA-4775-B224-CAA44BD89156.jpg",
+      "key" : "d0-a0",
+      "timestamp" : "2026-07-12T22:31:21Z"
+    },
+    {
+      "activityName" : "Flight Boston to Reykjavík",
+      "dayID" : 0,
+      "filename" : "F847FBEB-CD45-4738-AF38-62B213704C12.jpg",
+      "key" : "d0-a0",
+      "timestamp" : "2026-07-12T22:31:21Z"
     }
   ],
-  "travelers": [
+  "travelers" : [
     {
-      "checkIns": [
+      "checkIns" : [
         {
-          "dayID": 0,
-          "itemName": "custom-9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
-          "key": "custom-9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
-          "timestamp": "2026-07-12T21:39:48Z"
+          "dayID" : 0,
+          "itemName" : "custom-9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
+          "key" : "custom-9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
+          "timestamp" : "2026-07-12T21:39:48Z"
         },
         {
-          "dayID": 0,
-          "itemName": "custom-A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
-          "key": "custom-A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
-          "timestamp": "2026-07-12T18:24:16Z"
+          "dayID" : 0,
+          "itemName" : "custom-A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
+          "key" : "custom-A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
+          "timestamp" : "2026-07-12T18:24:16Z"
         },
         {
-          "dayID": 0,
-          "itemName": "custom-DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
-          "key": "custom-DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
-          "timestamp": "2026-07-12T20:34:24Z"
+          "dayID" : 0,
+          "itemName" : "custom-DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
+          "key" : "custom-DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
+          "timestamp" : "2026-07-12T20:34:24Z"
         },
         {
-          "dayID": 0,
-          "itemName": "custom-hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
-          "key": "custom-hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
-          "timestamp": "2026-07-12T20:34:49Z"
+          "dayID" : 0,
+          "itemName" : "custom-hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
+          "key" : "custom-hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
+          "timestamp" : "2026-07-12T20:34:49Z"
         },
         {
-          "dayID": 0,
-          "itemName": "custom-hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
-          "key": "custom-hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
-          "timestamp": "2026-07-12T20:36:55Z"
+          "dayID" : 0,
+          "itemName" : "custom-hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
+          "key" : "custom-hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
+          "timestamp" : "2026-07-12T20:36:55Z"
         },
         {
-          "dayID": -1,
-          "itemName": "Flight SFO to Boston",
-          "key": "d-1-a0",
-          "timestamp": "2026-07-12T02:51:39Z"
+          "dayID" : -1,
+          "itemName" : "Flight SFO to Boston",
+          "key" : "d-1-a0",
+          "timestamp" : "2026-07-12T02:51:39Z"
         },
         {
-          "dayID": -1,
-          "itemName": "World Cup with family",
-          "key": "d-1-a1",
-          "timestamp": "2026-07-12T16:36:37Z"
+          "dayID" : -1,
+          "itemName" : "World Cup with family",
+          "key" : "d-1-a1",
+          "timestamp" : "2026-07-12T16:36:37Z"
         },
         {
-          "dayID": -1,
-          "itemName": "d-1-s2",
-          "key": "d-1-s2",
-          "timestamp": "2026-07-12T02:45:33Z"
+          "dayID" : -1,
+          "itemName" : "d-1-s2",
+          "key" : "d-1-s2",
+          "timestamp" : "2026-07-12T02:45:33Z"
         },
         {
-          "dayID": 1,
-          "itemName": "Brimketill lava pool",
-          "key": "d1-a4",
-          "timestamp": "2026-07-12T15:30:31Z"
+          "dayID" : 1,
+          "itemName" : "Brimketill lava pool",
+          "key" : "d1-a4",
+          "timestamp" : "2026-07-12T15:30:31Z"
         },
         {
-          "dayID": 10,
-          "itemName": "d10-s15",
-          "key": "d10-s15",
-          "timestamp": "2026-07-11T17:34:45Z"
+          "dayID" : 10,
+          "itemName" : "d10-s15",
+          "key" : "d10-s15",
+          "timestamp" : "2026-07-11T17:34:45Z"
         }
       ],
-      "colorHex": "#B87A40",
-      "customEvents": [
+      "colorHex" : "#B87A40",
+      "customEvents" : [
         {
-          "activityCategory": "Waterfall",
-          "createdBy": "Chris",
-          "dayID": 0,
-          "id": "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
-          "latitude": 42.66676509874512,
-          "longitude": -71.5897970483974,
-          "name": "Waterfall",
-          "notes": "",
-          "type": "Activity"
+          "activityCategory" : "Waterfall",
+          "createdBy" : "Chris",
+          "dayID" : 0,
+          "id" : "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
+          "latitude" : 42.66676509874512,
+          "longitude" : -71.5897970483974,
+          "name" : "Waterfall",
+          "notes" : "",
+          "type" : "Activity"
         }
       ],
-      "deletedEventIDs": [
+      "deletedEventIDs" : [
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
         "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
         "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "A1FA3647-B0AE-4B53-B589-B9F10A0B035D"
       ],
-      "gpsPointCount": 411,
-      "gpsTrack": [
+      "gpsPointCount" : 416,
+      "gpsTrack" : [
         {
-          "acc": 14788.177814332172,
-          "lat": 42.17501850427744,
-          "lng": -95.83771392256853,
-          "ts": "2026-07-11T16:25:27Z"
+          "acc" : 14788.177814332172,
+          "lat" : 42.17501850427744,
+          "lng" : -95.83771392256853,
+          "ts" : "2026-07-11T16:25:27Z"
         },
         {
-          "acc": 2027.5820895816787,
-          "lat": 42.367513417375854,
-          "lng": -71.01181214926672,
-          "ts": "2026-07-11T18:51:25Z"
+          "acc" : 2027.5820895816787,
+          "lat" : 42.367513417375854,
+          "lng" : -71.01181214926672,
+          "ts" : "2026-07-11T18:51:25Z"
         },
         {
-          "acc": 810.8492154937892,
-          "lat": 42.36430194522285,
-          "lng": -71.01541285891113,
-          "ts": "2026-07-11T18:54:12Z"
+          "acc" : 810.8492154937892,
+          "lat" : 42.36430194522285,
+          "lng" : -71.01541285891113,
+          "ts" : "2026-07-11T18:54:12Z"
         },
         {
-          "acc": 6.4149256335383384,
-          "lat": 42.526167903612595,
-          "lng": -71.27943563211063,
-          "ts": "2026-07-11T20:51:37Z"
+          "acc" : 6.4149256335383384,
+          "lat" : 42.526167903612595,
+          "lng" : -71.27943563211063,
+          "ts" : "2026-07-11T20:51:37Z"
         },
         {
-          "acc": 6.4149256335383384,
-          "lat": 42.526167903612595,
-          "lng": -71.27943563211063,
-          "ts": "2026-07-11T20:51:37Z"
+          "acc" : 6.4149256335383384,
+          "lat" : 42.526167903612595,
+          "lng" : -71.27943563211063,
+          "ts" : "2026-07-11T20:51:37Z"
         },
         {
-          "acc": 6.495014,
-          "lat": 42.526167903612595,
-          "lng": -71.27943563211063,
-          "ts": "2026-07-11T20:51:37Z"
+          "acc" : 6.495014,
+          "lat" : 42.526167903612595,
+          "lng" : -71.27943563211063,
+          "ts" : "2026-07-11T20:51:37Z"
         },
         {
-          "acc": 6.414936525249899,
-          "lat": 42.52616790361153,
-          "lng": -71.2794356321105,
-          "ts": "2026-07-11T20:51:37Z"
+          "acc" : 6.414936525249899,
+          "lat" : 42.52616790361153,
+          "lng" : -71.2794356321105,
+          "ts" : "2026-07-11T20:51:37Z"
         },
         {
-          "acc": 6.414936529099629,
-          "lat": 42.52616790361152,
-          "lng": -71.27943563211049,
-          "ts": "2026-07-11T20:51:37Z"
+          "acc" : 6.414936529099629,
+          "lat" : 42.52616790361152,
+          "lng" : -71.27943563211049,
+          "ts" : "2026-07-11T20:51:37Z"
         },
         {
-          "acc": 3.253932628684491,
-          "lat": 42.52619795124404,
-          "lng": -71.27945625621594,
-          "ts": "2026-07-11T21:03:10Z"
+          "acc" : 3.253932628684491,
+          "lat" : 42.52619795124404,
+          "lng" : -71.27945625621594,
+          "ts" : "2026-07-11T21:03:10Z"
         },
         {
-          "acc": 22.195014,
-          "lat": 42.52619795124404,
-          "lng": -71.27945625621594,
-          "ts": "2026-07-11T21:03:10Z"
+          "acc" : 22.195014,
+          "lat" : 42.52619795124404,
+          "lng" : -71.27945625621594,
+          "ts" : "2026-07-11T21:03:10Z"
         },
         {
-          "acc": 14.838845998103537,
-          "lat": 42.52617179760496,
-          "lng": -71.279435577202,
-          "ts": "2026-07-11T21:03:10Z"
+          "acc" : 14.838845998103537,
+          "lat" : 42.52617179760496,
+          "lng" : -71.279435577202,
+          "ts" : "2026-07-11T21:03:10Z"
         },
         {
-          "acc": 14.838028973860816,
-          "lat": 42.52617185986637,
-          "lng": -71.27943547119506,
-          "ts": "2026-07-11T21:03:10Z"
+          "acc" : 14.838028973860816,
+          "lat" : 42.52617185986637,
+          "lng" : -71.27943547119506,
+          "ts" : "2026-07-11T21:03:10Z"
         },
         {
-          "acc": 11.932876540680622,
-          "lat": 42.52616427538477,
-          "lng": -71.27942942921135,
-          "ts": "2026-07-11T21:03:57Z"
+          "acc" : 11.932876540680622,
+          "lat" : 42.52616427538477,
+          "lng" : -71.27942942921135,
+          "ts" : "2026-07-11T21:03:57Z"
         },
         {
-          "acc": 11.995014000000001,
-          "lat": 42.52616427538477,
-          "lng": -71.27942942921135,
-          "ts": "2026-07-11T21:03:57Z"
+          "acc" : 11.995014000000001,
+          "lat" : 42.52616427538477,
+          "lng" : -71.27942942921135,
+          "ts" : "2026-07-11T21:03:57Z"
         },
         {
-          "acc": 11.889559629948485,
-          "lat": 42.526164169347524,
-          "lng": -71.27942934690607,
-          "ts": "2026-07-11T21:03:57Z"
+          "acc" : 11.889559629948485,
+          "lat" : 42.526164169347524,
+          "lng" : -71.27942934690607,
+          "ts" : "2026-07-11T21:03:57Z"
         },
         {
-          "acc": 11.889571853358898,
-          "lat": 42.526164169347695,
-          "lng": -71.27942934690579,
-          "ts": "2026-07-11T21:03:57Z"
+          "acc" : 11.889571853358898,
+          "lat" : 42.526164169347695,
+          "lng" : -71.27942934690579,
+          "ts" : "2026-07-11T21:03:57Z"
         },
         {
-          "acc": 11.902351799048917,
-          "lat": 42.52616416934776,
-          "lng": -71.27942934690569,
-          "ts": "2026-07-11T21:04:01Z"
+          "acc" : 11.902351799048917,
+          "lat" : 42.52616416934776,
+          "lng" : -71.27942934690569,
+          "ts" : "2026-07-11T21:04:01Z"
         },
         {
-          "acc": 11.902351799048917,
-          "lat": 42.52616416934776,
-          "lng": -71.27942934690569,
-          "ts": "2026-07-11T21:04:01Z"
+          "acc" : 11.902351799048917,
+          "lat" : 42.52616416934776,
+          "lng" : -71.27942934690569,
+          "ts" : "2026-07-11T21:04:01Z"
         },
         {
-          "acc": 11.995014000000001,
-          "lat": 42.52616416934776,
-          "lng": -71.27942934690569,
-          "ts": "2026-07-11T21:04:01Z"
+          "acc" : 11.995014000000001,
+          "lat" : 42.52616416934776,
+          "lng" : -71.27942934690569,
+          "ts" : "2026-07-11T21:04:01Z"
         },
         {
-          "acc": 11.905326612281794,
-          "lat": 42.52616416932839,
-          "lng": -71.27942934689064,
-          "ts": "2026-07-11T21:04:01Z"
+          "acc" : 11.905326612281794,
+          "lat" : 42.52616416932839,
+          "lng" : -71.27942934689064,
+          "ts" : "2026-07-11T21:04:01Z"
         },
         {
-          "acc": 11.905326684460052,
-          "lat": 42.526164169328396,
-          "lng": -71.27942934689065,
-          "ts": "2026-07-11T21:04:04Z"
+          "acc" : 11.905326684460052,
+          "lat" : 42.526164169328396,
+          "lng" : -71.27942934689065,
+          "ts" : "2026-07-11T21:04:04Z"
         },
         {
-          "acc": 11.905326684460052,
-          "lat": 42.526164169328396,
-          "lng": -71.27942934689065,
-          "ts": "2026-07-11T21:04:04Z"
+          "acc" : 11.905326684460052,
+          "lat" : 42.526164169328396,
+          "lng" : -71.27942934689065,
+          "ts" : "2026-07-11T21:04:04Z"
         },
         {
-          "acc": 11.930392219862384,
-          "lat": 42.526164169321646,
-          "lng": -71.27942934688541,
-          "ts": "2026-07-11T21:04:04Z"
+          "acc" : 11.930392219862384,
+          "lat" : 42.526164169321646,
+          "lng" : -71.27942934688541,
+          "ts" : "2026-07-11T21:04:04Z"
         },
         {
-          "acc": 11.902727215264369,
-          "lat": 42.52615934745717,
-          "lng": -71.27942550490313,
-          "ts": "2026-07-11T21:04:19Z"
+          "acc" : 11.902727215264369,
+          "lat" : 42.52615934745717,
+          "lng" : -71.27942550490313,
+          "ts" : "2026-07-11T21:04:19Z"
         },
         {
-          "acc": 11.902727215264369,
-          "lat": 42.52615934745717,
-          "lng": -71.27942550490313,
-          "ts": "2026-07-11T21:04:19Z"
+          "acc" : 11.902727215264369,
+          "lat" : 42.52615934745717,
+          "lng" : -71.27942550490313,
+          "ts" : "2026-07-11T21:04:19Z"
         },
         {
-          "acc": 11.879611931233992,
-          "lat": 42.52615931023035,
-          "lng": -71.27942547642296,
-          "ts": "2026-07-11T21:04:19Z"
+          "acc" : 11.879611931233992,
+          "lat" : 42.52615931023035,
+          "lng" : -71.27942547642296,
+          "ts" : "2026-07-11T21:04:19Z"
         },
         {
-          "acc": 11.879621609440433,
-          "lat": 42.52615931023045,
-          "lng": -71.2794254764228,
-          "ts": "2026-07-11T21:04:19Z"
+          "acc" : 11.879621609440433,
+          "lat" : 42.52615931023045,
+          "lng" : -71.2794254764228,
+          "ts" : "2026-07-11T21:04:19Z"
         },
         {
-          "acc": 11.862385466223214,
-          "lat": 42.526159282071845,
-          "lng": -71.27942545488004,
-          "ts": "2026-07-11T21:04:26Z"
+          "acc" : 11.862385466223214,
+          "lat" : 42.526159282071845,
+          "lng" : -71.27942545488004,
+          "ts" : "2026-07-11T21:04:26Z"
         },
         {
-          "acc": 11.862385466223214,
-          "lat": 42.526159282071845,
-          "lng": -71.27942545488004,
-          "ts": "2026-07-11T21:04:26Z"
+          "acc" : 11.862385466223214,
+          "lat" : 42.526159282071845,
+          "lng" : -71.27942545488004,
+          "ts" : "2026-07-11T21:04:26Z"
         },
         {
-          "acc": 11.995014000000001,
-          "lat": 42.526159282071845,
-          "lng": -71.27942545488004,
-          "ts": "2026-07-11T21:04:26Z"
+          "acc" : 11.995014000000001,
+          "lat" : 42.526159282071845,
+          "lng" : -71.27942545488004,
+          "ts" : "2026-07-11T21:04:26Z"
         },
         {
-          "acc": 11.904969254263676,
-          "lat": 42.52615928205023,
-          "lng": -71.2794254548635,
-          "ts": "2026-07-11T21:04:26Z"
+          "acc" : 11.904969254263676,
+          "lat" : 42.52615928205023,
+          "lng" : -71.2794254548635,
+          "ts" : "2026-07-11T21:04:26Z"
         },
         {
-          "acc": 11.904969255612356,
-          "lat": 42.52615928205023,
-          "lng": -71.27942545486349,
-          "ts": "2026-07-11T21:04:26Z"
+          "acc" : 11.904969255612356,
+          "lat" : 42.52615928205023,
+          "lng" : -71.27942545486349,
+          "ts" : "2026-07-11T21:04:26Z"
         },
         {
-          "acc": 8.688677385917227,
-          "lat": 42.52614834232379,
-          "lng": -71.27943963196716,
-          "ts": "2026-07-11T21:09:54Z"
+          "acc" : 8.688677385917227,
+          "lat" : 42.52614834232379,
+          "lng" : -71.27943963196716,
+          "ts" : "2026-07-11T21:09:54Z"
         },
         {
-          "acc": 8.688677385917227,
-          "lat": 42.52614834232379,
-          "lng": -71.27943963196716,
-          "ts": "2026-07-11T21:09:54Z"
+          "acc" : 8.688677385917227,
+          "lat" : 42.52614834232379,
+          "lng" : -71.27943963196716,
+          "ts" : "2026-07-11T21:09:54Z"
         },
         {
-          "acc": 8.895014000000002,
-          "lat": 42.52614834232379,
-          "lng": -71.27943963196716,
-          "ts": "2026-07-11T21:09:54Z"
+          "acc" : 8.895014000000002,
+          "lat" : 42.52614834232379,
+          "lng" : -71.27943963196716,
+          "ts" : "2026-07-11T21:09:54Z"
         },
         {
-          "acc": 8.05517562396157,
-          "lat": 42.526148682678134,
-          "lng": -71.27943623498427,
-          "ts": "2026-07-11T21:09:54Z"
+          "acc" : 8.05517562396157,
+          "lat" : 42.526148682678134,
+          "lng" : -71.27943623498427,
+          "ts" : "2026-07-11T21:09:54Z"
         },
         {
-          "acc": 8.05504492309656,
-          "lat": 42.52614870177683,
-          "lng": -71.27943620372243,
-          "ts": "2026-07-11T21:09:54Z"
+          "acc" : 8.05504492309656,
+          "lat" : 42.52614870177683,
+          "lng" : -71.27943620372243,
+          "ts" : "2026-07-11T21:09:54Z"
         },
         {
-          "acc": 9.276999421886376,
-          "lat": 42.52614875237184,
-          "lng": -71.27943611951707,
-          "ts": "2026-07-11T21:12:07Z"
+          "acc" : 9.276999421886376,
+          "lat" : 42.52614875237184,
+          "lng" : -71.27943611951707,
+          "ts" : "2026-07-11T21:12:07Z"
         },
         {
-          "acc": 9.276999421886376,
-          "lat": 42.52614875237184,
-          "lng": -71.27943611951707,
-          "ts": "2026-07-11T21:12:07Z"
+          "acc" : 9.276999421886376,
+          "lat" : 42.52614875237184,
+          "lng" : -71.27943611951707,
+          "ts" : "2026-07-11T21:12:07Z"
         },
         {
-          "acc": 8.416172276062856,
-          "lat": 42.5261490513048,
-          "lng": -71.27943303322095,
-          "ts": "2026-07-11T21:12:07Z"
+          "acc" : 8.416172276062856,
+          "lat" : 42.5261490513048,
+          "lng" : -71.27943303322095,
+          "ts" : "2026-07-11T21:12:07Z"
         },
         {
-          "acc": 8.416023203410615,
-          "lat": 42.52614907214057,
-          "lng": -71.27943299920783,
-          "ts": "2026-07-11T21:12:07Z"
+          "acc" : 8.416023203410615,
+          "lat" : 42.52614907214057,
+          "lng" : -71.27943299920783,
+          "ts" : "2026-07-11T21:12:07Z"
         },
         {
-          "acc": 7.536043420087499,
-          "lat": 42.52614963524321,
-          "lng": -71.27942904685901,
-          "ts": "2026-07-11T21:17:30Z"
+          "acc" : 7.536043420087499,
+          "lat" : 42.52614963524321,
+          "lng" : -71.27942904685901,
+          "ts" : "2026-07-11T21:17:30Z"
         },
         {
-          "acc": 7.536043420087499,
-          "lat": 42.52614963524321,
-          "lng": -71.27942904685901,
-          "ts": "2026-07-11T21:17:30Z"
+          "acc" : 7.536043420087499,
+          "lat" : 42.52614963524321,
+          "lng" : -71.27942904685901,
+          "ts" : "2026-07-11T21:17:30Z"
         },
         {
-          "acc": 7.1603019758910955,
-          "lat": 42.52614973845642,
-          "lng": -71.27942771945804,
-          "ts": "2026-07-11T21:17:30Z"
+          "acc" : 7.1603019758910955,
+          "lat" : 42.52614973845642,
+          "lng" : -71.27942771945804,
+          "ts" : "2026-07-11T21:17:30Z"
         },
         {
-          "acc": 7.160230118876907,
-          "lat": 42.52614975352047,
-          "lng": -71.27942769497437,
-          "ts": "2026-07-11T21:17:30Z"
+          "acc" : 7.160230118876907,
+          "lat" : 42.52614975352047,
+          "lng" : -71.27942769497437,
+          "ts" : "2026-07-11T21:17:30Z"
         },
         {
-          "acc": 7.160230118876907,
-          "lat": 42.52614975352047,
-          "lng": -71.27942769497437,
-          "ts": "2026-07-11T21:17:45Z"
+          "acc" : 7.160230118876907,
+          "lat" : 42.52614975352047,
+          "lng" : -71.27942769497437,
+          "ts" : "2026-07-11T21:17:45Z"
         },
         {
-          "acc": 7.295014,
-          "lat": 42.52614975352047,
-          "lng": -71.27942769497437,
-          "ts": "2026-07-11T21:17:45Z"
+          "acc" : 7.295014,
+          "lat" : 42.52614975352047,
+          "lng" : -71.27942769497437,
+          "ts" : "2026-07-11T21:17:45Z"
         },
         {
-          "acc": 6.795294086306334,
-          "lat": 42.52614983282505,
-          "lng": -71.27942665551842,
-          "ts": "2026-07-11T21:17:45Z"
+          "acc" : 6.795294086306334,
+          "lat" : 42.52614983282505,
+          "lng" : -71.27942665551842,
+          "ts" : "2026-07-11T21:17:45Z"
         },
         {
-          "acc": 6.795241405851475,
-          "lat": 42.526149846390304,
-          "lng": -71.2794266334918,
-          "ts": "2026-07-11T21:17:45Z"
+          "acc" : 6.795241405851475,
+          "lat" : 42.526149846390304,
+          "lng" : -71.2794266334918,
+          "ts" : "2026-07-11T21:17:45Z"
         },
         {
-          "acc": 11.720030236656228,
-          "lat": 42.52615014157081,
-          "lng": -71.27942363143302,
-          "ts": "2026-07-11T21:19:25Z"
+          "acc" : 11.720030236656228,
+          "lat" : 42.52615014157081,
+          "lng" : -71.27942363143302,
+          "ts" : "2026-07-11T21:19:25Z"
         },
         {
-          "acc": 11.720030236656228,
-          "lat": 42.52615014157081,
-          "lng": -71.27942363143302,
-          "ts": "2026-07-11T21:19:25Z"
+          "acc" : 11.720030236656228,
+          "lat" : 42.52615014157081,
+          "lng" : -71.27942363143302,
+          "ts" : "2026-07-11T21:19:25Z"
         },
         {
-          "acc": 11.795014,
-          "lat": 42.52615014157081,
-          "lng": -71.27942363143302,
-          "ts": "2026-07-11T21:19:25Z"
+          "acc" : 11.795014,
+          "lat" : 42.52615014157081,
+          "lng" : -71.27942363143302,
+          "ts" : "2026-07-11T21:19:25Z"
         },
         {
-          "acc": 10.1132173678985,
-          "lat": 42.526150218004034,
-          "lng": -71.27942236811809,
-          "ts": "2026-07-11T21:19:25Z"
+          "acc" : 10.1132173678985,
+          "lat" : 42.526150218004034,
+          "lng" : -71.27942236811809,
+          "ts" : "2026-07-11T21:19:25Z"
         },
         {
-          "acc": 10.11295871355678,
-          "lat": 42.52615024802951,
-          "lng": -71.27942231955147,
-          "ts": "2026-07-11T21:19:25Z"
+          "acc" : 10.11295871355678,
+          "lat" : 42.52615024802951,
+          "lng" : -71.27942231955147,
+          "ts" : "2026-07-11T21:19:25Z"
         },
         {
-          "acc": 7.467996768312644,
-          "lat": 42.52615021103636,
-          "lng": -71.27942108632239,
-          "ts": "2026-07-11T21:20:50Z"
+          "acc" : 7.467996768312644,
+          "lat" : 42.52615021103636,
+          "lng" : -71.27942108632239,
+          "ts" : "2026-07-11T21:20:50Z"
         },
         {
-          "acc": 7.303499589659253,
-          "lat": 42.52615402739529,
-          "lng": -71.27942477462535,
-          "ts": "2026-07-11T21:20:50Z"
+          "acc" : 7.303499589659253,
+          "lat" : 42.52615402739529,
+          "lng" : -71.27942477462535,
+          "ts" : "2026-07-11T21:20:50Z"
         },
         {
-          "acc": 2,
-          "lat": 42.52621245317074,
-          "lng": -71.27951034675603,
-          "ts": "2026-07-11T21:25:50Z"
+          "acc" : 2,
+          "lat" : 42.52621245317074,
+          "lng" : -71.27951034675603,
+          "ts" : "2026-07-11T21:25:50Z"
         },
         {
-          "acc": 14.08594676857885,
-          "lat": 42.52621824002039,
-          "lng": -71.27950283182331,
-          "ts": "2026-07-11T21:30:50Z"
+          "acc" : 14.08594676857885,
+          "lat" : 42.52621824002039,
+          "lng" : -71.27950283182331,
+          "ts" : "2026-07-11T21:30:50Z"
         },
         {
-          "acc": 14.535860560766414,
-          "lat": 42.52621824002039,
-          "lng": -71.27950283182331,
-          "ts": "2026-07-11T21:35:50Z"
+          "acc" : 14.535860560766414,
+          "lat" : 42.52621824002039,
+          "lng" : -71.27950283182331,
+          "ts" : "2026-07-11T21:35:50Z"
         },
         {
-          "acc": 11.130404947443838,
-          "lat": 42.52621523270993,
-          "lng": -71.27950387320809,
-          "ts": "2026-07-11T21:40:50Z"
+          "acc" : 11.130404947443838,
+          "lat" : 42.52621523270993,
+          "lng" : -71.27950387320809,
+          "ts" : "2026-07-11T21:40:50Z"
         },
         {
-          "acc": 12.259598053840794,
-          "lat": 42.526223382169945,
-          "lng": -71.27951248841316,
-          "ts": "2026-07-11T21:45:50Z"
+          "acc" : 12.259598053840794,
+          "lat" : 42.526223382169945,
+          "lng" : -71.27951248841316,
+          "ts" : "2026-07-11T21:45:50Z"
         },
         {
-          "acc": 14.481935788557362,
-          "lat": 42.5261621840961,
-          "lng": -71.27942579840932,
-          "ts": "2026-07-11T22:17:59Z"
+          "acc" : 14.481935788557362,
+          "lat" : 42.5261621840961,
+          "lng" : -71.27942579840932,
+          "ts" : "2026-07-11T22:17:59Z"
         },
         {
-          "acc": 14.595014,
-          "lat": 42.526162184094595,
-          "lng": -71.27942579841181,
-          "ts": "2026-07-11T22:17:59Z"
+          "acc" : 14.595014,
+          "lat" : 42.526162184094595,
+          "lng" : -71.27942579841181,
+          "ts" : "2026-07-11T22:17:59Z"
         },
         {
-          "acc": 15.333395839140284,
-          "lat": 42.5261615731433,
-          "lng": -71.27942542863465,
-          "ts": "2026-07-11T22:17:59Z"
+          "acc" : 15.333395839140284,
+          "lat" : 42.5261615731433,
+          "lng" : -71.27942542863465,
+          "ts" : "2026-07-11T22:17:59Z"
         },
         {
-          "acc": 15.333486720286285,
-          "lat": 42.52616157314462,
-          "lng": -71.27942542863246,
-          "ts": "2026-07-11T22:17:59Z"
+          "acc" : 15.333486720286285,
+          "lat" : 42.52616157314462,
+          "lng" : -71.27942542863246,
+          "ts" : "2026-07-11T22:17:59Z"
         },
         {
-          "acc": 8.132790440490414,
-          "lat": 42.52615044275228,
-          "lng": -71.27941868781136,
-          "ts": "2026-07-11T22:27:57Z"
+          "acc" : 8.132790440490414,
+          "lat" : 42.52615044275228,
+          "lng" : -71.27941868781136,
+          "ts" : "2026-07-11T22:27:57Z"
         },
         {
-          "acc": 12.663046445283417,
-          "lat": 42.52616409495009,
-          "lng": -71.27942725293458,
-          "ts": "2026-07-11T22:40:20Z"
+          "acc" : 12.663046445283417,
+          "lat" : 42.52616409495009,
+          "lng" : -71.27942725293458,
+          "ts" : "2026-07-11T22:40:20Z"
         },
         {
-          "acc": 12.663046445283417,
-          "lat": 42.52616409495009,
-          "lng": -71.27942725293458,
-          "ts": "2026-07-11T22:40:20Z"
+          "acc" : 12.663046445283417,
+          "lat" : 42.52616409495009,
+          "lng" : -71.27942725293458,
+          "ts" : "2026-07-11T22:40:20Z"
         },
         {
-          "acc": 12.995014000000001,
-          "lat": 42.52616409495009,
-          "lng": -71.27942725293458,
-          "ts": "2026-07-11T22:40:20Z"
+          "acc" : 12.995014000000001,
+          "lat" : 42.52616409495009,
+          "lng" : -71.27942725293458,
+          "ts" : "2026-07-11T22:40:20Z"
         },
         {
-          "acc": 10.839757424685601,
-          "lat": 42.526160083942756,
-          "lng": -71.2794247377657,
-          "ts": "2026-07-11T22:40:20Z"
+          "acc" : 10.839757424685601,
+          "lat" : 42.526160083942756,
+          "lng" : -71.2794247377657,
+          "ts" : "2026-07-11T22:40:20Z"
         },
         {
-          "acc": 10.839438924859062,
-          "lat": 42.52616011785726,
-          "lng": -71.27942468183147,
-          "ts": "2026-07-11T22:40:20Z"
+          "acc" : 10.839438924859062,
+          "lat" : 42.52616011785726,
+          "lng" : -71.27942468183147,
+          "ts" : "2026-07-11T22:40:20Z"
         },
         {
-          "acc": 2,
-          "lat": 42.526239667372096,
-          "lng": -71.27950454231674,
-          "ts": "2026-07-11T22:45:19Z"
+          "acc" : 2,
+          "lat" : 42.526239667372096,
+          "lng" : -71.27950454231674,
+          "ts" : "2026-07-11T22:45:19Z"
         },
         {
-          "acc": 2.0067586118792202,
-          "lat": 42.526249400141054,
-          "lng": -71.27950016329119,
-          "ts": "2026-07-11T22:46:48Z"
+          "acc" : 2.0067586118792202,
+          "lat" : 42.526249400141054,
+          "lng" : -71.27950016329119,
+          "ts" : "2026-07-11T22:46:48Z"
         },
         {
-          "acc": 2,
-          "lat": 42.52624841377224,
-          "lng": -71.2794993512224,
-          "ts": "2026-07-11T22:46:48Z"
+          "acc" : 2,
+          "lat" : 42.52624841377224,
+          "lng" : -71.2794993512224,
+          "ts" : "2026-07-11T22:46:48Z"
         },
         {
-          "acc": 5.586731959221723,
-          "lat": 42.52615065513514,
-          "lng": -71.27946120197296,
-          "ts": "2026-07-11T23:09:41Z"
+          "acc" : 5.586731959221723,
+          "lat" : 42.52615065513514,
+          "lng" : -71.27946120197296,
+          "ts" : "2026-07-11T23:09:41Z"
         },
         {
-          "acc": 5.586731959221723,
-          "lat": 42.52615065513514,
-          "lng": -71.27946120197296,
-          "ts": "2026-07-11T23:09:41Z"
+          "acc" : 5.586731959221723,
+          "lat" : 42.52615065513514,
+          "lng" : -71.27946120197296,
+          "ts" : "2026-07-11T23:09:41Z"
         },
         {
-          "acc": 5.632546176250537,
-          "lat": 42.526150656243985,
-          "lng": -71.27946126713522,
-          "ts": "2026-07-11T23:09:41Z"
+          "acc" : 5.632546176250537,
+          "lat" : 42.526150656243985,
+          "lng" : -71.27946126713522,
+          "ts" : "2026-07-11T23:09:41Z"
         },
         {
-          "acc": 5.632566874617786,
-          "lat": 42.526150656244056,
-          "lng": -71.27946126713508,
-          "ts": "2026-07-11T23:09:41Z"
+          "acc" : 5.632566874617786,
+          "lat" : 42.526150656244056,
+          "lng" : -71.27946126713508,
+          "ts" : "2026-07-11T23:09:41Z"
         },
         {
-          "acc": 9.877986109907601,
-          "lat": 42.526150728452826,
-          "lng": -71.27943896457958,
-          "ts": "2026-07-11T23:21:37Z"
+          "acc" : 9.877986109907601,
+          "lat" : 42.526150728452826,
+          "lng" : -71.27943896457958,
+          "ts" : "2026-07-11T23:21:37Z"
         },
         {
-          "acc": 9.877986109907601,
-          "lat": 42.526150728452826,
-          "lng": -71.27943896457958,
-          "ts": "2026-07-11T23:21:37Z"
+          "acc" : 9.877986109907601,
+          "lat" : 42.526150728452826,
+          "lng" : -71.27943896457958,
+          "ts" : "2026-07-11T23:21:37Z"
         },
         {
-          "acc": 9.995014000000001,
-          "lat": 42.526150728452826,
-          "lng": -71.27943896457958,
-          "ts": "2026-07-11T23:21:37Z"
+          "acc" : 9.995014000000001,
+          "lat" : 42.526150728452826,
+          "lng" : -71.27943896457958,
+          "ts" : "2026-07-11T23:21:37Z"
         },
         {
-          "acc": 8.858006722515633,
-          "lat": 42.52615063086584,
-          "lng": -71.27943497001571,
-          "ts": "2026-07-11T23:21:37Z"
+          "acc" : 8.858006722515633,
+          "lat" : 42.52615063086584,
+          "lng" : -71.27943497001571,
+          "ts" : "2026-07-11T23:21:37Z"
         },
         {
-          "acc": 8.857832917658424,
-          "lat": 42.526150653884656,
-          "lng": -71.27943493226172,
-          "ts": "2026-07-11T23:21:37Z"
+          "acc" : 8.857832917658424,
+          "lat" : 42.526150653884656,
+          "lng" : -71.27943493226172,
+          "ts" : "2026-07-11T23:21:37Z"
         },
         {
-          "acc": 2.3215039387077887,
-          "lat": 42.51864497850862,
-          "lng": -71.21041246661004,
-          "ts": "2026-07-11T23:56:43Z"
+          "acc" : 2.3215039387077887,
+          "lat" : 42.51864497850862,
+          "lng" : -71.21041246661004,
+          "ts" : "2026-07-11T23:56:43Z"
         },
         {
-          "acc": 8.19176826062495,
-          "lat": 42.514881620423566,
-          "lng": -71.20555073143346,
-          "ts": "2026-07-12T00:00:09Z"
+          "acc" : 8.19176826062495,
+          "lat" : 42.514881620423566,
+          "lng" : -71.20555073143346,
+          "ts" : "2026-07-12T00:00:09Z"
         },
         {
-          "acc": 1.9999993104079792,
-          "lat": 42.540762229130344,
-          "lng": -71.28199775109123,
-          "ts": "2026-07-12T00:14:19Z"
+          "acc" : 1.9999993104079792,
+          "lat" : 42.540762229130344,
+          "lng" : -71.28199775109123,
+          "ts" : "2026-07-12T00:14:19Z"
         },
         {
-          "acc": 5.447874809630502,
-          "lat": 42.60765785372887,
-          "lng": -71.32567880173949,
-          "ts": "2026-07-12T00:18:47Z"
+          "acc" : 5.447874809630502,
+          "lat" : 42.60765785372887,
+          "lng" : -71.32567880173949,
+          "ts" : "2026-07-12T00:18:47Z"
         },
         {
-          "acc": 2.021921937303297,
-          "lat": 42.6436378236716,
-          "lng": -71.4155460052293,
-          "ts": "2026-07-12T00:23:47Z"
+          "acc" : 2.021921937303297,
+          "lat" : 42.6436378236716,
+          "lng" : -71.4155460052293,
+          "ts" : "2026-07-12T00:23:47Z"
         },
         {
-          "acc": 9.435206740586418,
-          "lat": 42.666762431769754,
-          "lng": -71.58975335929054,
-          "ts": "2026-07-12T01:38:57Z"
+          "acc" : 9.435206740586418,
+          "lat" : 42.666762431769754,
+          "lng" : -71.58975335929054,
+          "ts" : "2026-07-12T01:38:57Z"
         },
         {
-          "acc": 9.435206740586418,
-          "lat": 42.666762431769754,
-          "lng": -71.58975335929054,
-          "ts": "2026-07-12T01:38:57Z"
+          "acc" : 9.435206740586418,
+          "lat" : 42.666762431769754,
+          "lng" : -71.58975335929054,
+          "ts" : "2026-07-12T01:38:57Z"
         },
         {
-          "acc": 11.395014000000002,
-          "lat": 42.666762431769754,
-          "lng": -71.58975335929054,
-          "ts": "2026-07-12T01:38:57Z"
+          "acc" : 11.395014000000002,
+          "lat" : 42.666762431769754,
+          "lng" : -71.58975335929054,
+          "ts" : "2026-07-12T01:38:57Z"
         },
         {
-          "acc": 10.837771678008737,
-          "lat": 42.66675958213162,
-          "lng": -71.58975779164902,
-          "ts": "2026-07-12T01:38:57Z"
+          "acc" : 10.837771678008737,
+          "lat" : 42.66675958213162,
+          "lng" : -71.58975779164902,
+          "ts" : "2026-07-12T01:38:57Z"
         },
         {
-          "acc": 10.837780528139392,
-          "lat": 42.66675959186233,
-          "lng": -71.5897577856319,
-          "ts": "2026-07-12T01:38:57Z"
+          "acc" : 10.837780528139392,
+          "lat" : 42.66675959186233,
+          "lng" : -71.5897577856319,
+          "ts" : "2026-07-12T01:38:57Z"
         },
         {
-          "acc": 13.3531774485355,
-          "lat": 42.666854426743754,
-          "lng": -71.58969079667757,
-          "ts": "2026-07-12T01:43:57Z"
+          "acc" : 13.3531774485355,
+          "lat" : 42.666854426743754,
+          "lng" : -71.58969079667757,
+          "ts" : "2026-07-12T01:43:57Z"
         },
         {
-          "acc": 4.748651530191761,
-          "lat": 42.666797797229556,
-          "lng": -71.58976788197049,
-          "ts": "2026-07-12T01:48:57Z"
+          "acc" : 4.748651530191761,
+          "lat" : 42.666797797229556,
+          "lng" : -71.58976788197049,
+          "ts" : "2026-07-12T01:48:57Z"
         },
         {
-          "acc": 15.491302156699644,
-          "lat": 42.66675341543838,
-          "lng": -71.58976843794436,
-          "ts": "2026-07-12T02:02:03Z"
+          "acc" : 15.491302156699644,
+          "lat" : 42.66675341543838,
+          "lng" : -71.58976843794436,
+          "ts" : "2026-07-12T02:02:03Z"
         },
         {
-          "acc": 10.570250463065852,
-          "lat": 42.66675282563822,
-          "lng": -71.5897686042972,
-          "ts": "2026-07-12T02:03:09Z"
+          "acc" : 10.570250463065852,
+          "lat" : 42.66675282563822,
+          "lng" : -71.5897686042972,
+          "ts" : "2026-07-12T02:03:09Z"
         },
         {
-          "acc": 7.371193741813823,
-          "lat": 42.666752873570445,
-          "lng": -71.58976921254892,
-          "ts": "2026-07-12T02:17:39Z"
+          "acc" : 7.371193741813823,
+          "lat" : 42.666752873570445,
+          "lng" : -71.58976921254892,
+          "ts" : "2026-07-12T02:17:39Z"
         },
         {
-          "acc": 27.095014,
-          "lat": 42.666752873570445,
-          "lng": -71.58976921254892,
-          "ts": "2026-07-12T02:17:39Z"
+          "acc" : 27.095014,
+          "lat" : 42.666752873570445,
+          "lng" : -71.58976921254892,
+          "ts" : "2026-07-12T02:17:39Z"
         },
         {
-          "acc": 16.205268104973506,
-          "lat": 42.666752777570785,
-          "lng": -71.5897687143157,
-          "ts": "2026-07-12T02:17:39Z"
+          "acc" : 16.205268104973506,
+          "lat" : 42.666752777570785,
+          "lng" : -71.5897687143157,
+          "ts" : "2026-07-12T02:17:39Z"
         },
         {
-          "acc": 16.20520697902835,
-          "lat": 42.66675279937782,
-          "lng": -71.58976870078034,
-          "ts": "2026-07-12T02:17:39Z"
+          "acc" : 16.20520697902835,
+          "lat" : 42.66675279937782,
+          "lng" : -71.58976870078034,
+          "ts" : "2026-07-12T02:17:39Z"
         },
         {
-          "acc": 9.373037429350669,
-          "lat": 42.66675277814643,
-          "lng": -71.58976834264996,
-          "ts": "2026-07-12T02:22:38Z"
+          "acc" : 9.373037429350669,
+          "lat" : 42.66675277814643,
+          "lng" : -71.58976834264996,
+          "ts" : "2026-07-12T02:22:38Z"
         },
         {
-          "acc": 15.651965412202198,
-          "lat": 42.66675485223817,
-          "lng": -71.58976408429227,
-          "ts": "2026-07-12T02:44:44Z"
+          "acc" : 15.651965412202198,
+          "lat" : 42.66675485223817,
+          "lng" : -71.58976408429227,
+          "ts" : "2026-07-12T02:44:44Z"
         },
         {
-          "acc": 15.651965412202198,
-          "lat": 42.66675485223817,
-          "lng": -71.58976408429227,
-          "ts": "2026-07-12T02:44:44Z"
+          "acc" : 15.651965412202198,
+          "lat" : 42.66675485223817,
+          "lng" : -71.58976408429227,
+          "ts" : "2026-07-12T02:44:44Z"
         },
         {
-          "acc": 17.695014,
-          "lat": 42.66675485223817,
-          "lng": -71.58976408429227,
-          "ts": "2026-07-12T02:44:44Z"
+          "acc" : 17.695014,
+          "lat" : 42.66675485223817,
+          "lng" : -71.58976408429227,
+          "ts" : "2026-07-12T02:44:44Z"
         },
         {
-          "acc": 13.199252926762536,
-          "lat": 42.666753926740306,
-          "lng": -71.58976598737188,
-          "ts": "2026-07-12T02:44:44Z"
+          "acc" : 13.199252926762536,
+          "lat" : 42.666753926740306,
+          "lng" : -71.58976598737188,
+          "ts" : "2026-07-12T02:44:44Z"
         },
         {
-          "acc": 13.198677897566993,
-          "lat": 42.66675421439218,
-          "lng": -71.58976539588039,
-          "ts": "2026-07-12T02:44:44Z"
+          "acc" : 13.198677897566993,
+          "lat" : 42.66675421439218,
+          "lng" : -71.58976539588039,
+          "ts" : "2026-07-12T02:44:44Z"
         },
         {
-          "acc": 11.029153080616156,
-          "lat": 42.66675396301766,
-          "lng": -71.58976591277609,
-          "ts": "2026-07-12T02:45:02Z"
+          "acc" : 11.029153080616156,
+          "lat" : 42.66675396301766,
+          "lng" : -71.58976591277609,
+          "ts" : "2026-07-12T02:45:02Z"
         },
         {
-          "acc": 11.029153080616156,
-          "lat": 42.66675396301766,
-          "lng": -71.58976591277609,
-          "ts": "2026-07-12T02:45:02Z"
+          "acc" : 11.029153080616156,
+          "lat" : 42.66675396301766,
+          "lng" : -71.58976591277609,
+          "ts" : "2026-07-12T02:45:02Z"
         },
         {
-          "acc": 9.66549630711357,
-          "lat": 42.66675367442114,
-          "lng": -71.58976650621025,
-          "ts": "2026-07-12T02:45:02Z"
+          "acc" : 9.66549630711357,
+          "lat" : 42.66675367442114,
+          "lng" : -71.58976650621025,
+          "ts" : "2026-07-12T02:45:02Z"
         },
         {
-          "acc": 10.828812501827906,
-          "lat": 42.66676389999698,
-          "lng": -71.58979636285501,
-          "ts": "2026-07-12T02:50:01Z"
+          "acc" : 10.828812501827906,
+          "lat" : 42.66676389999698,
+          "lng" : -71.58979636285501,
+          "ts" : "2026-07-12T02:50:01Z"
         },
         {
-          "acc": 14.026290896079832,
-          "lat": 42.6667530200469,
-          "lng": -71.58976840648657,
-          "ts": "2026-07-12T03:08:28Z"
+          "acc" : 14.026290896079832,
+          "lat" : 42.6667530200469,
+          "lng" : -71.58976840648657,
+          "ts" : "2026-07-12T03:08:28Z"
         },
         {
-          "acc": 14.026290896079832,
-          "lat": 42.6667530200469,
-          "lng": -71.58976840648657,
-          "ts": "2026-07-12T03:08:28Z"
+          "acc" : 14.026290896079832,
+          "lat" : 42.6667530200469,
+          "lng" : -71.58976840648657,
+          "ts" : "2026-07-12T03:08:28Z"
         },
         {
-          "acc": 16.795014,
-          "lat": 42.6667530200469,
-          "lng": -71.58976840648657,
-          "ts": "2026-07-12T03:08:28Z"
+          "acc" : 16.795014,
+          "lat" : 42.6667530200469,
+          "lng" : -71.58976840648657,
+          "ts" : "2026-07-12T03:08:28Z"
         },
         {
-          "acc": 12.81423679004133,
-          "lat": 42.666753002469584,
-          "lng": -71.58976829844092,
-          "ts": "2026-07-12T03:08:28Z"
+          "acc" : 12.81423679004133,
+          "lat" : 42.666753002469584,
+          "lng" : -71.58976829844092,
+          "ts" : "2026-07-12T03:08:28Z"
         },
         {
-          "acc": 12.814161415985314,
-          "lat": 42.666753021394335,
-          "lng": -71.58976842938294,
-          "ts": "2026-07-12T03:08:28Z"
+          "acc" : 12.814161415985314,
+          "lat" : 42.666753021394335,
+          "lng" : -71.58976842938294,
+          "ts" : "2026-07-12T03:08:28Z"
         },
         {
-          "acc": 13.56944604717815,
-          "lat": 42.666753055644755,
-          "lng": -71.58976836936166,
-          "ts": "2026-07-12T03:16:13Z"
+          "acc" : 13.56944604717815,
+          "lat" : 42.666753055644755,
+          "lng" : -71.58976836936166,
+          "ts" : "2026-07-12T03:16:13Z"
         },
         {
-          "acc": 13.56944604717815,
-          "lat": 42.666753055644755,
-          "lng": -71.58976836936166,
-          "ts": "2026-07-12T03:16:13Z"
+          "acc" : 13.56944604717815,
+          "lat" : 42.666753055644755,
+          "lng" : -71.58976836936166,
+          "ts" : "2026-07-12T03:16:13Z"
         },
         {
-          "acc": 13.695014,
-          "lat": 42.666753055644755,
-          "lng": -71.58976836936166,
-          "ts": "2026-07-12T03:16:13Z"
+          "acc" : 13.695014,
+          "lat" : 42.666753055644755,
+          "lng" : -71.58976836936166,
+          "ts" : "2026-07-12T03:16:13Z"
         },
         {
-          "acc": 11.22917985982371,
-          "lat": 42.66675303092521,
-          "lng": -71.5897682980954,
-          "ts": "2026-07-12T03:16:13Z"
+          "acc" : 11.22917985982371,
+          "lat" : 42.66675303092521,
+          "lng" : -71.5897682980954,
+          "ts" : "2026-07-12T03:16:13Z"
         },
         {
-          "acc": 11.22915952342518,
-          "lat": 42.66675304139515,
-          "lng": -71.58976829159778,
-          "ts": "2026-07-12T03:16:13Z"
+          "acc" : 11.22915952342518,
+          "lat" : 42.66675304139515,
+          "lng" : -71.58976829159778,
+          "ts" : "2026-07-12T03:16:13Z"
         },
         {
-          "acc": 11.228828213147212,
-          "lat": 42.66675323917906,
-          "lng": -71.58976786983857,
-          "ts": "2026-07-12T03:16:13Z"
+          "acc" : 11.228828213147212,
+          "lat" : 42.66675323917906,
+          "lng" : -71.58976786983857,
+          "ts" : "2026-07-12T03:16:13Z"
         },
         {
-          "acc": 11.228828213701917,
-          "lat": 42.66675323917906,
-          "lng": -71.58976786983857,
-          "ts": "2026-07-12T03:16:13Z"
+          "acc" : 11.228828213701917,
+          "lat" : 42.66675323917906,
+          "lng" : -71.58976786983857,
+          "ts" : "2026-07-12T03:16:13Z"
         },
         {
-          "acc": 11.487934457750603,
-          "lat": 42.666753558741405,
-          "lng": -71.58976714505656,
-          "ts": "2026-07-12T03:18:55Z"
+          "acc" : 11.487934457750603,
+          "lat" : 42.666753558741405,
+          "lng" : -71.58976714505656,
+          "ts" : "2026-07-12T03:18:55Z"
         },
         {
-          "acc": 11.487934457750603,
-          "lat": 42.666753558741405,
-          "lng": -71.58976714505656,
-          "ts": "2026-07-12T03:18:55Z"
+          "acc" : 11.487934457750603,
+          "lat" : 42.666753558741405,
+          "lng" : -71.58976714505656,
+          "ts" : "2026-07-12T03:18:55Z"
         },
         {
-          "acc": 12.095014,
-          "lat": 42.666753558741405,
-          "lng": -71.58976714505656,
-          "ts": "2026-07-12T03:18:55Z"
+          "acc" : 12.095014,
+          "lat" : 42.666753558741405,
+          "lng" : -71.58976714505656,
+          "ts" : "2026-07-12T03:18:55Z"
         },
         {
-          "acc": 10.273844420284652,
-          "lat": 42.66675340529205,
-          "lng": -71.58976740846984,
-          "ts": "2026-07-12T03:18:55Z"
+          "acc" : 10.273844420284652,
+          "lat" : 42.66675340529205,
+          "lng" : -71.58976740846984,
+          "ts" : "2026-07-12T03:18:55Z"
         },
         {
-          "acc": 10.273573244953601,
-          "lat": 42.666753579600304,
-          "lng": -71.58976705002563,
-          "ts": "2026-07-12T03:18:55Z"
+          "acc" : 10.273573244953601,
+          "lat" : 42.666753579600304,
+          "lng" : -71.58976705002563,
+          "ts" : "2026-07-12T03:18:55Z"
         },
         {
-          "acc": 8.095014,
-          "lat": 42.66675246213455,
-          "lng": -71.5897671475056,
-          "ts": "2026-07-12T03:21:45Z"
+          "acc" : 8.095014,
+          "lat" : 42.66675246213455,
+          "lng" : -71.5897671475056,
+          "ts" : "2026-07-12T03:21:45Z"
         },
         {
-          "acc": 8.395014000000002,
-          "lat": 42.66675246213455,
-          "lng": -71.5897671475056,
-          "ts": "2026-07-12T03:21:45Z"
+          "acc" : 8.395014000000002,
+          "lat" : 42.66675246213455,
+          "lng" : -71.5897671475056,
+          "ts" : "2026-07-12T03:21:45Z"
         },
         {
-          "acc": 7.676195832369938,
-          "lat": 42.66675253801307,
-          "lng": -71.5897672941944,
-          "ts": "2026-07-12T03:21:45Z"
+          "acc" : 7.676195832369938,
+          "lat" : 42.66675253801307,
+          "lng" : -71.5897672941944,
+          "ts" : "2026-07-12T03:21:45Z"
         },
         {
-          "acc": 7.676189338220623,
-          "lat": 42.66675254290652,
-          "lng": -71.58976729115976,
-          "ts": "2026-07-12T03:21:45Z"
+          "acc" : 7.676189338220623,
+          "lat" : 42.66675254290652,
+          "lng" : -71.58976729115976,
+          "ts" : "2026-07-12T03:21:45Z"
         },
         {
-          "acc": 9.619165556094286,
-          "lat": 42.66675288100467,
-          "lng": -71.58976787519671,
-          "ts": "2026-07-12T03:28:51Z"
+          "acc" : 9.619165556094286,
+          "lat" : 42.66675288100467,
+          "lng" : -71.58976787519671,
+          "ts" : "2026-07-12T03:28:51Z"
         },
         {
-          "acc": 9.619165556094286,
-          "lat": 42.66675288100467,
-          "lng": -71.58976787519671,
-          "ts": "2026-07-12T03:28:51Z"
+          "acc" : 9.619165556094286,
+          "lat" : 42.66675288100467,
+          "lng" : -71.58976787519671,
+          "ts" : "2026-07-12T03:28:51Z"
         },
         {
-          "acc": 17.495013999999998,
-          "lat": 42.66675288100467,
-          "lng": -71.58976787519671,
-          "ts": "2026-07-12T03:28:51Z"
+          "acc" : 17.495013999999998,
+          "lat" : 42.66675288100467,
+          "lng" : -71.58976787519671,
+          "ts" : "2026-07-12T03:28:51Z"
         },
         {
-          "acc": 13.140293706379124,
-          "lat": 42.66675292254158,
-          "lng": -71.58976799092366,
-          "ts": "2026-07-12T03:28:51Z"
+          "acc" : 13.140293706379124,
+          "lat" : 42.66675292254158,
+          "lng" : -71.58976799092366,
+          "ts" : "2026-07-12T03:28:51Z"
         },
         {
-          "acc": 13.140261118225157,
-          "lat": 42.666752936879085,
-          "lng": -71.58976798202768,
-          "ts": "2026-07-12T03:28:51Z"
+          "acc" : 13.140261118225157,
+          "lat" : 42.666752936879085,
+          "lng" : -71.58976798202768,
+          "ts" : "2026-07-12T03:28:51Z"
         },
         {
-          "acc": 15.613836163101613,
-          "lat": 42.666752998763144,
-          "lng": -71.58976813266754,
-          "ts": "2026-07-12T03:38:19Z"
+          "acc" : 15.613836163101613,
+          "lat" : 42.666752998763144,
+          "lng" : -71.58976813266754,
+          "ts" : "2026-07-12T03:38:19Z"
         },
         {
-          "acc": 15.613836163101613,
-          "lat": 42.666752998763144,
-          "lng": -71.58976813266754,
-          "ts": "2026-07-12T03:38:19Z"
+          "acc" : 15.613836163101613,
+          "lat" : 42.666752998763144,
+          "lng" : -71.58976813266754,
+          "ts" : "2026-07-12T03:38:19Z"
         },
         {
-          "acc": 16.395014,
-          "lat": 42.666752998763144,
-          "lng": -71.58976813266754,
-          "ts": "2026-07-12T03:38:19Z"
+          "acc" : 16.395014,
+          "lat" : 42.666752998763144,
+          "lng" : -71.58976813266754,
+          "ts" : "2026-07-12T03:38:19Z"
         },
         {
-          "acc": 19.07279938873705,
-          "lat": 42.666752998763116,
-          "lng": -71.58976813266756,
-          "ts": "2026-07-12T03:38:19Z"
+          "acc" : 19.07279938873705,
+          "lat" : 42.666752998763116,
+          "lng" : -71.58976813266756,
+          "ts" : "2026-07-12T03:38:19Z"
         },
         {
-          "acc": 11.762681526630413,
-          "lat": 42.66675299910707,
-          "lng": -71.58976812971808,
-          "ts": "2026-07-12T03:43:16Z"
+          "acc" : 11.762681526630413,
+          "lat" : 42.66675299910707,
+          "lng" : -71.58976812971808,
+          "ts" : "2026-07-12T03:43:16Z"
         },
         {
-          "acc": 11.762681526630413,
-          "lat": 42.66675299910707,
-          "lng": -71.58976812971808,
-          "ts": "2026-07-12T03:43:16Z"
+          "acc" : 11.762681526630413,
+          "lat" : 42.66675299910707,
+          "lng" : -71.58976812971808,
+          "ts" : "2026-07-12T03:43:16Z"
         },
         {
-          "acc": 9.71317078813961,
-          "lat": 42.66675301175197,
-          "lng": -71.58976812186911,
-          "ts": "2026-07-12T03:48:16Z"
+          "acc" : 9.71317078813961,
+          "lat" : 42.66675301175197,
+          "lng" : -71.58976812186911,
+          "ts" : "2026-07-12T03:48:16Z"
         },
         {
-          "acc": 9.71317078813961,
-          "lat": 42.66675301175197,
-          "lng": -71.58976812186911,
-          "ts": "2026-07-12T03:48:16Z"
+          "acc" : 9.71317078813961,
+          "lat" : 42.66675301175197,
+          "lng" : -71.58976812186911,
+          "ts" : "2026-07-12T03:48:16Z"
         },
         {
-          "acc": 10.595014,
-          "lat": 42.66675301175197,
-          "lng": -71.58976812186911,
-          "ts": "2026-07-12T03:48:16Z"
+          "acc" : 10.595014,
+          "lat" : 42.66675301175197,
+          "lng" : -71.58976812186911,
+          "ts" : "2026-07-12T03:48:16Z"
         },
         {
-          "acc": 8.535797806778866,
-          "lat": 42.66675301165951,
-          "lng": -71.58976812192489,
-          "ts": "2026-07-12T03:53:16Z"
+          "acc" : 8.535797806778866,
+          "lat" : 42.66675301165951,
+          "lng" : -71.58976812192489,
+          "ts" : "2026-07-12T03:53:16Z"
         },
         {
-          "acc": 8.695014,
-          "lat": 42.66675301165951,
-          "lng": -71.58976812192489,
-          "ts": "2026-07-12T03:53:16Z"
+          "acc" : 8.695014,
+          "lat" : 42.66675301165951,
+          "lng" : -71.58976812192489,
+          "ts" : "2026-07-12T03:53:16Z"
         },
         {
-          "acc": 15.095014,
-          "lat": 42.6667536306582,
-          "lng": -71.58976680949777,
-          "ts": "2026-07-12T04:16:37Z"
+          "acc" : 15.095014,
+          "lat" : 42.6667536306582,
+          "lng" : -71.58976680949777,
+          "ts" : "2026-07-12T04:16:37Z"
         },
         {
-          "acc": 11.978530305752948,
-          "lat": 42.6667533962646,
-          "lng": -71.58976728794599,
-          "ts": "2026-07-12T04:16:37Z"
+          "acc" : 11.978530305752948,
+          "lat" : 42.6667533962646,
+          "lng" : -71.58976728794599,
+          "ts" : "2026-07-12T04:16:37Z"
         },
         {
-          "acc": 11.978100516016664,
-          "lat": 42.66675363321204,
-          "lng": -71.58976680070174,
-          "ts": "2026-07-12T04:16:37Z"
+          "acc" : 11.978100516016664,
+          "lat" : 42.66675363321204,
+          "lng" : -71.58976680070174,
+          "ts" : "2026-07-12T04:16:37Z"
         },
         {
-          "acc": 9.695014,
-          "lat": 42.66675392178626,
-          "lng": -71.58976620349868,
-          "ts": "2026-07-12T04:21:26Z"
+          "acc" : 9.695014,
+          "lat" : 42.66675392178626,
+          "lng" : -71.58976620349868,
+          "ts" : "2026-07-12T04:21:26Z"
         },
         {
-          "acc": 8.66044413207143,
-          "lat": 42.66675374467397,
-          "lng": -71.58976656722535,
-          "ts": "2026-07-12T04:21:26Z"
+          "acc" : 8.66044413207143,
+          "lat" : 42.66675374467397,
+          "lng" : -71.58976656722535,
+          "ts" : "2026-07-12T04:21:26Z"
         },
         {
-          "acc": 8.66054113520895,
-          "lat": 42.66675386853091,
-          "lng": -71.58976631253365,
-          "ts": "2026-07-12T04:21:26Z"
+          "acc" : 8.66054113520895,
+          "lat" : 42.66675386853091,
+          "lng" : -71.58976631253365,
+          "ts" : "2026-07-12T04:21:26Z"
         },
         {
-          "acc": 16.55885667535577,
-          "lat": 42.66675342346299,
-          "lng": -71.58976720237632,
-          "ts": "2026-07-12T04:26:25Z"
+          "acc" : 16.55885667535577,
+          "lat" : 42.66675342346299,
+          "lng" : -71.58976720237632,
+          "ts" : "2026-07-12T04:26:25Z"
         },
         {
-          "acc": 11.289953543899564,
-          "lat": 42.66675360977989,
-          "lng": -71.58976684243501,
-          "ts": "2026-07-12T04:31:25Z"
+          "acc" : 11.289953543899564,
+          "lat" : 42.66675360977989,
+          "lng" : -71.58976684243501,
+          "ts" : "2026-07-12T04:31:25Z"
         },
         {
-          "acc": 4.748651532252218,
-          "lat": 42.66679788798601,
-          "lng": -71.5896676229473,
-          "ts": "2026-07-12T15:26:40Z"
+          "acc" : 4.748651532252218,
+          "lat" : 42.66679788798601,
+          "lng" : -71.5896676229473,
+          "ts" : "2026-07-12T15:26:40Z"
         },
         {
-          "acc": 4.748651535500749,
-          "lat": 42.66679717166019,
-          "lng": -71.58967319995485,
-          "ts": "2026-07-12T15:26:40Z"
+          "acc" : 4.748651535500749,
+          "lat" : 42.66679717166019,
+          "lng" : -71.58967319995485,
+          "ts" : "2026-07-12T15:26:40Z"
         },
         {
-          "acc": 4.748651530191761,
-          "lat": 42.66678480856835,
-          "lng": -71.5897799429113,
-          "ts": "2026-07-12T15:31:39Z"
+          "acc" : 4.748651530191761,
+          "lat" : 42.66678480856835,
+          "lng" : -71.5897799429113,
+          "ts" : "2026-07-12T15:31:39Z"
         },
         {
-          "acc": 18.895014,
-          "lat": 42.66675652737145,
-          "lng": -71.58976506988034,
-          "ts": "2026-07-12T15:35:58Z"
+          "acc" : 18.895014,
+          "lat" : 42.66675652737145,
+          "lng" : -71.58976506988034,
+          "ts" : "2026-07-12T15:35:58Z"
         },
         {
-          "acc": 18.895014,
-          "lat": 42.66675652737145,
-          "lng": -71.58976506988034,
-          "ts": "2026-07-12T15:35:58Z"
+          "acc" : 18.895014,
+          "lat" : 42.66675652737145,
+          "lng" : -71.58976506988034,
+          "ts" : "2026-07-12T15:35:58Z"
         },
         {
-          "acc": 18.895014,
-          "lat": 42.66675652737145,
-          "lng": -71.58976506988034,
-          "ts": "2026-07-12T15:35:58Z"
+          "acc" : 18.895014,
+          "lat" : 42.66675652737145,
+          "lng" : -71.58976506988034,
+          "ts" : "2026-07-12T15:35:58Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T15:35:58Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T15:35:58Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T15:35:58Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T15:35:58Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T15:40:58Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T15:40:58Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T15:40:58Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T15:40:58Z"
         },
         {
-          "acc": 51.995014,
-          "lat": 42.66677001744275,
-          "lng": -71.58973776345941,
-          "ts": "2026-07-12T15:40:58Z"
+          "acc" : 51.995014,
+          "lat" : 42.66677001744275,
+          "lng" : -71.58973776345941,
+          "ts" : "2026-07-12T15:40:58Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T15:45:58Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T15:45:58Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T15:45:58Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T15:45:58Z"
         },
         {
-          "acc": 20.395014,
-          "lat": 42.666758751467974,
-          "lng": -71.5897613362088,
-          "ts": "2026-07-12T15:45:58Z"
+          "acc" : 20.395014,
+          "lat" : 42.666758751467974,
+          "lng" : -71.5897613362088,
+          "ts" : "2026-07-12T15:45:58Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T15:58:44Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T15:58:44Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T15:58:44Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T15:58:44Z"
         },
         {
-          "acc": 10.795014,
-          "lat": 42.666756267374645,
-          "lng": -71.5897664951064,
-          "ts": "2026-07-12T16:07:36Z"
+          "acc" : 10.795014,
+          "lat" : 42.666756267374645,
+          "lng" : -71.5897664951064,
+          "ts" : "2026-07-12T16:07:36Z"
         },
         {
-          "acc": 10.795014,
-          "lat": 42.666756267374645,
-          "lng": -71.5897664951064,
-          "ts": "2026-07-12T16:07:36Z"
+          "acc" : 10.795014,
+          "lat" : 42.666756267374645,
+          "lng" : -71.5897664951064,
+          "ts" : "2026-07-12T16:07:36Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:07:36Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:07:36Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:07:36Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:07:36Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:08:33Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:08:33Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:08:33Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:08:33Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:08:33Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:08:33Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:13:32Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:13:32Z"
         },
         {
-          "acc": 11.095014,
-          "lat": 42.66675667713956,
-          "lng": -71.5897656339901,
-          "ts": "2026-07-12T16:13:32Z"
+          "acc" : 11.095014,
+          "lat" : 42.66675667713956,
+          "lng" : -71.5897656339901,
+          "ts" : "2026-07-12T16:13:32Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:15:38Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:15:38Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:15:38Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:15:38Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:15:38Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:15:38Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:20:37Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:20:37Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:20:37Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:20:37Z"
         },
         {
-          "acc": 15.795014,
-          "lat": 42.66675720132495,
-          "lng": -71.58976478664208,
-          "ts": "2026-07-12T16:20:37Z"
+          "acc" : 15.795014,
+          "lat" : 42.66675720132495,
+          "lng" : -71.58976478664208,
+          "ts" : "2026-07-12T16:20:37Z"
         },
         {
-          "acc": 2.280020669599688,
-          "lat": 42.666760972488916,
-          "lng": -71.5897756207299,
-          "ts": "2026-07-12T16:25:37Z"
+          "acc" : 2.280020669599688,
+          "lat" : 42.666760972488916,
+          "lng" : -71.5897756207299,
+          "ts" : "2026-07-12T16:25:37Z"
         },
         {
-          "acc": 2.280020669599688,
-          "lat": 42.666760972488916,
-          "lng": -71.5897756207299,
-          "ts": "2026-07-12T16:25:37Z"
+          "acc" : 2.280020669599688,
+          "lat" : 42.666760972488916,
+          "lng" : -71.5897756207299,
+          "ts" : "2026-07-12T16:25:37Z"
         },
         {
-          "acc": 2.995014,
-          "lat": 42.666760972488916,
-          "lng": -71.5897756207299,
-          "ts": "2026-07-12T16:25:37Z"
+          "acc" : 2.995014,
+          "lat" : 42.666760972488916,
+          "lng" : -71.5897756207299,
+          "ts" : "2026-07-12T16:25:37Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:28:22Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:28:22Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:28:22Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:28:22Z"
         },
         {
-          "acc": 11.995014000000001,
-          "lat": 42.66676092629877,
-          "lng": -71.5897757111618,
-          "ts": "2026-07-12T16:28:22Z"
+          "acc" : 11.995014000000001,
+          "lat" : 42.66676092629877,
+          "lng" : -71.5897757111618,
+          "ts" : "2026-07-12T16:28:22Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:28:22Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:28:22Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:28:22Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:28:22Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:33:08Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:33:08Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:33:08Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:33:08Z"
         },
         {
-          "acc": 9.195014,
-          "lat": 42.66675698373527,
-          "lng": -71.58976611097353,
-          "ts": "2026-07-12T16:33:08Z"
+          "acc" : 9.195014,
+          "lat" : 42.66675698373527,
+          "lng" : -71.58976611097353,
+          "ts" : "2026-07-12T16:33:08Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:33:08Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:33:08Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:33:08Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:33:08Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:35:41Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:35:41Z"
         },
         {
-          "acc": 17.795014,
-          "lat": 42.66675697411952,
-          "lng": -71.58976543079146,
-          "ts": "2026-07-12T16:35:41Z"
+          "acc" : 17.795014,
+          "lat" : 42.66675697411952,
+          "lng" : -71.58976543079146,
+          "ts" : "2026-07-12T16:35:41Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:35:41Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:35:41Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:35:41Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:35:41Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:40:40Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:40:40Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:40:40Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:40:40Z"
         },
         {
-          "acc": 12.595014,
-          "lat": 42.666757042097544,
-          "lng": -71.5897648828284,
-          "ts": "2026-07-12T16:40:40Z"
+          "acc" : 12.595014,
+          "lat" : 42.666757042097544,
+          "lng" : -71.5897648828284,
+          "ts" : "2026-07-12T16:40:40Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:41:11Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:41:11Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:41:11Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:41:11Z"
         },
         {
-          "acc": 10.695014,
-          "lat": 42.66675700869879,
-          "lng": -71.58976495151366,
-          "ts": "2026-07-12T16:41:11Z"
+          "acc" : 10.695014,
+          "lat" : 42.66675700869879,
+          "lng" : -71.58976495151366,
+          "ts" : "2026-07-12T16:41:11Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:41:11Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:41:11Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:41:11Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:41:11Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:51:19Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:51:19Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:51:19Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:51:19Z"
         },
         {
-          "acc": 14.795014,
-          "lat": 42.666756816488665,
-          "lng": -71.5897653469468,
-          "ts": "2026-07-12T16:51:19Z"
+          "acc" : 14.795014,
+          "lat" : 42.666756816488665,
+          "lng" : -71.5897653469468,
+          "ts" : "2026-07-12T16:51:19Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T16:58:10Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T16:58:10Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T17:00:00Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T17:00:00Z"
         },
         {
-          "acc": 10.995014000000001,
-          "lat": 42.66676178607232,
-          "lng": -71.58976932668074,
-          "ts": "2026-07-12T17:00:00Z"
+          "acc" : 10.995014000000001,
+          "lat" : 42.66676178607232,
+          "lng" : -71.58976932668074,
+          "ts" : "2026-07-12T17:00:00Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T17:00:00Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T17:00:00Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T17:00:00Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T17:00:00Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T17:14:37Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T17:14:37Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T17:14:37Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T17:14:37Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T17:14:37Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T17:14:37Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T17:19:36Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T17:19:36Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T17:24:36Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T17:24:36Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T17:24:36Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T17:24:36Z"
         },
         {
-          "acc": 51.695014,
-          "lat": 42.666761159231385,
-          "lng": -71.58975921097411,
-          "ts": "2026-07-12T17:24:36Z"
+          "acc" : 51.695014,
+          "lat" : 42.666761159231385,
+          "lng" : -71.58975921097411,
+          "ts" : "2026-07-12T17:24:36Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T17:29:45Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T17:29:45Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T17:29:45Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T17:29:45Z"
         },
         {
-          "acc": 16.195014,
-          "lat": 42.66675677794094,
-          "lng": -71.58976542748462,
-          "ts": "2026-07-12T17:29:45Z"
+          "acc" : 16.195014,
+          "lat" : 42.66675677794094,
+          "lng" : -71.58976542748462,
+          "ts" : "2026-07-12T17:29:45Z"
         },
         {
-          "acc": 13.395014000000002,
-          "lat": 42.6667565764465,
-          "lng": -71.58976584166086,
-          "ts": "2026-07-12T17:31:01Z"
+          "acc" : 13.395014000000002,
+          "lat" : 42.6667565764465,
+          "lng" : -71.58976584166086,
+          "ts" : "2026-07-12T17:31:01Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T17:31:01Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T17:31:01Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T17:31:01Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T17:31:01Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T17:31:16Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T17:31:16Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T17:31:16Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T17:31:16Z"
         },
         {
-          "acc": 11.195014,
-          "lat": 42.66675668245613,
-          "lng": -71.58976562328004,
-          "ts": "2026-07-12T17:31:16Z"
+          "acc" : 11.195014,
+          "lat" : 42.66675668245613,
+          "lng" : -71.58976562328004,
+          "ts" : "2026-07-12T17:31:16Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T17:31:16Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T17:31:16Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T17:31:16Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T17:31:16Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T17:42:18Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T17:42:18Z"
         },
         {
-          "acc": 8.395014000000002,
-          "lat": 42.66675749079743,
-          "lng": -71.58976396886456,
-          "ts": "2026-07-12T17:42:18Z"
+          "acc" : 8.395014000000002,
+          "lat" : 42.66675749079743,
+          "lng" : -71.58976396886456,
+          "ts" : "2026-07-12T17:42:18Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T17:48:22Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T17:48:22Z"
         },
         {
-          "acc": 8.595014,
-          "lat": 42.66675701297301,
-          "lng": -71.589764985605,
-          "ts": "2026-07-12T17:49:36Z"
+          "acc" : 8.595014,
+          "lat" : 42.66675701297301,
+          "lng" : -71.589764985605,
+          "ts" : "2026-07-12T17:49:36Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T17:49:36Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T17:49:36Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T17:49:36Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T17:49:36Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:05:45Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:05:45Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:05:45Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:05:45Z"
         },
         {
-          "acc": 12.395014000000002,
-          "lat": 42.66675731796468,
-          "lng": -71.58976432181042,
-          "ts": "2026-07-12T18:05:45Z"
+          "acc" : 12.395014000000002,
+          "lat" : 42.66675731796468,
+          "lng" : -71.58976432181042,
+          "ts" : "2026-07-12T18:05:45Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:05:45Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:05:45Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:05:45Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:05:45Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:10:44Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:10:44Z"
         },
         {
-          "acc": 22.095014,
-          "lat": 42.66675821682115,
-          "lng": -71.58976246662259,
-          "ts": "2026-07-12T18:10:44Z"
+          "acc" : 22.095014,
+          "lat" : 42.66675821682115,
+          "lng" : -71.58976246662259,
+          "ts" : "2026-07-12T18:10:44Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:12:57Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:12:57Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:12:57Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:12:57Z"
         },
         {
-          "acc": 21.895014,
-          "lat": 42.666758285890424,
-          "lng": -71.58976232371967,
-          "ts": "2026-07-12T18:12:57Z"
+          "acc" : 21.895014,
+          "lat" : 42.666758285890424,
+          "lng" : -71.58976232371967,
+          "ts" : "2026-07-12T18:12:57Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:12:57Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:12:57Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:12:57Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:12:57Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:14:06Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:14:06Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:14:06Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:14:06Z"
         },
         {
-          "acc": 12.595014,
-          "lat": 42.66675730904941,
-          "lng": -71.58976433349055,
-          "ts": "2026-07-12T18:14:06Z"
+          "acc" : 12.595014,
+          "lat" : 42.66675730904941,
+          "lng" : -71.58976433349055,
+          "ts" : "2026-07-12T18:14:06Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:14:06Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:14:06Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:14:06Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:14:06Z"
         },
         {
-          "acc": 6.4859295861001875,
-          "lat": 42.66675663110109,
-          "lng": -71.58976572848422,
-          "ts": "2026-07-12T18:19:05Z"
+          "acc" : 6.4859295861001875,
+          "lat" : 42.66675663110109,
+          "lng" : -71.58976572848422,
+          "ts" : "2026-07-12T18:19:05Z"
         },
         {
-          "acc": 6.4859295861001875,
-          "lat": 42.66675663110109,
-          "lng": -71.58976572848422,
-          "ts": "2026-07-12T18:19:05Z"
+          "acc" : 6.4859295861001875,
+          "lat" : 42.66675663110109,
+          "lng" : -71.58976572848422,
+          "ts" : "2026-07-12T18:19:05Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:23:28Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:23:28Z"
         },
         {
-          "acc": 8.195014,
-          "lat": 42.66675685258073,
-          "lng": -71.58976527269022,
-          "ts": "2026-07-12T18:23:28Z"
+          "acc" : 8.195014,
+          "lat" : 42.66675685258073,
+          "lng" : -71.58976527269022,
+          "ts" : "2026-07-12T18:23:28Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:23:28Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:23:28Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:23:28Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:23:28Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:24:42Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:24:42Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:24:42Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:24:42Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:24:42Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:24:42Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:24:42Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:24:42Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:25:26Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:25:26Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:25:26Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:25:26Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:25:26Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:25:26Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:25:26Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:25:26Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:30:25Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:30:25Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:30:25Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:30:25Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:34:27Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:34:27Z"
         },
         {
-          "acc": 14.195014,
-          "lat": 42.66675704278385,
-          "lng": -71.58976488125742,
-          "ts": "2026-07-12T18:34:27Z"
+          "acc" : 14.195014,
+          "lat" : 42.66675704278385,
+          "lng" : -71.58976488125742,
+          "ts" : "2026-07-12T18:34:27Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:34:27Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:34:27Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:34:27Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:34:27Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:35:37Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:35:37Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:35:37Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:35:37Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:40:37Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:40:37Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:40:37Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:40:37Z"
         },
         {
-          "acc": 16.495013999999998,
-          "lat": 42.66675765798571,
-          "lng": -71.58976361524192,
-          "ts": "2026-07-12T18:40:37Z"
+          "acc" : 16.495013999999998,
+          "lat" : 42.66675765798571,
+          "lng" : -71.58976361524192,
+          "ts" : "2026-07-12T18:40:37Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:59:25Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:59:25Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:59:25Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:59:25Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T18:59:25Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T18:59:25Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T19:00:47Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T19:00:47Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T19:00:47Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T19:00:47Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T19:22:47Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T19:22:47Z"
         },
         {
-          "acc": 22.395014,
-          "lat": 42.66675791133054,
-          "lng": -71.58976546669757,
-          "ts": "2026-07-12T19:22:47Z"
+          "acc" : 22.395014,
+          "lat" : 42.66675791133054,
+          "lng" : -71.58976546669757,
+          "ts" : "2026-07-12T19:22:47Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T19:22:47Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T19:22:47Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T19:22:47Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T19:22:47Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T19:27:32Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T19:27:32Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T19:27:32Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T19:27:32Z"
         },
         {
-          "acc": 26.895014,
-          "lat": 42.66676048379955,
-          "lng": -71.58976023933502,
-          "ts": "2026-07-12T19:27:32Z"
+          "acc" : 26.895014,
+          "lat" : 42.66676048379955,
+          "lng" : -71.58976023933502,
+          "ts" : "2026-07-12T19:27:32Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T19:27:32Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T19:27:32Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T19:27:32Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T19:27:32Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T19:32:32Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T19:32:32Z"
         },
         {
-          "acc": 2.794530583892154,
-          "lat": 42.6668148945583,
-          "lng": -71.58971426146856,
-          "ts": "2026-07-12T19:32:32Z"
+          "acc" : 2.794530583892154,
+          "lat" : 42.6668148945583,
+          "lng" : -71.58971426146856,
+          "ts" : "2026-07-12T19:32:32Z"
         },
         {
-          "acc": 13.595014,
-          "lat": 42.66675985654515,
-          "lng": -71.58976157472927,
-          "ts": "2026-07-12T19:32:32Z"
+          "acc" : 13.595014,
+          "lat" : 42.66675985654515,
+          "lng" : -71.58976157472927,
+          "ts" : "2026-07-12T19:32:32Z"
         },
         {
-          "acc": 5,
-          "lat": 42.66610416666668,
-          "lng": -71.54399566666666,
-          "ts": "2026-07-12T19:42:51Z"
+          "acc" : 5,
+          "lat" : 42.66610416666668,
+          "lng" : -71.54399566666666,
+          "ts" : "2026-07-12T19:42:51Z"
         },
         {
-          "acc": 5,
-          "lat": 42.67116966666668,
-          "lng": -71.4876305,
-          "ts": "2026-07-12T19:47:32Z"
+          "acc" : 5,
+          "lat" : 42.67116966666668,
+          "lng" : -71.4876305,
+          "ts" : "2026-07-12T19:47:32Z"
         },
         {
-          "acc": 5,
-          "lat": 42.67837016666667,
-          "lng": -71.46621733333333,
-          "ts": "2026-07-12T19:50:20Z"
+          "acc" : 5,
+          "lat" : 42.67837016666667,
+          "lng" : -71.46621733333333,
+          "ts" : "2026-07-12T19:50:20Z"
         },
         {
-          "acc": 5,
-          "lat": 42.699614000000004,
-          "lng": -71.44011783333333,
-          "ts": "2026-07-12T19:55:20Z"
+          "acc" : 5,
+          "lat" : 42.699614000000004,
+          "lng" : -71.44011783333333,
+          "ts" : "2026-07-12T19:55:20Z"
         },
         {
-          "acc": 13.895014000000002,
-          "lat": 42.70690963300839,
-          "lng": -71.43931499428575,
-          "ts": "2026-07-12T20:10:30Z"
+          "acc" : 13.895014000000002,
+          "lat" : 42.70690963300839,
+          "lng" : -71.43931499428575,
+          "ts" : "2026-07-12T20:10:30Z"
         },
         {
-          "acc": 13.895014000000002,
-          "lat": 42.70690963300839,
-          "lng": -71.43931499428575,
-          "ts": "2026-07-12T20:10:30Z"
+          "acc" : 13.895014000000002,
+          "lat" : 42.70690963300839,
+          "lng" : -71.43931499428575,
+          "ts" : "2026-07-12T20:10:30Z"
         },
         {
-          "acc": 13.895014000000002,
-          "lat": 42.70690963300839,
-          "lng": -71.43931499428575,
-          "ts": "2026-07-12T20:10:30Z"
+          "acc" : 13.895014000000002,
+          "lat" : 42.70690963300839,
+          "lng" : -71.43931499428575,
+          "ts" : "2026-07-12T20:10:30Z"
         },
         {
-          "acc": 11.36055040612738,
-          "lat": 42.70691420195916,
-          "lng": -71.43931390325801,
-          "ts": "2026-07-12T20:10:30Z"
+          "acc" : 11.36055040612738,
+          "lat" : 42.70691420195916,
+          "lng" : -71.43931390325801,
+          "ts" : "2026-07-12T20:10:30Z"
         },
         {
-          "acc": 11.360550374527062,
-          "lat": 42.706914203627015,
-          "lng": -71.43931390295369,
-          "ts": "2026-07-12T20:10:30Z"
+          "acc" : 11.360550374527062,
+          "lat" : 42.706914203627015,
+          "lng" : -71.43931390295369,
+          "ts" : "2026-07-12T20:10:30Z"
         },
         {
-          "acc": 5,
-          "lat": 42.70705333333334,
-          "lng": -71.43943933333334,
-          "ts": "2026-07-12T20:18:08Z"
+          "acc" : 5,
+          "lat" : 42.70705333333334,
+          "lng" : -71.43943933333334,
+          "ts" : "2026-07-12T20:18:08Z"
         },
         {
-          "acc": 5,
-          "lat": 42.70705333333334,
-          "lng": -71.43943933333334,
-          "ts": "2026-07-12T20:20:21Z"
+          "acc" : 5,
+          "lat" : 42.70705333333334,
+          "lng" : -71.43943933333334,
+          "ts" : "2026-07-12T20:20:21Z"
         },
         {
-          "acc": 5,
-          "lat": 42.70565933333334,
-          "lng": -71.43911,
-          "ts": "2026-07-12T20:25:21Z"
+          "acc" : 5,
+          "lat" : 42.70565933333334,
+          "lng" : -71.43911,
+          "ts" : "2026-07-12T20:25:21Z"
         },
         {
-          "acc": 5,
-          "lat": 42.70294483333334,
-          "lng": -71.43639666666667,
-          "ts": "2026-07-12T20:30:42Z"
+          "acc" : 5,
+          "lat" : 42.70294483333334,
+          "lng" : -71.43639666666667,
+          "ts" : "2026-07-12T20:30:42Z"
         },
         {
-          "acc": 14.737095297632427,
-          "lat": 42.70259434885458,
-          "lng": -71.43671040130037,
-          "ts": "2026-07-12T20:32:15Z"
+          "acc" : 14.737095297632427,
+          "lat" : 42.70259434885458,
+          "lng" : -71.43671040130037,
+          "ts" : "2026-07-12T20:32:15Z"
         },
         {
-          "acc": 14.737095297632427,
-          "lat": 42.70259434885458,
-          "lng": -71.43671040130037,
-          "ts": "2026-07-12T20:32:15Z"
+          "acc" : 14.737095297632427,
+          "lat" : 42.70259434885458,
+          "lng" : -71.43671040130037,
+          "ts" : "2026-07-12T20:32:15Z"
         },
         {
-          "acc": 14.195014,
-          "lat": 42.70259470501641,
-          "lng": -71.43670779336026,
-          "ts": "2026-07-12T20:32:15Z"
+          "acc" : 14.195014,
+          "lat" : 42.70259470501641,
+          "lng" : -71.43670779336026,
+          "ts" : "2026-07-12T20:32:15Z"
         },
         {
-          "acc": 12.87328250331106,
-          "lat": 42.702594609185,
-          "lng": -71.43670547880501,
-          "ts": "2026-07-12T20:32:15Z"
+          "acc" : 12.87328250331106,
+          "lat" : 42.702594609185,
+          "lng" : -71.43670547880501,
+          "ts" : "2026-07-12T20:32:15Z"
         },
         {
-          "acc": 12.873453518833388,
-          "lat": 42.702594609185006,
-          "lng": -71.43670547880501,
-          "ts": "2026-07-12T20:32:15Z"
+          "acc" : 12.873453518833388,
+          "lat" : 42.702594609185006,
+          "lng" : -71.43670547880501,
+          "ts" : "2026-07-12T20:32:15Z"
         },
         {
-          "acc": 7.984354404942343,
-          "lat": 42.702398583565895,
-          "lng": -71.43716075743387,
-          "ts": "2026-07-12T20:34:49Z"
+          "acc" : 7.984354404942343,
+          "lat" : 42.702398583565895,
+          "lng" : -71.43716075743387,
+          "ts" : "2026-07-12T20:34:49Z"
         },
         {
-          "acc": 7.984354404942343,
-          "lat": 42.702398583565895,
-          "lng": -71.43716075743387,
-          "ts": "2026-07-12T20:34:49Z"
+          "acc" : 7.984354404942343,
+          "lat" : 42.702398583565895,
+          "lng" : -71.43716075743387,
+          "ts" : "2026-07-12T20:34:49Z"
         },
         {
-          "acc": 8.095014,
-          "lat": 42.702398583565895,
-          "lng": -71.43716075743387,
-          "ts": "2026-07-12T20:34:49Z"
+          "acc" : 8.095014,
+          "lat" : 42.702398583565895,
+          "lng" : -71.43716075743387,
+          "ts" : "2026-07-12T20:34:49Z"
         },
         {
-          "acc": 9.82948403643565,
-          "lat": 42.702373164061704,
-          "lng": -71.43716309543727,
-          "ts": "2026-07-12T20:36:55Z"
+          "acc" : 9.82948403643565,
+          "lat" : 42.702373164061704,
+          "lng" : -71.43716309543727,
+          "ts" : "2026-07-12T20:36:55Z"
         },
         {
-          "acc": 13.646868799546777,
-          "lat": 42.70236620138001,
-          "lng": -71.43716744441636,
-          "ts": "2026-07-12T20:39:44Z"
+          "acc" : 13.646868799546777,
+          "lat" : 42.70236620138001,
+          "lng" : -71.43716744441636,
+          "ts" : "2026-07-12T20:39:44Z"
         },
         {
-          "acc": 6.648991439508996,
-          "lat": 42.70236502578316,
-          "lng": -71.43716817865004,
-          "ts": "2026-07-12T20:41:41Z"
+          "acc" : 6.648991439508996,
+          "lat" : 42.70236502578316,
+          "lng" : -71.43716817865004,
+          "ts" : "2026-07-12T20:41:41Z"
         },
         {
-          "acc": 11.150950546342207,
-          "lat": 42.70236333829044,
-          "lng": -71.43717479602583,
-          "ts": "2026-07-12T20:47:52Z"
+          "acc" : 11.150950546342207,
+          "lat" : 42.70236333829044,
+          "lng" : -71.43717479602583,
+          "ts" : "2026-07-12T20:47:52Z"
         },
         {
-          "acc": 11.150950546342207,
-          "lat": 42.70236333829044,
-          "lng": -71.43717479602583,
-          "ts": "2026-07-12T20:48:00Z"
+          "acc" : 11.150950546342207,
+          "lat" : 42.70236333829044,
+          "lng" : -71.43717479602583,
+          "ts" : "2026-07-12T20:48:00Z"
         },
         {
-          "acc": 45.60386570086474,
-          "lat": 42.702596082040834,
-          "lng": -71.43652468582624,
-          "ts": "2026-07-12T20:53:07Z"
+          "acc" : 45.60386570086474,
+          "lat" : 42.702596082040834,
+          "lng" : -71.43652468582624,
+          "ts" : "2026-07-12T20:53:07Z"
         },
         {
-          "acc": 45.595014,
-          "lat": 42.702596082002884,
-          "lng": -71.43652468582613,
-          "ts": "2026-07-12T20:53:07Z"
+          "acc" : 45.595014,
+          "lat" : 42.702596082002884,
+          "lng" : -71.43652468582613,
+          "ts" : "2026-07-12T20:53:07Z"
         },
         {
-          "acc": 5,
-          "lat": 42.707911333333335,
-          "lng": -71.4561425,
-          "ts": "2026-07-12T21:13:11Z"
+          "acc" : 5,
+          "lat" : 42.707911333333335,
+          "lng" : -71.4561425,
+          "ts" : "2026-07-12T21:13:11Z"
         },
         {
-          "acc": 5,
-          "lat": 42.70517100000001,
-          "lng": -71.49760383333334,
-          "ts": "2026-07-12T21:17:49Z"
+          "acc" : 5,
+          "lat" : 42.70517100000001,
+          "lng" : -71.49760383333334,
+          "ts" : "2026-07-12T21:17:49Z"
         },
         {
-          "acc": 5,
-          "lat": 42.70510550000001,
-          "lng": -71.49779816666667,
-          "ts": "2026-07-12T21:17:49Z"
+          "acc" : 5,
+          "lat" : 42.70510550000001,
+          "lng" : -71.49779816666667,
+          "ts" : "2026-07-12T21:17:49Z"
         },
         {
-          "acc": 5,
-          "lat": 42.71110166666667,
-          "lng": -71.54371983333334,
-          "ts": "2026-07-12T21:22:49Z"
+          "acc" : 5,
+          "lat" : 42.71110166666667,
+          "lng" : -71.54371983333334,
+          "ts" : "2026-07-12T21:22:49Z"
         },
         {
-          "acc": 5,
-          "lat": 42.675541833333334,
-          "lng": -71.57020883333334,
-          "ts": "2026-07-12T21:27:49Z"
+          "acc" : 5,
+          "lat" : 42.675541833333334,
+          "lng" : -71.57020883333334,
+          "ts" : "2026-07-12T21:27:49Z"
         },
         {
-          "acc": 5,
-          "lat": 42.66677116666666,
-          "lng": -71.58978883333333,
-          "ts": "2026-07-12T21:30:53Z"
+          "acc" : 5,
+          "lat" : 42.66677116666666,
+          "lng" : -71.58978883333333,
+          "ts" : "2026-07-12T21:30:53Z"
         },
         {
-          "acc": 5,
-          "lat": 42.66677116666666,
-          "lng": -71.58978883333333,
-          "ts": "2026-07-12T21:30:53Z"
+          "acc" : 5,
+          "lat" : 42.66677116666666,
+          "lng" : -71.58978883333333,
+          "ts" : "2026-07-12T21:30:53Z"
         },
         {
-          "acc": 11.746280974345767,
-          "lat": 42.666756414714605,
-          "lng": -71.5897656760397,
-          "ts": "2026-07-12T21:35:01Z"
+          "acc" : 11.746280974345767,
+          "lat" : 42.666756414714605,
+          "lng" : -71.5897656760397,
+          "ts" : "2026-07-12T21:35:01Z"
         },
         {
-          "acc": 12.195014,
-          "lat": 42.666756414714605,
-          "lng": -71.5897656760397,
-          "ts": "2026-07-12T21:35:01Z"
+          "acc" : 12.195014,
+          "lat" : 42.666756414714605,
+          "lng" : -71.5897656760397,
+          "ts" : "2026-07-12T21:35:01Z"
         },
         {
-          "acc": 10.463608061087012,
-          "lat": 42.66675683415335,
-          "lng": -71.58976579160478,
-          "ts": "2026-07-12T21:35:01Z"
+          "acc" : 10.463608061087012,
+          "lat" : 42.66675683415335,
+          "lng" : -71.58976579160478,
+          "ts" : "2026-07-12T21:35:01Z"
         },
         {
-          "acc": 10.46360806229545,
-          "lat": 42.66675683415335,
-          "lng": -71.58976579160478,
-          "ts": "2026-07-12T21:35:01Z"
+          "acc" : 10.46360806229545,
+          "lat" : 42.66675683415335,
+          "lng" : -71.58976579160478,
+          "ts" : "2026-07-12T21:35:01Z"
         },
         {
-          "acc": 10.46332158387504,
-          "lat": 42.6667570147721,
-          "lng": -71.58976541988622,
-          "ts": "2026-07-12T21:35:01Z"
+          "acc" : 10.46332158387504,
+          "lat" : 42.6667570147721,
+          "lng" : -71.58976541988622,
+          "ts" : "2026-07-12T21:35:01Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:38:50Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:38:50Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:38:59Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:38:59Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:41:14Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:41:14Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:46:14Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:46:14Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:47:04Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:47:04Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:47:04Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:47:04Z"
         },
         {
-          "acc": 4.395014,
-          "lat": 42.66675826878342,
-          "lng": -71.58976604582652,
-          "ts": "2026-07-12T21:47:04Z"
+          "acc" : 4.395014,
+          "lat" : 42.66675826878342,
+          "lng" : -71.58976604582652,
+          "ts" : "2026-07-12T21:47:04Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:47:04Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:47:04Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:47:04Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:47:04Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:47:04Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:47:04Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:49:33Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:49:33Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:49:33Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:49:33Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:49:33Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:49:33Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:49:33Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:49:33Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:51:06Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:51:06Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:51:06Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:51:06Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:51:06Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:51:06Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:51:06Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:51:06Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:51:24Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:51:24Z"
         },
         {
-          "acc": 10.795014,
-          "lat": 42.66675841341581,
-          "lng": -71.5897651671549,
-          "ts": "2026-07-12T21:51:24Z"
+          "acc" : 10.795014,
+          "lat" : 42.66675841341581,
+          "lng" : -71.5897651671549,
+          "ts" : "2026-07-12T21:51:24Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:51:24Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:51:24Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:51:24Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:51:24Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:54:53Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:54:53Z"
         },
         {
-          "acc": 14.995014000000001,
-          "lat": 42.66675908146979,
-          "lng": -71.58976378530052,
-          "ts": "2026-07-12T21:54:53Z"
+          "acc" : 14.995014000000001,
+          "lat" : 42.66675908146979,
+          "lng" : -71.58976378530052,
+          "ts" : "2026-07-12T21:54:53Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:54:53Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:54:53Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:54:53Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:54:53Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:55:18Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:55:18Z"
         },
         {
-          "acc": 13.995014000000001,
-          "lat": 42.66675879189787,
-          "lng": -71.58976436773484,
-          "ts": "2026-07-12T21:55:18Z"
+          "acc" : 13.995014000000001,
+          "lat" : 42.66675879189787,
+          "lng" : -71.58976436773484,
+          "ts" : "2026-07-12T21:55:18Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:55:18Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:55:18Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:55:18Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:55:18Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:58:31Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:58:31Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:58:31Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:58:31Z"
         },
         {
-          "acc": 10.495014000000001,
-          "lat": 42.666758634100944,
-          "lng": -71.58976468580089,
-          "ts": "2026-07-12T21:58:31Z"
+          "acc" : 10.495014000000001,
+          "lat" : 42.666758634100944,
+          "lng" : -71.58976468580089,
+          "ts" : "2026-07-12T21:58:31Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:58:31Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:58:31Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T21:58:31Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T21:58:31Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T22:03:29Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:03:29Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T22:03:29Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:03:29Z"
         },
         {
-          "acc": 17.495013999999998,
-          "lat": 42.66676076222128,
-          "lng": -71.58976030396735,
-          "ts": "2026-07-12T22:03:29Z"
+          "acc" : 17.495013999999998,
+          "lat" : 42.66676076222128,
+          "lng" : -71.58976030396735,
+          "ts" : "2026-07-12T22:03:29Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T22:04:31Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:04:31Z"
         },
         {
-          "acc": 8.795014,
-          "lat": 42.66675889354685,
-          "lng": -71.58976415005378,
-          "ts": "2026-07-12T22:04:31Z"
+          "acc" : 8.795014,
+          "lat" : 42.66675889354685,
+          "lng" : -71.58976415005378,
+          "ts" : "2026-07-12T22:04:31Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T22:04:31Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:04:31Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T22:04:31Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:04:31Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T22:05:26Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:05:26Z"
         },
         {
-          "acc": 8.095014,
-          "lat": 42.66675884813125,
-          "lng": -71.58976424349498,
-          "ts": "2026-07-12T22:05:26Z"
+          "acc" : 8.095014,
+          "lat" : 42.66675884813125,
+          "lng" : -71.58976424349498,
+          "ts" : "2026-07-12T22:05:26Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T22:05:26Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:05:26Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T22:05:26Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:05:26Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T22:05:52Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:05:52Z"
         },
         {
-          "acc": 14.995014000000001,
-          "lat": 42.666758746678056,
-          "lng": -71.58976445223188,
-          "ts": "2026-07-12T22:05:52Z"
+          "acc" : 14.995014000000001,
+          "lat" : 42.666758746678056,
+          "lng" : -71.58976445223188,
+          "ts" : "2026-07-12T22:05:52Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T22:05:52Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:05:52Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T22:05:52Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:05:52Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T22:07:47Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:07:47Z"
         },
         {
-          "acc": 7.595014,
-          "lat": 42.666758503672035,
-          "lng": -71.58976495235294,
-          "ts": "2026-07-12T22:12:46Z"
+          "acc" : 7.595014,
+          "lat" : 42.666758503672035,
+          "lng" : -71.58976495235294,
+          "ts" : "2026-07-12T22:12:46Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T22:14:55Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:14:55Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T22:14:55Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:14:55Z"
         },
         {
-          "acc": 12.595014,
-          "lat": 42.666758423069204,
-          "lng": -71.58976511829762,
-          "ts": "2026-07-12T22:14:55Z"
+          "acc" : 12.595014,
+          "lat" : 42.666758423069204,
+          "lng" : -71.58976511829762,
+          "ts" : "2026-07-12T22:14:55Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T22:14:55Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:14:55Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T22:14:55Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:14:55Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T22:19:52Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:19:52Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T22:19:52Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:19:52Z"
         },
         {
-          "acc": 11.895014000000002,
-          "lat": 42.66675915976198,
-          "lng": -71.58976360158182,
-          "ts": "2026-07-12T22:19:52Z"
+          "acc" : 11.895014000000002,
+          "lat" : 42.66675915976198,
+          "lng" : -71.58976360158182,
+          "ts" : "2026-07-12T22:19:52Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T22:23:47Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:23:47Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T22:23:47Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:23:47Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T22:23:47Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:23:47Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T22:23:47Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:23:47Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T22:27:00Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:27:00Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T22:27:00Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:27:00Z"
         },
         {
-          "acc": 16.395014,
-          "lat": 42.666759640250845,
-          "lng": -71.58976261234191,
-          "ts": "2026-07-12T22:27:00Z"
+          "acc" : 16.395014,
+          "lat" : 42.666759640250845,
+          "lng" : -71.58976261234191,
+          "ts" : "2026-07-12T22:27:00Z"
         },
         {
-          "acc": 0.8436229573422536,
-          "lat": 42.66676509874512,
-          "lng": -71.5897970483974,
-          "ts": "2026-07-12T22:27:00Z"
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:27:00Z"
+        },
+        {
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:30:15Z"
+        },
+        {
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:30:15Z"
+        },
+        {
+          "acc" : 13.795014,
+          "lat" : 42.666758995695524,
+          "lng" : -71.58976393936224,
+          "ts" : "2026-07-12T22:30:15Z"
+        },
+        {
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:30:15Z"
+        },
+        {
+          "acc" : 0.8436229573422536,
+          "lat" : 42.66676509874512,
+          "lng" : -71.5897970483974,
+          "ts" : "2026-07-12T22:30:15Z"
         }
       ],
-      "hikes": [
+      "hikes" : [
         {
-          "distanceKm": 0.02,
-          "endTime": "2026-07-12T17:31:19Z",
-          "name": "Test",
-          "pointCount": 5,
-          "source": "gps",
-          "startTime": "2026-07-12T17:31:16Z"
+          "distanceKm" : 0.02,
+          "endTime" : "2026-07-12T17:31:19Z",
+          "name" : "Test",
+          "pointCount" : 5,
+          "source" : "gps",
+          "startTime" : "2026-07-12T17:31:16Z"
         },
         {
-          "distanceKm": 0.02,
-          "endTime": "2026-07-12T18:23:37Z",
-          "name": "Test hike 223",
-          "pointCount": 4,
-          "source": "gps",
-          "startTime": "2026-07-12T18:23:28Z"
+          "distanceKm" : 0.02,
+          "endTime" : "2026-07-12T18:23:37Z",
+          "name" : "Test hike 223",
+          "pointCount" : 4,
+          "source" : "gps",
+          "startTime" : "2026-07-12T18:23:28Z"
         },
         {
-          "distanceKm": 0,
-          "endTime": "2026-07-12T20:34:51Z",
-          "name": "Test 434",
-          "pointCount": 3,
-          "source": "gps",
-          "startTime": "2026-07-12T20:34:49Z"
+          "distanceKm" : 0,
+          "endTime" : "2026-07-12T20:34:51Z",
+          "name" : "Test 434",
+          "pointCount" : 3,
+          "source" : "gps",
+          "startTime" : "2026-07-12T20:34:49Z"
         },
         {
-          "distanceKm": 0,
-          "endTime": "2026-07-12T20:37:00Z",
-          "name": "Svartifoss hike (Skaftafell)",
-          "pointCount": 1,
-          "source": "gps",
-          "startTime": "2026-07-12T20:36:55Z"
+          "distanceKm" : 0,
+          "endTime" : "2026-07-12T20:37:00Z",
+          "name" : "Svartifoss hike (Skaftafell)",
+          "pointCount" : 1,
+          "source" : "gps",
+          "startTime" : "2026-07-12T20:36:55Z"
         }
       ],
-      "hikesCompleted": 4,
-      "name": "Chris",
-      "notes": [
+      "hikesCompleted" : 4,
+      "name" : "Chris",
+      "notes" : [
         {
-          "dayID": -1,
-          "itemName": "Flight SFO to Boston",
-          "key": "d-1-a0",
-          "text": "We flew to Boston "
+          "dayID" : -1,
+          "itemName" : "Flight SFO to Boston",
+          "key" : "d-1-a0",
+          "text" : "We flew to Boston "
         },
         {
-          "dayID": -1,
-          "itemName": "World Cup with family",
-          "key": "d-1-a1",
-          "text": "Thanks coops for hosting game one and pepp for game 2!\n\nSorry for the popcorn incident!!"
+          "dayID" : -1,
+          "itemName" : "World Cup with family",
+          "key" : "d-1-a1",
+          "text" : "Thanks coops for hosting game one and pepp for game 2!\n\nSorry for the popcorn incident!!"
         },
         {
-          "dayID": -1,
-          "itemName": "d-1-s2",
-          "key": "d-1-s2",
-          "text": "One game down...we were all rooting for Norway. Alas...\n\nThanks to the Coops for hosting game 1 and the Pepp for game 2! Will Switzerland hold out?!?!"
+          "dayID" : -1,
+          "itemName" : "d-1-s2",
+          "key" : "d-1-s2",
+          "text" : "One game down...we were all rooting for Norway. Alas...\n\nThanks to the Coops for hosting game 1 and the Pepp for game 2! Will Switzerland hold out?!?!"
         },
         {
-          "dayID": 1,
-          "itemName": "Bridge Between Continents",
-          "key": "d1-a0",
-          "text": "Test item"
+          "dayID" : 1,
+          "itemName" : "Bridge Between Continents",
+          "key" : "d1-a0",
+          "text" : "Test item"
         },
         {
-          "dayID": 10,
-          "itemName": "d10-s15",
-          "key": "d10-s15",
-          "text": "We"
+          "dayID" : 10,
+          "itemName" : "d10-s15",
+          "key" : "d10-s15",
+          "text" : "We"
         }
       ],
-      "ratings": [
+      "ratings" : [
         {
-          "dayID": 0,
-          "itemName": "custom-A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
-          "key": "custom-A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
-          "rating": 5
+          "dayID" : 0,
+          "itemName" : "custom-A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
+          "key" : "custom-A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
+          "rating" : 5
         },
         {
-          "dayID": 0,
-          "itemName": "custom-DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
-          "key": "custom-DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
-          "rating": 5
+          "dayID" : 0,
+          "itemName" : "custom-DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
+          "key" : "custom-DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
+          "rating" : 5
         },
         {
-          "dayID": -1,
-          "itemName": "Flight SFO to Boston",
-          "key": "d-1-a0",
-          "rating": 5
+          "dayID" : -1,
+          "itemName" : "Flight SFO to Boston",
+          "key" : "d-1-a0",
+          "rating" : 5
         },
         {
-          "dayID": -1,
-          "itemName": "World Cup with family",
-          "key": "d-1-a1",
-          "rating": 5
+          "dayID" : -1,
+          "itemName" : "World Cup with family",
+          "key" : "d-1-a1",
+          "rating" : 5
         },
         {
-          "dayID": -1,
-          "itemName": "d-1-s2",
-          "key": "d-1-s2",
-          "rating": 5
+          "dayID" : -1,
+          "itemName" : "d-1-s2",
+          "key" : "d-1-s2",
+          "rating" : 5
         },
         {
-          "dayID": 1,
-          "itemName": "Sandholt Bakery",
-          "key": "d1-f0",
-          "rating": 5
+          "dayID" : 1,
+          "itemName" : "Sandholt Bakery",
+          "key" : "d1-f0",
+          "rating" : 5
         }
       ],
-      "totalHikeDistanceKm": 0,
-      "waterfallsVisited": 1
+      "totalHikeDistanceKm" : 0,
+      "waterfallsVisited" : 1
     }
   ]
 }
