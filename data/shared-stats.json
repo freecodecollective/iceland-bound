@@ -1,27 +1,6 @@
 {
-  "lastUpdated": "2026-07-12T21:07:53.048Z",
-  "hikes": [
-    {
-      "name": "Test",
-      "distanceKm": 0.02,
-      "isOverride": false
-    },
-    {
-      "name": "Test hike 223",
-      "distanceKm": 0,
-      "isOverride": false
-    },
-    {
-      "name": "Test 434",
-      "distanceKm": 0,
-      "isOverride": false
-    },
-    {
-      "name": "Svartifoss hike (Skaftafell)",
-      "distanceKm": 0,
-      "isOverride": false
-    }
-  ],
+  "lastUpdated": "2026-07-12T21:11:48.762Z",
+  "hikes": [],
   "totalHikeKm": 0,
   "waterfallsVisited": 0,
   "extraWaterfalls": [],
