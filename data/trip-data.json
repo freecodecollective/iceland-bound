@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-12T21:56:46Z",
+  "lastUpdated" : "2026-07-12T21:58:31Z",
   "photos" : [
     {
       "activityName" : "World Cup with family",
@@ -722,11 +722,11 @@
         }
       ],
       "deletedEventIDs" : [
-        "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
-        "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
+        "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
+        "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
         "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
-        "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
+        "A1FA3647-B0AE-4B53-B589-B9F10A0B035D"
       ],
       "gpsPointCount" : 373,
       "gpsTrack" : [
