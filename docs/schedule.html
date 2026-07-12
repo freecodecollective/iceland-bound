@@ -3,1013 +3,471 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Iceland Trip Schedule</title>
+<title>Schedule Admin</title>
 <style>
-  :root {
-    --bg: #f8f9fa; --card-bg: #ffffff; --text: #1a1a2e; --text-secondary: #64748b;
-    --border: #e2e8f0; --activity-bg: #eff6ff; --activity-border: #3b82f6; --activity-text: #1e40af;
-    --food-bg: #fef3c7; --food-border: #f59e0b; --food-text: #92400e;
-    --schedule-bg: #f1f5f9; --schedule-border: #94a3b8; --schedule-text: #64748b;
-    --highlight-accent: #8b5cf6; --header-bg: #0f172a; --header-text: #f8fafc;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0f172a; --card-bg: #1e293b; --text: #f1f5f9; --text-secondary: #94a3b8;
-      --border: #334155; --activity-bg: #1e3a5f; --activity-border: #60a5fa; --activity-text: #93c5fd;
-      --food-bg: #422006; --food-border: #fbbf24; --food-text: #fcd34d;
-      --schedule-bg: #1e293b; --schedule-border: #475569; --schedule-text: #64748b;
-      --highlight-accent: #a78bfa; --header-bg: #020617; --header-text: #f8fafc;
-    }
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
-  .page-header { background: var(--header-bg); color: var(--header-text); padding: 2rem 1rem; text-align: center; }
-  .page-header h1 { font-size: 1.75rem; font-weight: 700; margin-bottom: 0.25rem; }
-  .page-header .subtitle { font-size: 0.95rem; opacity: 0.7; }
-  .stats-bar { display: flex; justify-content: center; gap: 1.5rem; margin-top: 1rem; flex-wrap: wrap; }
-  .stat { text-align: center; }
-  .stat-number { font-size: 1.5rem; font-weight: 700; }
-  .stat-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.6; }
-  .stat.activity .stat-number { color: #60a5fa; }
-  .stat.food .stat-number { color: #fbbf24; }
-  .stat.schedule .stat-number { color: #94a3b8; }
-  .legend { display: flex; justify-content: center; gap: 1rem; padding: 0.75rem 1rem; background: var(--card-bg); border-bottom: 1px solid var(--border); flex-wrap: wrap; position: sticky; top: 0; z-index: 10; }
-  .legend-item { display: flex; align-items: center; gap: 0.35rem; font-size: 0.8rem; color: var(--text-secondary); }
-  .legend-dot { width: 10px; height: 10px; border-radius: 2px; }
-  .legend-dot.activity { background: var(--activity-border); }
-  .legend-dot.food { background: var(--food-border); }
-  .legend-dot.schedule { background: var(--schedule-border); }
-  .container { max-width: 700px; margin: 0 auto; padding: 1rem; }
-  .day-card { background: var(--card-bg); border-radius: 12px; margin-bottom: 1rem; overflow: hidden; border: 1px solid var(--border); }
-  .day-header { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); background: var(--bg); }
-  .day-label { font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--highlight-accent); white-space: nowrap; min-width: 3rem; }
-  .day-info { flex: 1; min-width: 0; }
-  .day-title { font-weight: 600; font-size: 1rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .day-date { font-size: 0.8rem; color: var(--text-secondary); }
-  .day-counter { font-size: 0.75rem; color: var(--text-secondary); white-space: nowrap; font-variant-numeric: tabular-nums; }
-  .schedule-table { width: 100%; border-collapse: collapse; }
-  .schedule-table tr { border-bottom: 1px solid var(--border); }
-  .schedule-table tr:last-child { border-bottom: none; }
-  .schedule-table td { padding: 0.5rem 0.75rem; vertical-align: top; }
-  .time-col { width: 5.5rem; font-size: 0.8rem; color: var(--text-secondary); white-space: nowrap; font-variant-numeric: tabular-nums; }
-  .title-col { flex: 1; }
-  .item-title { display: block; font-weight: 500; font-size: 0.9rem; }
-  .item-desc { display: block; font-size: 0.78rem; color: var(--text-secondary); margin-top: 1px; }
-  .match-name { display: block; font-size: 0.72rem; color: var(--activity-text); margin-top: 2px; font-style: italic; }
-  .food-row .match-name { color: var(--food-text); }
-  .badge-col { width: 5.5rem; text-align: right; white-space: nowrap; }
-  .badge { display: inline-block; font-size: 0.65rem; font-weight: 600; padding: 2px 6px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.03em; }
-  .badge.activity { background: var(--activity-bg); color: var(--activity-text); border: 1px solid var(--activity-border); }
-  .badge.food { background: var(--food-bg); color: var(--food-text); border: 1px solid var(--food-border); }
-  .badge.schedule { background: var(--schedule-bg); color: var(--schedule-text); border: 1px solid var(--schedule-border); }
-  .activity-row { background: color-mix(in srgb, var(--activity-bg) 30%, transparent); }
-  .food-row { background: color-mix(in srgb, var(--food-bg) 30%, transparent); }
-  .schedule-row .item-title { color: var(--text-secondary); }
-  tr.highlight .item-title { font-weight: 600; }
-  tr.highlight .time-col { color: var(--highlight-accent); font-weight: 600; }
-  @media (max-width: 500px) {
-    .page-header h1 { font-size: 1.3rem; }
-    .stats-bar { gap: 1rem; }
-    .badge-col { width: 4.5rem; }
-    .time-col { width: 4.5rem; font-size: 0.75rem; }
-    .schedule-table td { padding: 0.4rem 0.5rem; }
-    .badge { font-size: 0.6rem; padding: 1px 4px; }
-    .day-header { padding: 0.5rem 0.75rem; }
-    .container { padding: 0.5rem; }
-  }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f172a; color: #f1f5f9; padding: 20px; padding-bottom: 80px; }
+.admin-nav { display: flex; gap: 8px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid #334155; flex-wrap: wrap; }
+.admin-nav a { color: #94a3b8; text-decoration: none; font-size: 0.85rem; padding: 5px 12px; border-radius: 6px; }
+.admin-nav a:hover { color: #f1f5f9; background: #1e293b; }
+.admin-nav a.active { color: #60a5fa; background: #1e3a5f; }
+h1 { font-size: 1.4rem; margin-bottom: 4px; }
+.subtitle { color: #94a3b8; font-size: 0.85rem; margin-bottom: 20px; }
+.stats { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+.stat { background: #1e293b; padding: 8px 14px; border-radius: 10px; font-size: 0.82rem; }
+.stat b { color: #60a5fa; }
+.stat b.green { color: #4ade80; }
+.stat b.amber { color: #fbbf24; }
+.stat b.red { color: #f87171; }
+.stat b.purple { color: #a78bfa; }
+
+.search-bar { margin-bottom: 20px; }
+.search-bar input { width: 100%; max-width: 400px; background: #1e293b; border: 1px solid #334155; border-radius: 8px; color: #f1f5f9; padding: 8px 14px; font-size: 0.85rem; }
+.search-bar input:focus { border-color: #60a5fa; outline: none; }
+.search-bar input::placeholder { color: #64748b; }
+
+.day-card { background: #1e293b; border-radius: 12px; margin-bottom: 16px; overflow: hidden; }
+.day-header { padding: 14px 16px; background: #243044; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.day-header:hover { background: #2d3a50; }
+.day-title { font-weight: 700; font-size: 0.95rem; }
+.day-meta { font-size: 0.75rem; color: #94a3b8; margin-top: 2px; }
+.day-badge { font-size: 0.7rem; background: #334155; color: #94a3b8; padding: 2px 10px; border-radius: 12px; white-space: nowrap; }
+.day-chevron { color: #64748b; transition: transform 0.2s; font-size: 0.75rem; }
+.day-chevron.open { transform: rotate(90deg); }
+
+.event-list { padding: 4px 0; }
+.event-row { display: flex; align-items: center; gap: 10px; padding: 10px 16px; border-top: 1px solid #1a2332; transition: background 0.1s; }
+.event-row:first-child { border-top: none; }
+.event-row:hover { background: #253245; }
+.event-row.hidden-item { opacity: 0.4; text-decoration: line-through; }
+
+.badge { font-size: 0.65rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.03em; white-space: nowrap; flex-shrink: 0; }
+.badge-activity { background: #1e3a5f; color: #60a5fa; }
+.badge-hike { background: #064e3b; color: #34d399; }
+.badge-waterfall { background: #164e63; color: #22d3ee; }
+.badge-custom { background: #2e1065; color: #a78bfa; }
+.badge-stay { background: #78350f; color: #fbbf24; }
+
+.event-name { flex: 1; font-size: 0.85rem; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.event-duration { font-size: 0.75rem; color: #64748b; white-space: nowrap; flex-shrink: 0; }
+.event-creator { font-size: 0.65rem; color: #94a3b8; background: #334155; padding: 1px 6px; border-radius: 4px; flex-shrink: 0; }
+
+.event-actions { display: flex; gap: 4px; flex-shrink: 0; }
+.btn-icon { background: none; border: 1px solid transparent; color: #64748b; cursor: pointer; padding: 4px 6px; border-radius: 4px; font-size: 0.75rem; transition: all 0.15s; }
+.btn-icon:hover { color: #f1f5f9; background: #334155; }
+.btn-icon.delete:hover { color: #f87171; background: #3f1515; }
+.btn-icon.restore:hover { color: #4ade80; background: #0a3520; }
+
+.edit-row { display: flex; align-items: center; gap: 8px; padding: 8px 16px; background: #0f172a; border-top: 1px solid #1a2332; }
+.edit-input { flex: 1; background: #1e293b; border: 1px solid #60a5fa; border-radius: 6px; color: #f1f5f9; padding: 6px 10px; font-size: 0.85rem; }
+.edit-input:focus { outline: none; border-color: #93c5fd; }
+.btn-save { padding: 5px 12px; border-radius: 6px; border: none; background: #166534; color: #4ade80; font-weight: 600; font-size: 0.78rem; cursor: pointer; }
+.btn-save:hover { background: #15803d; }
+.btn-cancel { padding: 5px 12px; border-radius: 6px; border: none; background: #334155; color: #94a3b8; font-weight: 600; font-size: 0.78rem; cursor: pointer; }
+.btn-cancel:hover { background: #475569; }
+
+.hidden-section { margin-top: 24px; }
+.hidden-section h2 { font-size: 1rem; color: #94a3b8; margin-bottom: 10px; }
+
+.toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); padding: 10px 20px; border-radius: 8px; font-size: 0.85rem; display: none; z-index: 100; }
+.toast.success { background: #166534; color: #fff; }
+.toast.error { background: #991b1b; color: #fff; }
+
+.loading { text-align: center; padding: 60px; color: #94a3b8; }
+.empty { text-align: center; padding: 40px; color: #64748b; font-style: italic; }
+
+.rename-indicator { font-size: 0.6rem; color: #fbbf24; margin-left: 4px; vertical-align: super; }
+
+@media (max-width: 640px) {
+  body { padding: 12px; padding-bottom: 80px; }
+  .event-row { flex-wrap: wrap; gap: 6px; padding: 10px 12px; }
+  .event-name { flex-basis: calc(100% - 80px); order: 1; }
+  .badge { order: 0; }
+  .event-duration { order: 2; }
+  .event-creator { order: 3; }
+  .event-actions { order: 4; margin-left: auto; }
+}
 </style>
 </head>
 <body>
-<div class="page-header">
-  <h1>Iceland Adventure Schedule</h1>
-  <div class="subtitle">Jul 11 &ndash; 22, 2026 &middot; Busselle Family</div>
-  <div class="stats-bar">
-    <div class="stat activity"><div class="stat-number">65</div><div class="stat-label">Activities</div></div>
-    <div class="stat food"><div class="stat-number">33</div><div class="stat-label">Meals</div></div>
-    <div class="stat schedule"><div class="stat-number">49</div><div class="stat-label">Schedule Only</div></div>
-    <div class="stat"><div class="stat-number">147</div><div class="stat-label">Total</div></div>
-  </div>
-</div>
-<div class="legend">
-  <div class="legend-item"><div class="legend-dot activity"></div>Activity &mdash; tappable in app</div>
-  <div class="legend-item"><div class="legend-dot food"></div>Meal &mdash; tappable in app</div>
-  <div class="legend-item"><div class="legend-dot schedule"></div>Schedule only &mdash; info only</div>
-</div>
-<div class="container">
-<div class="day-card" id="day--1">
-  <div class="day-header">
-    <div class="day-label">Day -1</div>
-    <div class="day-info">
-      <div class="day-title">Travel to Boston</div>
-      <div class="day-date">Sat Jul 11</div>
-    </div>
-    <div class="day-counter">2/3 events</div>
-  </div>
-  <table class="schedule-table">
-    <tbody>
-<tr class="schedule-row">
-  <td class="time-col">Morning</td>
-  <td class="title-col"><span class="item-title">Pack &amp; prep</span><span class="item-desc">Final packing for Iceland trip</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">Afternoon</td>
-  <td class="title-col"><span class="item-title">Flight SFO to Boston</span><span class="item-desc">Fly east to meet family</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">Evening</td>
-  <td class="title-col"><span class="item-title">World Cup with family</span><span class="item-desc">Watch quarterfinal matches together</span><span class="match-name">&#8594; World Cup matches with family</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-    </tbody>
-  </table>
+
+<nav class="admin-nav">
+  <a href="index.html">Dashboard</a>
+  <a href="admin.html">Photos</a>
+  <a href="schedule.html" class="active">Schedule</a>
+  <a href="hikes.html">Hikes</a>
+</nav>
+
+<h1>Schedule Admin</h1>
+<p class="subtitle">Rename or remove events. Custom events from the app appear automatically after sync.</p>
+
+<div class="stats" id="stats"></div>
+
+<div class="search-bar">
+  <input type="text" id="search" placeholder="Search events..." oninput="render()">
 </div>
 
-<div class="day-card" id="day-0">
-  <div class="day-header">
-    <div class="day-label">Day 0</div>
-    <div class="day-info">
-      <div class="day-title">Travel to Iceland</div>
-      <div class="day-date">Sun Jul 12</div>
-    </div>
-    <div class="day-counter">1/4 events</div>
-  </div>
-  <table class="schedule-table">
-    <tbody>
-<tr class="schedule-row">
-  <td class="time-col">Daytime</td>
-  <td class="title-col"><span class="item-title">Last day in Boston</span><span class="item-desc">Relax, final prep with family</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">5:00 PM</td>
-  <td class="title-col"><span class="item-title">Head to Logan Airport</span><span class="item-desc">Allow time for international check-in</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="schedule-row highlight">
-  <td class="time-col">7:00 PM</td>
-  <td class="title-col"><span class="item-title">Check in Icelandair FI632</span><span class="item-desc">International terminal, check bags</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">8:30 PM</td>
-  <td class="title-col"><span class="item-title">Fly Boston to Iceland</span><span class="item-desc">Overnight flight to Keflavík, ~5 hrs</span><span class="match-name">&#8594; Flight Boston to Reykjavík</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-    </tbody>
-  </table>
-</div>
+<div id="content"><div class="loading">Loading schedule...</div></div>
 
-<div class="day-card" id="day-1">
-  <div class="day-header">
-    <div class="day-label">Day 1</div>
-    <div class="day-info">
-      <div class="day-title">Arrival &amp; Reykjanes</div>
-      <div class="day-date">Mon Jul 13</div>
-    </div>
-    <div class="day-counter">11/17 events</div>
-  </div>
-  <table class="schedule-table">
-    <tbody>
-<tr class="schedule-row highlight">
-  <td class="time-col">8:10 AM</td>
-  <td class="title-col"><span class="item-title">Land Keflavík FI632</span><span class="item-desc">Arrive from Boston</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">8:30 AM</td>
-  <td class="title-col"><span class="item-title">Customs + shuttle</span><span class="item-desc">Clear customs, collect luggage</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">9:30 AM</td>
-  <td class="title-col"><span class="item-title">Pickup Land Cruiser</span><span class="item-desc">Rental pickup at Keflavík airport</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">10:00 AM</td>
-  <td class="title-col"><span class="item-title">Depart</span><span class="item-desc">Head onto Reykjanes Peninsula</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">10:15 AM</td>
-  <td class="title-col"><span class="item-title">Bridge Between Continents</span><span class="item-desc">Walk between tectonic plates</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">10:45 AM</td>
-  <td class="title-col"><span class="item-title">Reykjanesviti lighthouse</span><span class="item-desc">Iceland's oldest lighthouse on sea cliffs</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">11:30 AM</td>
-  <td class="title-col"><span class="item-title">Gunnuhver</span><span class="item-desc">Bubbling mud pots and steam vents</span><span class="match-name">&#8594; Gunnuhver geothermal</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">12:00 PM</td>
-  <td class="title-col"><span class="item-title">Brimketill</span><span class="item-desc">Natural lava pool on shoreline</span><span class="match-name">&#8594; Brimketill lava pool</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row food-row">
-  <td class="time-col">12:30 PM</td>
-  <td class="title-col"><span class="item-title">Lunch Grindavík</span><span class="item-desc">Lunch stop in fishing town</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">1:30 PM</td>
-  <td class="title-col"><span class="item-title">Krýsuvík / Seltún</span><span class="item-desc">Colorful sulfurous geothermal landscape</span><span class="match-name">&#8594; Krýsuvík / Seltún geothermal</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">2:30 PM</td>
-  <td class="title-col"><span class="item-title">Drive to Reykjavík</span><span class="item-desc">Head north to capital</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">3:30 PM</td>
-  <td class="title-col"><span class="item-title">Check in Galtafell</span><span class="item-desc">Drop bags, freshen up</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row food-row">
-  <td class="time-col">4:00 PM</td>
-  <td class="title-col"><span class="item-title">Sandholt bakery</span><span class="item-desc">Famous Reykjavík bakery</span><span class="match-name">&#8594; Sandholt Bakery</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">5:00 PM</td>
-  <td class="title-col"><span class="item-title">Drive to Blue Lagoon</span><span class="item-desc">Head back south to Grindavík area</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row food-row highlight">
-  <td class="time-col">5:30 PM</td>
-  <td class="title-col"><span class="item-title">LAVA Restaurant</span><span class="item-desc">Dinner at Blue Lagoon restaurant, reserved for 4</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">7:00 PM</td>
-  <td class="title-col"><span class="item-title">Blue Lagoon Premium</span><span class="item-desc">Geothermal spa — includes drink + masks</span><span class="match-name">&#8594; Blue Lagoon & LAVA Restaurant</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">9:00 PM</td>
-  <td class="title-col"><span class="item-title">Drive back</span><span class="item-desc">Return to Reykjavík</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-    </tbody>
-  </table>
-</div>
+<div id="hiddenSection"></div>
 
-<div class="day-card" id="day-2">
-  <div class="day-header">
-    <div class="day-label">Day 2</div>
-    <div class="day-info">
-      <div class="day-title">Golden Circle</div>
-      <div class="day-date">Tue Jul 14</div>
-    </div>
-    <div class="day-counter">8/12 events</div>
-  </div>
-  <table class="schedule-table">
-    <tbody>
-<tr class="event-row food-row">
-  <td class="time-col">7:00 AM</td>
-  <td class="title-col"><span class="item-title">Breakfast</span><span class="item-desc">Fuel up for a big day</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">7:45 AM</td>
-  <td class="title-col"><span class="item-title">Depart</span><span class="item-desc">Drive east toward Silfra</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="schedule-row highlight">
-  <td class="time-col">8:45 AM</td>
-  <td class="title-col"><span class="item-title">Arrive Silfra meeting point</span><span class="item-desc">Meet Adventure Vikings guides</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">9:00 AM</td>
-  <td class="title-col"><span class="item-title">Silfra snorkeling</span><span class="item-desc">Snorkel between tectonic plates</span><span class="match-name">&#8594; Silfra fissure snorkeling</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">11:00 AM</td>
-  <td class="title-col"><span class="item-title">Þingvellir National Park</span><span class="item-desc">UNESCO World Heritage — Almannagjá gorge</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row food-row">
-  <td class="time-col">1:00 PM</td>
-  <td class="title-col"><span class="item-title">Lunch</span><span class="item-desc">Eat near Þingvellir or en route to Geysir</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">1:30 PM</td>
-  <td class="title-col"><span class="item-title">Drive to Geysir</span><span class="item-desc">Continue east on Golden Circle</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">2:15 PM</td>
-  <td class="title-col"><span class="item-title">Geysir / Strokkur</span><span class="item-desc">Erupts every 6–10 min, 20–40 m high</span><span class="match-name">&#8594; Geysir & Strokkur</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">3:15 PM</td>
-  <td class="title-col"><span class="item-title">Gullfoss</span><span class="item-desc">Massive two-tier waterfall</span><span class="match-name">&#8594; Gullfoss waterfall</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">4:30 PM</td>
-  <td class="title-col"><span class="item-title">Kerið</span><span class="item-desc">Volcanic crater with aquamarine water</span><span class="match-name">&#8594; Kerið crater lake</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">5:00 PM</td>
-  <td class="title-col"><span class="item-title">Drive back</span><span class="item-desc">Return to Reykjavík</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">7:00 PM</td>
-  <td class="title-col"><span class="item-title">⚽ Semifinal 1</span><span class="item-desc">World Cup semifinal</span><span class="match-name">&#8594; World Cup Semifinal 1</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-    </tbody>
-  </table>
-</div>
+<div class="toast" id="toast"></div>
 
-<div class="day-card" id="day-3">
-  <div class="day-header">
-    <div class="day-label">Day 3</div>
-    <div class="day-info">
-      <div class="day-title">Waterfalls &amp; South Coast</div>
-      <div class="day-date">Wed Jul 15</div>
-    </div>
-    <div class="day-counter">10/11 events</div>
-  </div>
-  <table class="schedule-table">
-    <tbody>
-<tr class="event-row food-row">
-  <td class="time-col">8:00 AM</td>
-  <td class="title-col"><span class="item-title">Breakfast</span><span class="item-desc">Morning meal at Galtafell</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">9:00 AM</td>
-  <td class="title-col"><span class="item-title">Depart</span><span class="item-desc">Leave Reykjavík heading east</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">10:30 AM</td>
-  <td class="title-col"><span class="item-title">Hella town sign photo</span><span class="item-desc">Quick stop for photo op</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">11:30 AM</td>
-  <td class="title-col"><span class="item-title">Lava Centre (optional)</span><span class="item-desc">Interactive volcano museum in Hvolsvöllur</span><span class="match-name">&#8594; Lava Centre Hvolsvöllur</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">12:00 PM</td>
-  <td class="title-col"><span class="item-title">Gljúfrabúi</span><span class="item-desc">Hidden waterfall in slot canyon — light-sensitive!</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">12:45 PM</td>
-  <td class="title-col"><span class="item-title">Seljalandsfoss</span><span class="item-desc">Walk behind the 60 m waterfall</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row food-row">
-  <td class="time-col">2:00 PM</td>
-  <td class="title-col"><span class="item-title">Lunch</span><span class="item-desc">Eat near waterfalls area</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">2:30 PM</td>
-  <td class="title-col"><span class="item-title">Skógafoss</span><span class="item-desc">60 m curtain waterfall with 527 steps to top</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row food-row">
-  <td class="time-col">3:30 PM</td>
-  <td class="title-col"><span class="item-title">Drive to Vík + Bónus stop</span><span class="item-desc">Stock up on groceries en route</span><span class="match-name">&#8594; Bónus supermarket</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">5:00 PM</td>
-  <td class="title-col"><span class="item-title">Check in Vík</span><span class="item-desc">Settle in at Vik House</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">7:00 PM</td>
-  <td class="title-col"><span class="item-title">⚽ Semifinal 2</span><span class="item-desc">World Cup semifinal</span><span class="match-name">&#8594; World Cup Semifinal 2</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-    </tbody>
-  </table>
-</div>
+<script>
+var REPO = 'freecodecollective/iceland-bound';
+var TOKEN = atob(['Z2hwX3N1SERVT','TFLRkFCQk5Dcm9D','U1RtVjJEU3Z6U3V','NUDJKRlBzcQ=='].join(''));
+var API = 'https://api.github.com/repos/' + REPO;
 
-<div class="day-card" id="day-4">
-  <div class="day-header">
-    <div class="day-label">Day 4</div>
-    <div class="day-info">
-      <div class="day-title">Vík Explorer Day</div>
-      <div class="day-date">Thu Jul 16</div>
-    </div>
-    <div class="day-counter">10/13 events</div>
-  </div>
-  <table class="schedule-table">
-    <tbody>
-<tr class="event-row food-row">
-  <td class="time-col">7:30 AM</td>
-  <td class="title-col"><span class="item-title">Breakfast</span><span class="item-desc">Cook at Vík House</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">8:30 AM</td>
-  <td class="title-col"><span class="item-title">Drive to Þakgil</span><span class="item-desc">Head to trailhead</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">9:00 AM</td>
-  <td class="title-col"><span class="item-title">Þakgil–Mælifell hike</span><span class="item-desc">Summit views of Mýrdalsjökull and Katla</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">1:15 PM</td>
-  <td class="title-col"><span class="item-title">Drive back</span><span class="item-desc">Return toward Vík</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row food-row">
-  <td class="time-col">1:30 PM</td>
-  <td class="title-col"><span class="item-title">Lunch Vík</span><span class="item-desc">Refuel in town</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">2:30 PM</td>
-  <td class="title-col"><span class="item-title">Vík village + church</span><span class="item-desc">Explore Vík and Reyniskirkja</span><span class="match-name">&#8594; Reyniskirkja church</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">3:00 PM</td>
-  <td class="title-col"><span class="item-title">Víkurfjara</span><span class="item-desc">Black sand beach west of Vík</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">3:30 PM</td>
-  <td class="title-col"><span class="item-title">Reynisfjara</span><span class="item-desc">Black sand beach with basalt columns</span><span class="match-name">&#8594; Reynisfjara black sand beach</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">5:00 PM</td>
-  <td class="title-col"><span class="item-title">Dyrhólaey</span><span class="item-desc">Promontory with natural arch and puffins</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">6:00 PM</td>
-  <td class="title-col"><span class="item-title">Hjörleifshöfði / Yoda Cave</span><span class="item-desc">Sea cave that looks like Yoda</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row food-row">
-  <td class="time-col">6:30 PM</td>
-  <td class="title-col"><span class="item-title">Back to Vík</span><span class="item-desc">Return to town</span><span class="match-name">&#8594; Lunch Vík</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="event-row food-row">
-  <td class="time-col">7:00 PM</td>
-  <td class="title-col"><span class="item-title">Dinner</span><span class="item-desc">Evening meal in Vík</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">8:30 PM</td>
-  <td class="title-col"><span class="item-title">Dyrhólaey puffins</span><span class="item-desc">Evening puffin viewing — best light</span><span class="match-name">&#8594; Dyrhólaey</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-    </tbody>
-  </table>
-</div>
+var tripData = null;
+var adminData = { renames: {}, hidden: [] };
+var adminSha = null;
+var editingKey = null;
+var openDays = {};
+var saving = false;
 
-<div class="day-card" id="day-5">
-  <div class="day-header">
-    <div class="day-label">Day 5</div>
-    <div class="day-info">
-      <div class="day-title">Glaciers &amp; Icebergs</div>
-      <div class="day-date">Fri Jul 17</div>
-    </div>
-    <div class="day-counter">10/14 events</div>
-  </div>
-  <table class="schedule-table">
-    <tbody>
-<tr class="event-row food-row">
-  <td class="time-col">7:30 AM</td>
-  <td class="title-col"><span class="item-title">Breakfast</span><span class="item-desc">Check out of Vik House</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">8:00 AM</td>
-  <td class="title-col"><span class="item-title">Depart</span><span class="item-desc">Drive east along south coast</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">9:00 AM</td>
-  <td class="title-col"><span class="item-title">Fjaðrárgljúfur</span><span class="item-desc">100 m deep serpentine canyon</span><span class="match-name">&#8594; Fjaðrárgljúfur canyon</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row food-row">
-  <td class="time-col">12:30 PM</td>
-  <td class="title-col"><span class="item-title">Picnic lunch</span><span class="item-desc">Packed lunch at Skaftafell — no food in park</span><span class="match-name">&#8594; Pack picnic for Skaftafell</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">1:30 PM</td>
-  <td class="title-col"><span class="item-title">Drive Fjallsárlón</span><span class="item-desc">Continue east to glacier lagoon</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">2:00 PM</td>
-  <td class="title-col"><span class="item-title">Fjallsárlón tour</span><span class="item-desc">Glacier hike + zodiac boat among icebergs</span><span class="match-name">&#8594; Fjallsárlón Glacier Hike & Boat Tour</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">5:00 PM</td>
-  <td class="title-col"><span class="item-title">Tour ends</span><span class="item-desc">Head to Jökulsárlón</span><span class="match-name">&#8594; Fjallsárlón Glacier Hike & Boat Tour</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">5:15 PM</td>
-  <td class="title-col"><span class="item-title">Jökulsárlón</span><span class="item-desc">Glacier lagoon — icebergs and seals</span><span class="match-name">&#8594; Jökulsárlón glacier lagoon</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">6:00 PM</td>
-  <td class="title-col"><span class="item-title">Diamond Beach</span><span class="item-desc">Ice chunks on jet-black sand</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">6:30 PM</td>
-  <td class="title-col"><span class="item-title">Drive Höfn</span><span class="item-desc">Continue to Höfn for dinner</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row food-row highlight">
-  <td class="time-col">8:00 PM</td>
-  <td class="title-col"><span class="item-title">Dinner Pakkhús</span><span class="item-desc">Langoustine in Höfn harbor</span><span class="match-name">&#8594; Pakkhús</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">9:30 PM</td>
-  <td class="title-col"><span class="item-title">Check in Fosshotel</span><span class="item-desc">Settle in</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">10:00 PM</td>
-  <td class="title-col"><span class="item-title">Drive to Stokksnes</span><span class="item-desc">Evening photography mission</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">10:15 PM</td>
-  <td class="title-col"><span class="item-title">Vestrahorn shoot</span><span class="item-desc">Horn-shaped mountain on black sand</span><span class="match-name">&#8594; Vestrahorn / Stokksnes</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-    </tbody>
-  </table>
-</div>
+function headers() {
+  return { 'Authorization': 'Bearer ' + TOKEN, 'Accept': 'application/vnd.github+json' };
+}
 
-<div class="day-card" id="day-6">
-  <div class="day-header">
-    <div class="day-label">Day 6</div>
-    <div class="day-info">
-      <div class="day-title">Laki &amp; the Highlands</div>
-      <div class="day-date">Sat Jul 18</div>
-    </div>
-    <div class="day-counter">10/15 events</div>
-  </div>
-  <table class="schedule-table">
-    <tbody>
-<tr class="event-row food-row">
-  <td class="time-col">7:00 AM</td>
-  <td class="title-col"><span class="item-title">Quick breakfast</span><span class="item-desc">Grab-and-go from Fosshotel</span><span class="match-name">&#8594; Breakfast</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">7:30 AM</td>
-  <td class="title-col"><span class="item-title">Depart</span><span class="item-desc">Drive west from Höfn</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">8:00 AM</td>
-  <td class="title-col"><span class="item-title">Drive + stops</span><span class="item-desc">Lómagnúpur, Dverghamrar on Route 1</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">9:30 AM</td>
-  <td class="title-col"><span class="item-title">Drop bags Stracta</span><span class="item-desc">Leave luggage if possible</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row food-row">
-  <td class="time-col">10:00 AM</td>
-  <td class="title-col"><span class="item-title">N1 fuel + supplies</span><span class="item-desc">Last fuel before F-road</span><span class="match-name">&#8594; N1 Klaustur</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">10:30 AM</td>
-  <td class="title-col"><span class="item-title">Turn onto F206</span><span class="item-desc">Enter highland road</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">11:00 AM</td>
-  <td class="title-col"><span class="item-title">Fagrifoss</span><span class="item-desc">Dramatic waterfall en route to Laki</span><span class="match-name">&#8594; Fagrifoss waterfall</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">12:00 PM</td>
-  <td class="title-col"><span class="item-title">Arrive Lakagígar</span><span class="item-desc">Reach the crater row</span><span class="match-name">&#8594; Laki / Lakagígar craters</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">12:00 PM</td>
-  <td class="title-col"><span class="item-title">Laki summit + lunch</span><span class="item-desc">Climb to panoramic views, picnic at top</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">1:30 PM</td>
-  <td class="title-col"><span class="item-title">Tjarnargígur + lava walks</span><span class="item-desc">Crater with lake inside + lava field trails</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">3:00 PM</td>
-  <td class="title-col"><span class="item-title">Other craters</span><span class="item-desc">Explore additional crater row sites</span><span class="match-name">&#8594; Laki / Lakagígar craters</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">3:30 PM</td>
-  <td class="title-col"><span class="item-title">Drive back</span><span class="item-desc">Return on F206 to Ring Road</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row food-row">
-  <td class="time-col">5:30 PM</td>
-  <td class="title-col"><span class="item-title">Back Klaustur</span><span class="item-desc">Arrive in town</span><span class="match-name">&#8594; N1 Klaustur</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">6:00 PM</td>
-  <td class="title-col"><span class="item-title">Check in Stracta</span><span class="item-desc">Settle into apartments</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row food-row">
-  <td class="time-col">7:00 PM</td>
-  <td class="title-col"><span class="item-title">Dinner</span><span class="item-desc">Evening meal in Klaustur</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-    </tbody>
-  </table>
-</div>
+async function load() {
+  try {
+    var [tripRes, adminRes] = await Promise.all([
+      fetch(API + '/contents/data/trip-data.json?ref=main', { headers: headers() }),
+      fetch(API + '/contents/data/schedule-admin.json?ref=main', { headers: headers() })
+    ]);
 
-<div class="day-card" id="day-7">
-  <div class="day-header">
-    <div class="day-label">Day 7</div>
-    <div class="day-info">
-      <div class="day-title">Plane Wreck &amp; Secret Lagoon</div>
-      <div class="day-date">Sun Jul 19</div>
-    </div>
-    <div class="day-counter">8/13 events</div>
-  </div>
-  <table class="schedule-table">
-    <tbody>
-<tr class="event-row food-row">
-  <td class="time-col">9:00 AM</td>
-  <td class="title-col"><span class="item-title">Breakfast</span><span class="item-desc">Relaxed start at Stracta</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">11:00 AM</td>
-  <td class="title-col"><span class="item-title">Depart</span><span class="item-desc">Drive west toward Sólheimasandur</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">11:45 AM</td>
-  <td class="title-col"><span class="item-title">DC-3 plane wreck</span><span class="item-desc">Walk 4 km to crash site on black sand</span><span class="match-name">&#8594; DC-3 plane wreck Sólheimasandur</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row food-row">
-  <td class="time-col">12:30 PM</td>
-  <td class="title-col"><span class="item-title">Lunch Vík</span><span class="item-desc">Quick lunch in Vík</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">1:15 PM</td>
-  <td class="title-col"><span class="item-title">Drive Flúðir</span><span class="item-desc">Head north to Secret Lagoon</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">1:30 PM</td>
-  <td class="title-col"><span class="item-title">Secret Lagoon</span><span class="item-desc">Iceland's oldest natural geothermal pool</span><span class="match-name">&#8594; Secret Lagoon (Gamla Laugin)</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row food-row">
-  <td class="time-col">3:15 PM</td>
-  <td class="title-col"><span class="item-title">Drive Selfoss</span><span class="item-desc">Continue to accommodation</span><span class="match-name">&#8594; Bónus Selfoss</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="event-row food-row">
-  <td class="time-col">3:30 PM</td>
-  <td class="title-col"><span class="item-title">Bónus heavy stock</span><span class="item-desc">Major grocery run for coming days</span><span class="match-name">&#8594; Bónus Selfoss</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">4:30 PM</td>
-  <td class="title-col"><span class="item-title">Check in</span><span class="item-desc">Settle in at Heima Holiday Homes</span><span class="match-name">&#8594; Check in Heima</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">5:30 PM</td>
-  <td class="title-col"><span class="item-title">Pack + prep</span><span class="item-desc">Pack Landmannalaugar packs + make sandwiches</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">6:15 PM</td>
-  <td class="title-col"><span class="item-title">Head to bar</span><span class="item-desc">Find World Cup viewing spot</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">7:00 PM</td>
-  <td class="title-col"><span class="item-title">⚽ Final</span><span class="item-desc">World Cup Final!</span><span class="match-name">&#8594; World Cup Final</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">10:00 PM</td>
-  <td class="title-col"><span class="item-title">Back at cabin</span><span class="item-desc">Return from watching match</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-    </tbody>
-  </table>
-</div>
+    var tripJson = await tripRes.json();
+    tripData = JSON.parse(atob(tripJson.content.replace(/\n/g, '')));
 
-<div class="day-card" id="day-8">
-  <div class="day-header">
-    <div class="day-label">Day 8</div>
-    <div class="day-info">
-      <div class="day-title">Landmannalaugar</div>
-      <div class="day-date">Mon Jul 20</div>
-    </div>
-    <div class="day-counter">12/19 events</div>
-  </div>
-  <table class="schedule-table">
-    <tbody>
-<tr class="event-row food-row">
-  <td class="time-col">6:30 AM</td>
-  <td class="title-col"><span class="item-title">Breakfast</span><span class="item-desc">Grab-and-go — biggest day of the trip</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">7:30 AM</td>
-  <td class="title-col"><span class="item-title">Depart</span><span class="item-desc">Drive east toward highlands</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">8:30 AM</td>
-  <td class="title-col"><span class="item-title">Hella last gas</span><span class="item-desc">Fill tank — last fuel before highlands</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">9:15 AM</td>
-  <td class="title-col"><span class="item-title">Hekla viewpoint</span><span class="item-desc">Quick look at one of Iceland's most feared volcanoes</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">9:30 AM</td>
-  <td class="title-col"><span class="item-title">Turn onto F208</span><span class="item-desc">Enter highland road (Sigalda approach)</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">9:45 AM</td>
-  <td class="title-col"><span class="item-title">Arrive Landmannalaugar</span><span class="item-desc">Park and prepare for hike</span><span class="match-name">&#8594; Landmannalaugar hot spring</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">10:00 AM</td>
-  <td class="title-col"><span class="item-title">Start hike</span><span class="item-desc">Begin Brennisteinsalda + Bláhnúkur loop</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">12:00 PM</td>
-  <td class="title-col"><span class="item-title">Descend to saddle</span><span class="item-desc">Cross to Bláhnúkur</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row food-row highlight">
-  <td class="time-col">1:45 PM</td>
-  <td class="title-col"><span class="item-title">Bláhnúkur summit + lunch + Omnom</span><span class="item-desc">Picnic at the top with chocolate!</span><span class="match-name">&#8594; Pre-made sandwiches at Bláhnúkur summit + Omnom chocolate</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">2:15 PM</td>
-  <td class="title-col"><span class="item-title">Descend</span><span class="item-desc">Steep scree descent — go slow</span><span class="match-name">&#8594; Descend to saddle</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">3:00 PM</td>
-  <td class="title-col"><span class="item-title">Cross lava field</span><span class="item-desc">Return through lava formations</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">3:30 PM</td>
-  <td class="title-col"><span class="item-title">Back at parking</span><span class="item-desc">Regroup at trailhead</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">3:45 PM</td>
-  <td class="title-col"><span class="item-title">Hot spring soak</span><span class="item-desc">Natural geothermal pool — earned it!</span><span class="match-name">&#8594; Landmannalaugar hot spring</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">4:30 PM</td>
-  <td class="title-col"><span class="item-title">Change + snack</span><span class="item-desc">Dry off, refuel</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">4:45 PM</td>
-  <td class="title-col"><span class="item-title">Decision: Ljótipollur or home</span><span class="item-desc">Read the group's energy — 45 min add-on</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">5:30 PM</td>
-  <td class="title-col"><span class="item-title">Drive out</span><span class="item-desc">Leave highland area</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">6:45 PM</td>
-  <td class="title-col"><span class="item-title">Off F-road</span><span class="item-desc">Back to paved road</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row food-row">
-  <td class="time-col">7:30 PM</td>
-  <td class="title-col"><span class="item-title">Arrive Selfoss</span><span class="item-desc">Back at Heima</span><span class="match-name">&#8594; Grandkaffi Selfoss</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="event-row food-row">
-  <td class="time-col">8:30 PM</td>
-  <td class="title-col"><span class="item-title">Dinner Grandkaffi</span><span class="item-desc">Casual fast dinner</span><span class="match-name">&#8594; Grandkaffi Selfoss</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-    </tbody>
-  </table>
-</div>
+    if (adminRes.ok) {
+      var adminJson = await adminRes.json();
+      adminSha = adminJson.sha;
+      adminData = JSON.parse(atob(adminJson.content.replace(/\n/g, '')));
+      if (!adminData.renames) adminData.renames = {};
+      if (!adminData.hidden) adminData.hidden = [];
+    }
 
-<div class="day-card" id="day-9">
-  <div class="day-header">
-    <div class="day-label">Day 9</div>
-    <div class="day-info">
-      <div class="day-title">Snæfellsnes South</div>
-      <div class="day-date">Tue Jul 21</div>
-    </div>
-    <div class="day-counter">9/11 events</div>
-  </div>
-  <table class="schedule-table">
-    <tbody>
-<tr class="event-row food-row">
-  <td class="time-col">9:00 AM</td>
-  <td class="title-col"><span class="item-title">Breakfast</span><span class="item-desc">Easy morning after Landmannalaugar</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">11:00 AM</td>
-  <td class="title-col"><span class="item-title">Depart</span><span class="item-desc">Drive north and west</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row food-row">
-  <td class="time-col">12:30 PM</td>
-  <td class="title-col"><span class="item-title">Lunch Borgarnes</span><span class="item-desc">Recovery lunch in real town</span><span class="match-name">&#8594; Geirabakari Kaffihús Borgarnes</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">1:30 PM</td>
-  <td class="title-col"><span class="item-title">Continue west</span><span class="item-desc">Drive onto Snæfellsnes Peninsula</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">2:00 PM</td>
-  <td class="title-col"><span class="item-title">Gerðuberg</span><span class="item-desc">Hexagonal basalt column wall</span><span class="match-name">&#8594; Gerðuberg basalt columns</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">2:30 PM</td>
-  <td class="title-col"><span class="item-title">Ytri Tunga seals</span><span class="item-desc">Beach with harbor seal colony</span><span class="match-name">&#8594; Ytri Tunga seal beach</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">3:00 PM</td>
-  <td class="title-col"><span class="item-title">Búðakirkja</span><span class="item-desc">Jet-black church on lava field</span><span class="match-name">&#8594; Búðakirkja black church</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">3:30 PM</td>
-  <td class="title-col"><span class="item-title">Check in Arnarstapi</span><span class="item-desc">Settle into hotel</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">4:00 PM</td>
-  <td class="title-col"><span class="item-title">Arnarstapi cliff walk to Hellnar</span><span class="item-desc">Highlight — 2.5 km coastal trail</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row food-row">
-  <td class="time-col">6:30 PM</td>
-  <td class="title-col"><span class="item-title">Dinner</span><span class="item-desc">Evening meal</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">8:00 PM</td>
-  <td class="title-col"><span class="item-title">Optional sunset photography</span><span class="item-desc">Sunset ~10:30 PM in July</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-    </tbody>
-  </table>
-</div>
+    openDays = {};
+    tripData.itinerary.forEach(function(d) { openDays[d.id] = true; });
 
-<div class="day-card" id="day-10">
-  <div class="day-header">
-    <div class="day-label">Day 10</div>
-    <div class="day-info">
-      <div class="day-title">Snæfellsnes North &amp; Home</div>
-      <div class="day-date">Wed Jul 22</div>
-    </div>
-    <div class="day-counter">7/15 events</div>
-  </div>
-  <table class="schedule-table">
-    <tbody>
-<tr class="event-row food-row">
-  <td class="time-col">8:00 AM</td>
-  <td class="title-col"><span class="item-title">Breakfast</span><span class="item-desc">Morning meal at Arnarstapi</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">9:30 AM</td>
-  <td class="title-col"><span class="item-title">Drive to Vatnshellir</span><span class="item-desc">Short drive to lava cave</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">9:45 AM</td>
-  <td class="title-col"><span class="item-title">Vatnshellir lava cave</span><span class="item-desc">Guided tour into 8000-year-old lava tube</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row activity-row">
-  <td class="time-col">10:45 AM</td>
-  <td class="title-col"><span class="item-title">Djúpalónssandur</span><span class="item-desc">Black pebble beach with lifting stones</span><span class="match-name">&#8594; Djúpalónssandur black pebble beach</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">11:30 AM</td>
-  <td class="title-col"><span class="item-title">Drive to north side</span><span class="item-desc">Cross to Snæfellsnes north coast</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">12:00 PM</td>
-  <td class="title-col"><span class="item-title">Kirkjufell + Kirkjufellsfoss</span><span class="item-desc">Most photographed mountain in Iceland</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="event-row food-row">
-  <td class="time-col">1:00 PM</td>
-  <td class="title-col"><span class="item-title">Lunch Grundarfjörður</span><span class="item-desc">Last Icelandic meal!</span><span class="match-name">&#8594; Bjargarsteinn Mathús Grundarfjörður</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">2:00 PM</td>
-  <td class="title-col"><span class="item-title">Begin drive to Keflavík</span><span class="item-desc">Head south and east to airport</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row food-row">
-  <td class="time-col">3:30 PM</td>
-  <td class="title-col"><span class="item-title">Pass Borgarnes (gas)</span><span class="item-desc">Final fuel stop</span><span class="match-name">&#8594; Borgarnes gas stop</span></td>
-  <td class="badge-col"><span class="badge food">Food</span></td>
-</tr>
-<tr class="schedule-row highlight">
-  <td class="time-col">5:00 PM</td>
-  <td class="title-col"><span class="item-title">Return Land Cruiser</span><span class="item-desc">Drop off rental at Keflavík</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">5:15 PM</td>
-  <td class="title-col"><span class="item-title">Shuttle to terminal</span><span class="item-desc">Free shuttle from rental lot</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="schedule-row highlight">
-  <td class="time-col">5:55 PM</td>
-  <td class="title-col"><span class="item-title">Check-in / security</span><span class="item-desc">International departure</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">7:00 PM</td>
-  <td class="title-col"><span class="item-title">At gate</span><span class="item-desc">Ready for boarding</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-<tr class="event-row activity-row highlight">
-  <td class="time-col">7:55 PM</td>
-  <td class="title-col"><span class="item-title">FI633 wheels up</span><span class="item-desc">Depart Iceland for Boston</span></td>
-  <td class="badge-col"><span class="badge activity">Activity</span></td>
-</tr>
-<tr class="schedule-row">
-  <td class="time-col">9:45 PM</td>
-  <td class="title-col"><span class="item-title">Land Boston</span><span class="item-desc">Arrive home same day</span></td>
-  <td class="badge-col"><span class="badge schedule">Schedule Only</span></td>
-</tr>
-    </tbody>
-  </table>
-</div>
-</div>
+    render();
+  } catch (e) {
+    document.getElementById('content').innerHTML = '<div class="empty">Failed to load: ' + e.message + '</div>';
+  }
+}
+
+function getAllEvents() {
+  if (!tripData) return [];
+  var events = [];
+
+  tripData.itinerary.forEach(function(day) {
+    if (day.stayName) {
+      events.push({
+        key: 'd' + day.id + '-stay',
+        name: day.stayName,
+        type: 'stay',
+        dayId: day.id,
+        dayDate: day.date,
+        dayTitle: day.title,
+        duration: 'Accommodation',
+        isCustom: false
+      });
+    }
+
+    day.activities.forEach(function(a, i) {
+      var aType = 'activity';
+      if (a.isHike && a.isWaterfall) aType = 'hike';
+      else if (a.isHike) aType = 'hike';
+      else if (a.isWaterfall) aType = 'waterfall';
+
+      events.push({
+        key: 'd' + day.id + '-a' + i,
+        name: a.name,
+        type: aType,
+        dayId: day.id,
+        dayDate: day.date,
+        dayTitle: day.title,
+        duration: a.duration,
+        hikeKm: a.hikeDistanceKm,
+        isCustom: false
+      });
+    });
+  });
+
+  if (tripData.travelers) {
+    tripData.travelers.forEach(function(t) {
+      if (!t.customEvents) return;
+      t.customEvents.forEach(function(e) {
+        var cat = (e.activityCategory || '').toLowerCase();
+        var eType = 'custom';
+        if (cat === 'hiking') eType = 'hike';
+        else if (cat === 'waterfall') eType = 'waterfall';
+
+        var dayInfo = tripData.itinerary.find(function(d) { return d.id === e.dayID; });
+
+        events.push({
+          key: e.id || ('custom-' + e.name),
+          name: e.name,
+          type: eType,
+          dayId: e.dayID,
+          dayDate: dayInfo ? dayInfo.date : '',
+          dayTitle: dayInfo ? dayInfo.title : 'Day ' + e.dayID,
+          duration: '',
+          createdBy: e.createdBy || t.name,
+          notes: e.notes,
+          isCustom: true
+        });
+      });
+    });
+  }
+
+  return events;
+}
+
+function render() {
+  var events = getAllEvents();
+  var query = (document.getElementById('search').value || '').toLowerCase();
+
+  var visibleEvents = events.filter(function(e) {
+    return adminData.hidden.indexOf(e.key) === -1;
+  });
+  var hiddenEvents = events.filter(function(e) {
+    return adminData.hidden.indexOf(e.key) !== -1;
+  });
+
+  if (query) {
+    visibleEvents = visibleEvents.filter(function(e) {
+      var displayName = adminData.renames[e.key] || e.name;
+      return displayName.toLowerCase().indexOf(query) !== -1 ||
+             e.dayTitle.toLowerCase().indexOf(query) !== -1 ||
+             (e.type && e.type.toLowerCase().indexOf(query) !== -1);
+    });
+  }
+
+  var totalActs = events.filter(function(e) { return e.type === 'activity'; }).length;
+  var totalHikes = events.filter(function(e) { return e.type === 'hike'; }).length;
+  var totalWaterfalls = events.filter(function(e) { return e.type === 'waterfall'; }).length;
+  var totalCustom = events.filter(function(e) { return e.isCustom; }).length;
+  var totalHidden = hiddenEvents.length;
+  var totalRenamed = Object.keys(adminData.renames).length;
+
+  document.getElementById('stats').innerHTML =
+    '<div class="stat"><b>' + totalActs + '</b> activities</div>' +
+    '<div class="stat"><b class="green">' + totalHikes + '</b> hikes</div>' +
+    '<div class="stat"><b class="amber">' + totalWaterfalls + '</b> waterfalls</div>' +
+    '<div class="stat"><b class="purple">' + totalCustom + '</b> custom</div>' +
+    (totalRenamed ? '<div class="stat"><b class="amber">' + totalRenamed + '</b> renamed</div>' : '') +
+    (totalHidden ? '<div class="stat"><b class="red">' + totalHidden + '</b> hidden</div>' : '');
+
+  var byDay = {};
+  var dayOrder = [];
+  visibleEvents.forEach(function(e) {
+    if (!byDay[e.dayId]) {
+      byDay[e.dayId] = { id: e.dayId, date: e.dayDate, title: e.dayTitle, events: [] };
+      dayOrder.push(e.dayId);
+    }
+    byDay[e.dayId].events.push(e);
+  });
+
+  dayOrder.sort(function(a, b) { return a - b; });
+
+  if (dayOrder.length === 0) {
+    document.getElementById('content').innerHTML = '<div class="empty">No events match your search.</div>';
+  } else {
+    var html = '';
+    dayOrder.forEach(function(dayId) {
+      var day = byDay[dayId];
+      var isOpen = openDays[dayId] !== false;
+      var count = day.events.length;
+
+      html += '<div class="day-card">';
+      html += '<div class="day-header" onclick="toggleDay(' + dayId + ')">';
+      html += '<div>';
+      html += '<div class="day-title">' + escHtml(day.date) + ' — ' + escHtml(day.title) + '</div>';
+      html += '</div>';
+      html += '<div style="display:flex;align-items:center;gap:8px;">';
+      html += '<span class="day-badge">' + count + ' event' + (count !== 1 ? 's' : '') + '</span>';
+      html += '<span class="day-chevron' + (isOpen ? ' open' : '') + '">▶</span>';
+      html += '</div>';
+      html += '</div>';
+
+      if (isOpen) {
+        html += '<div class="event-list">';
+        day.events.forEach(function(e) {
+          if (editingKey === e.key) {
+            html += renderEditRow(e);
+          } else {
+            html += renderEventRow(e);
+          }
+        });
+        html += '</div>';
+      }
+      html += '</div>';
+    });
+    document.getElementById('content').innerHTML = html;
+  }
+
+  if (hiddenEvents.length > 0 && !query) {
+    var hHtml = '<div class="hidden-section">';
+    hHtml += '<h2>Hidden Events (' + hiddenEvents.length + ')</h2>';
+    hHtml += '<div class="day-card"><div class="event-list">';
+    hiddenEvents.forEach(function(e) {
+      var displayName = adminData.renames[e.key] || e.name;
+      hHtml += '<div class="event-row hidden-item">';
+      hHtml += '<span class="badge badge-' + e.type + '">' + typeLabel(e) + '</span>';
+      hHtml += '<span class="event-name">' + escHtml(displayName) + '</span>';
+      hHtml += '<span class="event-duration">' + escHtml(e.dayDate) + '</span>';
+      hHtml += '<div class="event-actions">';
+      hHtml += '<button class="btn-icon restore" onclick="restoreEvent(\'' + escAttr(e.key) + '\')" title="Restore">↩</button>';
+      hHtml += '</div>';
+      hHtml += '</div>';
+    });
+    hHtml += '</div></div></div>';
+    document.getElementById('hiddenSection').innerHTML = hHtml;
+  } else {
+    document.getElementById('hiddenSection').innerHTML = '';
+  }
+}
+
+function renderEventRow(e) {
+  var displayName = adminData.renames[e.key] || e.name;
+  var isRenamed = adminData.renames[e.key] !== undefined;
+  var html = '<div class="event-row">';
+  html += '<span class="badge badge-' + e.type + '">' + typeLabel(e) + '</span>';
+  html += '<span class="event-name">' + escHtml(displayName);
+  if (isRenamed) html += '<span class="rename-indicator" title="Original: ' + escAttr(e.name) + '">✎</span>';
+  html += '</span>';
+  if (e.duration) html += '<span class="event-duration">' + escHtml(e.duration) + '</span>';
+  if (e.createdBy) html += '<span class="event-creator">' + escHtml(e.createdBy) + '</span>';
+  html += '<div class="event-actions">';
+  html += '<button class="btn-icon" onclick="startEdit(\'' + escAttr(e.key) + '\')" title="Rename">✏️</button>';
+  html += '<button class="btn-icon delete" onclick="hideEvent(\'' + escAttr(e.key) + '\')" title="Remove">✕</button>';
+  html += '</div>';
+  html += '</div>';
+  return html;
+}
+
+function renderEditRow(e) {
+  var displayName = adminData.renames[e.key] || e.name;
+  var html = '<div class="edit-row">';
+  html += '<span class="badge badge-' + e.type + '">' + typeLabel(e) + '</span>';
+  html += '<input class="edit-input" id="edit-input" value="' + escAttr(displayName) + '" onkeydown="editKeydown(event, \'' + escAttr(e.key) + '\', \'' + escAttr(e.name) + '\')" autofocus>';
+  html += '<button class="btn-save" onclick="saveEdit(\'' + escAttr(e.key) + '\', \'' + escAttr(e.name) + '\')">Save</button>';
+  html += '<button class="btn-cancel" onclick="cancelEdit()">Cancel</button>';
+  html += '</div>';
+  return html;
+}
+
+function typeLabel(e) {
+  if (e.type === 'hike') return 'Hike';
+  if (e.type === 'waterfall') return 'Waterfall';
+  if (e.type === 'stay') return 'Stay';
+  if (e.isCustom) return 'Custom';
+  return 'Activity';
+}
+
+function toggleDay(dayId) {
+  openDays[dayId] = openDays[dayId] === false;
+  render();
+}
+
+function startEdit(key) {
+  editingKey = key;
+  render();
+  var input = document.getElementById('edit-input');
+  if (input) { input.focus(); input.select(); }
+}
+
+function cancelEdit() {
+  editingKey = null;
+  render();
+}
+
+function editKeydown(event, key, originalName) {
+  if (event.key === 'Enter') saveEdit(key, originalName);
+  if (event.key === 'Escape') cancelEdit();
+}
+
+async function saveEdit(key, originalName) {
+  var input = document.getElementById('edit-input');
+  if (!input) return;
+  var newName = input.value.trim();
+  if (!newName) return;
+
+  if (newName === originalName) {
+    delete adminData.renames[key];
+  } else {
+    adminData.renames[key] = newName;
+  }
+
+  editingKey = null;
+  render();
+  await saveAdminData();
+  showToast('Renamed');
+}
+
+async function hideEvent(key) {
+  if (adminData.hidden.indexOf(key) === -1) {
+    adminData.hidden.push(key);
+  }
+  render();
+  await saveAdminData();
+  showToast('Removed — use Hidden Events to restore');
+}
+
+async function restoreEvent(key) {
+  adminData.hidden = adminData.hidden.filter(function(k) { return k !== key; });
+  render();
+  await saveAdminData();
+  showToast('Restored');
+}
+
+async function saveAdminData() {
+  if (saving) return;
+  saving = true;
+  try {
+    var encoded = btoa(unescape(encodeURIComponent(JSON.stringify(adminData, null, 2))));
+    var body = { message: 'Admin: update schedule overrides', content: encoded, branch: 'main' };
+    if (adminSha) body.sha = adminSha;
+    var res = await fetch(API + '/contents/data/schedule-admin.json', {
+      method: 'PUT',
+      headers: Object.assign({ 'Content-Type': 'application/json' }, headers()),
+      body: JSON.stringify(body)
+    });
+    if (!res.ok) {
+      showToast('Save failed — try again', true);
+      return;
+    }
+    var json = await res.json();
+    if (json.content) adminSha = json.content.sha;
+  } catch (e) {
+    showToast('Save error: ' + e.message, true);
+  } finally {
+    saving = false;
+  }
+}
+
+function showToast(msg, isError) {
+  var t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'toast ' + (isError ? 'error' : 'success');
+  t.style.display = 'block';
+  setTimeout(function() { t.style.display = 'none'; }, 3000);
+}
+
+function escHtml(s) {
+  if (!s) return '';
+  var d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+function escAttr(s) {
+  if (!s) return '';
+  return s.replace(/&/g, '&amp;').replace(/'/g, '&#39;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+load();
+</script>
 </body>
 </html>
