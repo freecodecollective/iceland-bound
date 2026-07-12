@@ -338,6 +338,21 @@ body {
   width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
   border: 1.5px solid rgba(255,255,255,0.4);
 }
+.puffin-glow {
+  animation: puffin-pulse 2s ease-in-out infinite;
+  filter: drop-shadow(0 0 6px rgba(96,165,250,0.7));
+}
+@keyframes puffin-pulse {
+  0%, 100% { filter: drop-shadow(0 0 6px rgba(96,165,250,0.7)); }
+  50% { filter: drop-shadow(0 0 14px rgba(96,165,250,1)) drop-shadow(0 0 24px rgba(34,211,238,0.5)); }
+}
+.gps-track-line { stroke: var(--accent); }
+.map-legend-line {
+  width: 20px; height: 3px; border-radius: 2px; flex-shrink: 0;
+}
+.map-legend-puffin {
+  width: 16px; height: 16px; flex-shrink: 0;
+}
 .map-day-filter {
   display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 20px 0; padding: 10px 14px;
   background: var(--card); border-radius: var(--radius-sm); border: 1px solid var(--border);
@@ -992,6 +1007,9 @@ let tripMap = null;
 let mapInitialized = false;
 let mapMarkers = [];
 let activeMapDay = 'all';
+let gpsTrackLayer = null;
+let gpsDotsLayer = null;
+let puffinMarker = null;
 
 const TRIP_START = new Date('2026-07-11T00:00:00');
 const TRIP_END = new Date('2026-07-22T23:59:59');
@@ -1111,7 +1129,7 @@ function switchTab(tabId) {
 
   if (tabId === 'map') {
     if (!mapInitialized) {
-      setTimeout(initMap, 80);
+      setTimeout(function() { initMap(); renderGPSTrack(); }, 80);
       mapInitialized = true;
     } else if (tripMap) {
       tripMap.invalidateSize();
@@ -1261,6 +1279,8 @@ function addMapLegend(categories) {
     for (const [name, color] of Object.entries(categories)) {
       html += '<div class="map-legend-item"><span class="map-legend-dot" style="background:' + color + '"></span>' + name + '</div>';
     }
+    html += '<div class="map-legend-item"><span class="map-legend-line" style="background:linear-gradient(90deg,#60a5fa,#22d3ee);"></span> GPS Track</div>';
+    html += '<div class="map-legend-item"><img src="puffin.png" class="map-legend-puffin"> Current Position</div>';
     div.innerHTML = html;
     return div;
   };
@@ -1308,6 +1328,51 @@ function filterMapDay(dayId, btn) {
   } else if (dayId === 'all') {
     tripMap.setView([64.5, -19.0], 6);
   }
+}
+
+// ─── GPS TRACK ──────────────────────────────────────────────────
+function renderGPSTrack() {
+  if (!tripMap || !syncData || !syncData.travelers) return;
+
+  if (gpsTrackLayer) { tripMap.removeLayer(gpsTrackLayer); gpsTrackLayer = null; }
+  if (gpsDotsLayer) { tripMap.removeLayer(gpsDotsLayer); gpsDotsLayer = null; }
+  if (puffinMarker) { tripMap.removeLayer(puffinMarker); puffinMarker = null; }
+
+  var traveler = syncData.travelers.find(function(t) { return t.name === 'Chris' && t.gpsTrack && t.gpsTrack.length > 0; });
+  if (!traveler) {
+    traveler = syncData.travelers.find(function(t) { return t.gpsTrack && t.gpsTrack.length > 0; });
+  }
+  if (!traveler || !traveler.gpsTrack || traveler.gpsTrack.length === 0) return;
+
+  var points = traveler.gpsTrack.map(function(p) { return [p.lat, p.lng]; });
+
+  gpsTrackLayer = L.polyline(points, {
+    color: '#60a5fa', weight: 3, opacity: 0.7,
+    dashArray: '8, 6', lineCap: 'round', lineJoin: 'round'
+  }).addTo(tripMap);
+
+  gpsDotsLayer = L.layerGroup();
+  var dotInterval = Math.max(1, Math.floor(traveler.gpsTrack.length / 60));
+  for (var i = 0; i < traveler.gpsTrack.length; i += dotInterval) {
+    L.circleMarker([traveler.gpsTrack[i].lat, traveler.gpsTrack[i].lng], {
+      radius: 2.5, fillColor: '#60a5fa', color: '#60a5fa',
+      weight: 0, fillOpacity: 0.5
+    }).addTo(gpsDotsLayer);
+  }
+  gpsDotsLayer.addTo(tripMap);
+
+  var last = traveler.gpsTrack[traveler.gpsTrack.length - 1];
+  var puffinIcon = L.divIcon({
+    className: 'puffin-glow',
+    html: '<img src="puffin.png" style="width:36px;height:36px;">',
+    iconSize: [36, 36],
+    iconAnchor: [18, 18],
+    popupAnchor: [0, -20]
+  });
+  puffinMarker = L.marker([last.lat, last.lng], { icon: puffinIcon, zIndexOffset: 1000 }).addTo(tripMap);
+  var puffinTime = last.ts ? new Date(last.ts) : null;
+  var timeStr = puffinTime ? puffinTime.toLocaleString() : 'Unknown';
+  puffinMarker.bindPopup('<div style="text-align:center;font-family:var(--font);"><strong>' + traveler.name + '\'s Location</strong><br><span style="font-size:0.8em;color:#94a3b8;">Last update: ' + timeStr + '</span></div>', { maxWidth: 200 });
 }
 
 // ─── PHOTOS TAB ──────────────────────────────────────────────────
@@ -1715,7 +1780,7 @@ function render() {
   renderProgress();
   renderStats();
   renderDays();
-  // Re-render photos if tab is active
+  if (mapInitialized) renderGPSTrack();
   if (document.getElementById('panel-photos').classList.contains('active')) {
     renderPhotos();
   }
