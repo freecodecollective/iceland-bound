@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-12T23:45:43Z",
+  "lastUpdated" : "2026-07-12T23:47:01Z",
   "photos" : [
     {
       "activityName" : "World Cup with family",
@@ -622,7 +622,16 @@
       ],
       "colorHex" : "#3180A8",
       "customEvents" : [
-
+        {
+          "createdBy" : "Becah",
+          "dayID" : 2,
+          "id" : "72F18AEC-99EF-4D55-B498-448DE505E501",
+          "latitude" : 42.68065866666667,
+          "longitude" : -71.46312083333333,
+          "name" : "Efstidalur II Ice Cream",
+          "notes" : "",
+          "type" : "Food"
+        }
       ],
       "deletedEventIDs" : [
         "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
