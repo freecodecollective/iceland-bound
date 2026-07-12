@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Becah's Iceland Adventure</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <style>
 :root {
   --bg: #0f172a;
@@ -32,6 +33,7 @@
   --radius: 12px;
   --radius-sm: 8px;
   --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, Roboto, sans-serif;
+  --tile-style: dark_all;
 }
 
 @media (prefers-color-scheme: light) {
@@ -59,6 +61,7 @@
     --border2: #cbd5e1;
     --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
     --shadow2: 0 4px 12px rgba(0,0,0,0.08);
+    --tile-style: rastertiles/voyager;
   }
 }
 
@@ -90,6 +93,27 @@ body {
 .sync-status .dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
 .sync-status .dot.live { background: var(--green); }
 .sync-status .dot.stale { background: var(--orange); }
+
+/* Tab Bar */
+.tab-bar {
+  display: flex; gap: 0;
+  background: var(--card);
+  border-bottom: 2px solid var(--border);
+  position: sticky; top: 0; z-index: 100;
+}
+.tab-btn {
+  flex: 1; padding: 12px 8px; background: none; border: none;
+  border-bottom: 3px solid transparent; margin-bottom: -2px;
+  color: var(--text3); font-family: var(--font);
+  font-size: 0.82rem; font-weight: 600; cursor: pointer;
+  transition: all 0.2s; text-align: center;
+}
+.tab-btn:hover { color: var(--text2); background: var(--card-hover); }
+.tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* Tab Panels */
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
 
 /* Progress */
 .progress-section {
@@ -233,7 +257,7 @@ body {
 .notes-text { font-size: 0.82rem; color: var(--text2); font-style: italic; padding: 6px 10px; background: var(--card); border-radius: 6px; }
 .notes-empty { font-size: 0.78rem; color: var(--text3); font-style: italic; }
 
-/* Photos */
+/* Photos in itinerary */
 .photos-row { margin-top: 8px; }
 .photos-label { font-size: 0.75rem; color: var(--text3); font-weight: 600; margin-bottom: 4px; }
 .photos-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 6px; }
@@ -283,10 +307,127 @@ body {
 .custom-event .ce-name { font-weight: 600; flex: 1; }
 .custom-event .ce-notes { font-size: 0.75rem; color: var(--text2); }
 
+/* ─── MAP TAB ────────────────────────────────────────────────── */
+#mapContainer {
+  height: calc(100vh - 160px);
+  min-height: 400px;
+  border-radius: var(--radius);
+  margin: 16px 20px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.map-legend {
+  background: var(--card) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius-sm) !important;
+  padding: 10px 14px !important;
+  font-family: var(--font) !important;
+  color: var(--text) !important;
+  box-shadow: var(--shadow2) !important;
+}
+.map-legend-title {
+  font-weight: 700; font-size: 0.68rem; text-transform: uppercase;
+  letter-spacing: 0.5px; color: var(--text3); margin-bottom: 6px;
+  padding-bottom: 6px; border-bottom: 1px solid var(--border);
+}
+.map-legend-item {
+  display: flex; align-items: center; gap: 7px; padding: 3px 0;
+  font-size: 0.75rem; color: var(--text2);
+}
+.map-legend-dot {
+  width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+  border: 1.5px solid rgba(255,255,255,0.4);
+}
+.map-day-filter {
+  display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 20px 0; padding: 10px 14px;
+  background: var(--card); border-radius: var(--radius-sm); border: 1px solid var(--border);
+}
+.day-filter-btn {
+  padding: 4px 10px; border-radius: 8px; border: 1px solid var(--border);
+  background: var(--bg2); color: var(--text2); font-size: 0.72rem; font-weight: 600;
+  cursor: pointer; font-family: var(--font); transition: all 0.15s;
+}
+.day-filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+.day-filter-btn.active { background: var(--accent); color: white; border-color: var(--accent); }
+
+/* ─── PHOTOS TAB ─────────────────────────────────────────────── */
+.photos-tab-header {
+  padding: 20px 20px 0;
+  text-align: center;
+}
+.photos-tab-header h2 {
+  font-size: 1.2rem; font-weight: 700; margin-bottom: 4px;
+}
+.photos-tab-header .photo-count {
+  font-size: 0.82rem; color: var(--text2);
+}
+.photos-tab-empty {
+  text-align: center; padding: 80px 20px; color: var(--text3);
+}
+.photos-tab-empty .empty-icon { font-size: 3.5rem; margin-bottom: 16px; opacity: 0.6; }
+.photos-tab-empty h3 { color: var(--text2); font-size: 1.1rem; margin-bottom: 8px; }
+.photos-tab-empty p { font-size: 0.88rem; line-height: 1.6; max-width: 340px; margin: 0 auto; }
+
+.photos-day-section { margin-bottom: 8px; }
+.photos-day-header {
+  display: flex; align-items: center; gap: 10px; padding: 24px 20px 12px;
+}
+.photos-day-badge {
+  width: 34px; height: 34px; border-radius: 9px; background: var(--accent);
+  color: white; display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 0.82rem; flex-shrink: 0;
+}
+.photos-day-info .photos-day-title { font-weight: 600; font-size: 0.95rem; }
+.photos-day-info .photos-day-date { font-size: 0.78rem; color: var(--text2); }
+
+.photo-card {
+  background: var(--card); border-radius: var(--radius); margin: 0 20px 16px;
+  border: 1px solid var(--border); overflow: hidden; box-shadow: var(--shadow);
+}
+.photo-card-header {
+  padding: 12px 16px; display: flex; align-items: center; gap: 10px;
+}
+.photo-card-place-icon { font-size: 0.9rem; flex-shrink: 0; }
+.photo-card-place { font-weight: 600; font-size: 0.88rem; flex: 1; }
+.photo-card-traveler {
+  font-size: 0.72rem; color: var(--text3); background: var(--bg2);
+  padding: 2px 8px; border-radius: 10px; white-space: nowrap;
+}
+
+.photo-card-img {
+  width: 100%; max-height: 560px; object-fit: contain;
+  background: var(--bg2); cursor: pointer; display: block;
+}
+
+.photo-card-footer {
+  padding: 12px 16px; display: flex; align-items: center; gap: 14px;
+  border-top: 1px solid var(--border);
+}
+.photo-minimap {
+  position: relative; width: 160px; height: 100px; overflow: hidden;
+  border-radius: 8px; border: 1px solid var(--border); flex-shrink: 0;
+  background: var(--bg2);
+}
+.photo-minimap img { position: absolute; pointer-events: none; }
+.minimap-pin {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  width: 12px; height: 12px; background: #ef4444; border: 2px solid white;
+  border-radius: 50%; box-shadow: 0 1px 4px rgba(0,0,0,0.5); z-index: 2;
+}
+.minimap-pin::after {
+  content: ''; position: absolute; top: -4px; left: -4px;
+  width: 20px; height: 20px; border-radius: 50%;
+  background: rgba(239,68,68,0.2); z-index: -1;
+}
+.photo-card-meta { flex: 1; }
+.photo-card-meta .meta-line { font-size: 0.8rem; color: var(--text2); margin-bottom: 4px; }
+.photo-card-meta a { font-size: 0.75rem; color: var(--accent); text-decoration: none; }
+.photo-card-meta a:hover { text-decoration: underline; }
+
 /* Photo lightbox */
 .lightbox {
   display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-  background: rgba(0,0,0,0.9); z-index: 1000; justify-content: center; align-items: center;
+  background: rgba(0,0,0,0.92); z-index: 1000; justify-content: center; align-items: center;
   cursor: pointer;
 }
 .lightbox.open { display: flex; }
@@ -296,12 +437,19 @@ body {
 @media (max-width: 600px) {
   .header h1 { font-size: 1.3rem; }
   .header { padding: 24px 16px 20px; }
+  .tab-btn { font-size: 0.76rem; padding: 10px 4px; }
   .days-container, .stats { padding-left: 12px; padding-right: 12px; }
   .progress-section { margin-left: 12px; margin-right: 12px; }
   .day-header { padding: 12px 14px; }
   .day-body { padding: 0 14px 14px; }
   .act-name { font-size: 0.85rem; }
   .stats { margin-left: 12px; margin-right: 12px; }
+  #mapContainer { margin: 12px; height: calc(100vh - 150px); }
+  .map-day-filter { margin: 8px 12px 0; gap: 4px; padding: 8px 10px; }
+  .photo-card { margin: 0 12px 12px; }
+  .photos-day-header { padding: 20px 12px 10px; }
+  .photo-card-footer { flex-direction: column; align-items: flex-start; }
+  .photo-minimap { width: 100%; height: 120px; }
 }
 
 /* Scroll animation */
@@ -317,6 +465,8 @@ body {
 .day-card:nth-child(9) { animation-delay: 0.45s; }
 .day-card:nth-child(10) { animation-delay: 0.5s; }
 @keyframes slideIn { to { opacity: 1; transform: translateY(0); } }
+
+.photo-card { opacity: 0; transform: translateY(10px); animation: slideIn 0.4s ease forwards; }
 </style>
 </head>
 <body>
@@ -330,15 +480,33 @@ body {
     </div>
   </div>
 
-  <div class="progress-section" id="progressSection"></div>
-  <div class="stats" id="statsRow"></div>
-  <div class="days-container" id="daysContainer"></div>
+  <div class="tab-bar">
+    <button class="tab-btn active" data-tab="itinerary" onclick="switchTab('itinerary')">&#128203; Itinerary</button>
+    <button class="tab-btn" data-tab="map" onclick="switchTab('map')">&#128506; Map</button>
+    <button class="tab-btn" data-tab="photos" onclick="switchTab('photos')">&#128248; Photos</button>
+  </div>
+
+  <div class="tab-panel active" id="panel-itinerary">
+    <div class="progress-section" id="progressSection"></div>
+    <div class="stats" id="statsRow"></div>
+    <div class="days-container" id="daysContainer"></div>
+  </div>
+
+  <div class="tab-panel" id="panel-map">
+    <div class="map-day-filter" id="mapDayFilter"></div>
+    <div id="mapContainer"></div>
+  </div>
+
+  <div class="tab-panel" id="panel-photos">
+    <div id="photosContainer"></div>
+  </div>
 </div>
 
 <div class="lightbox" id="lightbox" onclick="closeLightbox()">
   <img id="lightboxImg" src="" alt="Photo">
 </div>
 
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 // ─── STATIC TRIP DATA ───────────────────────────────────────────
 const TRIP_DATA = [
@@ -684,7 +852,7 @@ const TRIP_DATA = [
         safety: null, lat: 64.7671, lng: -23.6307 }
     ],
     food: [
-      { name: "Geirabakari Kaffihús Borgarnes", desc: "Bakery — recovery lunch after Landmannalaugar", gf: false, lat: 64.5399, lng: -21.9071 },
+      { name: "Geirabakari Kaffiúhús Borgarnes", desc: "Bakery — recovery lunch after Landmannalaugar", gf: false, lat: 64.5399, lng: -21.9071 },
       { name: "Settlement Center café Borgarnes", desc: "Alternative lunch option", gf: false, lat: 64.5357, lng: -21.9232 },
       { name: "Fjöruhúsið café Hellnar", desc: "Famous fish soup at end of cliff walk", gf: true, lat: 64.7517, lng: -23.6454 },
       { name: "Arnarstapi Hotel restaurant", desc: "Dinner at hotel", gf: false, lat: 64.7691, lng: -23.6259 }
@@ -725,6 +893,10 @@ const TRIP_DATA = [
 // ─── STATE ────────────────────────────────────────────────────────
 let syncData = null;
 let lastFetchTime = null;
+let tripMap = null;
+let mapInitialized = false;
+let mapMarkers = [];
+let activeMapDay = 'all';
 
 const TRIP_START = new Date('2026-07-13T00:00:00');
 const TRIP_END = new Date('2026-07-22T23:59:59');
@@ -736,8 +908,7 @@ function getCurrentDayNum() {
   const now = new Date();
   if (now < TRIP_START) return 0;
   if (now > TRIP_END) return 11;
-  const diff = now - TRIP_START;
-  return Math.floor(diff / (1000 * 60 * 60 * 24)) + 1;
+  return Math.floor((now - TRIP_START) / (1000 * 60 * 60 * 24)) + 1;
 }
 
 function getDayStatus(dayId) {
@@ -780,10 +951,8 @@ function renderRatingNotesPhotos(key) {
   const ratings = getTravelerData(key, 'ratings');
   const notes = getTravelerData(key, 'notes');
   const photos = getPhotos(key);
-
   let html = '';
 
-  // Ratings
   if (ratings.length > 0) {
     for (const r of ratings) {
       html += `<div class="rating-row">
@@ -796,7 +965,6 @@ function renderRatingNotesPhotos(key) {
       <span class="stars">${renderStars(0)}</span></div>`;
   }
 
-  // Notes
   if (notes.length > 0) {
     html += '<div class="notes-row">';
     for (const n of notes) {
@@ -808,7 +976,6 @@ function renderRatingNotesPhotos(key) {
     html += '<div class="notes-row"><span class="notes-empty">No notes yet</span></div>';
   }
 
-  // Photos
   html += '<div class="photos-row"><div class="photos-label">Photos</div>';
   if (photos.length > 0) {
     html += '<div class="photos-grid">';
@@ -821,7 +988,6 @@ function renderRatingNotesPhotos(key) {
     html += '<span class="photos-empty">No photos yet</span>';
   }
   html += '</div>';
-
   return html;
 }
 
@@ -832,12 +998,316 @@ function escHtml(s) {
 
 // ─── LIGHTBOX ─────────────────────────────────────────────────────
 function openLightbox(url) {
-  event.stopPropagation();
+  if (event) event.stopPropagation();
   document.getElementById('lightboxImg').src = url;
   document.getElementById('lightbox').classList.add('open');
 }
 function closeLightbox() {
   document.getElementById('lightbox').classList.remove('open');
+}
+
+// ─── TAB SWITCHING ────────────────────────────────────────────────
+function switchTab(tabId) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector(`[data-tab="${tabId}"]`).classList.add('active');
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById(`panel-${tabId}`).classList.add('active');
+
+  if (tabId === 'map') {
+    if (!mapInitialized) {
+      setTimeout(initMap, 80);
+      mapInitialized = true;
+    } else if (tripMap) {
+      tripMap.invalidateSize();
+    }
+  }
+  if (tabId === 'photos') {
+    renderPhotos();
+  }
+}
+
+// ─── ACTIVITY CATEGORIZATION (Northern Lights palette) ────────────
+function getActivityCategory(act) {
+  const name = act.name.toLowerCase();
+  const brief = (act.brief || '').toLowerCase();
+  const text = name + ' ' + brief;
+
+  if (text.includes('snorkel') || text.includes('silfra')) return { cat: 'Snorkeling', color: '#5EEAD4' };
+  if (text.includes('whale')) return { cat: 'Whale Watching', color: '#6366F1' };
+  if (text.includes('puffin')) return { cat: 'Puffin', color: '#FBBF24' };
+  if (text.includes('horse')) return { cat: 'Horseback', color: '#FCD34D' };
+  if (name.includes('foss') || text.includes('waterfall')) return { cat: 'Waterfall', color: '#22D3EE' };
+  if (act.hikeKm || text.includes('hike') || text.includes('cliff walk') || text.includes('loop')) return { cat: 'Hiking', color: '#4ADE80' };
+  if (text.includes('geothermal') || text.includes('hot spring') || text.includes('geyser') || text.includes('strokkur') || text.includes('lagoon') || text.includes('laugin') || text.includes('blue lagoon') || text.includes('secret lagoon')) return { cat: 'Geothermal', color: '#F43F5E' };
+  if (text.includes('glacier') || text.includes('iceberg') || text.includes('jökul') || text.includes('diamond beach')) return { cat: 'Glacier / Ice', color: '#7DD3FC' };
+  if (text.includes('cave') || text.includes('hellir') || text.includes('lava tube') || text.includes('yoda')) return { cat: 'Cave', color: '#E879F9' };
+  if (text.includes('museum') || text.includes('centre') || text.includes('center')) return { cat: 'Museum', color: '#C084FC' };
+  if (text.includes('beach') || text.includes('sand')) return { cat: 'Beach', color: '#38BDF8' };
+  if (text.includes('viewpoint') || text.includes('church') || text.includes('kirkja') || text.includes('lighthouse') || text.includes('column') || text.includes('crater') || text.includes('canyon') || text.includes('view')) return { cat: 'Viewpoint', color: '#2DD4BF' };
+  return { cat: 'Activity', color: '#FB7185' };
+}
+
+// ─── MAP INITIALIZATION ──────────────────────────────────────────
+function initMap() {
+  const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const tileUrl = isDark
+    ? 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
+    : 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
+
+  tripMap = L.map('mapContainer', { zoomControl: true }).setView([64.5, -19.0], 6);
+  L.tileLayer(tileUrl, {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OSM</a> © <a href="https://carto.com/">CARTO</a>',
+    maxZoom: 18, subdomains: 'abcd'
+  }).addTo(tripMap);
+
+  const categories = {};
+
+  for (const day of TRIP_DATA) {
+    day.activities.forEach(function(act, idx) {
+      if (!act.lat || !act.lng) return;
+      const cat = getActivityCategory(act);
+      if (!categories[cat.cat]) categories[cat.cat] = cat.color;
+
+      const marker = L.circleMarker([act.lat, act.lng], {
+        radius: 7, fillColor: cat.color, color: '#fff',
+        weight: 2, fillOpacity: 0.9
+      }).bindPopup(
+        '<div style="font-family:system-ui,sans-serif;min-width:180px;">' +
+        '<div style="font-weight:700;font-size:0.9rem;margin-bottom:4px;">' + escHtml(act.name) + '</div>' +
+        '<div style="font-size:0.78rem;color:#888;margin-bottom:6px;">Day ' + day.id + ': ' + escHtml(day.title) + '</div>' +
+        '<div style="font-size:0.82rem;margin-bottom:8px;">' + escHtml(act.brief) + '</div>' +
+        (act.duration ? '<div style="font-size:0.75rem;color:#aaa;">⏱ ' + escHtml(act.duration) + '</div>' : '') +
+        '<a href="' + mapsUrl(act.lat, act.lng) + '" target="_blank" rel="noopener" style="font-size:0.75rem;">Open in Google Maps →</a>' +
+        '</div>'
+      );
+      marker._dayId = day.id;
+      marker._type = 'activity';
+      marker.addTo(tripMap);
+      mapMarkers.push(marker);
+    });
+
+    day.food.forEach(function(f, idx) {
+      if (!f.lat || !f.lng) return;
+      if (!categories['Food']) categories['Food'] = '#A3E635';
+      const marker = L.circleMarker([f.lat, f.lng], {
+        radius: 5, fillColor: '#A3E635', color: '#fff',
+        weight: 1.5, fillOpacity: 0.8
+      }).bindPopup(
+        '<div style="font-family:system-ui,sans-serif;">' +
+        '<div style="font-weight:700;font-size:0.85rem;">🍴 ' + escHtml(f.name) + '</div>' +
+        '<div style="font-size:0.78rem;color:#888;">Day ' + day.id + ': ' + escHtml(day.title) + '</div>' +
+        '<div style="font-size:0.82rem;margin-top:4px;">' + escHtml(f.desc) + '</div></div>'
+      );
+      marker._dayId = day.id;
+      marker._type = 'food';
+      marker.addTo(tripMap);
+      mapMarkers.push(marker);
+    });
+
+    if (day.stay && day.stay.lat) {
+      if (!categories['Accommodation']) categories['Accommodation'] = '#818CF8';
+      const marker = L.circleMarker([day.stay.lat, day.stay.lng], {
+        radius: 8, fillColor: '#818CF8', color: '#fff',
+        weight: 2.5, fillOpacity: 0.9
+      }).bindPopup(
+        '<div style="font-family:system-ui,sans-serif;">' +
+        '<div style="font-weight:700;font-size:0.85rem;">🏨 ' + escHtml(day.stay.name) + '</div>' +
+        '<div style="font-size:0.78rem;color:#888;">Day ' + day.id + ': ' + escHtml(day.title) + '</div>' +
+        '<div style="font-size:0.82rem;margin-top:4px;">' + escHtml(day.stay.address) + '</div></div>'
+      );
+      marker._dayId = day.id;
+      marker._type = 'stay';
+      marker.addTo(tripMap);
+      mapMarkers.push(marker);
+    }
+  }
+
+  addMapLegend(categories);
+  renderMapDayFilter();
+}
+
+function addMapLegend(categories) {
+  const legend = L.control({ position: 'bottomright' });
+  legend.onAdd = function() {
+    const div = L.DomUtil.create('div', 'map-legend');
+    let html = '<div class="map-legend-title">Legend</div>';
+    for (const [name, color] of Object.entries(categories)) {
+      html += '<div class="map-legend-item"><span class="map-legend-dot" style="background:' + color + '"></span>' + name + '</div>';
+    }
+    div.innerHTML = html;
+    return div;
+  };
+  legend.addTo(tripMap);
+}
+
+function renderMapDayFilter() {
+  const container = document.getElementById('mapDayFilter');
+  let html = '<button class="day-filter-btn active" onclick="filterMapDay(\'all\', this)">All Days</button>';
+  for (const day of TRIP_DATA) {
+    html += '<button class="day-filter-btn" onclick="filterMapDay(' + day.id + ', this)">Day ' + day.id + '</button>';
+  }
+  container.innerHTML = html;
+}
+
+function filterMapDay(dayId, btn) {
+  activeMapDay = dayId;
+  document.querySelectorAll('.day-filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  const bounds = [];
+  for (const marker of mapMarkers) {
+    if (dayId === 'all' || marker._dayId === dayId) {
+      marker.setStyle({ opacity: 1, fillOpacity: 0.9 });
+      marker.setRadius(marker._type === 'stay' ? 8 : marker._type === 'food' ? 5 : 7);
+      bounds.push(marker.getLatLng());
+    } else {
+      marker.setStyle({ opacity: 0.15, fillOpacity: 0.1 });
+      marker.setRadius(3);
+    }
+  }
+
+  if (dayId !== 'all' && bounds.length > 0) {
+    if (bounds.length === 1) {
+      tripMap.setView(bounds[0], 11);
+    } else {
+      tripMap.fitBounds(L.latLngBounds(bounds), { padding: [40, 40], maxZoom: 12 });
+    }
+  } else if (dayId === 'all') {
+    tripMap.setView([64.5, -19.0], 6);
+  }
+}
+
+// ─── PHOTOS TAB ──────────────────────────────────────────────────
+function renderPhotos() {
+  const container = document.getElementById('photosContainer');
+
+  if (!syncData || !syncData.photos || syncData.photos.length === 0) {
+    container.innerHTML =
+      '<div class="photos-tab-empty">' +
+      '<div class="empty-icon">&#128248;</div>' +
+      '<h3>No photos yet</h3>' +
+      '<p>Photos will appear here as the trip unfolds! They sync from the app day by day.</p>' +
+      '</div>';
+    return;
+  }
+
+  const photosByDay = {};
+  for (const photo of syncData.photos) {
+    const parsed = parsePhotoKey(photo.key);
+    if (!parsed) continue;
+    const dayId = parsed.day.id;
+    if (!photosByDay[dayId]) photosByDay[dayId] = [];
+    photosByDay[dayId].push({ photo: photo, parsed: parsed });
+  }
+
+  let totalPhotos = syncData.photos.length;
+  let html = '<div class="photos-tab-header"><h2>Trip Photos</h2>' +
+    '<div class="photo-count">' + totalPhotos + ' photo' + (totalPhotos !== 1 ? 's' : '') + ' captured</div></div>';
+
+  for (const day of TRIP_DATA) {
+    const dayPhotos = photosByDay[day.id];
+    if (!dayPhotos || dayPhotos.length === 0) continue;
+
+    html += '<div class="photos-day-section">' +
+      '<div class="photos-day-header">' +
+      '<div class="photos-day-badge">' + day.id + '</div>' +
+      '<div class="photos-day-info"><div class="photos-day-title">' + escHtml(day.title) + '</div>' +
+      '<div class="photos-day-date">' + escHtml(day.date) + ' &bull; ' + dayPhotos.length + ' photo' + (dayPhotos.length !== 1 ? 's' : '') + '</div></div></div>';
+
+    for (let i = 0; i < dayPhotos.length; i++) {
+      const item = dayPhotos[i];
+      const p = item.parsed;
+      const photo = item.photo;
+      let placeName = photo.activityName || '';
+      let lat = null, lng = null;
+
+      if (p.type === 'activity' && p.activity) {
+        placeName = placeName || p.activity.name;
+        lat = p.activity.lat; lng = p.activity.lng;
+      } else if (p.type === 'food' && p.food) {
+        placeName = placeName || p.food.name;
+        lat = p.food.lat; lng = p.food.lng;
+      } else if (p.type === 'stay' && p.stay) {
+        placeName = placeName || p.stay.name;
+        lat = p.stay.lat; lng = p.stay.lng;
+      }
+
+      const photoUrl = PHOTO_BASE + encodeURIComponent(photo.filename);
+      const traveler = findTravelerForPhoto(photo);
+
+      html += '<div class="photo-card" style="animation-delay:' + (i * 0.08) + 's">' +
+        '<div class="photo-card-header">' +
+        '<span class="photo-card-place-icon">&#128205;</span>' +
+        '<span class="photo-card-place">' + escHtml(placeName) + '</span>' +
+        (traveler ? '<span class="photo-card-traveler">&#128248; ' + escHtml(traveler) + '</span>' : '') +
+        '</div>' +
+        '<img class="photo-card-img" src="' + photoUrl + '" alt="' + escHtml(placeName) + '" onclick="openLightbox(\'' + photoUrl + '\')" loading="lazy">' +
+        '<div class="photo-card-footer">' +
+        miniMapHtml(lat, lng) +
+        '<div class="photo-card-meta">' +
+        '<div class="meta-line">Day ' + day.id + ': ' + escHtml(day.title) + '</div>' +
+        (lat ? '<a href="' + mapsUrl(lat, lng) + '" target="_blank" rel="noopener">View on Google Maps &rarr;</a>' : '') +
+        '</div></div></div>';
+    }
+    html += '</div>';
+  }
+
+  container.innerHTML = html;
+}
+
+function parsePhotoKey(key) {
+  const m = key.match(/^d(\d+)-(a(\d+)|f(\d+)|stay)$/);
+  if (!m) return null;
+  const dayId = parseInt(m[1]);
+  const day = TRIP_DATA.find(function(d) { return d.id === dayId; });
+  if (!day) return null;
+  if (m[3] !== undefined) return { day: day, activity: day.activities[parseInt(m[3])], type: 'activity' };
+  if (m[4] !== undefined) return { day: day, food: day.food[parseInt(m[4])], type: 'food' };
+  return { day: day, stay: day.stay, type: 'stay' };
+}
+
+function findTravelerForPhoto(photo) {
+  if (!syncData || !syncData.travelers) return null;
+  if (photo.travelerID) {
+    var t = syncData.travelers.find(function(tr) { return tr.id === photo.travelerID; });
+    return t ? t.name : null;
+  }
+  return null;
+}
+
+function miniMapHtml(lat, lng) {
+  if (!lat || !lng) return '';
+  var z = 9;
+  var n = Math.pow(2, z);
+  var latRad = lat * Math.PI / 180;
+
+  var fx = (lng + 180) / 360 * n;
+  var fy = (1 - Math.log(Math.tan(latRad) + 1 / Math.cos(latRad)) / Math.PI) / 2 * n;
+
+  var tx = Math.floor(fx);
+  var ty = Math.floor(fy);
+  var px = (fx - tx) * 256;
+  var py = (fy - ty) * 256;
+
+  var sx = px < 128 ? tx - 1 : tx;
+  var sy = py < 128 ? ty - 1 : ty;
+
+  var gpx = (fx - sx) * 256;
+  var gpy = (fy - sy) * 256;
+
+  var isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  var style = isDark ? 'dark_all' : 'rastertiles/voyager';
+
+  var tiles = '';
+  for (var dy = 0; dy < 2; dy++) {
+    for (var dx = 0; dx < 2; dx++) {
+      var l = Math.round(80 - gpx + dx * 256);
+      var t = Math.round(50 - gpy + dy * 256);
+      tiles += '<img src="https://a.basemaps.cartocdn.com/' + style + '/' + z + '/' + (sx+dx) + '/' + (sy+dy) + '.png" style="position:absolute;left:' + l + 'px;top:' + t + 'px;width:256px;height:256px;" loading="lazy" alt="">';
+    }
+  }
+
+  return '<div class="photo-minimap">' + tiles + '<div class="minimap-pin"></div></div>';
 }
 
 // ─── RENDER PROGRESS ──────────────────────────────────────────────
@@ -846,22 +1316,16 @@ function renderProgress() {
   let pct, label;
   if (current <= 0) { pct = 0; label = 'Trip starts Jul 13'; }
   else if (current > 10) { pct = 100; label = 'Trip complete!'; }
-  else { pct = ((current - 1) / 10) * 100 + (10); label = `Day ${current} of 10`; }
+  else { pct = ((current - 1) / 10) * 100 + 10; label = 'Day ' + current + ' of 10'; }
 
-  document.getElementById('progressSection').innerHTML = `
-    <div class="progress-label">
-      <span>${label}</span>
-      <span>${Math.round(pct)}%</span>
-    </div>
-    <div class="progress-track">
-      <div class="progress-fill" style="width:${pct}%"></div>
-    </div>`;
+  document.getElementById('progressSection').innerHTML =
+    '<div class="progress-label"><span>' + label + '</span><span>' + Math.round(pct) + '%</span></div>' +
+    '<div class="progress-track"><div class="progress-fill" style="width:' + pct + '%"></div></div>';
 }
 
 // ─── RENDER STATS ─────────────────────────────────────────────────
 function renderStats() {
   let checkIns = 0, ratingsCount = 0, photoCount = 0, hikesCount = 0, hikeKm = 0;
-
   if (syncData && syncData.travelers) {
     for (const t of syncData.travelers) {
       checkIns += (t.checkIns || []).length;
@@ -870,17 +1334,14 @@ function renderStats() {
       hikeKm = Math.max(hikeKm, t.totalHikeDistanceKm || 0);
     }
   }
-  if (syncData && syncData.photos) {
-    photoCount = syncData.photos.length;
-  }
+  if (syncData && syncData.photos) photoCount = syncData.photos.length;
 
-  document.getElementById('statsRow').innerHTML = `
-    <div class="stat-card"><div class="icon">&#10004;&#65039;</div><div class="num">${checkIns}</div><div class="label">Check-ins</div></div>
-    <div class="stat-card"><div class="icon">&#11088;</div><div class="num">${ratingsCount}</div><div class="label">Ratings</div></div>
-    <div class="stat-card"><div class="icon">&#128247;</div><div class="num">${photoCount}</div><div class="label">Photos</div></div>
-    <div class="stat-card"><div class="icon">&#129406;</div><div class="num">${hikesCount}</div><div class="label">Hikes</div></div>
-    <div class="stat-card"><div class="icon">&#128099;</div><div class="num">${hikeKm.toFixed(1)}</div><div class="label">Km Hiked</div></div>
-  `;
+  document.getElementById('statsRow').innerHTML =
+    '<div class="stat-card"><div class="icon">&#10004;&#65039;</div><div class="num">' + checkIns + '</div><div class="label">Check-ins</div></div>' +
+    '<div class="stat-card"><div class="icon">&#11088;</div><div class="num">' + ratingsCount + '</div><div class="label">Ratings</div></div>' +
+    '<div class="stat-card"><div class="icon">&#128247;</div><div class="num">' + photoCount + '</div><div class="label">Photos</div></div>' +
+    '<div class="stat-card"><div class="icon">&#129406;</div><div class="num">' + hikesCount + '</div><div class="label">Hikes</div></div>' +
+    '<div class="stat-card"><div class="icon">&#128099;</div><div class="num">' + hikeKm.toFixed(1) + '</div><div class="label">Km Hiked</div></div>';
 }
 
 // ─── RENDER DAYS ──────────────────────────────────────────────────
@@ -891,180 +1352,117 @@ function renderDays() {
 
   for (const day of TRIP_DATA) {
     const status = getDayStatus(day.id);
-    const isToday = status === 'today';
-    const expanded = isToday;
+    const expanded = status === 'today';
+    const bookedCount = day.activities.filter(function(a) { return a.booked; }).length;
+    const hikeActivities = day.activities.filter(function(a) { return a.hikeKm; });
 
-    // Count booked activities
-    const bookedCount = day.activities.filter(a => a.booked).length;
-    const hikeActivities = day.activities.filter(a => a.hikeKm);
-
-    // Badges
     let badges = '';
-    if (bookedCount > 0) badges += `<span class="badge badge-green">&#10003; ${bookedCount} booked</span>`;
+    if (bookedCount > 0) badges += '<span class="badge badge-green">&#10003; ' + bookedCount + ' booked</span>';
     if (hikeActivities.length > 0) {
-      const totalKm = hikeActivities.reduce((s, a) => s + a.hikeKm, 0);
-      badges += `<span class="badge badge-orange">&#129406; ${totalKm} km</span>`;
+      const totalKm = hikeActivities.reduce(function(s, a) { return s + a.hikeKm; }, 0);
+      badges += '<span class="badge badge-orange">&#129406; ' + totalKm + ' km</span>';
     }
-    if (day.match) badges += `<span class="badge badge-accent">&#9917; Match</span>`;
+    if (day.match) badges += '<span class="badge badge-accent">&#9917; Match</span>';
 
-    html += `<div class="day-card" id="day-${day.id}">
-      <div class="day-header" onclick="toggleDay(${day.id})">
-        <div class="day-badge ${status}">${day.id}</div>
-        <div class="day-info">
-          <div class="day-title">${escHtml(day.title)}</div>
-          <div class="day-meta">
-            <span>${day.date}</span>
-            <span>&#8226; ~${day.km} km</span>
-          </div>
-        </div>
-        <div class="day-badges">${badges}</div>
-        <span class="chevron ${expanded ? 'open' : ''}" id="chev-${day.id}">&#9654;</span>
-      </div>
-      <div class="day-body ${expanded ? 'open' : ''}" id="body-${day.id}">
-        ${renderDayBody(day)}
-      </div>
-    </div>`;
+    html += '<div class="day-card" id="day-' + day.id + '">' +
+      '<div class="day-header" onclick="toggleDay(' + day.id + ')">' +
+      '<div class="day-badge ' + status + '">' + day.id + '</div>' +
+      '<div class="day-info"><div class="day-title">' + escHtml(day.title) + '</div>' +
+      '<div class="day-meta"><span>' + day.date + '</span><span>&#8226; ~' + day.km + ' km</span></div></div>' +
+      '<div class="day-badges">' + badges + '</div>' +
+      '<span class="chevron ' + (expanded ? 'open' : '') + '" id="chev-' + day.id + '">&#9654;</span></div>' +
+      '<div class="day-body ' + (expanded ? 'open' : '') + '" id="body-' + day.id + '">' +
+      renderDayBody(day) + '</div></div>';
   }
-
   container.innerHTML = html;
 }
 
 function renderDayBody(day) {
-  let html = '';
+  let html = '<div class="route-bar"><span class="icon">&#128663;</span><span>' + escHtml(day.route) + ' &bull; ~' + day.km + ' km</span></div>';
 
-  // Route bar
-  html += `<div class="route-bar">
-    <span class="icon">&#128663;</span>
-    <span>${escHtml(day.route)} &bull; ~${day.km} km</span>
-  </div>`;
-
-  // Match bar
   if (day.match) {
-    html += `<div class="match-bar">
-      <span class="ball">&#9917;</span>
-      <span class="info">${escHtml(day.match.event)}</span>
-      <span class="time">${escHtml(day.match.time)} &mdash; ${escHtml(day.match.note)}</span>
-    </div>`;
+    html += '<div class="match-bar"><span class="ball">&#9917;</span>' +
+      '<span class="info">' + escHtml(day.match.event) + '</span>' +
+      '<span class="time">' + escHtml(day.match.time) + ' &mdash; ' + escHtml(day.match.note) + '</span></div>';
   }
 
-  // Custom events from sync
   const customEvents = getCustomEventsForDay(day.id);
   if (customEvents.length > 0) {
     html += '<div class="section-title">&#127775; Custom Events</div>';
     for (const ce of customEvents) {
-      html += `<div class="custom-event">
-        <span class="ce-icon">${ce.type === 'Activity' ? '&#127939;' : ce.type === 'Food' ? '&#127860;' : '&#128204;'}</span>
-        <span class="ce-name">${escHtml(ce.name)}</span>
-        ${ce.notes ? `<span class="ce-notes">${escHtml(ce.notes)}</span>` : ''}
-        <span style="font-size:0.7rem;color:var(--text3)">${escHtml(ce.travelerName)}</span>
-      </div>`;
+      html += '<div class="custom-event">' +
+        '<span class="ce-icon">' + (ce.type === 'Activity' ? '&#127939;' : ce.type === 'Food' ? '&#127860;' : '&#128204;') + '</span>' +
+        '<span class="ce-name">' + escHtml(ce.name) + '</span>' +
+        (ce.notes ? '<span class="ce-notes">' + escHtml(ce.notes) + '</span>' : '') +
+        '<span style="font-size:0.7rem;color:var(--text3)">' + escHtml(ce.travelerName) + '</span></div>';
     }
   }
 
-  // Activities
-  html += `<div class="section-title">&#128205; Activities (${day.activities.length})</div>`;
-  day.activities.forEach((act, idx) => {
-    const key = `d${day.id}-a${idx}`;
-    const mapLink = mapsUrl(act.lat, act.lng);
-    html += renderActivityCard(act, key, mapLink);
+  html += '<div class="section-title">&#128205; Activities (' + day.activities.length + ')</div>';
+  day.activities.forEach(function(act, idx) {
+    html += renderActivityCard(act, 'd' + day.id + '-a' + idx);
   });
 
-  // Food
-  html += `<div class="section-title">&#127860; Food & Drink (${day.food.length})</div>`;
-  day.food.forEach((f, idx) => {
-    const key = `d${day.id}-f${idx}`;
-    const mapLink = mapsUrl(f.lat, f.lng);
-    html += renderFoodCard(f, key, mapLink);
+  html += '<div class="section-title">&#127860; Food & Drink (' + day.food.length + ')</div>';
+  day.food.forEach(function(f, idx) {
+    html += renderFoodCard(f, 'd' + day.id + '-f' + idx);
   });
 
-  // Accommodation
   if (day.stay) {
-    const stayKey = `d${day.id}-stay`;
     const stayMap = mapsUrl(day.stay.lat, day.stay.lng);
-    html += `<div class="section-title">&#127968; Accommodation</div>`;
-    html += `<div class="stay-card" onclick="toggleStay(this)">
-      <div class="stay-icon">&#127968;</div>
-      <div class="stay-info">
-        <h4>${escHtml(day.stay.name)}
-          ${stayMap ? `<a href="${stayMap}" target="_blank" rel="noopener" class="map-link" onclick="event.stopPropagation()" style="display:inline-flex;width:22px;height:22px;font-size:0.65rem;margin-left:6px;vertical-align:middle;">&#128205;</a>` : ''}
-        </h4>
-        <div class="addr">${escHtml(day.stay.address)}</div>
-        ${day.stay.checkin ? `<div class="checkin">Check-in: ${escHtml(day.stay.checkin)}</div>` : ''}
-        <div class="stay-details">
-          ${renderRatingNotesPhotos(stayKey)}
-        </div>
-      </div>
-    </div>`;
+    html += '<div class="section-title">&#127968; Accommodation</div>' +
+      '<div class="stay-card" onclick="toggleStay(this)"><div class="stay-icon">&#127968;</div><div class="stay-info">' +
+      '<h4>' + escHtml(day.stay.name) +
+      (stayMap ? ' <a href="' + stayMap + '" target="_blank" rel="noopener" class="map-link" onclick="event.stopPropagation()" style="display:inline-flex;width:22px;height:22px;font-size:0.65rem;margin-left:6px;vertical-align:middle;">&#128205;</a>' : '') +
+      '</h4><div class="addr">' + escHtml(day.stay.address) + '</div>' +
+      (day.stay.checkin ? '<div class="checkin">Check-in: ' + escHtml(day.stay.checkin) + '</div>' : '') +
+      '<div class="stay-details">' + renderRatingNotesPhotos('d' + day.id + '-stay') + '</div></div></div>';
   } else {
-    html += `<div class="section-title">&#9992;&#65039; Flying home!</div>`;
+    html += '<div class="section-title">&#9992;&#65039; Flying home!</div>';
   }
-
   return html;
 }
 
-function renderActivityCard(act, key, mapLink) {
+function renderActivityCard(act, key) {
+  const mapLink = mapsUrl(act.lat, act.lng);
   let metaParts = [];
   if (act.duration) metaParts.push(act.duration);
-  if (act.hikeKm) metaParts.push(`<span class="hike-tag badge badge-orange">&#129406; ${act.hikeKm} km hike</span>`);
+  if (act.hikeKm) metaParts.push('<span class="hike-tag badge badge-orange">&#129406; ' + act.hikeKm + ' km hike</span>');
 
   let detailsHtml = '';
-  if (act.details) detailsHtml += `<p>${escHtml(act.details)}</p>`;
-
+  if (act.details) detailsHtml += '<p>' + escHtml(act.details) + '</p>';
   if (act.tips && act.tips.length > 0) {
-    detailsHtml += `<div class="callout callout-tips">
-      <div class="callout-title">&#128161; Tips</div>
-      <ul>${act.tips.map(t => `<li>${escHtml(t)}</li>`).join('')}</ul>
-    </div>`;
+    detailsHtml += '<div class="callout callout-tips"><div class="callout-title">&#128161; Tips</div><ul>' +
+      act.tips.map(function(t) { return '<li>' + escHtml(t) + '</li>'; }).join('') + '</ul></div>';
   }
-
   if (act.trivia) {
-    detailsHtml += `<div class="callout callout-trivia">
-      <div class="callout-title">&#129504; Fun Fact</div>
-      ${escHtml(act.trivia)}
-    </div>`;
+    detailsHtml += '<div class="callout callout-trivia"><div class="callout-title">&#129504; Fun Fact</div>' + escHtml(act.trivia) + '</div>';
   }
-
   if (act.safety) {
-    detailsHtml += `<div class="callout callout-safety">
-      <div class="callout-title">&#9888;&#65039; Safety Warning</div>
-      ${escHtml(act.safety)}
-    </div>`;
+    detailsHtml += '<div class="callout callout-safety"><div class="callout-title">&#9888;&#65039; Safety Warning</div>' + escHtml(act.safety) + '</div>';
   }
-
   detailsHtml += renderRatingNotesPhotos(key);
 
-  return `<div class="activity-card" onclick="toggleActivity(this)">
-    <div class="act-top">
-      <div class="act-info">
-        <div class="act-name">
-          ${escHtml(act.name)}
-          ${act.booked ? '<span class="badge badge-green">&#10003; Booked</span>' : ''}
-        </div>
-        <div class="act-meta">${metaParts.join(' &bull; ')}</div>
-        <div class="act-brief">${escHtml(act.brief)}</div>
-      </div>
-      <div class="act-links">
-        ${mapLink ? `<a href="${mapLink}" target="_blank" rel="noopener" class="map-link" onclick="event.stopPropagation()" title="Open in Google Maps">&#128205;</a>` : ''}
-        <span class="act-chevron">&#9654;</span>
-      </div>
-    </div>
-    <div class="act-details">${detailsHtml}</div>
-  </div>`;
+  return '<div class="activity-card" onclick="toggleActivity(this)">' +
+    '<div class="act-top"><div class="act-info">' +
+    '<div class="act-name">' + escHtml(act.name) + (act.booked ? ' <span class="badge badge-green">&#10003; Booked</span>' : '') + '</div>' +
+    '<div class="act-meta">' + metaParts.join(' &bull; ') + '</div>' +
+    '<div class="act-brief">' + escHtml(act.brief) + '</div></div>' +
+    '<div class="act-links">' +
+    (mapLink ? '<a href="' + mapLink + '" target="_blank" rel="noopener" class="map-link" onclick="event.stopPropagation()" title="Open in Google Maps">&#128205;</a>' : '') +
+    '<span class="act-chevron">&#9654;</span></div></div>' +
+    '<div class="act-details">' + detailsHtml + '</div></div>';
 }
 
-function renderFoodCard(f, key, mapLink) {
-  return `<div class="food-card" onclick="toggleFood(this)">
-    <span class="food-icon">&#127860;</span>
-    <div class="food-info">
-      <div class="food-name">
-        ${escHtml(f.name)}
-        ${f.gf ? '<span class="gf-tag">GF OK</span>' : ''}
-        ${mapLink ? `<a href="${mapLink}" target="_blank" rel="noopener" class="map-link" onclick="event.stopPropagation()" style="width:22px;height:22px;font-size:0.6rem;">&#128205;</a>` : ''}
-      </div>
-      <div class="food-desc">${escHtml(f.desc)}</div>
-      <div class="food-details">${renderRatingNotesPhotos(key)}</div>
-    </div>
-  </div>`;
+function renderFoodCard(f, key) {
+  const mapLink = mapsUrl(f.lat, f.lng);
+  return '<div class="food-card" onclick="toggleFood(this)">' +
+    '<span class="food-icon">&#127860;</span><div class="food-info">' +
+    '<div class="food-name">' + escHtml(f.name) +
+    (f.gf ? ' <span class="gf-tag">GF OK</span>' : '') +
+    (mapLink ? ' <a href="' + mapLink + '" target="_blank" rel="noopener" class="map-link" onclick="event.stopPropagation()" style="width:22px;height:22px;font-size:0.6rem;">&#128205;</a>' : '') +
+    '</div><div class="food-desc">' + escHtml(f.desc) + '</div>' +
+    '<div class="food-details">' + renderRatingNotesPhotos(key) + '</div></div></div>';
 }
 
 function getCustomEventsForDay(dayId) {
@@ -1072,9 +1470,7 @@ function getCustomEventsForDay(dayId) {
   const events = [];
   for (const t of syncData.travelers) {
     for (const ce of (t.customEvents || [])) {
-      if (ce.dayID === dayId) {
-        events.push({ ...ce, travelerName: t.name });
-      }
+      if (ce.dayID === dayId) events.push({ ...ce, travelerName: t.name });
     }
   }
   return events;
@@ -1082,22 +1478,12 @@ function getCustomEventsForDay(dayId) {
 
 // ─── TOGGLES ──────────────────────────────────────────────────────
 function toggleDay(dayId) {
-  const body = document.getElementById(`body-${dayId}`);
-  const chev = document.getElementById(`chev-${dayId}`);
-  const isOpen = body.classList.contains('open');
-  body.classList.toggle('open');
-  chev.classList.toggle('open');
+  document.getElementById('body-' + dayId).classList.toggle('open');
+  document.getElementById('chev-' + dayId).classList.toggle('open');
 }
-
-function toggleActivity(el) {
-  el.classList.toggle('expanded');
-}
-function toggleFood(el) {
-  el.classList.toggle('expanded');
-}
-function toggleStay(el) {
-  el.classList.toggle('expanded');
-}
+function toggleActivity(el) { el.classList.toggle('expanded'); }
+function toggleFood(el) { el.classList.toggle('expanded'); }
+function toggleStay(el) { el.classList.toggle('expanded'); }
 
 // ─── SYNC FETCH ───────────────────────────────────────────────────
 async function fetchSyncData() {
@@ -1117,22 +1503,20 @@ async function fetchSyncData() {
 function updateSyncStatus(ok) {
   const el = document.getElementById('syncStatus');
   if (ok && syncData && syncData.lastUpdated) {
-    const d = new Date(syncData.lastUpdated);
-    const ago = timeSince(d);
-    el.innerHTML = `<span class="dot live"></span> Synced ${ago} ago`;
+    el.innerHTML = '<span class="dot live"></span> Synced ' + timeSince(new Date(syncData.lastUpdated)) + ' ago';
   } else if (ok) {
-    el.innerHTML = `<span class="dot live"></span> Connected (no data yet)`;
+    el.innerHTML = '<span class="dot live"></span> Connected (no data yet)';
   } else {
-    el.innerHTML = `<span class="dot stale"></span> Offline &mdash; showing static data`;
+    el.innerHTML = '<span class="dot stale"></span> Offline &mdash; showing static data';
   }
 }
 
 function timeSince(date) {
   const s = Math.floor((new Date() - date) / 1000);
-  if (s < 60) return `${s}s`;
-  if (s < 3600) return `${Math.floor(s/60)}m`;
-  if (s < 86400) return `${Math.floor(s/3600)}h`;
-  return `${Math.floor(s/86400)}d`;
+  if (s < 60) return s + 's';
+  if (s < 3600) return Math.floor(s / 60) + 'm';
+  if (s < 86400) return Math.floor(s / 3600) + 'h';
+  return Math.floor(s / 86400) + 'd';
 }
 
 // ─── RENDER ALL ───────────────────────────────────────────────────
@@ -1140,19 +1524,17 @@ function render() {
   renderProgress();
   renderStats();
   renderDays();
+  // Re-render photos if tab is active
+  if (document.getElementById('panel-photos').classList.contains('active')) {
+    renderPhotos();
+  }
 }
 
 // ─── INIT ─────────────────────────────────────────────────────────
 render();
 fetchSyncData();
-
-// Auto-refresh every 5 minutes
 setInterval(fetchSyncData, 5 * 60 * 1000);
-
-// Keyboard shortcut: Escape closes lightbox
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') closeLightbox();
-});
+document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeLightbox(); });
 </script>
 </body>
 </html>
