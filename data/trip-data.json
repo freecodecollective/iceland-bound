@@ -423,7 +423,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-12T18:16:12Z",
+  "lastUpdated" : "2026-07-12T18:17:05Z",
   "photos" : [
     {
       "activityName" : "World Cup with family",
@@ -459,6 +459,55 @@
       "filename" : "9A35631B-78AC-42C7-9479-778360476CBC.jpg",
       "key" : "d-1-s1",
       "timestamp" : "2026-07-12T02:50:56Z"
+    },
+    {
+      "activityName" : "Flight SFO to Boston",
+      "dayID" : -1,
+      "filename" : "249C8C9E-946F-41DB-AE8F-B6318C25E70E.jpg",
+      "key" : "d-1-a0",
+      "timestamp" : "2026-07-12T18:16:22Z"
+    },
+    {
+      "activityName" : "World Cup matches with family",
+      "dayID" : -1,
+      "filename" : "6A80B0CF-B077-4CFF-BF48-26FF75BB772D.jpg",
+      "key" : "d-1-a1",
+      "timestamp" : "2026-07-12T18:17:00Z"
+    },
+    {
+      "activityName" : "World Cup matches with family",
+      "dayID" : -1,
+      "filename" : "C4588BC1-F5EC-4DCC-95DC-D7349D8F27F8.jpg",
+      "key" : "d-1-a1",
+      "timestamp" : "2026-07-12T18:17:00Z"
+    },
+    {
+      "activityName" : "World Cup matches with family",
+      "dayID" : -1,
+      "filename" : "6836C200-0624-487D-BD55-8481CAE3BACA.jpg",
+      "key" : "d-1-a1",
+      "timestamp" : "2026-07-12T18:17:00Z"
+    },
+    {
+      "activityName" : "World Cup matches with family",
+      "dayID" : -1,
+      "filename" : "5DB61B41-2B71-4BCC-8391-1C722179544F.jpg",
+      "key" : "d-1-a1",
+      "timestamp" : "2026-07-12T18:17:00Z"
+    },
+    {
+      "activityName" : "World Cup matches with family",
+      "dayID" : -1,
+      "filename" : "AB0E1792-5546-46DB-B47F-387864546DB2.jpg",
+      "key" : "d-1-a1",
+      "timestamp" : "2026-07-12T18:17:00Z"
+    },
+    {
+      "activityName" : "World Cup matches with family",
+      "dayID" : -1,
+      "filename" : "7FC63D6C-7752-49CA-9F6C-83D5404D93BA.jpg",
+      "key" : "d-1-a1",
+      "timestamp" : "2026-07-12T18:17:00Z"
     }
   ],
   "travelers" : [
@@ -2094,7 +2143,7 @@
           "dayID" : -1,
           "itemName" : "Flight SFO to Boston",
           "key" : "d-1-a0",
-          "text" : "We flew"
+          "text" : "We flew to Boston "
         },
         {
           "dayID" : -1,
