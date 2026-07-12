@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-12T21:41:16Z",
+  "lastUpdated" : "2026-07-12T21:42:06Z",
   "photos" : [
     {
       "activityName" : "World Cup with family",
@@ -693,14 +693,6 @@
           "itemName" : "d-1-s2",
           "key" : "d-1-s2",
           "timestamp" : "2026-07-12T02:45:33Z"
-        },
-        {
-          "dayID" : 0,
-          "itemName" : "Flight Boston to Reykjavík",
-          "key" : "d0-a0",
-          "latitude" : 42.6667570147721,
-          "longitude" : -71.58976541988622,
-          "timestamp" : "2026-07-12T21:35:54Z"
         },
         {
           "dayID" : 1,
@@ -2871,12 +2863,6 @@
           "text" : "One game down...we were all rooting for Norway. Alas...\n\nThanks to the Coops for hosting game 1 and the Pepp for game 2! Will Switzerland hold out?!?!"
         },
         {
-          "dayID" : 0,
-          "itemName" : "Flight Boston to Reykjavík",
-          "key" : "d0-a0",
-          "text" : "Test tests "
-        },
-        {
           "dayID" : 1,
           "itemName" : "Bridge Between Continents",
           "key" : "d1-a0",
@@ -2918,12 +2904,6 @@
           "dayID" : -1,
           "itemName" : "d-1-s2",
           "key" : "d-1-s2",
-          "rating" : 5
-        },
-        {
-          "dayID" : 0,
-          "itemName" : "Flight Boston to Reykjavík",
-          "key" : "d0-a0",
           "rating" : 5
         },
         {
