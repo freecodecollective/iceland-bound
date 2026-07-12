@@ -3,6 +3,40 @@
     {
       "activities" : [
         {
+          "duration" : "~5.5 hrs",
+          "name" : "Flight SFO to Boston"
+        },
+        {
+          "duration" : "Evening",
+          "name" : "World Cup matches with family"
+        }
+      ],
+      "activityCount" : 2,
+      "date" : "Sat Jul 11",
+      "driving" : "Flight",
+      "foodCount" : 0,
+      "id" : -1,
+      "route" : "SFO → Boston Logan",
+      "title" : "Travel to Boston"
+    },
+    {
+      "activities" : [
+        {
+          "duration" : "~5 hrs",
+          "name" : "Flight Boston to Reykjavík"
+        }
+      ],
+      "activityCount" : 1,
+      "date" : "Sun Jul 12",
+      "driving" : "Flight",
+      "foodCount" : 0,
+      "id" : 0,
+      "route" : "Boston Logan → Keflavík",
+      "title" : "Travel to Iceland"
+    },
+    {
+      "activities" : [
+        {
           "duration" : "15 min",
           "name" : "Bridge Between Continents"
         },
@@ -292,7 +326,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-12T02:23:10Z",
+  "lastUpdated" : "2026-07-12T02:46:08Z",
   "photos" : [
     {
       "activityName" : "Bridge Between Continents",
@@ -306,6 +340,12 @@
     {
       "checkIns" : [
         {
+          "dayID" : -1,
+          "itemName" : "World Cup with family",
+          "key" : "d-1-s2",
+          "timestamp" : "2026-07-12T02:45:33Z"
+        },
+        {
           "dayID" : 10,
           "itemName" : "Land Boston",
           "key" : "d10-s15",
@@ -316,10 +356,16 @@
       "customEvents" : [
 
       ],
-      "gpsPointCount" : 102,
+      "gpsPointCount" : 110,
       "hikesCompleted" : 0,
       "name" : "Chris",
       "notes" : [
+        {
+          "dayID" : -1,
+          "itemName" : "World Cup with family",
+          "key" : "d-1-s2",
+          "text" : "One game down...we were all rooting for Norway. Alas...\n\nThanks to the Coops for hosting!"
+        },
         {
           "dayID" : 1,
           "itemName" : "Bridge Between Continents",
@@ -334,7 +380,12 @@
         }
       ],
       "ratings" : [
-
+        {
+          "dayID" : -1,
+          "itemName" : "World Cup with family",
+          "key" : "d-1-s2",
+          "rating" : 5
+        }
       ],
       "totalHikeDistanceKm" : 0
     }
