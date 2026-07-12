@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-12T20:57:24.443Z",
+  "lastUpdated": "2026-07-12T21:02:32.254Z",
   "hikes": [
     {
       "name": "Test",
@@ -8,7 +8,7 @@
     },
     {
       "name": "Test hike 223",
-      "distanceKm": 0.02,
+      "distanceKm": 0,
       "isOverride": false
     },
     {
@@ -27,5 +27,11 @@
   "extraWaterfalls": [],
   "hiddenWaterfalls": [
     "d5-a1"
+  ],
+  "hiddenHikes": [
+    "Test hike 223",
+    "Svartifoss hike (Skaftafell)",
+    "Test",
+    "Test 434"
   ]
 }
