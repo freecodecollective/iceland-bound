@@ -326,7 +326,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-12T02:46:08Z",
+  "lastUpdated" : "2026-07-12T02:47:44Z",
   "photos" : [
     {
       "activityName" : "Bridge Between Continents",
@@ -334,11 +334,38 @@
       "filename" : "E092E4B6-7D08-414E-A2A8-E04BEDE8A12B.jpg",
       "key" : "d1-a0",
       "timestamp" : "2026-07-11T23:09:59Z"
+    },
+    {
+      "activityName" : "World Cup with family",
+      "dayID" : -1,
+      "filename" : "18E48D66-F47C-4C16-AF5B-A5853CF6D4F0.jpg",
+      "key" : "d-1-s2",
+      "timestamp" : "2026-07-12T02:46:24Z"
+    },
+    {
+      "activityName" : "World Cup with family",
+      "dayID" : -1,
+      "filename" : "38746A01-E082-4A34-9F3C-79715443EAF0.jpg",
+      "key" : "d-1-s2",
+      "timestamp" : "2026-07-12T02:46:31Z"
+    },
+    {
+      "activityName" : "World Cup with family",
+      "dayID" : -1,
+      "filename" : "C75879FC-F403-48B6-A12C-77D07BA97BFE.jpg",
+      "key" : "d-1-s2",
+      "timestamp" : "2026-07-12T02:46:45Z"
     }
   ],
   "travelers" : [
     {
       "checkIns" : [
+        {
+          "dayID" : -1,
+          "itemName" : "Flight SFO → Boston",
+          "key" : "d-1-s1",
+          "timestamp" : "2026-07-12T02:47:26Z"
+        },
         {
           "dayID" : -1,
           "itemName" : "World Cup with family",
@@ -362,9 +389,15 @@
       "notes" : [
         {
           "dayID" : -1,
+          "itemName" : "Flight SFO → Boston",
+          "key" : "d-1-s1",
+          "text" : "We flew. We landed. We coded the Iceland app all the way. "
+        },
+        {
+          "dayID" : -1,
           "itemName" : "World Cup with family",
           "key" : "d-1-s2",
-          "text" : "One game down...we were all rooting for Norway. Alas...\n\nThanks to the Coops for hosting!"
+          "text" : "One game down...we were all rooting for Norway. Alas...\n\nThanks to the Coops for hosting game one and the Pepp for game 2! Will Switzerland hold out?!?!"
         },
         {
           "dayID" : 1,
@@ -380,6 +413,12 @@
         }
       ],
       "ratings" : [
+        {
+          "dayID" : -1,
+          "itemName" : "Flight SFO → Boston",
+          "key" : "d-1-s1",
+          "rating" : 5
+        },
         {
           "dayID" : -1,
           "itemName" : "World Cup with family",
