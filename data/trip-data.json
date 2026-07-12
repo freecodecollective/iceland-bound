@@ -292,7 +292,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-11T23:57:07Z",
+  "lastUpdated" : "2026-07-12T00:14:34Z",
   "photos" : [
     {
       "activityName" : "Bridge Between Continents",
@@ -306,12 +306,6 @@
     {
       "checkIns" : [
         {
-          "dayID" : 1,
-          "itemName" : "Bridge Between Continents",
-          "key" : "d1-a0",
-          "timestamp" : "2026-07-11T23:09:45Z"
-        },
-        {
           "dayID" : 10,
           "itemName" : "Land Boston",
           "key" : "d10-s15",
@@ -322,7 +316,7 @@
       "customEvents" : [
 
       ],
-      "gpsPointCount" : 84,
+      "gpsPointCount" : 86,
       "hikesCompleted" : 0,
       "name" : "Chris",
       "notes" : [
@@ -340,12 +334,7 @@
         }
       ],
       "ratings" : [
-        {
-          "dayID" : 1,
-          "itemName" : "Bridge Between Continents",
-          "key" : "d1-a0",
-          "rating" : 5
-        }
+
       ],
       "totalHikeDistanceKm" : 0
     }
