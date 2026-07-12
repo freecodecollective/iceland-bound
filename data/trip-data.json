@@ -20,7 +20,7 @@
       "driving": "Flight",
       "foodCount": 0,
       "id": -1,
-      "route": "SFO â Boston Logan",
+      "route": "SFO Ã¢ÂÂ Boston Logan",
       "title": "Travel to Boston"
     },
     {
@@ -29,7 +29,7 @@
           "duration": "~5 hrs",
           "isHike": false,
           "isWaterfall": false,
-          "name": "Flight Boston to ReykjavÃ­k"
+          "name": "Flight Boston to ReykjavÃÂ­k"
         }
       ],
       "activityCount": 1,
@@ -37,7 +37,7 @@
       "driving": "Flight",
       "foodCount": 0,
       "id": 0,
-      "route": "Boston Logan â KeflavÃ­k",
+      "route": "Boston Logan Ã¢ÂÂ KeflavÃÂ­k",
       "title": "Travel to Iceland"
     },
     {
@@ -64,7 +64,7 @@
           "duration": "45 min",
           "isHike": false,
           "isWaterfall": false,
-          "name": "KrÃ½suvÃ­k / SeltÃºn geothermal"
+          "name": "KrÃÂ½suvÃÂ­k / SeltÃÂºn geothermal"
         },
         {
           "duration": "15 min",
@@ -84,14 +84,14 @@
       "driving": "~80 km",
       "foodCount": 2,
       "id": 1,
-      "route": "KeflavÃ­k â Reykjanes loop â ReykjavÃ­k",
+      "route": "KeflavÃÂ­k Ã¢ÂÂ Reykjanes loop Ã¢ÂÂ ReykjavÃÂ­k",
       "stayName": "Guesthouse Galtafell",
       "title": "Arrival & Reykjanes"
     },
     {
       "activities": [
         {
-          "duration": "2 hrs (9:00â11:00 AM)",
+          "duration": "2 hrs (9:00Ã¢ÂÂ11:00 AM)",
           "isHike": false,
           "isWaterfall": false,
           "name": "Silfra fissure snorkeling"
@@ -100,7 +100,7 @@
           "duration": "2 hrs",
           "isHike": false,
           "isWaterfall": false,
-          "name": "Ãingvellir National Park"
+          "name": "ÃÂingvellir National Park"
         },
         {
           "duration": "45 min",
@@ -118,7 +118,7 @@
           "duration": "30 min",
           "isHike": false,
           "isWaterfall": false,
-          "name": "KeriÃ° crater lake"
+          "name": "KeriÃÂ° crater lake"
         }
       ],
       "activityCount": 5,
@@ -126,7 +126,7 @@
       "driving": "~200 km",
       "foodCount": 4,
       "id": 2,
-      "route": "ReykjavÃ­k â Silfra â Ãingvellir â Geysir â Gullfoss â KeriÃ° â ReykjavÃ­k",
+      "route": "ReykjavÃÂ­k Ã¢ÂÂ Silfra Ã¢ÂÂ ÃÂingvellir Ã¢ÂÂ Geysir Ã¢ÂÂ Gullfoss Ã¢ÂÂ KeriÃÂ° Ã¢ÂÂ ReykjavÃÂ­k",
       "stayName": "Guesthouse Galtafell",
       "title": "Golden Circle"
     },
@@ -136,13 +136,13 @@
           "duration": "1 hr",
           "isHike": false,
           "isWaterfall": false,
-          "name": "Lava Centre HvolsvÃ¶llur"
+          "name": "Lava Centre HvolsvÃÂ¶llur"
         },
         {
           "duration": "15 min",
           "isHike": false,
           "isWaterfall": true,
-          "name": "GljÃºfrabÃºi"
+          "name": "GljÃÂºfrabÃÂºi"
         },
         {
           "duration": "1 hr",
@@ -154,7 +154,7 @@
           "duration": "1 hr",
           "isHike": false,
           "isWaterfall": true,
-          "name": "SkÃ³gafoss"
+          "name": "SkÃÂ³gafoss"
         }
       ],
       "activityCount": 4,
@@ -162,7 +162,7 @@
       "driving": "~187 km",
       "foodCount": 2,
       "id": 3,
-      "route": "ReykjavÃ­k â Hella â Seljalandsfoss â SkÃ³gafoss â VÃ­k",
+      "route": "ReykjavÃÂ­k Ã¢ÂÂ Hella Ã¢ÂÂ Seljalandsfoss Ã¢ÂÂ SkÃÂ³gafoss Ã¢ÂÂ VÃÂ­k",
       "stayName": "Vik House",
       "title": "Waterfalls & South Coast"
     },
@@ -173,7 +173,7 @@
           "hikeDistanceKm": 11.9,
           "isHike": true,
           "isWaterfall": false,
-          "name": "ÃakgilâMÃ¦lifell hike"
+          "name": "ÃÂakgilÃ¢ÂÂMÃÂ¦lifell hike"
         },
         {
           "duration": "45 min",
@@ -185,13 +185,13 @@
           "duration": "1.5 hrs",
           "isHike": false,
           "isWaterfall": false,
-          "name": "DyrhÃ³laey"
+          "name": "DyrhÃÂ³laey"
         },
         {
           "duration": "1 hr",
           "isHike": false,
           "isWaterfall": false,
-          "name": "HjÃ¶rleifshÃ¶fÃ°i / Yoda Cave"
+          "name": "HjÃÂ¶rleifshÃÂ¶fÃÂ°i / Yoda Cave"
         },
         {
           "duration": "30 min",
@@ -205,9 +205,9 @@
       "driving": "~80 km local",
       "foodCount": 3,
       "id": 4,
-      "route": "VÃ­k area",
+      "route": "VÃÂ­k area",
       "stayName": "Vik House",
-      "title": "VÃ­k Explorer Day"
+      "title": "VÃÂ­k Explorer Day"
     },
     {
       "activities": [
@@ -215,7 +215,7 @@
           "duration": "45 min",
           "isHike": false,
           "isWaterfall": false,
-          "name": "FjaÃ°rÃ¡rgljÃºfur canyon"
+          "name": "FjaÃÂ°rÃÂ¡rgljÃÂºfur canyon"
         },
         {
           "duration": "2 hrs",
@@ -228,13 +228,13 @@
           "duration": "4 hrs (2:00 PM start)",
           "isHike": false,
           "isWaterfall": false,
-          "name": "FjallsÃ¡rlÃ³n Glacier Hike & Boat Tour"
+          "name": "FjallsÃÂ¡rlÃÂ³n Glacier Hike & Boat Tour"
         },
         {
           "duration": "45 min",
           "isHike": false,
           "isWaterfall": false,
-          "name": "JÃ¶kulsÃ¡rlÃ³n glacier lagoon"
+          "name": "JÃÂ¶kulsÃÂ¡rlÃÂ³n glacier lagoon"
         },
         {
           "duration": "30 min",
@@ -254,8 +254,8 @@
       "driving": "~270 km",
       "foodCount": 3,
       "id": 5,
-      "route": "VÃ­k â FjaÃ°rÃ¡rgljÃºfur â Skaftafell â FjallsÃ¡rlÃ³n â JÃ¶kulsÃ¡rlÃ³n â HÃ¶fn",
-      "stayName": "Fosshotel VatnajÃ¶kull",
+      "route": "VÃÂ­k Ã¢ÂÂ FjaÃÂ°rÃÂ¡rgljÃÂºfur Ã¢ÂÂ Skaftafell Ã¢ÂÂ FjallsÃÂ¡rlÃÂ³n Ã¢ÂÂ JÃÂ¶kulsÃÂ¡rlÃÂ³n Ã¢ÂÂ HÃÂ¶fn",
+      "stayName": "Fosshotel VatnajÃÂ¶kull",
       "title": "Glaciers & Icebergs"
     },
     {
@@ -264,7 +264,7 @@
           "duration": "5 min",
           "isHike": false,
           "isWaterfall": false,
-          "name": "LÃ³magnÃºpur viewpoint"
+          "name": "LÃÂ³magnÃÂºpur viewpoint"
         },
         {
           "duration": "15 min",
@@ -279,11 +279,11 @@
           "name": "Fagrifoss waterfall"
         },
         {
-          "duration": "4â5 hrs",
+          "duration": "4Ã¢ÂÂ5 hrs",
           "hikeDistanceKm": 8,
           "isHike": true,
           "isWaterfall": false,
-          "name": "Laki / LakagÃ­gar craters"
+          "name": "Laki / LakagÃÂ­gar craters"
         }
       ],
       "activityCount": 4,
@@ -291,7 +291,7 @@
       "driving": "~200 km + F-road",
       "foodCount": 3,
       "id": 6,
-      "route": "HÃ¶fn â Klaustur â Laki via F206 â Klaustur",
+      "route": "HÃÂ¶fn Ã¢ÂÂ Klaustur Ã¢ÂÂ Laki via F206 Ã¢ÂÂ Klaustur",
       "stayName": "Stracta Apartments",
       "title": "Laki & the Highlands"
     },
@@ -301,7 +301,7 @@
           "duration": "1.5 hrs",
           "isHike": false,
           "isWaterfall": false,
-          "name": "DC-3 plane wreck SÃ³lheimasandur"
+          "name": "DC-3 plane wreck SÃÂ³lheimasandur"
         },
         {
           "duration": "1.5 hrs (1:30 PM start)",
@@ -313,7 +313,7 @@
           "duration": "30 min",
           "isHike": false,
           "isWaterfall": true,
-          "name": "HjÃ¡lparfoss"
+          "name": "HjÃÂ¡lparfoss"
         }
       ],
       "activityCount": 3,
@@ -321,7 +321,7 @@
       "driving": "~225 km",
       "foodCount": 2,
       "id": 7,
-      "route": "Klaustur â SÃ³lheimasandur â FlÃºÃ°ir â Selfoss",
+      "route": "Klaustur Ã¢ÂÂ SÃÂ³lheimasandur Ã¢ÂÂ FlÃÂºÃÂ°ir Ã¢ÂÂ Selfoss",
       "stayName": "Heima Holiday Homes",
       "title": "Plane Wreck & Secret Lagoon"
     },
@@ -332,7 +332,7 @@
           "hikeDistanceKm": 10,
           "isHike": true,
           "isWaterfall": false,
-          "name": "Brennisteinsalda + BlÃ¡hnÃºkur loop"
+          "name": "Brennisteinsalda + BlÃÂ¡hnÃÂºkur loop"
         },
         {
           "duration": "45 min",
@@ -344,15 +344,15 @@
           "duration": "45 min add-on",
           "isHike": false,
           "isWaterfall": false,
-          "name": "LjÃ³tipollur red crater lake (optional)"
+          "name": "LjÃÂ³tipollur red crater lake (optional)"
         }
       ],
       "activityCount": 3,
       "date": "Mon Jul 20",
-      "driving": "~400 km round trip, 10â12 hrs",
+      "driving": "~400 km round trip, 10Ã¢ÂÂ12 hrs",
       "foodCount": 2,
       "id": 8,
-      "route": "Selfoss â F208 â Landmannalaugar â Selfoss",
+      "route": "Selfoss Ã¢ÂÂ F208 Ã¢ÂÂ Landmannalaugar Ã¢ÂÂ Selfoss",
       "stayName": "Heima Holiday Homes",
       "title": "Landmannalaugar"
     },
@@ -362,7 +362,7 @@
           "duration": "15 min",
           "isHike": false,
           "isWaterfall": false,
-          "name": "GerÃ°uberg basalt columns"
+          "name": "GerÃÂ°uberg basalt columns"
         },
         {
           "duration": "30 min",
@@ -374,7 +374,7 @@
           "duration": "15 min",
           "isHike": false,
           "isWaterfall": false,
-          "name": "BÃºÃ°akirkja black church"
+          "name": "BÃÂºÃÂ°akirkja black church"
         },
         {
           "duration": "1.5 hrs",
@@ -389,9 +389,9 @@
       "driving": "~250 km",
       "foodCount": 4,
       "id": 9,
-      "route": "Selfoss â Borgarnes â SnÃ¦fellsnes south â Arnarstapi",
+      "route": "Selfoss Ã¢ÂÂ Borgarnes Ã¢ÂÂ SnÃÂ¦fellsnes south Ã¢ÂÂ Arnarstapi",
       "stayName": "Arnarstapi Hotel",
-      "title": "SnÃ¦fellsnes South"
+      "title": "SnÃÂ¦fellsnes South"
     },
     {
       "activities": [
@@ -405,7 +405,7 @@
           "duration": "45 min",
           "isHike": false,
           "isWaterfall": false,
-          "name": "DjÃºpalÃ³nssandur black pebble beach"
+          "name": "DjÃÂºpalÃÂ³nssandur black pebble beach"
         },
         {
           "duration": "1 hr",
@@ -419,8 +419,8 @@
       "driving": "~300 km",
       "foodCount": 2,
       "id": 10,
-      "route": "Arnarstapi â SnÃ¦fellsnes north â Borgarnes â KeflavÃ­k â Boston",
-      "title": "SnÃ¦fellsnes North & Home"
+      "route": "Arnarstapi Ã¢ÂÂ SnÃÂ¦fellsnes north Ã¢ÂÂ Borgarnes Ã¢ÂÂ KeflavÃÂ­k Ã¢ÂÂ Boston",
+      "title": "SnÃÂ¦fellsnes North & Home"
     }
   ],
   "lastUpdated": "2026-07-12T18:41:50Z",
@@ -445,13 +445,6 @@
       "filename": "C75879FC-F403-48B6-A12C-77D07BA97BFE.jpg",
       "key": "d-1-s2",
       "timestamp": "2026-07-12T02:46:45Z"
-    },
-    {
-      "activityName": "Flight SFO â Boston",
-      "dayID": -1,
-      "filename": "AD74E229-ADDA-4EBF-8AAD-367FBDD34C3A.jpg",
-      "key": "d-1-s1",
-      "timestamp": "2026-07-12T02:47:52Z"
     },
     {
       "activityName": "Flight SFO to Boston",
@@ -553,7 +546,7 @@
         },
         {
           "dayID": -1,
-          "itemName": "Flight SFO â Boston",
+          "itemName": "Flight SFO Ã¢ÂÂ Boston",
           "key": "d-1-s1",
           "timestamp": "2026-07-12T02:47:26Z"
         },
@@ -2354,7 +2347,7 @@
         },
         {
           "dayID": -1,
-          "itemName": "Flight SFO â Boston",
+          "itemName": "Flight SFO Ã¢ÂÂ Boston",
           "key": "d-1-s1",
           "text": "We flew. We landed. We coded the Iceland app all the way. "
         },
@@ -2392,7 +2385,7 @@
         },
         {
           "dayID": -1,
-          "itemName": "Flight SFO â Boston",
+          "itemName": "Flight SFO Ã¢ÂÂ Boston",
           "key": "d-1-s1",
           "rating": 5
         },
