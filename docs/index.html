@@ -1553,12 +1553,11 @@ function renderGPSTrack() {
   var puffinLat = null, puffinLng = null, puffinTime = null, puffinName = 'Chris';
 
   if (traveler && traveler.gpsTrack && traveler.gpsTrack.length > 0) {
-    var points = traveler.gpsTrack.map(function(p) { return [p.lat, p.lng]; });
-
-    gpsTrackLayer = L.polyline(points, {
-      color: '#60a5fa', weight: 3, opacity: 0.7,
-      dashArray: '8, 6', lineCap: 'round', lineJoin: 'round'
-    }).addTo(tripMap);
+    var rawPoints = traveler.gpsTrack.map(function(p) { return [p.lat, p.lng]; });
+    var last = traveler.gpsTrack[traveler.gpsTrack.length - 1];
+    puffinLat = last.lat; puffinLng = last.lng;
+    puffinTime = last.ts ? new Date(last.ts) : null;
+    puffinName = traveler.name;
 
     gpsDotsLayer = L.layerGroup();
     var dotInterval = Math.max(1, Math.floor(traveler.gpsTrack.length / 60));
@@ -1570,10 +1569,7 @@ function renderGPSTrack() {
     }
     gpsDotsLayer.addTo(tripMap);
 
-    var last = traveler.gpsTrack[traveler.gpsTrack.length - 1];
-    puffinLat = last.lat; puffinLng = last.lng;
-    puffinTime = last.ts ? new Date(last.ts) : null;
-    puffinName = traveler.name;
+    snapTrackToRoads(rawPoints, traveler.gpsTrack);
   }
 
   if (puffinLat === null) {
@@ -1601,6 +1597,72 @@ function renderGPSTrack() {
     var timeStr = puffinTime ? puffinTime.toLocaleString() : 'Unknown';
     puffinMarker.bindPopup('<div style="text-align:center;font-family:var(--font);"><strong>' + puffinName + '\'s Location</strong><br><span style="font-size:0.8em;color:#94a3b8;">Last update: ' + timeStr + '</span></div>', { maxWidth: 200 });
   }
+}
+
+function snapTrackToRoads(rawPoints, gpsTrack) {
+  var CHUNK = 80;
+  var chunks = [];
+  for (var i = 0; i < rawPoints.length; i += CHUNK - 1) {
+    chunks.push(rawPoints.slice(i, i + CHUNK));
+  }
+  var allCoords = [];
+  var pending = chunks.length;
+  var failed = false;
+
+  chunks.forEach(function(chunk, ci) {
+    var coords = chunk.map(function(p) { return p[1] + ',' + p[0]; }).join(';');
+    var radiuses = chunk.map(function() { return '25'; }).join(';');
+    var timestamps = [];
+    var baseIdx = ci * (CHUNK - 1);
+    for (var j = 0; j < chunk.length; j++) {
+      var pt = gpsTrack[baseIdx + j];
+      if (pt && pt.ts) {
+        timestamps.push(Math.floor(new Date(pt.ts).getTime() / 1000));
+      } else {
+        timestamps.push(0);
+      }
+    }
+    var hasTimestamps = timestamps.every(function(t) { return t > 0; });
+    var url = 'https://router.project-osrm.org/match/v1/driving/' + coords +
+      '?overview=full&geometries=geojson&radiuses=' + radiuses;
+    if (hasTimestamps) url += '&timestamps=' + timestamps.join(';');
+
+    fetch(url).then(function(r) { return r.json(); }).then(function(data) {
+      if (data.code === 'Ok' && data.matchings && data.matchings.length > 0) {
+        var matched = [];
+        data.matchings.forEach(function(m) {
+          m.geometry.coordinates.forEach(function(c) { matched.push([c[1], c[0]]); });
+        });
+        allCoords[ci] = matched;
+      } else {
+        allCoords[ci] = chunk;
+      }
+    }).catch(function() {
+      allCoords[ci] = chunk;
+      failed = true;
+    }).finally(function() {
+      pending--;
+      if (pending === 0) {
+        var merged = [];
+        for (var k = 0; k < chunks.length; k++) {
+          var seg = allCoords[k] || chunks[k];
+          if (merged.length > 0 && seg.length > 0) {
+            var lastPt = merged[merged.length - 1];
+            var firstPt = seg[0];
+            if (Math.abs(lastPt[0] - firstPt[0]) < 0.0001 && Math.abs(lastPt[1] - firstPt[1]) < 0.0001) {
+              seg = seg.slice(1);
+            }
+          }
+          merged = merged.concat(seg);
+        }
+        if (gpsTrackLayer) tripMap.removeLayer(gpsTrackLayer);
+        gpsTrackLayer = L.polyline(merged, {
+          color: '#3b82f6', weight: 3.5, opacity: 0.85,
+          lineCap: 'round', lineJoin: 'round'
+        }).addTo(tripMap);
+      }
+    });
+  });
 }
 
 function resolveKeyCoords(key) {
