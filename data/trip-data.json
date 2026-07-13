@@ -1,670 +1,661 @@
 {
-  "itinerary" : [
+  "itinerary": [
     {
-      "activities" : [
+      "activities": [
         {
-          "duration" : "~5.5 hrs",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Flight SFO to Boston"
+          "duration": "~5.5 hrs",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Flight SFO to Boston"
         },
         {
-          "duration" : "Evening",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "World Cup with family"
+          "duration": "Evening",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "World Cup with family"
         },
         {
-          "duration" : "~5 hrs",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Fly Boston to Iceland"
+          "duration": "~5 hrs",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Fly Boston to Iceland"
         }
       ],
-      "activityCount" : 3,
-      "date" : "Sat Jul 11",
-      "driving" : "Flight",
-      "foodCount" : 0,
-      "id" : -1,
-      "route" : "SFO → Boston Logan",
-      "title" : "Travel to Boston"
+      "activityCount": 3,
+      "date": "Sat Jul 11",
+      "driving": "Flight",
+      "foodCount": 0,
+      "id": -1,
+      "route": "SFO → Boston Logan",
+      "title": "Travel to Boston"
     },
     {
-      "activities" : [
+      "activities": [
         {
-          "duration" : "~5 hrs",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Flight Boston to Reykjavík"
+          "duration": "~5 hrs",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Flight Boston to Reykjavík"
         }
       ],
-      "activityCount" : 1,
-      "date" : "Sun Jul 12",
-      "driving" : "Flight",
-      "foodCount" : 0,
-      "id" : 0,
-      "route" : "Boston Logan → Keflavík",
-      "title" : "Travel to Iceland"
+      "activityCount": 1,
+      "date": "Sun Jul 12",
+      "driving": "Flight",
+      "foodCount": 0,
+      "id": 0,
+      "route": "Boston Logan → Keflavík",
+      "title": "Travel to Iceland"
     },
     {
-      "activities" : [
+      "activities": [
         {
-          "duration" : "15 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Bridge Between Continents"
+          "duration": "15 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Bridge Between Continents"
         },
         {
-          "duration" : "30 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Gunnuhver geothermal"
+          "duration": "30 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Gunnuhver geothermal"
         },
         {
-          "duration" : "30 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Reykjanesviti lighthouse"
+          "duration": "30 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Reykjanesviti lighthouse"
         },
         {
-          "duration" : "45 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Krýsuvík \/ Seltún geothermal"
+          "duration": "45 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Krýsuvík / Seltún geothermal"
         },
         {
-          "duration" : "15 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Brimketill lava pool"
+          "duration": "15 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Brimketill lava pool"
         },
         {
-          "duration" : "3 hrs",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Blue Lagoon & LAVA Restaurant"
+          "duration": "3 hrs",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Blue Lagoon & LAVA Restaurant"
         },
         {
-          "duration" : "30 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Pickup Land Cruiser"
+          "duration": "30 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Pickup Land Cruiser"
         },
         {
-          "duration" : "30 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Check in Galtafell"
+          "duration": "30 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Check in Galtafell"
         }
       ],
-      "activityCount" : 8,
-      "date" : "Mon Jul 13",
-      "driving" : "~80 km",
-      "foodCount" : 3,
-      "id" : 1,
-      "route" : "Keflavík → Reykjanes loop → Reykjavík",
-      "stayName" : "Guesthouse Galtafell",
-      "title" : "Arrival & Reykjanes"
+      "activityCount": 8,
+      "date": "Mon Jul 13",
+      "driving": "~80 km",
+      "foodCount": 3,
+      "id": 1,
+      "route": "Keflavík → Reykjanes loop → Reykjavík",
+      "stayName": "Guesthouse Galtafell",
+      "title": "Arrival & Reykjanes"
     },
     {
-      "activities" : [
+      "activities": [
         {
-          "duration" : "2 hrs (9:00–11:00 AM)",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Silfra fissure snorkeling"
+          "duration": "2 hrs (9:00–11:00 AM)",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Silfra fissure snorkeling"
         },
         {
-          "duration" : "2 hrs",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Þingvellir National Park"
+          "duration": "2 hrs",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Þingvellir National Park"
         },
         {
-          "duration" : "45 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Geysir & Strokkur"
+          "duration": "45 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Geysir & Strokkur"
         },
         {
-          "duration" : "45 min",
-          "isHike" : false,
-          "isWaterfall" : true,
-          "name" : "Gullfoss waterfall"
+          "duration": "45 min",
+          "isHike": false,
+          "isWaterfall": true,
+          "name": "Gullfoss waterfall"
         },
         {
-          "duration" : "30 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Kerið crater lake"
+          "duration": "30 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Kerið crater lake"
         },
         {
-          "duration" : "2 hrs",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "World Cup Semifinal 1"
+          "duration": "2 hrs",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "World Cup Semifinal 1"
         }
       ],
-      "activityCount" : 6,
-      "date" : "Tue Jul 14",
-      "driving" : "~200 km",
-      "foodCount" : 6,
-      "id" : 2,
-      "route" : "Reykjavík → Silfra → Þingvellir → Geysir → Gullfoss → Kerið → Reykjavík",
-      "stayName" : "Guesthouse Galtafell",
-      "title" : "Golden Circle"
+      "activityCount": 6,
+      "date": "Tue Jul 14",
+      "driving": "~200 km",
+      "foodCount": 6,
+      "id": 2,
+      "route": "Reykjavík → Silfra → Þingvellir → Geysir → Gullfoss → Kerið → Reykjavík",
+      "stayName": "Guesthouse Galtafell",
+      "title": "Golden Circle"
     },
     {
-      "activities" : [
+      "activities": [
         {
-          "duration" : "1 hr",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Lava Centre Hvolsvöllur"
+          "duration": "1 hr",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Lava Centre Hvolsvöllur"
         },
         {
-          "duration" : "15 min",
-          "isHike" : false,
-          "isWaterfall" : true,
-          "name" : "Gljúfrabúi"
+          "duration": "15 min",
+          "isHike": false,
+          "isWaterfall": true,
+          "name": "Gljúfrabúi"
         },
         {
-          "duration" : "1 hr",
-          "isHike" : false,
-          "isWaterfall" : true,
-          "name" : "Seljalandsfoss"
+          "duration": "1 hr",
+          "isHike": false,
+          "isWaterfall": true,
+          "name": "Seljalandsfoss"
         },
         {
-          "duration" : "1 hr",
-          "isHike" : false,
-          "isWaterfall" : true,
-          "name" : "Skógafoss"
+          "duration": "1 hr",
+          "isHike": false,
+          "isWaterfall": true,
+          "name": "Skógafoss"
         },
         {
-          "duration" : "10 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Hella town sign photo"
+          "duration": "10 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Hella town sign photo"
         },
         {
-          "duration" : "2 hrs",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "World Cup Semifinal 2"
+          "duration": "2 hrs",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "World Cup Semifinal 2"
         },
         {
-          "duration" : "30 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Check in Vík"
+          "duration": "30 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Check in Vík"
         }
       ],
-      "activityCount" : 7,
-      "date" : "Wed Jul 15",
-      "driving" : "~187 km",
-      "foodCount" : 4,
-      "id" : 3,
-      "route" : "Reykjavík → Hella → Seljalandsfoss → Skógafoss → Vík",
-      "stayName" : "Vik House",
-      "title" : "Waterfalls & South Coast"
+      "activityCount": 7,
+      "date": "Wed Jul 15",
+      "driving": "~187 km",
+      "foodCount": 4,
+      "id": 3,
+      "route": "Reykjavík → Hella → Seljalandsfoss → Skógafoss → Vík",
+      "stayName": "Vik House",
+      "title": "Waterfalls & South Coast"
     },
     {
-      "activities" : [
+      "activities": [
         {
-          "duration" : "~4 hrs",
-          "hikeDistanceKm" : 11.9,
-          "isHike" : true,
-          "isWaterfall" : false,
-          "name" : "Þakgil–Mælifell hike"
+          "duration": "~4 hrs",
+          "hikeDistanceKm": 11.9,
+          "isHike": true,
+          "isWaterfall": false,
+          "name": "Þakgil–Mælifell hike"
         },
         {
-          "duration" : "45 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Reynisfjara black sand beach"
+          "duration": "45 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Reynisfjara black sand beach"
         },
         {
-          "duration" : "1.5 hrs",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Dyrhólaey"
+          "duration": "1.5 hrs",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Dyrhólaey"
         },
         {
-          "duration" : "1 hr",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Hjörleifshöfði \/ Yoda Cave"
+          "duration": "1 hr",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Hjörleifshöfði / Yoda Cave"
         },
         {
-          "duration" : "30 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Reyniskirkja church"
+          "duration": "30 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Reyniskirkja church"
         }
       ],
-      "activityCount" : 5,
-      "date" : "Thu Jul 16",
-      "driving" : "~80 km local",
-      "foodCount" : 6,
-      "id" : 4,
-      "route" : "Vík area",
-      "stayName" : "Vik House",
-      "title" : "Vík Explorer Day"
+      "activityCount": 5,
+      "date": "Thu Jul 16",
+      "driving": "~80 km local",
+      "foodCount": 6,
+      "id": 4,
+      "route": "Vík area",
+      "stayName": "Vik House",
+      "title": "Vík Explorer Day"
     },
     {
-      "activities" : [
+      "activities": [
         {
-          "duration" : "45 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Fjaðrárgljúfur canyon"
+          "duration": "45 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Fjaðrárgljúfur canyon"
         },
         {
-          "duration" : "2 hrs",
-          "hikeDistanceKm" : 5.5,
-          "isHike" : true,
-          "isWaterfall" : true,
-          "name" : "Svartifoss hike (Skaftafell)"
+          "duration": "2 hrs",
+          "hikeDistanceKm": 5.5,
+          "isHike": true,
+          "isWaterfall": true,
+          "name": "Svartifoss hike (Skaftafell)"
         },
         {
-          "duration" : "4 hrs (2:00 PM start)",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Fjallsárlón Glacier Hike & Boat Tour"
+          "duration": "4 hrs (2:00 PM start)",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Fjallsárlón Glacier Hike & Boat Tour"
         },
         {
-          "duration" : "45 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Jökulsárlón glacier lagoon"
+          "duration": "45 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Jökulsárlón glacier lagoon"
         },
         {
-          "duration" : "30 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Diamond Beach"
+          "duration": "30 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Diamond Beach"
         },
         {
-          "duration" : "1.5 hrs",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Vestrahorn \/ Stokksnes"
+          "duration": "1.5 hrs",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Vestrahorn / Stokksnes"
         },
         {
-          "duration" : "30 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Check in Fosshotel"
+          "duration": "30 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Check in Fosshotel"
         }
       ],
-      "activityCount" : 7,
-      "date" : "Fri Jul 17",
-      "driving" : "~270 km",
-      "foodCount" : 4,
-      "id" : 5,
-      "route" : "Vík → Fjaðrárgljúfur → Skaftafell → Fjallsárlón → Jökulsárlón → Höfn",
-      "stayName" : "Fosshotel Vatnajökull",
-      "title" : "Glaciers & Icebergs"
+      "activityCount": 7,
+      "date": "Fri Jul 17",
+      "driving": "~270 km",
+      "foodCount": 4,
+      "id": 5,
+      "route": "Vík → Fjaðrárgljúfur → Skaftafell → Fjallsárlón → Jökulsárlón → Höfn",
+      "stayName": "Fosshotel Vatnajökull",
+      "title": "Glaciers & Icebergs"
     },
     {
-      "activities" : [
+      "activities": [
         {
-          "duration" : "5 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Lómagnúpur viewpoint"
+          "duration": "5 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Lómagnúpur viewpoint"
         },
         {
-          "duration" : "15 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Dverghamrar \"Dwarf Cliffs\""
+          "duration": "15 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Dverghamrar \"Dwarf Cliffs\""
         },
         {
-          "duration" : "30 min",
-          "isHike" : false,
-          "isWaterfall" : true,
-          "name" : "Fagrifoss waterfall"
+          "duration": "30 min",
+          "isHike": false,
+          "isWaterfall": true,
+          "name": "Fagrifoss waterfall"
         },
         {
-          "duration" : "4–5 hrs",
-          "hikeDistanceKm" : 8,
-          "isHike" : true,
-          "isWaterfall" : false,
-          "name" : "Laki \/ Lakagígar craters"
+          "duration": "4–5 hrs",
+          "hikeDistanceKm": 8,
+          "isHike": true,
+          "isWaterfall": false,
+          "name": "Laki / Lakagígar craters"
         },
         {
-          "duration" : "1.5 hrs",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Laki summit + lunch"
+          "duration": "1.5 hrs",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Laki summit + lunch"
         },
         {
-          "duration" : "1.5 hrs",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Tjarnargígur + lava walks"
+          "duration": "1.5 hrs",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Tjarnargígur + lava walks"
         },
         {
-          "duration" : "30 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Check in Stracta"
+          "duration": "30 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Check in Stracta"
         }
       ],
-      "activityCount" : 7,
-      "date" : "Sat Jul 18",
-      "driving" : "~200 km + F-road",
-      "foodCount" : 5,
-      "id" : 6,
-      "route" : "Höfn → Klaustur → Laki via F206 → Klaustur",
-      "stayName" : "Stracta Apartments",
-      "title" : "Laki & the Highlands"
+      "activityCount": 7,
+      "date": "Sat Jul 18",
+      "driving": "~200 km + F-road",
+      "foodCount": 5,
+      "id": 6,
+      "route": "Höfn → Klaustur → Laki via F206 → Klaustur",
+      "stayName": "Stracta Apartments",
+      "title": "Laki & the Highlands"
     },
     {
-      "activities" : [
+      "activities": [
         {
-          "duration" : "1.5 hrs",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "DC-3 plane wreck Sólheimasandur"
+          "duration": "1.5 hrs",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "DC-3 plane wreck Sólheimasandur"
         },
         {
-          "duration" : "1.5 hrs (1:30 PM start)",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Secret Lagoon (Gamla Laugin)"
+          "duration": "1.5 hrs (1:30 PM start)",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Secret Lagoon (Gamla Laugin)"
         },
         {
-          "duration" : "30 min",
-          "isHike" : false,
-          "isWaterfall" : true,
-          "name" : "Hjálparfoss"
+          "duration": "30 min",
+          "isHike": false,
+          "isWaterfall": true,
+          "name": "Hjálparfoss"
         },
         {
-          "duration" : "3 hrs",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "World Cup Final"
+          "duration": "3 hrs",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "World Cup Final"
         },
         {
-          "duration" : "30 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Check in Heima"
+          "duration": "30 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Check in Heima"
         }
       ],
-      "activityCount" : 5,
-      "date" : "Sun Jul 19",
-      "driving" : "~225 km",
-      "foodCount" : 4,
-      "id" : 7,
-      "route" : "Klaustur → Sólheimasandur → Flúðir → Selfoss",
-      "stayName" : "Heima Holiday Homes",
-      "title" : "Plane Wreck & Secret Lagoon"
+      "activityCount": 5,
+      "date": "Sun Jul 19",
+      "driving": "~225 km",
+      "foodCount": 4,
+      "id": 7,
+      "route": "Klaustur → Sólheimasandur → Flúðir → Selfoss",
+      "stayName": "Heima Holiday Homes",
+      "title": "Plane Wreck & Secret Lagoon"
     },
     {
-      "activities" : [
+      "activities": [
         {
-          "duration" : "~5 hrs",
-          "hikeDistanceKm" : 10,
-          "isHike" : true,
-          "isWaterfall" : false,
-          "name" : "Brennisteinsalda + Bláhnúkur loop"
+          "duration": "~5 hrs",
+          "hikeDistanceKm": 10,
+          "isHike": true,
+          "isWaterfall": false,
+          "name": "Brennisteinsalda + Bláhnúkur loop"
         },
         {
-          "duration" : "45 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Landmannalaugar hot spring"
+          "duration": "45 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Landmannalaugar hot spring"
         },
         {
-          "duration" : "45 min add-on",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Ljótipollur red crater lake (optional)"
+          "duration": "45 min add-on",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Ljótipollur red crater lake (optional)"
         },
         {
-          "duration" : "15 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Hekla viewpoint"
+          "duration": "15 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Hekla viewpoint"
         },
         {
-          "duration" : "15 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Start hike"
+          "duration": "15 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Start hike"
         },
         {
-          "duration" : "30 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Descend to saddle"
+          "duration": "30 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Descend to saddle"
         },
         {
-          "duration" : "30 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Cross lava field"
+          "duration": "30 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Cross lava field"
         },
         {
-          "duration" : "15 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Off F-road"
+          "duration": "15 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Off F-road"
         }
       ],
-      "activityCount" : 8,
-      "date" : "Mon Jul 20",
-      "driving" : "~400 km round trip, 10–12 hrs",
-      "foodCount" : 3,
-      "id" : 8,
-      "route" : "Selfoss → F208 → Landmannalaugar → Selfoss",
-      "stayName" : "Heima Holiday Homes",
-      "title" : "Landmannalaugar"
+      "activityCount": 8,
+      "date": "Mon Jul 20",
+      "driving": "~400 km round trip, 10–12 hrs",
+      "foodCount": 3,
+      "id": 8,
+      "route": "Selfoss → F208 → Landmannalaugar → Selfoss",
+      "stayName": "Heima Holiday Homes",
+      "title": "Landmannalaugar"
     },
     {
-      "activities" : [
+      "activities": [
         {
-          "duration" : "15 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Gerðuberg basalt columns"
+          "duration": "15 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Gerðuberg basalt columns"
         },
         {
-          "duration" : "30 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Ytri Tunga seal beach"
+          "duration": "30 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Ytri Tunga seal beach"
         },
         {
-          "duration" : "15 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Búðakirkja black church"
+          "duration": "15 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Búðakirkja black church"
         },
         {
-          "duration" : "1.5 hrs",
-          "hikeDistanceKm" : 5,
-          "isHike" : true,
-          "isWaterfall" : false,
-          "name" : "Arnarstapi cliff walk to Hellnar"
+          "duration": "1.5 hrs",
+          "hikeDistanceKm": 5,
+          "isHike": true,
+          "isWaterfall": false,
+          "name": "Arnarstapi cliff walk to Hellnar"
         },
         {
-          "duration" : "30 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Check in Arnarstapi"
+          "duration": "30 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Check in Arnarstapi"
         },
         {
-          "duration" : "1.5 hrs",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Optional sunset photography"
+          "duration": "1.5 hrs",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Optional sunset photography"
         }
       ],
-      "activityCount" : 6,
-      "date" : "Tue Jul 21",
-      "driving" : "~250 km",
-      "foodCount" : 6,
-      "id" : 9,
-      "route" : "Selfoss → Borgarnes → Snæfellsnes south → Arnarstapi",
-      "stayName" : "Arnarstapi Hotel",
-      "title" : "Snæfellsnes South"
+      "activityCount": 6,
+      "date": "Tue Jul 21",
+      "driving": "~250 km",
+      "foodCount": 6,
+      "id": 9,
+      "route": "Selfoss → Borgarnes → Snæfellsnes south → Arnarstapi",
+      "stayName": "Arnarstapi Hotel",
+      "title": "Snæfellsnes South"
     },
     {
-      "activities" : [
+      "activities": [
         {
-          "duration" : "45 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Vatnshellir lava cave"
+          "duration": "45 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Vatnshellir lava cave"
         },
         {
-          "duration" : "45 min",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "Djúpalónssandur black pebble beach"
+          "duration": "45 min",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "Djúpalónssandur black pebble beach"
         },
         {
-          "duration" : "1 hr",
-          "isHike" : false,
-          "isWaterfall" : true,
-          "name" : "Kirkjufell + Kirkjufellsfoss"
+          "duration": "1 hr",
+          "isHike": false,
+          "isWaterfall": true,
+          "name": "Kirkjufell + Kirkjufellsfoss"
         },
         {
-          "duration" : "5 hrs",
-          "isHike" : false,
-          "isWaterfall" : false,
-          "name" : "FI633 wheels up"
+          "duration": "5 hrs",
+          "isHike": false,
+          "isWaterfall": false,
+          "name": "FI633 wheels up"
         }
       ],
-      "activityCount" : 4,
-      "date" : "Wed Jul 22",
-      "driving" : "~300 km",
-      "foodCount" : 3,
-      "id" : 10,
-      "route" : "Arnarstapi → Snæfellsnes north → Borgarnes → Keflavík → Boston",
-      "title" : "Snæfellsnes North & Home"
+      "activityCount": 4,
+      "date": "Wed Jul 22",
+      "driving": "~300 km",
+      "foodCount": 3,
+      "id": 10,
+      "route": "Arnarstapi → Snæfellsnes north → Borgarnes → Keflavík → Boston",
+      "title": "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-13T02:34:59Z",
-  "photos" : [
+  "lastUpdated": "2026-07-13T02:34:59Z",
+  "photos": [
     {
-      "activityName" : "Flight Boston to Reykjavík",
-      "dayID" : 0,
-      "filename" : "204A3A71-7600-4E93-8896-A5B3FCA6E6EF.jpg",
-      "key" : "d0-a0",
-      "timestamp" : "2026-07-13T02:25:38Z"
+      "activityName": "Flight Boston to Reykjavík",
+      "dayID": 0,
+      "filename": "7B754254-5B09-44B4-BBBB-EC26953CF5CA.jpg",
+      "key": "d0-a0",
+      "timestamp": "2026-07-13T02:25:38Z"
     },
     {
-      "activityName" : "Flight Boston to Reykjavík",
-      "dayID" : 0,
-      "filename" : "7B754254-5B09-44B4-BBBB-EC26953CF5CA.jpg",
-      "key" : "d0-a0",
-      "timestamp" : "2026-07-13T02:25:38Z"
+      "activityName": "Flight Boston to Reykjavík",
+      "dayID": 0,
+      "filename": "2CB66D6E-55E9-4C6E-886F-DA9F94532FC9.jpg",
+      "key": "d0-a0",
+      "timestamp": "2026-07-13T02:25:47Z"
     },
     {
-      "activityName" : "Flight Boston to Reykjavík",
-      "dayID" : 0,
-      "filename" : "2CB66D6E-55E9-4C6E-886F-DA9F94532FC9.jpg",
-      "key" : "d0-a0",
-      "timestamp" : "2026-07-13T02:25:47Z"
+      "activityName": "World Cup with family",
+      "dayID": -1,
+      "filename": "C75879FC-F403-48B6-A12C-77D07BA97BFE.jpg",
+      "key": "d-1-s2",
+      "timestamp": "2026-07-12T02:46:45Z"
     },
     {
-      "activityName" : "World Cup with family",
-      "dayID" : -1,
-      "filename" : "C75879FC-F403-48B6-A12C-77D07BA97BFE.jpg",
-      "key" : "d-1-s2",
-      "timestamp" : "2026-07-12T02:46:45Z"
+      "activityName": "Flight SFO to Boston",
+      "dayID": -1,
+      "filename": "4F697389-AFDF-4817-B5C8-3EF0300848AB.jpg",
+      "key": "d-1-a0",
+      "timestamp": "2026-07-12T21:14:05Z"
     },
     {
-      "activityName" : "Flight SFO to Boston",
-      "dayID" : -1,
-      "filename" : "4F697389-AFDF-4817-B5C8-3EF0300848AB.jpg",
-      "key" : "d-1-a0",
-      "timestamp" : "2026-07-12T21:14:05Z"
+      "activityName": "Flight SFO to Boston",
+      "dayID": -1,
+      "filename": "BC7EE9DD-B7CF-4FC3-88EE-C503A057A6A0.jpg",
+      "key": "d-1-a0",
+      "timestamp": "2026-07-12T21:14:06Z"
     },
     {
-      "activityName" : "Flight SFO to Boston",
-      "dayID" : -1,
-      "filename" : "BC7EE9DD-B7CF-4FC3-88EE-C503A057A6A0.jpg",
-      "key" : "d-1-a0",
-      "timestamp" : "2026-07-12T21:14:06Z"
+      "activityName": "World Cup with family",
+      "dayID": -1,
+      "filename": "6F5D50DC-41EA-49E9-B199-9026EDCEDA7C.jpg",
+      "key": "d-1-a1",
+      "timestamp": "2026-07-12T21:20:48Z"
     },
     {
-      "activityName" : "World Cup with family",
-      "dayID" : -1,
-      "filename" : "6F5D50DC-41EA-49E9-B199-9026EDCEDA7C.jpg",
-      "key" : "d-1-a1",
-      "timestamp" : "2026-07-12T21:20:48Z"
+      "activityName": "World Cup with family",
+      "dayID": -1,
+      "filename": "CDF61917-F2B0-4F07-A687-41921C7A00EF.jpg",
+      "key": "d-1-a1",
+      "timestamp": "2026-07-12T21:20:48Z"
     },
     {
-      "activityName" : "World Cup with family",
-      "dayID" : -1,
-      "filename" : "CDF61917-F2B0-4F07-A687-41921C7A00EF.jpg",
-      "key" : "d-1-a1",
-      "timestamp" : "2026-07-12T21:20:48Z"
+      "activityName": "World Cup with family",
+      "dayID": -1,
+      "filename": "B5AC6B9F-E46F-492E-8E98-AD1F923028B8.jpg",
+      "key": "d-1-a1",
+      "timestamp": "2026-07-12T21:20:49Z"
     },
     {
-      "activityName" : "World Cup with family",
-      "dayID" : -1,
-      "filename" : "B5AC6B9F-E46F-492E-8E98-AD1F923028B8.jpg",
-      "key" : "d-1-a1",
-      "timestamp" : "2026-07-12T21:20:49Z"
+      "activityName": "World Cup with family",
+      "dayID": -1,
+      "filename": "768890A7-03F7-4700-8BEC-A2A965DB03D4.jpg",
+      "key": "d-1-a1",
+      "timestamp": "2026-07-12T21:20:49Z"
     },
     {
-      "activityName" : "World Cup with family",
-      "dayID" : -1,
-      "filename" : "768890A7-03F7-4700-8BEC-A2A965DB03D4.jpg",
-      "key" : "d-1-a1",
-      "timestamp" : "2026-07-12T21:20:49Z"
+      "activityName": "World Cup with family",
+      "dayID": -1,
+      "filename": "FC6C3ECE-ADC4-4ABE-BF3E-3754E32318B9.jpg",
+      "key": "d-1-a1",
+      "timestamp": "2026-07-12T21:20:49Z"
     },
     {
-      "activityName" : "World Cup with family",
-      "dayID" : -1,
-      "filename" : "FC6C3ECE-ADC4-4ABE-BF3E-3754E32318B9.jpg",
-      "key" : "d-1-a1",
-      "timestamp" : "2026-07-12T21:20:49Z"
+      "activityName": "World Cup with family",
+      "dayID": -1,
+      "filename": "821169F0-B13C-4D07-99EA-B3CBF24C0B87.jpg",
+      "key": "d-1-a1",
+      "timestamp": "2026-07-12T21:20:49Z"
     },
     {
-      "activityName" : "World Cup with family",
-      "dayID" : -1,
-      "filename" : "821169F0-B13C-4D07-99EA-B3CBF24C0B87.jpg",
-      "key" : "d-1-a1",
-      "timestamp" : "2026-07-12T21:20:49Z"
+      "activityName": "Flight Boston to Reykjavík",
+      "dayID": 0,
+      "filename": "48F0D1F3-EA25-498A-B9BB-23E719C9565B.jpg",
+      "key": "d0-a0",
+      "timestamp": "2026-07-13T01:33:19Z"
     },
     {
-      "activityName" : "Flight Boston to Reykjavík",
-      "dayID" : 0,
-      "filename" : "48F0D1F3-EA25-498A-B9BB-23E719C9565B.jpg",
-      "key" : "d0-a0",
-      "timestamp" : "2026-07-13T01:33:19Z"
-    },
-    {
-      "activityName" : "Fly Boston to Iceland",
-      "dayID" : -1,
-      "filename" : "0C313879-463C-4704-9536-B47CD974FD5F.jpg",
-      "key" : "d-1-a2",
-      "timestamp" : "2026-07-13T01:18:40Z"
+      "activityName": "Fly Boston to Iceland",
+      "dayID": -1,
+      "filename": "0C313879-463C-4704-9536-B47CD974FD5F.jpg",
+      "key": "d-1-a2",
+      "timestamp": "2026-07-13T01:18:40Z"
     }
   ],
-  "travelers" : [
+  "travelers": [
     {
-      "checkIns" : [
+      "checkIns": [
         {
-          "dayID" : 0,
-          "itemName" : "Flight Boston to Reykjavík",
-          "key" : "d0-a0",
-          "timestamp" : "2026-07-13T02:25:24Z"
+          "dayID": 0,
+          "itemName": "Flight Boston to Reykjavík",
+          "key": "d0-a0",
+          "timestamp": "2026-07-13T02:25:24Z"
         }
       ],
-      "colorHex" : "#3180A8",
-      "customEvents" : [
-
-      ],
-      "deletedEventIDs" : [
+      "colorHex": "#3180A8",
+      "customEvents": [],
+      "deletedEventIDs": [
         "54A846B9-6D87-40D2-995B-E807631D15DF",
         "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
@@ -673,49 +664,41 @@
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
         "A1FA3647-B0AE-4B53-B589-B9F10A0B035D"
       ],
-      "gpsPointCount" : 0,
-      "gpsTrack" : [
-
-      ],
-      "hikes" : [
-
-      ],
-      "hikesCompleted" : 0,
-      "name" : "Chris",
-      "notes" : [
-
-      ],
-      "ratings" : [
-
-      ],
-      "totalHikeDistanceKm" : 0,
-      "waterfallsVisited" : 0
+      "gpsPointCount": 0,
+      "gpsTrack": [],
+      "hikes": [],
+      "hikesCompleted": 0,
+      "name": "Chris",
+      "notes": [],
+      "ratings": [],
+      "totalHikeDistanceKm": 0,
+      "waterfallsVisited": 0
     },
     {
-      "checkIns" : [
+      "checkIns": [
         {
-          "dayID" : -1,
-          "itemName" : "Fly Boston to Iceland",
-          "key" : "d-1-a2",
-          "latitude" : 42.37031915384049,
-          "longitude" : -71.0212835110328,
-          "timestamp" : "2026-07-13T01:18:43Z"
+          "dayID": -1,
+          "itemName": "Fly Boston to Iceland",
+          "key": "d-1-a2",
+          "latitude": 42.37031915384049,
+          "longitude": -71.0212835110328,
+          "timestamp": "2026-07-13T01:18:43Z"
         }
       ],
-      "colorHex" : "#3180A8",
-      "customEvents" : [
+      "colorHex": "#3180A8",
+      "customEvents": [
         {
-          "createdBy" : "Becah",
-          "dayID" : 2,
-          "id" : "72F18AEC-99EF-4D55-B498-448DE505E501",
-          "latitude" : 42.68065866666667,
-          "longitude" : -71.46312083333333,
-          "name" : "Efstidalur II Ice Cream",
-          "notes" : "",
-          "type" : "Food"
+          "createdBy": "Becah",
+          "dayID": 2,
+          "id": "72F18AEC-99EF-4D55-B498-448DE505E501",
+          "latitude": 42.68065866666667,
+          "longitude": -71.46312083333333,
+          "name": "Efstidalur II Ice Cream",
+          "notes": "",
+          "type": "Food"
         }
       ],
-      "deletedEventIDs" : [
+      "deletedEventIDs": [
         "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
         "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
@@ -723,127 +706,109 @@
         "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
         "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A"
       ],
-      "gpsPointCount" : 12,
-      "gpsTrack" : [
+      "gpsPointCount": 12,
+      "gpsTrack": [
         {
-          "acc" : 14.403975080018844,
-          "lat" : 42.66683791096425,
-          "lng" : -71.58970040148347,
-          "ts" : "2026-07-12T22:44:31Z"
+          "acc": 14.403975080018844,
+          "lat": 42.66683791096425,
+          "lng": -71.58970040148347,
+          "ts": "2026-07-12T22:44:31Z"
         },
         {
-          "acc" : 14.403975080018844,
-          "lat" : 42.66683791096425,
-          "lng" : -71.58970040148347,
-          "ts" : "2026-07-12T22:44:31Z"
+          "acc": 14.403975080018844,
+          "lat": 42.66683791096425,
+          "lng": -71.58970040148347,
+          "ts": "2026-07-12T22:44:31Z"
         },
         {
-          "acc" : 14.495014000000001,
-          "lat" : 42.66683791096425,
-          "lng" : -71.58970040148347,
-          "ts" : "2026-07-12T22:44:31Z"
+          "acc": 14.495014000000001,
+          "lat": 42.66683791096425,
+          "lng": -71.58970040148347,
+          "ts": "2026-07-12T22:44:31Z"
         },
         {
-          "acc" : 5,
-          "lat" : 42.68065866666667,
-          "lng" : -71.46312083333333,
-          "ts" : "2026-07-12T23:43:45Z"
+          "acc": 5,
+          "lat": 42.68065866666667,
+          "lng": -71.46312083333333,
+          "ts": "2026-07-12T23:43:45Z"
         },
         {
-          "acc" : 5,
-          "lat" : 42.660296833333334,
-          "lng" : -71.42981033333334,
-          "ts" : "2026-07-12T23:48:45Z"
+          "acc": 5,
+          "lat": 42.660296833333334,
+          "lng": -71.42981033333334,
+          "ts": "2026-07-12T23:48:45Z"
         },
         {
-          "acc" : 5,
-          "lat" : 42.60048633333334,
-          "lng" : -71.32224933333333,
-          "ts" : "2026-07-12T23:55:20Z"
+          "acc": 5,
+          "lat": 42.60048633333334,
+          "lng": -71.32224933333333,
+          "ts": "2026-07-12T23:55:20Z"
         },
         {
-          "acc" : 5,
-          "lat" : 42.60023066666666,
-          "lng" : -71.32203249999999,
-          "ts" : "2026-07-12T23:55:20Z"
+          "acc": 5,
+          "lat": 42.60023066666666,
+          "lng": -71.32203249999999,
+          "ts": "2026-07-12T23:55:20Z"
         },
         {
-          "acc" : 12.716531199847996,
-          "lat" : 42.36943356519872,
-          "lng" : -71.01985340144938,
-          "ts" : "2026-07-13T00:45:41Z"
+          "acc": 12.716531199847996,
+          "lat": 42.36943356519872,
+          "lng": -71.01985340144938,
+          "ts": "2026-07-13T00:45:41Z"
         },
         {
-          "acc" : 24.103136304273907,
-          "lat" : 42.370315087542686,
-          "lng" : -71.02146461764768,
-          "ts" : "2026-07-13T01:18:14Z"
+          "acc": 24.103136304273907,
+          "lat": 42.370315087542686,
+          "lng": -71.02146461764768,
+          "ts": "2026-07-13T01:18:14Z"
         },
         {
-          "acc" : 24.103136304273907,
-          "lat" : 42.370315087542686,
-          "lng" : -71.02146461764768,
-          "ts" : "2026-07-13T01:18:14Z"
+          "acc": 24.103136304273907,
+          "lat": 42.370315087542686,
+          "lng": -71.02146461764768,
+          "ts": "2026-07-13T01:18:14Z"
         },
         {
-          "acc" : 32.395013999999996,
-          "lat" : 42.37032172711337,
-          "lng" : -71.02140949173017,
-          "ts" : "2026-07-13T01:18:14Z"
+          "acc": 32.395013999999996,
+          "lat": 42.37032172711337,
+          "lng": -71.02140949173017,
+          "ts": "2026-07-13T01:18:14Z"
         },
         {
-          "acc" : 28.116654311464284,
-          "lat" : 42.37031915384049,
-          "lng" : -71.0212835110328,
-          "ts" : "2026-07-13T01:18:14Z"
+          "acc": 28.116654311464284,
+          "lat": 42.37031915384049,
+          "lng": -71.0212835110328,
+          "ts": "2026-07-13T01:18:14Z"
         }
       ],
-      "hikes" : [
-
-      ],
-      "hikesCompleted" : 0,
-      "name" : "Becah",
-      "notes" : [
-
-      ],
-      "ratings" : [
-
-      ],
-      "totalHikeDistanceKm" : 0,
-      "waterfallsVisited" : 0
+      "hikes": [],
+      "hikesCompleted": 0,
+      "name": "Becah",
+      "notes": [],
+      "ratings": [],
+      "totalHikeDistanceKm": 0,
+      "waterfallsVisited": 0
     },
     {
-      "checkIns" : [
-
-      ],
-      "colorHex" : "#3180A8",
-      "customEvents" : [
-
-      ],
-      "deletedEventIDs" : [
+      "checkIns": [],
+      "colorHex": "#3180A8",
+      "customEvents": [],
+      "deletedEventIDs": [
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
         "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
         "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "DA7494B6-485B-406D-8AA3-68DD6D0B24CE"
       ],
-      "gpsPointCount" : 0,
-      "gpsTrack" : [
-
-      ],
-      "hikes" : [
-
-      ],
-      "hikesCompleted" : 0,
-      "name" : "Calvin",
-      "notes" : [
-
-      ],
-      "ratings" : [
-
-      ],
-      "totalHikeDistanceKm" : 0,
-      "waterfallsVisited" : 1
+      "gpsPointCount": 0,
+      "gpsTrack": [],
+      "hikes": [],
+      "hikesCompleted": 0,
+      "name": "Calvin",
+      "notes": [],
+      "ratings": [],
+      "totalHikeDistanceKm": 0,
+      "waterfallsVisited": 1
     }
   ]
 }
