@@ -549,8 +549,22 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-13T09:01:39Z",
+  "lastUpdated" : "2026-07-13T09:07:05Z",
   "photos" : [
+    {
+      "activityName" : "Flight Boston to Reykjavík",
+      "dayID" : 0,
+      "filename" : "7B754254-5B09-44B4-BBBB-EC26953CF5CA.jpg",
+      "key" : "d0-a0",
+      "timestamp" : "2026-07-13T02:25:38Z"
+    },
+    {
+      "activityName" : "Flight Boston to Reykjavík",
+      "dayID" : 0,
+      "filename" : "2CB66D6E-55E9-4C6E-886F-DA9F94532FC9.jpg",
+      "key" : "d0-a0",
+      "timestamp" : "2026-07-13T02:25:47Z"
+    },
     {
       "activityName" : "Fly Boston to Iceland",
       "dayID" : -1,
@@ -560,6 +574,70 @@
     }
   ],
   "travelers" : [
+    {
+      "checkIns" : [
+        {
+          "dayID" : 0,
+          "itemName" : "Flight Boston to Reykjavík",
+          "key" : "d0-a0",
+          "timestamp" : "2026-07-13T02:25:24Z"
+        }
+      ],
+      "colorHex" : "#3180A8",
+      "customEvents" : [
+        {
+          "createdBy" : "Chris",
+          "dayID" : 2,
+          "id" : "AF7482C2-208D-4491-8769-4995975659A9",
+          "name" : "Efstidalur II Ice Cream",
+          "notes" : "",
+          "scheduleAfterIndex" : 7,
+          "type" : "Food"
+        }
+      ],
+      "deletedEventIDs" : [
+        "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
+        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
+        "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
+        "54A846B9-6D87-40D2-995B-E807631D15DF",
+        "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
+        "72F18AEC-99EF-4D55-B498-448DE505E501",
+        "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
+        "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A"
+      ],
+      "gpsPointCount" : 1,
+      "gpsTrack" : [
+        {
+          "acc" : 135.12671105200525,
+          "lat" : 42.36835518700849,
+          "lng" : -71.01702537983924,
+          "ts" : "2026-07-13T02:38:14Z"
+        }
+      ],
+      "hikes" : [
+
+      ],
+      "hikesCompleted" : 0,
+      "name" : "Chris",
+      "notes" : [
+        {
+          "dayID" : 0,
+          "itemName" : "Flight Boston to Reykjavík",
+          "key" : "d0-a0",
+          "text" : "737 Max. Wish us luck! "
+        }
+      ],
+      "ratings" : [
+        {
+          "dayID" : 0,
+          "itemName" : "Flight Boston to Reykjavík",
+          "key" : "d0-a0",
+          "rating" : 5
+        }
+      ],
+      "totalHikeDistanceKm" : 0,
+      "waterfallsVisited" : 0
+    },
     {
       "checkIns" : [
         {
