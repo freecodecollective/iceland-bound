@@ -6,5 +6,16 @@
     "d-1-a2"
   ],
   "overrides": {},
-  "additions": []
+  "additions": [
+    {
+      "id": "admin-55846f1c",
+      "dayId": 2,
+      "name": "Efstidalur II Ice Cream",
+      "duration": "",
+      "isHike": false,
+      "isWaterfall": false,
+      "hikeDistanceKm": null,
+      "addedAt": "2026-07-13T02:49:13.472Z"
+    }
+  ]
 }
