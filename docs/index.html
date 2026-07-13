@@ -1044,6 +1044,8 @@ const TRIP_END = new Date('2026-07-22T23:59:59');
 const PHOTO_BASE = 'https://raw.githubusercontent.com/freecodecollective/iceland-bound/main/data/photos/';
 const SYNC_URL = 'https://raw.githubusercontent.com/freecodecollective/iceland-bound/main/data/trip-data.json';
 const DEL_EVENTS_URL = 'https://raw.githubusercontent.com/freecodecollective/iceland-bound/main/data/admin-deleted-events.json';
+const SCHED_ADMIN_URL = 'https://raw.githubusercontent.com/freecodecollective/iceland-bound/main/data/schedule-admin.json';
+var scheduleAdmin = null;
 
 // ─── HELPERS ──────────────────────────────────────────────────────
 function handlePhotoError(el) {
@@ -1311,9 +1313,9 @@ function initMap() {
   const gpsFallback = buildGPSFallbacks();
 
   for (const day of TRIP_DATA) {
-    day.activities.forEach(function(act, idx) {
+    getEffectiveActivities(day).forEach(function(item) {
+      var act = item.act, key = item.key;
       var lat = act.lat, lng = act.lng;
-      var key = 'd' + day.id + '-a' + idx;
       if (!lat || !lng) {
         var hasPhotos = syncData && syncData.photos && syncData.photos.some(function(p) { return p.key === key; });
         var hasCheckIn = syncData && syncData.travelers && syncData.travelers.some(function(t) { return (t.checkIns || []).some(function(c) { return c.key === key; }); });
@@ -1949,6 +1951,38 @@ function renderProgress() {
 }
 
 // ─── RENDER DAYS ──────────────────────────────────────────────────
+function getEffectiveActivities(day) {
+  var activities = day.activities.map(function(act, idx) {
+    var key = 'd' + day.id + '-a' + idx;
+    if (scheduleAdmin && scheduleAdmin.overrides && scheduleAdmin.overrides[key]) {
+      var ov = scheduleAdmin.overrides[key];
+      var merged = Object.assign({}, act);
+      if (ov.name) merged.name = ov.name;
+      if (ov.duration) merged.duration = ov.duration;
+      if (ov.isHike !== undefined) { merged.isHike = ov.isHike; if (!ov.isHike) delete merged.hikeKm; }
+      if (ov.isWaterfall !== undefined) merged.isWaterfall = ov.isWaterfall;
+      if (ov.hikeDistanceKm !== undefined) merged.hikeKm = ov.hikeDistanceKm;
+      return { act: merged, key: key };
+    }
+    return { act: act, key: key };
+  });
+  if (scheduleAdmin && scheduleAdmin.hidden) {
+    activities = activities.filter(function(item) { return scheduleAdmin.hidden.indexOf(item.key) === -1; });
+  }
+  if (scheduleAdmin && scheduleAdmin.additions) {
+    scheduleAdmin.additions.forEach(function(added) {
+      if (added.dayId === day.id) {
+        activities.push({
+          act: { name: added.name, duration: added.duration, isHike: added.isHike, isWaterfall: added.isWaterfall, hikeKm: added.hikeDistanceKm || 0, brief: '', details: '' },
+          key: added.id,
+          isAdminAdded: true
+        });
+      }
+    });
+  }
+  return activities;
+}
+
 function renderDays() {
   const container = document.getElementById('daysContainer');
   const currentDay = getCurrentDayNum();
@@ -1957,13 +1991,14 @@ function renderDays() {
   for (const day of TRIP_DATA) {
     const status = getDayStatus(day.id);
     const expanded = status === 'today';
-    const bookedCount = day.activities.filter(function(a) { return a.booked; }).length;
-    const hikeActivities = day.activities.filter(function(a) { return a.hikeKm; });
+    const effActs = getEffectiveActivities(day);
+    const bookedCount = effActs.filter(function(item) { return item.act.booked; }).length;
+    const hikeActivities = effActs.filter(function(item) { return item.act.hikeKm; });
 
     let badges = '';
     if (bookedCount > 0) badges += '<span class="badge badge-green">&#10003; ' + bookedCount + ' booked</span>';
     if (hikeActivities.length > 0) {
-      const totalKm = hikeActivities.reduce(function(s, a) { return s + a.hikeKm; }, 0);
+      const totalKm = hikeActivities.reduce(function(s, item) { return s + item.act.hikeKm; }, 0);
       badges += '<span class="badge badge-orange">&#129406; ' + totalKm + ' km</span>';
     }
     if (day.match) badges += '<span class="badge badge-accent">&#9917; Match</span>';
@@ -2012,9 +2047,10 @@ function renderDayBody(day) {
     }
   }
 
-  html += '<div class="section-title">&#128205; Activities (' + day.activities.length + ')</div>';
-  day.activities.forEach(function(act, idx) {
-    html += renderActivityCard(act, 'd' + day.id + '-a' + idx);
+  const effActs = getEffectiveActivities(day);
+  html += '<div class="section-title">&#128205; Activities (' + effActs.length + ')</div>';
+  effActs.forEach(function(item) {
+    html += renderActivityCard(item.act, item.key);
   });
 
   html += '<div class="section-title">&#127860; Food & Drink (' + day.food.length + ')</div>';
@@ -2161,14 +2197,18 @@ function toggleStay(el) { el.classList.toggle('expanded'); }
 // ─── SYNC FETCH ───────────────────────────────────────────────────
 async function fetchSyncData() {
   try {
-    const [resp, delResp] = await Promise.all([
+    const [resp, delResp, schedResp] = await Promise.all([
       fetch(SYNC_URL + '?t=' + Date.now()),
-      fetch(DEL_EVENTS_URL + '?t=' + Date.now()).catch(function() { return { ok: false }; })
+      fetch(DEL_EVENTS_URL + '?t=' + Date.now()).catch(function() { return { ok: false }; }),
+      fetch(SCHED_ADMIN_URL + '?t=' + Date.now()).catch(function() { return { ok: false }; })
     ]);
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     syncData = await resp.json();
     if (delResp.ok) {
       try { adminDeletedEvents = await delResp.json(); } catch(e) { adminDeletedEvents = []; }
+    }
+    if (schedResp.ok) {
+      try { scheduleAdmin = await schedResp.json(); } catch(e) { scheduleAdmin = null; }
     }
     lastFetchTime = new Date();
     updateSyncStatus(true);
