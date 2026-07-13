@@ -77,6 +77,19 @@ h1 { font-size: 1.4rem; margin-bottom: 4px; }
 .empty { text-align: center; padding: 40px; color: #64748b; font-style: italic; }
 
 .rename-indicator { font-size: 0.6rem; color: #fbbf24; margin-left: 4px; vertical-align: super; }
+.override-indicator { font-size: 0.6rem; color: #60a5fa; margin-left: 4px; vertical-align: super; }
+.added-indicator { font-size: 0.6rem; color: #4ade80; margin-left: 4px; vertical-align: super; }
+
+.edit-form { padding: 12px 16px; background: #0f172a; border-top: 1px solid #1a2332; }
+.edit-form .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px; }
+.edit-form .form-full { grid-column: 1 / -1; }
+.edit-form label { display: block; font-size: 0.7rem; color: #94a3b8; margin-bottom: 3px; text-transform: uppercase; letter-spacing: 0.04em; }
+.edit-form input[type="text"], .edit-form input[type="number"] { width: 100%; background: #1e293b; border: 1px solid #334155; border-radius: 6px; color: #f1f5f9; padding: 6px 10px; font-size: 0.85rem; }
+.edit-form input:focus { outline: none; border-color: #60a5fa; }
+.edit-form .check-row { display: flex; align-items: center; gap: 8px; padding: 4px 0; }
+.edit-form .check-row input[type="checkbox"] { width: 16px; height: 16px; accent-color: #60a5fa; }
+.edit-form .check-row label { margin: 0; font-size: 0.82rem; color: #f1f5f9; text-transform: none; letter-spacing: 0; }
+.edit-form .form-actions { display: flex; gap: 8px; }
 
 @media (max-width: 640px) {
   body { padding: 12px; padding-bottom: 80px; }
@@ -99,7 +112,7 @@ h1 { font-size: 1.4rem; margin-bottom: 4px; }
 </nav>
 
 <h1>Schedule Admin</h1>
-<p class="subtitle">Rename or remove events. Custom events from the app appear automatically after sync.</p>
+<p class="subtitle">Edit activities, add new ones, or remove events. Changes sync to the app and dashboard.</p>
 
 <div class="stats" id="stats"></div>
 
@@ -119,11 +132,12 @@ var TOKEN = atob(['Z2hwX3N1SERVT','TFLRkFCQk5Dcm9D','U1RtVjJEU3Z6U3V','NUDJKRlBz
 var API = 'https://api.github.com/repos/' + REPO;
 
 var tripData = null;
-var adminData = { renames: {}, hidden: [] };
+var adminData = { renames: {}, hidden: [], overrides: {}, additions: [] };
 var adminSha = null;
 var adminDeletedEvents = [];
 var adminDeletedSha = null;
 var editingKey = null;
+var addingToDay = null;
 var openDays = {};
 var saving = false;
 
@@ -155,6 +169,8 @@ async function load() {
       adminData = JSON.parse(decodeB64(adminJson.content));
       if (!adminData.renames) adminData.renames = {};
       if (!adminData.hidden) adminData.hidden = [];
+      if (!adminData.overrides) adminData.overrides = {};
+      if (!adminData.additions) adminData.additions = [];
     }
 
     if (delEvRes.ok) {
@@ -240,6 +256,27 @@ function getAllEvents() {
     });
   }
 
+  if (adminData.additions) {
+    adminData.additions.forEach(function(added) {
+      var dayInfo = tripData.itinerary.find(function(d) { return d.id === added.dayId; });
+      var aType = 'activity';
+      if (added.isHike) aType = 'hike';
+      else if (added.isWaterfall) aType = 'waterfall';
+      events.push({
+        key: added.id,
+        name: added.name,
+        type: aType,
+        dayId: added.dayId,
+        dayDate: dayInfo ? dayInfo.date : '',
+        dayTitle: dayInfo ? dayInfo.title : 'Day ' + added.dayId,
+        duration: added.duration,
+        hikeKm: added.hikeDistanceKm,
+        isCustom: false,
+        isAdminAdded: true
+      });
+    });
+  }
+
   return events;
 }
 
@@ -269,12 +306,16 @@ function render() {
   var totalCustom = events.filter(function(e) { return e.isCustom; }).length;
   var totalHidden = hiddenEvents.length;
   var totalRenamed = Object.keys(adminData.renames).length;
+  var totalOverrides = Object.keys(adminData.overrides).length;
+  var totalAdded = adminData.additions.length;
 
   document.getElementById('stats').innerHTML =
     '<div class="stat"><b>' + totalActs + '</b> activities</div>' +
     '<div class="stat"><b class="green">' + totalHikes + '</b> hikes</div>' +
     '<div class="stat"><b class="amber">' + totalWaterfalls + '</b> waterfalls</div>' +
     '<div class="stat"><b class="purple">' + totalCustom + '</b> custom</div>' +
+    (totalAdded ? '<div class="stat"><b class="green">' + totalAdded + '</b> added</div>' : '') +
+    (totalOverrides ? '<div class="stat"><b class="amber">' + totalOverrides + '</b> edited</div>' : '') +
     (totalRenamed ? '<div class="stat"><b class="amber">' + totalRenamed + '</b> renamed</div>' : '') +
     (totalHidden ? '<div class="stat"><b class="red">' + totalHidden + '</b> hidden</div>' : '');
 
@@ -319,6 +360,13 @@ function render() {
             html += renderEventRow(e);
           }
         });
+        if (addingToDay === dayId) {
+          html += renderAddForm(dayId);
+        } else {
+          html += '<div style="padding:8px 16px;border-top:1px solid #1a2332">';
+          html += '<button class="btn-save" style="background:#1e3a5f;color:#60a5fa;font-size:0.75rem" onclick="startAdd(' + dayId + ')">+ Add Activity</button>';
+          html += '</div>';
+        }
         html += '</div>';
       }
       html += '</div>';
@@ -348,18 +396,32 @@ function render() {
   }
 }
 
+function getEffectiveValues(e) {
+  var ov = adminData.overrides[e.key] || {};
+  return {
+    name: ov.name || adminData.renames[e.key] || e.name,
+    duration: ov.duration || e.duration || '',
+    isHike: ov.isHike !== undefined ? ov.isHike : (e.type === 'hike'),
+    isWaterfall: ov.isWaterfall !== undefined ? ov.isWaterfall : (e.type === 'waterfall'),
+    hikeKm: ov.hikeDistanceKm !== undefined ? ov.hikeDistanceKm : (e.hikeKm || 0)
+  };
+}
+
 function renderEventRow(e) {
-  var displayName = adminData.renames[e.key] || e.name;
+  var eff = getEffectiveValues(e);
+  var hasOverride = adminData.overrides[e.key] !== undefined;
   var isRenamed = adminData.renames[e.key] !== undefined;
   var html = '<div class="event-row">';
   html += '<span class="badge badge-' + e.type + '">' + typeLabel(e) + '</span>';
-  html += '<span class="event-name">' + escHtml(displayName);
-  if (isRenamed) html += '<span class="rename-indicator" title="Original: ' + escAttr(e.name) + '">✎</span>';
+  html += '<span class="event-name">' + escHtml(eff.name);
+  if (e.isAdminAdded) html += '<span class="added-indicator" title="Admin added">★</span>';
+  else if (hasOverride) html += '<span class="override-indicator" title="Edited">✎</span>';
+  else if (isRenamed) html += '<span class="rename-indicator" title="Original: ' + escAttr(e.name) + '">✎</span>';
   html += '</span>';
-  if (e.duration) html += '<span class="event-duration">' + escHtml(e.duration) + '</span>';
+  if (eff.duration) html += '<span class="event-duration">' + escHtml(eff.duration) + '</span>';
   if (e.createdBy) html += '<span class="event-creator">' + escHtml(e.createdBy) + '</span>';
   html += '<div class="event-actions">';
-  html += '<button class="btn-icon" onclick="startEdit(\'' + escAttr(e.key) + '\')" title="Rename">✏️</button>';
+  if (!e.isCustom) html += '<button class="btn-icon" onclick="startEdit(\'' + escAttr(e.key) + '\')" title="Edit">✏️</button>';
   html += '<button class="btn-icon delete" onclick="hideEvent(\'' + escAttr(e.key) + '\')" title="Remove">✕</button>';
   html += '</div>';
   html += '</div>';
@@ -367,12 +429,38 @@ function renderEventRow(e) {
 }
 
 function renderEditRow(e) {
-  var displayName = adminData.renames[e.key] || e.name;
-  var html = '<div class="edit-row">';
-  html += '<span class="badge badge-' + e.type + '">' + typeLabel(e) + '</span>';
-  html += '<input class="edit-input" id="edit-input" value="' + escAttr(displayName) + '" onkeydown="editKeydown(event, \'' + escAttr(e.key) + '\', \'' + escAttr(e.name) + '\')" autofocus>';
+  var eff = getEffectiveValues(e);
+  var html = '<div class="edit-form">';
+  html += '<div class="form-grid">';
+  html += '<div class="form-full"><label>Name</label><input type="text" id="ef-name" value="' + escAttr(eff.name) + '"></div>';
+  html += '<div><label>Duration</label><input type="text" id="ef-duration" value="' + escAttr(eff.duration) + '" placeholder="e.g. 2 hrs"></div>';
+  html += '<div><label>Hike Distance (km)</label><input type="number" id="ef-hikekm" value="' + (eff.hikeKm || '') + '" step="0.1" min="0" placeholder="0"></div>';
+  html += '<div class="check-row"><input type="checkbox" id="ef-ishike"' + (eff.isHike ? ' checked' : '') + '><label for="ef-ishike">Hike</label></div>';
+  html += '<div class="check-row"><input type="checkbox" id="ef-iswaterfall"' + (eff.isWaterfall ? ' checked' : '') + '><label for="ef-iswaterfall">Waterfall</label></div>';
+  html += '</div>';
+  html += '<div class="form-actions">';
   html += '<button class="btn-save" onclick="saveEdit(\'' + escAttr(e.key) + '\', \'' + escAttr(e.name) + '\')">Save</button>';
   html += '<button class="btn-cancel" onclick="cancelEdit()">Cancel</button>';
+  if (adminData.overrides[e.key]) html += '<button class="btn-cancel" style="color:#f87171" onclick="resetOverride(\'' + escAttr(e.key) + '\')">Reset</button>';
+  html += '</div>';
+  html += '</div>';
+  return html;
+}
+
+function renderAddForm(dayId) {
+  var html = '<div class="edit-form">';
+  html += '<div style="font-size:0.82rem;font-weight:600;margin-bottom:8px;color:#60a5fa">Add New Activity</div>';
+  html += '<div class="form-grid">';
+  html += '<div class="form-full"><label>Name</label><input type="text" id="af-name" value="" placeholder="Activity name"></div>';
+  html += '<div><label>Duration</label><input type="text" id="af-duration" value="" placeholder="e.g. 1 hr"></div>';
+  html += '<div><label>Hike Distance (km)</label><input type="number" id="af-hikekm" value="" step="0.1" min="0" placeholder="0"></div>';
+  html += '<div class="check-row"><input type="checkbox" id="af-ishike"><label for="af-ishike">Hike</label></div>';
+  html += '<div class="check-row"><input type="checkbox" id="af-iswaterfall"><label for="af-iswaterfall">Waterfall</label></div>';
+  html += '</div>';
+  html += '<div class="form-actions">';
+  html += '<button class="btn-save" onclick="saveAdd(' + dayId + ')">Add</button>';
+  html += '<button class="btn-cancel" onclick="cancelAdd()">Cancel</button>';
+  html += '</div>';
   html += '</div>';
   return html;
 }
@@ -392,8 +480,9 @@ function toggleDay(dayId) {
 
 function startEdit(key) {
   editingKey = key;
+  addingToDay = null;
   render();
-  var input = document.getElementById('edit-input');
+  var input = document.getElementById('ef-name');
   if (input) { input.focus(); input.select(); }
 }
 
@@ -402,32 +491,115 @@ function cancelEdit() {
   render();
 }
 
-function editKeydown(event, key, originalName) {
-  if (event.key === 'Enter') saveEdit(key, originalName);
-  if (event.key === 'Escape') cancelEdit();
+function startAdd(dayId) {
+  addingToDay = dayId;
+  editingKey = null;
+  render();
+  var input = document.getElementById('af-name');
+  if (input) input.focus();
+}
+
+function cancelAdd() {
+  addingToDay = null;
+  render();
 }
 
 async function saveEdit(key, originalName) {
-  var input = document.getElementById('edit-input');
-  if (!input) return;
-  var newName = input.value.trim();
+  var nameEl = document.getElementById('ef-name');
+  var durEl = document.getElementById('ef-duration');
+  var hikeEl = document.getElementById('ef-ishike');
+  var waterfallEl = document.getElementById('ef-iswaterfall');
+  var hikeKmEl = document.getElementById('ef-hikekm');
+  if (!nameEl) return;
+
+  var newName = nameEl.value.trim();
   if (!newName) return;
 
-  if (newName === originalName) {
-    delete adminData.renames[key];
+  var isAdminAdded = adminData.additions.some(function(a) { return a.id === key; });
+
+  if (isAdminAdded) {
+    adminData.additions = adminData.additions.map(function(a) {
+      if (a.id !== key) return a;
+      return Object.assign({}, a, {
+        name: newName,
+        duration: durEl.value.trim(),
+        isHike: hikeEl.checked,
+        isWaterfall: waterfallEl.checked,
+        hikeDistanceKm: hikeEl.checked && hikeKmEl.value ? parseFloat(hikeKmEl.value) : null
+      });
+    });
   } else {
-    adminData.renames[key] = newName;
+    var ov = {};
+    if (newName !== originalName) ov.name = newName;
+    if (durEl.value.trim()) ov.duration = durEl.value.trim();
+    ov.isHike = hikeEl.checked;
+    ov.isWaterfall = waterfallEl.checked;
+    if (hikeEl.checked && hikeKmEl.value) ov.hikeDistanceKm = parseFloat(hikeKmEl.value);
+
+    if (Object.keys(ov).length > 0) {
+      adminData.overrides[key] = ov;
+    }
+    if (newName !== originalName) {
+      adminData.renames[key] = newName;
+    } else {
+      delete adminData.renames[key];
+    }
   }
 
   editingKey = null;
   render();
   await saveAdminData();
-  showToast('Renamed');
+  showToast('Saved');
+}
+
+async function saveAdd(dayId) {
+  var nameEl = document.getElementById('af-name');
+  var durEl = document.getElementById('af-duration');
+  var hikeEl = document.getElementById('af-ishike');
+  var waterfallEl = document.getElementById('af-iswaterfall');
+  var hikeKmEl = document.getElementById('af-hikekm');
+  if (!nameEl || !nameEl.value.trim()) { showToast('Name is required', true); return; }
+
+  var newAct = {
+    id: 'admin-' + crypto.randomUUID().substring(0, 8),
+    dayId: dayId,
+    name: nameEl.value.trim(),
+    duration: durEl.value.trim() || '',
+    isHike: hikeEl.checked,
+    isWaterfall: waterfallEl.checked,
+    hikeDistanceKm: hikeEl.checked && hikeKmEl.value ? parseFloat(hikeKmEl.value) : null,
+    addedAt: new Date().toISOString()
+  };
+  adminData.additions.push(newAct);
+
+  addingToDay = null;
+  render();
+  await saveAdminData();
+  showToast('Activity added');
+}
+
+async function resetOverride(key) {
+  delete adminData.overrides[key];
+  delete adminData.renames[key];
+  editingKey = null;
+  render();
+  await saveAdminData();
+  showToast('Reset to original');
 }
 
 async function hideEvent(key) {
   var events = getAllEvents();
   var ev = events.find(function(e) { return e.key === key; });
+
+  if (ev && ev.isAdminAdded) {
+    adminData.additions = adminData.additions.filter(function(a) { return a.id !== key; });
+    delete adminData.overrides[key];
+    delete adminData.renames[key];
+    render();
+    await saveAdminData();
+    showToast('Removed admin activity');
+    return;
+  }
 
   if (ev && ev.isCustom) {
     if (adminDeletedEvents.indexOf(key) === -1) {
