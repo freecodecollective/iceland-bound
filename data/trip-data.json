@@ -549,8 +549,29 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-13T02:25:19Z",
+  "lastUpdated" : "2026-07-13T02:26:20Z",
   "photos" : [
+    {
+      "activityName" : "Flight Boston to Reykjavík",
+      "dayID" : 0,
+      "filename" : "204A3A71-7600-4E93-8896-A5B3FCA6E6EF.jpg",
+      "key" : "d0-a0",
+      "timestamp" : "2026-07-13T02:25:38Z"
+    },
+    {
+      "activityName" : "Flight Boston to Reykjavík",
+      "dayID" : 0,
+      "filename" : "7B754254-5B09-44B4-BBBB-EC26953CF5CA.jpg",
+      "key" : "d0-a0",
+      "timestamp" : "2026-07-13T02:25:38Z"
+    },
+    {
+      "activityName" : "Flight Boston to Reykjavík",
+      "dayID" : 0,
+      "filename" : "2CB66D6E-55E9-4C6E-886F-DA9F94532FC9.jpg",
+      "key" : "d0-a0",
+      "timestamp" : "2026-07-13T02:25:47Z"
+    },
     {
       "activityName" : "World Cup with family",
       "dayID" : -1,
@@ -632,7 +653,12 @@
   "travelers" : [
     {
       "checkIns" : [
-
+        {
+          "dayID" : 0,
+          "itemName" : "Flight Boston to Reykjavík",
+          "key" : "d0-a0",
+          "timestamp" : "2026-07-13T02:25:24Z"
+        }
       ],
       "colorHex" : "#3180A8",
       "customEvents" : [
