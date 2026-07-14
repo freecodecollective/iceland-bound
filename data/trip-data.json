@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-14T11:43:35Z",
+  "lastUpdated" : "2026-07-14T11:49:23Z",
   "photos" : [
     {
       "activityName" : "Flight Boston to Reykjavík",
@@ -871,46 +871,6 @@
     {
       "checkIns" : [
         {
-          "dayID" : 1,
-          "itemName" : "Reykjanesviti lighthouse",
-          "key" : "d1-a2",
-          "timestamp" : "2026-07-13T10:51:07Z"
-        }
-      ],
-      "colorHex" : "#3180A8",
-      "customEvents" : [
-
-      ],
-      "deletedEventIDs" : [
-        "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
-        "72F18AEC-99EF-4D55-B498-448DE505E501",
-        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
-        "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
-        "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
-        "54A846B9-6D87-40D2-995B-E807631D15DF",
-        "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
-      ],
-      "gpsPointCount" : 0,
-      "gpsTrack" : [
-
-      ],
-      "hikes" : [
-
-      ],
-      "hikesCompleted" : 0,
-      "name" : "Calvin",
-      "notes" : [
-
-      ],
-      "ratings" : [
-
-      ],
-      "totalHikeDistanceKm" : 0,
-      "waterfallsVisited" : 1
-    },
-    {
-      "checkIns" : [
-        {
           "dayID" : 0,
           "itemName" : "custom-C4D9106A-E668-4776-BC85-DB53A48976A3",
           "key" : "custom-C4D9106A-E668-4776-BC85-DB53A48976A3",
@@ -923,6 +883,12 @@
           "latitude" : 63.81249381536821,
           "longitude" : -22.714051811261104,
           "timestamp" : "2026-07-13T11:21:11Z"
+        },
+        {
+          "dayID" : 0,
+          "itemName" : "custom-hike-8D402D3F-6C03-4A25-B3F8-0D6DED6D576C",
+          "key" : "custom-hike-8D402D3F-6C03-4A25-B3F8-0D6DED6D576C",
+          "timestamp" : "2026-07-14T11:30:01Z"
         },
         {
           "dayID" : 0,
@@ -991,6 +957,7 @@
           "id" : "AF7482C2-208D-4491-8769-4995975659A9",
           "name" : "Efstidalur II Ice Cream",
           "notes" : "",
+          "scheduleAfterIndex" : 7,
           "type" : "Food"
         },
         {
@@ -999,6 +966,7 @@
           "id" : "C4D9106A-E668-4776-BC85-DB53A48976A3",
           "name" : "Breakfast",
           "notes" : "",
+          "scheduleAfterIndex" : 2,
           "type" : "Food"
         },
         {
@@ -1010,6 +978,7 @@
           "longitude" : -22.703900399999995,
           "name" : "Volcano Man",
           "notes" : "",
+          "scheduleAfterIndex" : 5,
           "type" : "Activity"
         },
         {
@@ -1021,20 +990,30 @@
           "longitude" : -21.92736755039493,
           "name" : "Hallgrimalorkja Church",
           "notes" : "Very stark! Love me a church.",
+          "scheduleAfterIndex" : 11,
+          "type" : "Activity"
+        },
+        {
+          "activityCategory" : "Hiking",
+          "createdBy" : "Chris",
+          "dayID" : 2,
+          "id" : "hike-8D402D3F-6C03-4A25-B3F8-0D6DED6D576C",
+          "name" : "Thingvellir National Park Visitor Center Gestastofa Þingvalla á Haki",
+          "notes" : "",
           "type" : "Activity"
         }
       ],
       "deletedEventIDs" : [
+        "72F18AEC-99EF-4D55-B498-448DE505E501",
+        "54A846B9-6D87-40D2-995B-E807631D15DF",
+        "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
+        "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
         "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
         "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
-        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
-        "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
-        "72F18AEC-99EF-4D55-B498-448DE505E501",
-        "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
-        "54A846B9-6D87-40D2-995B-E807631D15DF"
+        "hike-7666B985-19D6-4937-8B38-1659089A4DB0"
       ],
-      "gpsPointCount" : 158,
+      "gpsPointCount" : 173,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -1983,12 +1962,109 @@
           "lat" : 64.2558867728471,
           "lng" : -21.135339732778945,
           "ts" : "2026-07-14T11:27:23Z"
+        },
+        {
+          "acc" : 52.48595870762865,
+          "lat" : 64.25588227805275,
+          "lng" : -21.135343547930816,
+          "ts" : "2026-07-14T11:28:19Z"
+        },
+        {
+          "acc" : 52.48595870762865,
+          "lat" : 64.25588227805275,
+          "lng" : -21.135343547930816,
+          "ts" : "2026-07-14T11:28:19Z"
+        },
+        {
+          "acc" : 3.515410281135018,
+          "lat" : 64.25596822218344,
+          "lng" : -21.13520811340541,
+          "ts" : "2026-07-14T11:29:19Z"
+        },
+        {
+          "acc" : 3.515410281135018,
+          "lat" : 64.25596822218344,
+          "lng" : -21.13520811340541,
+          "ts" : "2026-07-14T11:29:19Z"
+        },
+        {
+          "acc" : 3.795014,
+          "lat" : 64.25596822218344,
+          "lng" : -21.13520811340541,
+          "ts" : "2026-07-14T11:29:19Z"
+        },
+        {
+          "acc" : 8.556599754156103,
+          "lat" : 64.25595334469493,
+          "lng" : -21.13523821063714,
+          "ts" : "2026-07-14T11:30:02Z"
+        },
+        {
+          "acc" : 8.556599754156103,
+          "lat" : 64.25595334469493,
+          "lng" : -21.13523821063714,
+          "ts" : "2026-07-14T11:30:02Z"
+        },
+        {
+          "acc" : 29.495013999999998,
+          "lat" : 64.25595345824503,
+          "lng" : -21.135238199330836,
+          "ts" : "2026-07-14T11:30:02Z"
+        },
+        {
+          "acc" : 29.433276321318097,
+          "lat" : 64.25595344782656,
+          "lng" : -21.135237026610604,
+          "ts" : "2026-07-14T11:30:02Z"
+        },
+        {
+          "acc" : 26.133398777467356,
+          "lat" : 64.2559383803188,
+          "lng" : -21.135259573190165,
+          "ts" : "2026-07-14T11:30:07Z"
+        },
+        {
+          "acc" : 26.133398777467356,
+          "lat" : 64.2559383803188,
+          "lng" : -21.135259573190165,
+          "ts" : "2026-07-14T11:30:07Z"
+        },
+        {
+          "acc" : 26.795014,
+          "lat" : 64.2559383727677,
+          "lng" : -21.135259584489386,
+          "ts" : "2026-07-14T11:30:07Z"
+        },
+        {
+          "acc" : 26.577818137790512,
+          "lat" : 64.255938372764,
+          "lng" : -21.13525958449492,
+          "ts" : "2026-07-14T11:30:07Z"
+        },
+        {
+          "acc" : 55.04787225629744,
+          "lat" : 64.2560816406393,
+          "lng" : -21.135836134391944,
+          "ts" : "2026-07-14T11:49:22Z"
+        },
+        {
+          "acc" : 176.83798430779797,
+          "lat" : 64.25608163983094,
+          "lng" : -21.135836130150206,
+          "ts" : "2026-07-14T11:49:22Z"
         }
       ],
       "hikes" : [
-
+        {
+          "distanceKm" : 0,
+          "endTime" : "2026-07-14T11:30:07Z",
+          "name" : "Thingvellir National Park Visitor Center Gestastofa Þingvalla á Haki",
+          "pointCount" : 4,
+          "source" : "gps",
+          "startTime" : "2026-07-14T11:30:01Z"
+        }
       ],
-      "hikesCompleted" : 0,
+      "hikesCompleted" : 1,
       "name" : "Chris",
       "notes" : [
         {
@@ -2043,7 +2119,7 @@
           "dayID" : 2,
           "itemName" : "Silfra fissure snorkeling",
           "key" : "d2-a0",
-          "text" : "Snorkeling between tectonic plates! 2 degree Celsius water. So we had dry suits. Which are just like they advertise. Pretty amazing. Lips frozen but e"
+          "text" : "Snorkeling between tectonic plates! 2 degree Celsius water. So we had dry suits. Which are just like they advertise. Pretty amazing. Lips frozen but rest of body pretty comfy. Water had (apparently) the most visibility of anywhere on earth. It was quite clear. "
         }
       ],
       "ratings" : [
@@ -2116,6 +2192,46 @@
       ],
       "totalHikeDistanceKm" : 0,
       "waterfallsVisited" : 0
+    },
+    {
+      "checkIns" : [
+        {
+          "dayID" : 1,
+          "itemName" : "Reykjanesviti lighthouse",
+          "key" : "d1-a2",
+          "timestamp" : "2026-07-13T10:51:07Z"
+        }
+      ],
+      "colorHex" : "#3180A8",
+      "customEvents" : [
+
+      ],
+      "deletedEventIDs" : [
+        "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
+        "72F18AEC-99EF-4D55-B498-448DE505E501",
+        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
+        "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
+        "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
+        "54A846B9-6D87-40D2-995B-E807631D15DF",
+        "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
+      ],
+      "gpsPointCount" : 0,
+      "gpsTrack" : [
+
+      ],
+      "hikes" : [
+
+      ],
+      "hikesCompleted" : 0,
+      "name" : "Calvin",
+      "notes" : [
+
+      ],
+      "ratings" : [
+
+      ],
+      "totalHikeDistanceKm" : 0,
+      "waterfallsVisited" : 1
     },
     {
       "checkIns" : [
