@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-14T16:04:33Z",
+  "lastUpdated" : "2026-07-14T16:50:17Z",
   "photos" : [
     {
       "activityName" : "Flight Boston to Reykjavík",
@@ -1093,6 +1093,14 @@
           "latitude" : 64.30747646169095,
           "longitude" : -20.312255620489406,
           "timestamp" : "2026-07-14T15:56:25Z"
+        },
+        {
+          "dayID" : 2,
+          "itemName" : "Gullfoss waterfall",
+          "key" : "d2-a3",
+          "latitude" : 64.3115387428696,
+          "longitude" : -20.155846111172885,
+          "timestamp" : "2026-07-14T16:04:47Z"
         }
       ],
       "colorHex" : "#3180A8",
@@ -1213,16 +1221,16 @@
         }
       ],
       "deletedEventIDs" : [
-        "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
-        "54A846B9-6D87-40D2-995B-E807631D15DF",
-        "72F18AEC-99EF-4D55-B498-448DE505E501",
         "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
         "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
+        "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
+        "54A846B9-6D87-40D2-995B-E807631D15DF",
+        "72F18AEC-99EF-4D55-B498-448DE505E501",
         "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
       ],
-      "gpsPointCount" : 292,
+      "gpsPointCount" : 296,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -2975,6 +2983,30 @@
           "lat" : 64.30641997454211,
           "lng" : -20.191077090584095,
           "ts" : "2026-07-14T16:02:59Z"
+        },
+        {
+          "acc" : 2.014395684769088,
+          "lat" : 64.3112487499187,
+          "lng" : -20.15639459425543,
+          "ts" : "2026-07-14T16:04:33Z"
+        },
+        {
+          "acc" : 2.014395684769088,
+          "lat" : 64.3112487499187,
+          "lng" : -20.15639459425543,
+          "ts" : "2026-07-14T16:04:33Z"
+        },
+        {
+          "acc" : 2.0022864259762283,
+          "lat" : 64.3115387428696,
+          "lng" : -20.155846111172885,
+          "ts" : "2026-07-14T16:04:34Z"
+        },
+        {
+          "acc" : 2.0842192880121964,
+          "lat" : 64.3143759791335,
+          "lng" : -20.272114648483196,
+          "ts" : "2026-07-14T16:50:16Z"
         }
       ],
       "hikes" : [
@@ -3166,7 +3198,7 @@
         }
       ],
       "totalHikeDistanceKm" : 4,
-      "waterfallsVisited" : 2
+      "waterfallsVisited" : 3
     },
     {
       "checkIns" : [
