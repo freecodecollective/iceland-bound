@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-14T12:06:37Z",
+  "lastUpdated" : "2026-07-14T12:41:55Z",
   "photos" : [
     {
       "activityName" : "Flight Boston to Reykjavík",
@@ -891,6 +891,12 @@
         },
         {
           "dayID" : 0,
+          "itemName" : "custom-EF303FEC-04BD-4062-8386-EC36C0712FFD",
+          "key" : "custom-EF303FEC-04BD-4062-8386-EC36C0712FFD",
+          "timestamp" : "2026-07-14T12:17:55Z"
+        },
+        {
+          "dayID" : 0,
           "itemName" : "custom-FEF4A851-70D3-47A3-B6CD-91B82F2BF2D3",
           "key" : "custom-FEF4A851-70D3-47A3-B6CD-91B82F2BF2D3",
           "latitude" : 63.81249381536821,
@@ -1041,6 +1047,18 @@
           "notes" : "",
           "scheduleAfterIndex" : 4,
           "type" : "Activity"
+        },
+        {
+          "activityCategory" : "Waterfall",
+          "createdBy" : "Chris",
+          "dayID" : 2,
+          "id" : "EF303FEC-04BD-4062-8386-EC36C0712FFD",
+          "latitude" : 64.2658861279742,
+          "longitude" : -21.11717342774428,
+          "name" : "Waterfall",
+          "notes" : "",
+          "scheduleAfterIndex" : 4,
+          "type" : "Activity"
         }
       ],
       "deletedEventIDs" : [
@@ -1053,7 +1071,7 @@
         "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0"
       ],
-      "gpsPointCount" : 200,
+      "gpsPointCount" : 211,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -2254,6 +2272,72 @@
           "lat" : 64.26107363440396,
           "lng" : -21.121443234518303,
           "ts" : "2026-07-14T12:05:40Z"
+        },
+        {
+          "acc" : 4.642797131017358,
+          "lat" : 64.26127867559867,
+          "lng" : -21.12120206031447,
+          "ts" : "2026-07-14T12:06:39Z"
+        },
+        {
+          "acc" : 165.12392324927833,
+          "lat" : 64.26144046894237,
+          "lng" : -21.120968185666403,
+          "ts" : "2026-07-14T12:06:39Z"
+        },
+        {
+          "acc" : 165.29501399999998,
+          "lat" : 64.26147085970224,
+          "lng" : -21.120964052446222,
+          "ts" : "2026-07-14T12:06:39Z"
+        },
+        {
+          "acc" : 5.41867234794358,
+          "lat" : 64.2658861279742,
+          "lng" : -21.11717342774428,
+          "ts" : "2026-07-14T12:17:29Z"
+        },
+        {
+          "acc" : 5.41867234794358,
+          "lat" : 64.2658861279742,
+          "lng" : -21.11717342774428,
+          "ts" : "2026-07-14T12:17:29Z"
+        },
+        {
+          "acc" : 30.095014,
+          "lat" : 64.2658861279742,
+          "lng" : -21.11717342774428,
+          "ts" : "2026-07-14T12:17:29Z"
+        },
+        {
+          "acc" : 47.79222331425557,
+          "lat" : 64.26653818863893,
+          "lng" : -21.116481904008992,
+          "ts" : "2026-07-14T12:22:35Z"
+        },
+        {
+          "acc" : 144.7021163838573,
+          "lat" : 64.2679022078369,
+          "lng" : -21.11427497057059,
+          "ts" : "2026-07-14T12:22:52Z"
+        },
+        {
+          "acc" : 8.330748220876107,
+          "lat" : 64.26854069048066,
+          "lng" : -21.113519042460993,
+          "ts" : "2026-07-14T12:22:59Z"
+        },
+        {
+          "acc" : 13.015400354281867,
+          "lat" : 64.27103937785577,
+          "lng" : -21.110277005045614,
+          "ts" : "2026-07-14T12:27:34Z"
+        },
+        {
+          "acc" : 6.463089222880661,
+          "lat" : 64.2709571457849,
+          "lng" : -21.11004146269816,
+          "ts" : "2026-07-14T12:27:38Z"
         }
       ],
       "hikes" : [
@@ -2266,9 +2350,9 @@
           "startTime" : "2026-07-14T11:30:01Z"
         },
         {
-          "distanceKm" : 0.94,
+          "distanceKm" : 2.19,
           "name" : "Thingvellir National Park Visitor Center Gestastofa Þingvalla á Haki",
-          "pointCount" : 27,
+          "pointCount" : 38,
           "source" : "gps",
           "startTime" : "2026-07-14T11:49:48Z"
         }
@@ -2399,8 +2483,8 @@
           "rating" : 5
         }
       ],
-      "totalHikeDistanceKm" : 0.9,
-      "waterfallsVisited" : 1
+      "totalHikeDistanceKm" : 2.2,
+      "waterfallsVisited" : 2
     },
     {
       "checkIns" : [
