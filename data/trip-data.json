@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-14T13:19:08Z",
+  "lastUpdated" : "2026-07-14T13:25:22Z",
   "photos" : [
     {
       "activityName" : "Flight Boston to Reykjavík",
@@ -825,6 +825,48 @@
       "timestamp" : "2026-07-14T12:49:24Z"
     },
     {
+      "activityName" : "Þingvellir National Park",
+      "dayID" : 2,
+      "filename" : "F0431D6E-8EF9-40D0-9B90-8F4B01D2D937.jpg",
+      "key" : "d2-a1",
+      "timestamp" : "2026-07-14T13:19:26Z"
+    },
+    {
+      "activityName" : "Þingvellir National Park",
+      "dayID" : 2,
+      "filename" : "E6BB5AC0-F59F-499A-8B5A-93C453C0AB9B.jpg",
+      "key" : "d2-a1",
+      "timestamp" : "2026-07-14T13:19:26Z"
+    },
+    {
+      "activityName" : "Þingvellir National Park",
+      "dayID" : 2,
+      "filename" : "29A9912F-E1DB-44EC-BC49-7D248CE275E0.jpg",
+      "key" : "d2-a1",
+      "timestamp" : "2026-07-14T13:19:26Z"
+    },
+    {
+      "activityName" : "Þingvellir National Park",
+      "dayID" : 2,
+      "filename" : "2E7384DB-4A2B-41AC-881F-3E0E575391CB.jpg",
+      "key" : "d2-a1",
+      "timestamp" : "2026-07-14T13:19:26Z"
+    },
+    {
+      "activityName" : "Þingvellir National Park",
+      "dayID" : 2,
+      "filename" : "40655DBD-4FFC-4405-85BE-7B9E7E2C715C.jpg",
+      "key" : "d2-a1",
+      "timestamp" : "2026-07-14T13:19:26Z"
+    },
+    {
+      "activityName" : "Þingvellir National Park",
+      "dayID" : 2,
+      "filename" : "0D67134B-1060-432A-AD31-D7BC0666B629.jpg",
+      "key" : "d2-a1",
+      "timestamp" : "2026-07-14T13:19:26Z"
+    },
+    {
       "activityName" : "Fly Boston to Iceland",
       "dayID" : -1,
       "filename" : "0C313879-463C-4704-9536-B47CD974FD5F.jpg",
@@ -992,6 +1034,14 @@
           "latitude" : 64.25581634665427,
           "longitude" : -21.117245555996966,
           "timestamp" : "2026-07-14T10:58:43Z"
+        },
+        {
+          "dayID" : 2,
+          "itemName" : "Þingvellir National Park",
+          "key" : "d2-a1",
+          "latitude" : 64.25609915357887,
+          "longitude" : -21.135826586204455,
+          "timestamp" : "2026-07-14T13:19:27Z"
         }
       ],
       "colorHex" : "#3180A8",
@@ -1110,7 +1160,7 @@
         "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0"
       ],
-      "gpsPointCount" : 241,
+      "gpsPointCount" : 247,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -2557,6 +2607,42 @@
           "lat" : 64.25608552716537,
           "lng" : -21.135829220015875,
           "ts" : "2026-07-14T13:18:16Z"
+        },
+        {
+          "acc" : 2.91018435540247,
+          "lat" : 64.25609915357887,
+          "lng" : -21.135826586204455,
+          "ts" : "2026-07-14T13:19:16Z"
+        },
+        {
+          "acc" : 2.91018435540247,
+          "lat" : 64.25609915357887,
+          "lng" : -21.135826586204455,
+          "ts" : "2026-07-14T13:19:16Z"
+        },
+        {
+          "acc" : 121.595014,
+          "lat" : 64.25609915357887,
+          "lng" : -21.135826586204455,
+          "ts" : "2026-07-14T13:19:16Z"
+        },
+        {
+          "acc" : 7.120797248077209,
+          "lat" : 64.25609719032342,
+          "lng" : -21.135850181302946,
+          "ts" : "2026-07-14T13:21:17Z"
+        },
+        {
+          "acc" : 5.987027986887562,
+          "lat" : 64.25610128650635,
+          "lng" : -21.135839269182988,
+          "ts" : "2026-07-14T13:22:16Z"
+        },
+        {
+          "acc" : 5,
+          "lat" : 64.25475759999999,
+          "lng" : -21.1380912,
+          "ts" : "2026-07-14T13:25:21Z"
         }
       ],
       "hikes" : [
