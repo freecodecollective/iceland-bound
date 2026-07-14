@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-14T14:43:57Z",
+  "lastUpdated" : "2026-07-14T14:46:57Z",
   "photos" : [
     {
       "activityName" : "Flight Boston to Reykjavík",
@@ -874,6 +874,13 @@
       "timestamp" : "2026-07-14T14:07:15Z"
     },
     {
+      "activityName" : "Vinastrati Veitingahis",
+      "dayID" : 2,
+      "filename" : "D2F61F56-8CCD-4B67-BD34-6A0F8AC7FBE3.jpg",
+      "key" : "custom-8F24F1D6-C1EA-4AF1-9A36-C578F18371FC",
+      "timestamp" : "2026-07-14T14:44:23Z"
+    },
+    {
       "activityName" : "Fly Boston to Iceland",
       "dayID" : -1,
       "filename" : "0C313879-463C-4704-9536-B47CD974FD5F.jpg",
@@ -1186,7 +1193,7 @@
         "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0"
       ],
-      "gpsPointCount" : 274,
+      "gpsPointCount" : 278,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -2831,6 +2838,30 @@
           "lat" : 64.22059024924995,
           "lng" : -20.729651635430287,
           "ts" : "2026-07-14T14:43:56Z"
+        },
+        {
+          "acc" : 56.995014,
+          "lat" : 64.23140895621819,
+          "lng" : -20.714238428993728,
+          "ts" : "2026-07-14T14:46:56Z"
+        },
+        {
+          "acc" : 56.995014,
+          "lat" : 64.23140895621819,
+          "lng" : -20.714238428993728,
+          "ts" : "2026-07-14T14:46:56Z"
+        },
+        {
+          "acc" : 83.79501400000001,
+          "lat" : 64.23152672154232,
+          "lng" : -20.71390088368588,
+          "ts" : "2026-07-14T14:46:56Z"
+        },
+        {
+          "acc" : 100.36259784799802,
+          "lat" : 64.2315636263945,
+          "lng" : -20.713793016404736,
+          "ts" : "2026-07-14T14:46:56Z"
         }
       ],
       "hikes" : [
@@ -2934,6 +2965,12 @@
           "dayID" : 0,
           "itemName" : "custom-8319D757-3245-494C-9C6F-F5A5F4AB2EE0",
           "key" : "custom-8319D757-3245-494C-9C6F-F5A5F4AB2EE0",
+          "rating" : 5
+        },
+        {
+          "dayID" : 0,
+          "itemName" : "custom-8F24F1D6-C1EA-4AF1-9A36-C578F18371FC",
+          "key" : "custom-8F24F1D6-C1EA-4AF1-9A36-C578F18371FC",
           "rating" : 5
         },
         {
