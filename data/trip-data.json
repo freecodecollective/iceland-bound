@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-14T12:04:52Z",
+  "lastUpdated" : "2026-07-14T12:05:48Z",
   "photos" : [
     {
       "activityName" : "Flight Boston to Reykjavík",
@@ -804,6 +804,13 @@
       "timestamp" : "2026-07-14T10:59:15Z"
     },
     {
+      "activityName" : "Waterfall",
+      "dayID" : 2,
+      "filename" : "72701A25-19E6-476B-A9EE-077B5E8B46B5.jpg",
+      "key" : "custom-C9C4B4E5-506D-4A8E-8F07-EEF00968281A",
+      "timestamp" : "2026-07-14T12:05:40Z"
+    },
+    {
       "activityName" : "Fly Boston to Iceland",
       "dayID" : -1,
       "filename" : "0C313879-463C-4704-9536-B47CD974FD5F.jpg",
@@ -875,6 +882,12 @@
           "itemName" : "custom-C4D9106A-E668-4776-BC85-DB53A48976A3",
           "key" : "custom-C4D9106A-E668-4776-BC85-DB53A48976A3",
           "timestamp" : "2026-07-13T09:27:24Z"
+        },
+        {
+          "dayID" : 0,
+          "itemName" : "custom-C9C4B4E5-506D-4A8E-8F07-EEF00968281A",
+          "key" : "custom-C9C4B4E5-506D-4A8E-8F07-EEF00968281A",
+          "timestamp" : "2026-07-14T12:05:40Z"
         },
         {
           "dayID" : 0,
@@ -1016,6 +1029,18 @@
           "name" : "Thingvellir National Park Visitor Center Gestastofa Þingvalla á Haki",
           "notes" : "",
           "type" : "Activity"
+        },
+        {
+          "activityCategory" : "Waterfall",
+          "createdBy" : "Chris",
+          "dayID" : 2,
+          "id" : "C9C4B4E5-506D-4A8E-8F07-EEF00968281A",
+          "latitude" : 64.26107363440396,
+          "longitude" : -21.121443234518303,
+          "name" : "Waterfall",
+          "notes" : "",
+          "scheduleAfterIndex" : 4,
+          "type" : "Activity"
         }
       ],
       "deletedEventIDs" : [
@@ -1028,7 +1053,7 @@
         "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0"
       ],
-      "gpsPointCount" : 198,
+      "gpsPointCount" : 200,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -2217,6 +2242,18 @@
           "lat" : 64.2558618581658,
           "lng" : -21.133871013874465,
           "ts" : "2026-07-14T11:52:48Z"
+        },
+        {
+          "acc" : 6.862053489318691,
+          "lat" : 64.26084264513146,
+          "lng" : -21.121913652304222,
+          "ts" : "2026-07-14T12:04:54Z"
+        },
+        {
+          "acc" : 4.748651530192167,
+          "lat" : 64.26107363440396,
+          "lng" : -21.121443234518303,
+          "ts" : "2026-07-14T12:05:40Z"
         }
       ],
       "hikes" : [
@@ -2229,9 +2266,9 @@
           "startTime" : "2026-07-14T11:30:01Z"
         },
         {
-          "distanceKm" : 0.1,
+          "distanceKm" : 0.94,
           "name" : "Thingvellir National Park Visitor Center Gestastofa Þingvalla á Haki",
-          "pointCount" : 25,
+          "pointCount" : 27,
           "source" : "gps",
           "startTime" : "2026-07-14T11:49:48Z"
         }
@@ -2362,8 +2399,8 @@
           "rating" : 5
         }
       ],
-      "totalHikeDistanceKm" : 0.1,
-      "waterfallsVisited" : 0
+      "totalHikeDistanceKm" : 0.9,
+      "waterfallsVisited" : 1
     },
     {
       "checkIns" : [
