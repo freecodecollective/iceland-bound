@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-14T13:17:52.076Z",
+  "lastUpdated": "2026-07-14T13:17:57.385Z",
   "hikes": [
     {
       "name": "Thingvellir National Park Visitor Center Gestastofa Þingvalla á Haki",
-      "distanceKm": 3.79,
-      "isOverride": false
+      "distanceKm": 5.471771292834715,
+      "isOverride": true
     },
     {
       "name": "Continues",
@@ -12,7 +12,7 @@
       "isOverride": false
     }
   ],
-  "totalHikeKm": 3.8,
+  "totalHikeKm": 5.5,
   "waterfallsVisited": 2,
   "extraWaterfalls": [],
   "hiddenWaterfalls": [
