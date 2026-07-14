@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-14T15:55:01Z",
+  "lastUpdated" : "2026-07-14T15:57:22Z",
   "photos" : [
     {
       "activityName" : "Flight Boston to Reykjavík",
@@ -881,6 +881,27 @@
       "timestamp" : "2026-07-14T14:44:23Z"
     },
     {
+      "activityName" : "Geysir & Strokkur",
+      "dayID" : 2,
+      "filename" : "D642E9A2-0085-4EB7-92DC-26E1343D8D0D.jpg",
+      "key" : "d2-a2",
+      "timestamp" : "2026-07-14T15:57:12Z"
+    },
+    {
+      "activityName" : "Geysir & Strokkur",
+      "dayID" : 2,
+      "filename" : "9ADB3A7B-2DC1-4B9F-B076-B77650526CCA.jpg",
+      "key" : "d2-a2",
+      "timestamp" : "2026-07-14T15:57:12Z"
+    },
+    {
+      "activityName" : "Geysir & Strokkur",
+      "dayID" : 2,
+      "filename" : "5E6D196B-197E-4C61-A691-5DBB892FBF2E.jpg",
+      "key" : "d2-a2",
+      "timestamp" : "2026-07-14T15:57:12Z"
+    },
+    {
       "activityName" : "Fly Boston to Iceland",
       "dayID" : -1,
       "filename" : "0C313879-463C-4704-9536-B47CD974FD5F.jpg",
@@ -1064,6 +1085,14 @@
           "latitude" : 64.25609915357887,
           "longitude" : -21.135826586204455,
           "timestamp" : "2026-07-14T13:19:27Z"
+        },
+        {
+          "dayID" : 2,
+          "itemName" : "Geysir & Strokkur",
+          "key" : "d2-a2",
+          "latitude" : 64.30747646169095,
+          "longitude" : -20.312255620489406,
+          "timestamp" : "2026-07-14T15:56:25Z"
         }
       ],
       "colorHex" : "#3180A8",
@@ -1193,7 +1222,7 @@
         "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
       ],
-      "gpsPointCount" : 283,
+      "gpsPointCount" : 287,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -2892,6 +2921,30 @@
           "lat" : 64.30920060163622,
           "lng" : -20.30508647957379,
           "ts" : "2026-07-14T15:54:34Z"
+        },
+        {
+          "acc" : 2.4054449535675713,
+          "lat" : 64.30747646169095,
+          "lng" : -20.312255620489406,
+          "ts" : "2026-07-14T15:56:21Z"
+        },
+        {
+          "acc" : 2.2676987424347566,
+          "lat" : 64.30822546360794,
+          "lng" : -20.3090395908046,
+          "ts" : "2026-07-14T15:56:34Z"
+        },
+        {
+          "acc" : 2.2676987424347566,
+          "lat" : 64.30822546360794,
+          "lng" : -20.3090395908046,
+          "ts" : "2026-07-14T15:56:34Z"
+        },
+        {
+          "acc" : 9.795014,
+          "lat" : 64.30836580244929,
+          "lng" : -20.3084207647876,
+          "ts" : "2026-07-14T15:56:34Z"
         }
       ],
       "hikes" : [
@@ -2988,6 +3041,12 @@
           "itemName" : "Þingvellir National Park",
           "key" : "d2-a1",
           "text" : "Nice hike w waterfalls and continental a divides. "
+        },
+        {
+          "dayID" : 2,
+          "itemName" : "Geysir & Strokkur",
+          "key" : "d2-a2",
+          "text" : "Well we got some shorties. Highlight was litl geysir "
         }
       ],
       "ratings" : [
@@ -3068,6 +3127,12 @@
           "itemName" : "Þingvellir National Park",
           "key" : "d2-a1",
           "rating" : 5
+        },
+        {
+          "dayID" : 2,
+          "itemName" : "Geysir & Strokkur",
+          "key" : "d2-a2",
+          "rating" : 3
         }
       ],
       "totalHikeDistanceKm" : 4,
