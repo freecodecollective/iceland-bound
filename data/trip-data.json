@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-14T14:06:38Z",
+  "lastUpdated" : "2026-07-14T14:07:54Z",
   "photos" : [
     {
       "activityName" : "Flight Boston to Reykjavík",
@@ -867,6 +867,13 @@
       "timestamp" : "2026-07-14T13:19:26Z"
     },
     {
+      "activityName" : "Vinastrati Veitingahis",
+      "dayID" : 2,
+      "filename" : "C0CFE0B2-B2CB-4F7F-8043-14BD521AC4BA.jpg",
+      "key" : "custom-8F24F1D6-C1EA-4AF1-9A36-C578F18371FC",
+      "timestamp" : "2026-07-14T14:07:15Z"
+    },
+    {
       "activityName" : "Fly Boston to Iceland",
       "dayID" : -1,
       "filename" : "0C313879-463C-4704-9536-B47CD974FD5F.jpg",
@@ -933,6 +940,14 @@
   "travelers" : [
     {
       "checkIns" : [
+        {
+          "dayID" : 0,
+          "itemName" : "custom-8F24F1D6-C1EA-4AF1-9A36-C578F18371FC",
+          "key" : "custom-8F24F1D6-C1EA-4AF1-9A36-C578F18371FC",
+          "latitude" : 64.22067987329959,
+          "longitude" : -20.729553538721117,
+          "timestamp" : "2026-07-14T14:07:29Z"
+        },
         {
           "dayID" : 0,
           "itemName" : "custom-C4D9106A-E668-4776-BC85-DB53A48976A3",
@@ -1148,6 +1163,17 @@
           "name" : "Continues",
           "notes" : "",
           "type" : "Activity"
+        },
+        {
+          "createdBy" : "Chris",
+          "dayID" : 2,
+          "id" : "8F24F1D6-C1EA-4AF1-9A36-C578F18371FC",
+          "latitude" : 64.22067987329959,
+          "longitude" : -20.729553538721117,
+          "name" : "Vinastrati Veitingahis",
+          "notes" : "Homemade sourdough and beef from next door. And cokes for $9.",
+          "scheduleAfterIndex" : 5,
+          "type" : "Food"
         }
       ],
       "deletedEventIDs" : [
@@ -1160,7 +1186,7 @@
         "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0"
       ],
-      "gpsPointCount" : 267,
+      "gpsPointCount" : 272,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -2763,6 +2789,36 @@
           "lat" : 64.22065566716361,
           "lng" : -20.729504771752467,
           "ts" : "2026-07-14T14:05:47Z"
+        },
+        {
+          "acc" : 14.697301782601087,
+          "lat" : 64.22067987329959,
+          "lng" : -20.729553538721117,
+          "ts" : "2026-07-14T14:06:47Z"
+        },
+        {
+          "acc" : 14.697301782601087,
+          "lat" : 64.22067987329959,
+          "lng" : -20.729553538721117,
+          "ts" : "2026-07-14T14:06:47Z"
+        },
+        {
+          "acc" : 15.128064983425348,
+          "lat" : 64.22070138068737,
+          "lng" : -20.729537925332423,
+          "ts" : "2026-07-14T14:07:47Z"
+        },
+        {
+          "acc" : 15.128064983425348,
+          "lat" : 64.22070138068737,
+          "lng" : -20.729537925332423,
+          "ts" : "2026-07-14T14:07:47Z"
+        },
+        {
+          "acc" : 16.695014,
+          "lat" : 64.22070138070175,
+          "lng" : -20.729537925360255,
+          "ts" : "2026-07-14T14:07:47Z"
         }
       ],
       "hikes" : [
@@ -2799,6 +2855,12 @@
           "itemName" : "custom-8319D757-3245-494C-9C6F-F5A5F4AB2EE0",
           "key" : "custom-8319D757-3245-494C-9C6F-F5A5F4AB2EE0",
           "text" : "Love me a church. So stark! "
+        },
+        {
+          "dayID" : 0,
+          "itemName" : "custom-8F24F1D6-C1EA-4AF1-9A36-C578F18371FC",
+          "key" : "custom-8F24F1D6-C1EA-4AF1-9A36-C578F18371FC",
+          "text" : "Homemade sourdough and beef from next door. And $9 cokes. "
         },
         {
           "dayID" : 0,
