@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-14T12:48:27Z",
+  "lastUpdated" : "2026-07-14T12:53:56Z",
   "photos" : [
     {
       "activityName" : "Flight Boston to Reykjavík",
@@ -811,6 +811,20 @@
       "timestamp" : "2026-07-14T12:05:40Z"
     },
     {
+      "activityName" : "Nicest National Park Bathroom Eva",
+      "dayID" : 2,
+      "filename" : "5D1573FF-7B93-462E-9BB0-E6021A66011A.jpg",
+      "key" : "custom-3EEF354F-A579-4958-AF20-656080F563E2",
+      "timestamp" : "2026-07-14T12:49:24Z"
+    },
+    {
+      "activityName" : "Nicest National Park Bathroom Eva",
+      "dayID" : 2,
+      "filename" : "E849E360-AB08-429A-A8FD-1DDD52D64C65.jpg",
+      "key" : "custom-3EEF354F-A579-4958-AF20-656080F563E2",
+      "timestamp" : "2026-07-14T12:49:24Z"
+    },
+    {
       "activityName" : "Fly Boston to Iceland",
       "dayID" : -1,
       "filename" : "0C313879-463C-4704-9536-B47CD974FD5F.jpg",
@@ -1059,6 +1073,16 @@
           "notes" : "",
           "scheduleAfterIndex" : 4,
           "type" : "Activity"
+        },
+        {
+          "createdBy" : "Chris",
+          "dayID" : 2,
+          "id" : "3EEF354F-A579-4958-AF20-656080F563E2",
+          "latitude" : 64.26336334784993,
+          "longitude" : -21.117662302972803,
+          "name" : "Nicest National Park Bathroom Eva",
+          "notes" : "Amazing bathrooms but really a shame that you're not allowed to flush your apples.",
+          "type" : "Rest"
         }
       ],
       "deletedEventIDs" : [
@@ -1071,7 +1095,7 @@
         "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0"
       ],
-      "gpsPointCount" : 214,
+      "gpsPointCount" : 217,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -2356,6 +2380,24 @@
           "lat" : 64.26352872257642,
           "lng" : -21.117918837035212,
           "ts" : "2026-07-14T12:48:18Z"
+        },
+        {
+          "acc" : 2.231078072811385,
+          "lat" : 64.26340932993028,
+          "lng" : -21.117658665579583,
+          "ts" : "2026-07-14T12:48:57Z"
+        },
+        {
+          "acc" : 2.231078072811385,
+          "lat" : 64.26340932993028,
+          "lng" : -21.117658665579583,
+          "ts" : "2026-07-14T12:48:57Z"
+        },
+        {
+          "acc" : 62.095014,
+          "lat" : 64.26336334784993,
+          "lng" : -21.117662302972803,
+          "ts" : "2026-07-14T12:48:57Z"
         }
       ],
       "hikes" : [
@@ -2368,9 +2410,9 @@
           "startTime" : "2026-07-14T11:30:01Z"
         },
         {
-          "distanceKm" : 3.25,
+          "distanceKm" : 3.27,
           "name" : "Thingvellir National Park Visitor Center Gestastofa Þingvalla á Haki",
-          "pointCount" : 41,
+          "pointCount" : 44,
           "source" : "gps",
           "startTime" : "2026-07-14T11:49:48Z"
         }
@@ -2501,7 +2543,7 @@
           "rating" : 5
         }
       ],
-      "totalHikeDistanceKm" : 3.2,
+      "totalHikeDistanceKm" : 3.3,
       "waterfallsVisited" : 2
     },
     {
