@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-14T13:17:09Z",
+  "lastUpdated" : "2026-07-14T13:19:08Z",
   "photos" : [
     {
       "activityName" : "Flight Boston to Reykjavík",
@@ -1110,7 +1110,7 @@
         "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0"
       ],
-      "gpsPointCount" : 239,
+      "gpsPointCount" : 241,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -2545,6 +2545,18 @@
           "lat" : 64.25684690815409,
           "lng" : -21.13513892257486,
           "ts" : "2026-07-14T13:15:37Z"
+        },
+        {
+          "acc" : 9.747546732071664,
+          "lat" : 64.25609357121029,
+          "lng" : -21.135841172553956,
+          "ts" : "2026-07-14T13:18:05Z"
+        },
+        {
+          "acc" : 7.231107258221601,
+          "lat" : 64.25608552716537,
+          "lng" : -21.135829220015875,
+          "ts" : "2026-07-14T13:18:16Z"
         }
       ],
       "hikes" : [
@@ -2629,6 +2641,12 @@
           "itemName" : "Silfra fissure snorkeling",
           "key" : "d2-a0",
           "text" : "Snorkeling between tectonic plates! 2 degree Celsius water. So we had dry suits. Which are just like they advertise. Pretty amazing. Lips frozen but rest of body pretty comfy. Water had (apparently) the most visibility of anywhere on earth. It was quite clear. "
+        },
+        {
+          "dayID" : 2,
+          "itemName" : "Þingvellir National Park",
+          "key" : "d2-a1",
+          "text" : "Nice hike w waterfalls and continental a divides. "
         }
       ],
       "ratings" : [
@@ -2696,6 +2714,12 @@
           "dayID" : 2,
           "itemName" : "Silfra fissure snorkeling",
           "key" : "d2-a0",
+          "rating" : 5
+        },
+        {
+          "dayID" : 2,
+          "itemName" : "Þingvellir National Park",
+          "key" : "d2-a1",
           "rating" : 5
         }
       ],
