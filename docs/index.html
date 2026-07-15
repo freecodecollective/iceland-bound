@@ -478,6 +478,18 @@ body {
   padding: 2px 8px; border-radius: 10px; white-space: nowrap;
 }
 
+.photo-card-notes {
+  padding: 0 16px 8px; font-size: 0.8rem;
+}
+.photo-card-note {
+  display: flex; align-items: baseline; gap: 6px; margin-top: 4px;
+}
+.photo-card-note-author {
+  font-weight: 600; font-size: 0.72rem; color: var(--text3); white-space: nowrap;
+}
+.photo-card-note-text {
+  font-style: italic; color: var(--text2); font-size: 0.8rem;
+}
 .photo-card-img {
   width: 100%; max-height: 560px; object-fit: contain;
   background: var(--bg2); cursor: pointer; display: block;
@@ -1952,6 +1964,7 @@ function renderPhotos() {
           '<span class="photo-card-place">' + escHtml(placeName) + '</span>' +
           (traveler ? '<span class="photo-card-traveler">&#128248; ' + escHtml(traveler) + '</span>' : '') +
           '</div>' +
+          photoNotesHtml(photo.key) +
           '<img class="photo-card-img" src="' + photoUrl + '" alt="' + escHtml(placeName) + '" onclick="' + lightboxCall(photoUrl, photo) + '" loading="lazy" onerror="handlePhotoError(this)">' +
           videoBadge(photo.filename) +
           '<div class="photo-card-footer">' +
@@ -2021,6 +2034,34 @@ function findTravelerForPhoto(photo) {
     return t ? t.name : null;
   }
   return null;
+}
+
+function getNotesForKey(key) {
+  if (!syncData || !syncData.travelers) return [];
+  var results = [];
+  for (var i = 0; i < syncData.travelers.length; i++) {
+    var t = syncData.travelers[i];
+    if (!t.notes) continue;
+    for (var j = 0; j < t.notes.length; j++) {
+      if (t.notes[j].key === key) {
+        results.push({ author: t.name || 'Traveler', text: t.notes[j].text });
+      }
+    }
+  }
+  return results;
+}
+
+function photoNotesHtml(key) {
+  var notes = getNotesForKey(key);
+  if (notes.length === 0) return '';
+  var html = '<div class="photo-card-notes">';
+  for (var i = 0; i < notes.length; i++) {
+    html += '<div class="photo-card-note">' +
+      '<span class="photo-card-note-author">' + escHtml(notes[i].author) + ':</span>' +
+      '<span class="photo-card-note-text">&ldquo;' + escHtml(notes[i].text) + '&rdquo;</span></div>';
+  }
+  html += '</div>';
+  return html;
 }
 
 function miniMapHtml(lat, lng) {
