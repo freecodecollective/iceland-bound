@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-15T23:42:20Z",
+  "lastUpdated" : "2026-07-15T23:42:24Z",
   "photos" : [
     {
       "activityName" : "Flight Boston to Reykjavík",
@@ -738,16 +738,14 @@
       "dayID" : 1,
       "filename" : "6E51451B-884C-4ADB-AC8F-3FCE92ADAE63_thumb.jpg",
       "key" : "d1-a3",
-      "timestamp" : "2026-07-13T13:17:39Z",
-      "videoFilename" : "6E51451B-884C-4ADB-AC8F-3FCE92ADAE63.mov"
+      "timestamp" : "2026-07-13T13:17:39Z"
     },
     {
       "activityName" : "Krýsuvík \/ Seltún geothermal",
       "dayID" : 1,
       "filename" : "3EA8FB46-3652-4673-882E-EE79581268C9_thumb.jpg",
       "key" : "d1-a3",
-      "timestamp" : "2026-07-13T13:17:39Z",
-      "videoFilename" : "3EA8FB46-3652-4673-882E-EE79581268C9.mov"
+      "timestamp" : "2026-07-13T13:17:39Z"
     },
     {
       "activityName" : "Krýsuvík \/ Seltún geothermal",
@@ -761,8 +759,7 @@
       "dayID" : 1,
       "filename" : "59625666-FF93-4226-B131-75DC36502458_thumb.jpg",
       "key" : "d1-a3",
-      "timestamp" : "2026-07-13T14:45:18Z",
-      "videoFilename" : "59625666-FF93-4226-B131-75DC36502458.mov"
+      "timestamp" : "2026-07-13T14:45:18Z"
     },
     {
       "activityName" : "Hallgrimalorkja Church",
@@ -1070,8 +1067,7 @@
       "dayID" : 3,
       "filename" : "748EE158-C502-4016-B968-9498B90D1B88_thumb.jpg",
       "key" : "d3-a1",
-      "timestamp" : "2026-07-15T16:21:47Z",
-      "videoFilename" : "748EE158-C502-4016-B968-9498B90D1B88.mov"
+      "timestamp" : "2026-07-15T16:21:47Z"
     },
     {
       "activityName" : "Gljúfrabúi",
@@ -1257,6 +1253,47 @@
     }
   ],
   "travelers" : [
+    {
+      "checkIns" : [
+        {
+          "dayID" : 1,
+          "itemName" : "Reykjanesviti lighthouse",
+          "key" : "d1-a2",
+          "timestamp" : "2026-07-13T10:51:07Z"
+        }
+      ],
+      "colorHex" : "#3180A8",
+      "customEvents" : [
+
+      ],
+      "deletedEventIDs" : [
+        "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
+        "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
+        "54A846B9-6D87-40D2-995B-E807631D15DF",
+        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
+        "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
+        "72F18AEC-99EF-4D55-B498-448DE505E501",
+        "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
+        "DA7494B6-485B-406D-8AA3-68DD6D0B24CE"
+      ],
+      "gpsPointCount" : 0,
+      "gpsTrack" : [
+
+      ],
+      "hikes" : [
+
+      ],
+      "hikesCompleted" : 0,
+      "name" : "Calvin",
+      "notes" : [
+
+      ],
+      "ratings" : [
+
+      ],
+      "totalHikeDistanceKm" : 0,
+      "waterfallsVisited" : 0
+    },
     {
       "checkIns" : [
         {
@@ -1454,7 +1491,6 @@
           "id" : "AF7482C2-208D-4491-8769-4995975659A9",
           "name" : "Efstidalur II Ice Cream",
           "notes" : "",
-          "scheduleAfterIndex" : 7,
           "type" : "Food"
         },
         {
@@ -1463,7 +1499,6 @@
           "id" : "C4D9106A-E668-4776-BC85-DB53A48976A3",
           "name" : "Breakfast",
           "notes" : "",
-          "scheduleAfterIndex" : 2,
           "type" : "Food"
         },
         {
@@ -1475,7 +1510,6 @@
           "longitude" : -22.703900399999995,
           "name" : "Volcano Man",
           "notes" : "",
-          "scheduleAfterIndex" : 5,
           "type" : "Activity"
         },
         {
@@ -1487,7 +1521,6 @@
           "longitude" : -21.92736755039493,
           "name" : "Hallgrimalorkja Church",
           "notes" : "Very stark! Love me a church.",
-          "scheduleAfterIndex" : 11,
           "type" : "Activity"
         },
         {
@@ -1517,7 +1550,6 @@
           "longitude" : -21.121443234518303,
           "name" : "Waterfall",
           "notes" : "",
-          "scheduleAfterIndex" : 4,
           "type" : "Activity"
         },
         {
@@ -1529,7 +1561,6 @@
           "longitude" : -21.11717342774428,
           "name" : "Waterfall",
           "notes" : "",
-          "scheduleAfterIndex" : 4,
           "type" : "Activity"
         },
         {
@@ -1559,7 +1590,6 @@
           "longitude" : -20.729553538721117,
           "name" : "Vinastrati Veitingahis",
           "notes" : "Homemade sourdough and beef from next door. And cokes for $9.",
-          "scheduleAfterIndex" : 5,
           "type" : "Food"
         },
         {
@@ -1569,7 +1599,6 @@
           "id" : "46297DCA-52A7-4E84-8125-15A7B83D3030",
           "name" : "Gullfoss Falls",
           "notes" : "",
-          "scheduleAfterIndex" : 8,
           "type" : "Activity"
         },
         {
@@ -1580,7 +1609,6 @@
           "longitude" : -21.940948889562545,
           "name" : "Onmon Chocolate",
           "notes" : "",
-          "scheduleAfterIndex" : 1,
           "type" : "Food"
         },
         {
@@ -6550,46 +6578,6 @@
       ],
       "totalHikeDistanceKm" : 0,
       "waterfallsVisited" : 5
-    },
-    {
-      "checkIns" : [
-        {
-          "dayID" : 1,
-          "itemName" : "Reykjanesviti lighthouse",
-          "key" : "d1-a2",
-          "timestamp" : "2026-07-13T10:51:07Z"
-        }
-      ],
-      "colorHex" : "#3180A8",
-      "customEvents" : [
-
-      ],
-      "deletedEventIDs" : [
-        "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
-        "72F18AEC-99EF-4D55-B498-448DE505E501",
-        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
-        "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
-        "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
-        "54A846B9-6D87-40D2-995B-E807631D15DF",
-        "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
-      ],
-      "gpsPointCount" : 0,
-      "gpsTrack" : [
-
-      ],
-      "hikes" : [
-
-      ],
-      "hikesCompleted" : 0,
-      "name" : "Calvin",
-      "notes" : [
-
-      ],
-      "ratings" : [
-
-      ],
-      "totalHikeDistanceKm" : 0,
-      "waterfallsVisited" : 1
     }
   ]
 }
