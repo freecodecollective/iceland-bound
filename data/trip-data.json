@@ -549,92 +549,8 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-14T20:16:46Z",
+  "lastUpdated" : "2026-07-15T10:21:40Z",
   "photos" : [
-    {
-      "activityName" : "Fly Boston to Iceland",
-      "dayID" : -1,
-      "filename" : "0C313879-463C-4704-9536-B47CD974FD5F.jpg",
-      "key" : "d-1-a2",
-      "timestamp" : "2026-07-13T01:18:40Z"
-    },
-    {
-      "activityName" : "Bridge Between Continents",
-      "dayID" : 1,
-      "filename" : "9D2849FE-87EC-43F4-818E-CA374B1FCB60.jpg",
-      "key" : "d1-a0",
-      "timestamp" : "2026-07-13T10:26:12Z"
-    },
-    {
-      "activityName" : "Bridge Between Continents",
-      "dayID" : 1,
-      "filename" : "CDDE779E-3153-4908-B2D4-F13FF9628C23.jpg",
-      "key" : "d1-a0",
-      "timestamp" : "2026-07-13T10:26:12Z"
-    },
-    {
-      "activityName" : "Bridge Between Continents",
-      "dayID" : 1,
-      "filename" : "AF747D64-8CB2-4D4B-8E00-01179AC84CC5.jpg",
-      "key" : "d1-a0",
-      "timestamp" : "2026-07-13T10:26:12Z"
-    },
-    {
-      "activityName" : "Bridge Between Continents",
-      "dayID" : 1,
-      "filename" : "F60C5890-01CF-4DF1-8F4C-2ED0ADB9AA23.jpg",
-      "key" : "d1-a0",
-      "timestamp" : "2026-07-13T10:26:12Z"
-    },
-    {
-      "activityName" : "Bridge Between Continents",
-      "dayID" : 1,
-      "filename" : "8C958C4E-4AC4-4644-B75F-511BC3663AB6.jpg",
-      "key" : "d1-a0",
-      "timestamp" : "2026-07-13T10:26:12Z"
-    },
-    {
-      "activityName" : "Bridge Between Continents",
-      "dayID" : 1,
-      "filename" : "254F9D2F-ED9B-4A08-A62A-5BFB48202111.jpg",
-      "key" : "d1-a0",
-      "timestamp" : "2026-07-13T10:26:12Z"
-    },
-    {
-      "activityName" : "Blue Lagoon & LAVA Restaurant",
-      "dayID" : 1,
-      "filename" : "BDC85D04-C030-4523-9C6C-8DC62FBB7017.jpg",
-      "key" : "d1-a5",
-      "timestamp" : "2026-07-13T20:38:17Z"
-    },
-    {
-      "activityName" : "Blue Lagoon & LAVA Restaurant",
-      "dayID" : 1,
-      "filename" : "1C4CACAE-0281-4736-AF11-A42FAD8D1479.jpg",
-      "key" : "d1-a5",
-      "timestamp" : "2026-07-13T20:38:17Z"
-    },
-    {
-      "activityName" : "Þingvellir National Park",
-      "dayID" : 2,
-      "filename" : "5A3B165E-D359-49C4-AB79-03AE3E0F7350.jpg",
-      "key" : "d2-a1",
-      "timestamp" : "2026-07-14T13:35:53Z"
-    },
-    {
-      "activityName" : "Þingvellir National Park",
-      "dayID" : 2,
-      "filename" : "BD716492-887E-45A7-BB00-C451CF9FD739.jpg",
-      "key" : "d2-a1",
-      "timestamp" : "2026-07-14T13:35:53Z"
-    },
-    {
-      "activityName" : "Þingvellir National Park",
-      "dayID" : 2,
-      "filename" : "C072BA8A-431B-43A5-B90F-8A44C185840B.jpg",
-      "key" : "d2-a1",
-      "timestamp" : "2026-07-14T13:35:53Z"
-    },
     {
       "activityName" : "Flight Boston to Reykjavík",
       "dayID" : 0,
@@ -1026,232 +942,93 @@
       "filename" : "48582183-39AC-460E-BB66-34905C866FF4.jpg",
       "key" : "d2-a3",
       "timestamp" : "2026-07-14T16:51:10Z"
+    },
+    {
+      "activityName" : "Fly Boston to Iceland",
+      "dayID" : -1,
+      "filename" : "0C313879-463C-4704-9536-B47CD974FD5F.jpg",
+      "key" : "d-1-a2",
+      "timestamp" : "2026-07-13T01:18:40Z"
+    },
+    {
+      "activityName" : "Bridge Between Continents",
+      "dayID" : 1,
+      "filename" : "9D2849FE-87EC-43F4-818E-CA374B1FCB60.jpg",
+      "key" : "d1-a0",
+      "timestamp" : "2026-07-13T10:26:12Z"
+    },
+    {
+      "activityName" : "Bridge Between Continents",
+      "dayID" : 1,
+      "filename" : "CDDE779E-3153-4908-B2D4-F13FF9628C23.jpg",
+      "key" : "d1-a0",
+      "timestamp" : "2026-07-13T10:26:12Z"
+    },
+    {
+      "activityName" : "Bridge Between Continents",
+      "dayID" : 1,
+      "filename" : "AF747D64-8CB2-4D4B-8E00-01179AC84CC5.jpg",
+      "key" : "d1-a0",
+      "timestamp" : "2026-07-13T10:26:12Z"
+    },
+    {
+      "activityName" : "Bridge Between Continents",
+      "dayID" : 1,
+      "filename" : "F60C5890-01CF-4DF1-8F4C-2ED0ADB9AA23.jpg",
+      "key" : "d1-a0",
+      "timestamp" : "2026-07-13T10:26:12Z"
+    },
+    {
+      "activityName" : "Bridge Between Continents",
+      "dayID" : 1,
+      "filename" : "8C958C4E-4AC4-4644-B75F-511BC3663AB6.jpg",
+      "key" : "d1-a0",
+      "timestamp" : "2026-07-13T10:26:12Z"
+    },
+    {
+      "activityName" : "Bridge Between Continents",
+      "dayID" : 1,
+      "filename" : "254F9D2F-ED9B-4A08-A62A-5BFB48202111.jpg",
+      "key" : "d1-a0",
+      "timestamp" : "2026-07-13T10:26:12Z"
+    },
+    {
+      "activityName" : "Blue Lagoon & LAVA Restaurant",
+      "dayID" : 1,
+      "filename" : "BDC85D04-C030-4523-9C6C-8DC62FBB7017.jpg",
+      "key" : "d1-a5",
+      "timestamp" : "2026-07-13T20:38:17Z"
+    },
+    {
+      "activityName" : "Blue Lagoon & LAVA Restaurant",
+      "dayID" : 1,
+      "filename" : "1C4CACAE-0281-4736-AF11-A42FAD8D1479.jpg",
+      "key" : "d1-a5",
+      "timestamp" : "2026-07-13T20:38:17Z"
+    },
+    {
+      "activityName" : "Þingvellir National Park",
+      "dayID" : 2,
+      "filename" : "5A3B165E-D359-49C4-AB79-03AE3E0F7350.jpg",
+      "key" : "d2-a1",
+      "timestamp" : "2026-07-14T13:35:53Z"
+    },
+    {
+      "activityName" : "Þingvellir National Park",
+      "dayID" : 2,
+      "filename" : "BD716492-887E-45A7-BB00-C451CF9FD739.jpg",
+      "key" : "d2-a1",
+      "timestamp" : "2026-07-14T13:35:53Z"
+    },
+    {
+      "activityName" : "Þingvellir National Park",
+      "dayID" : 2,
+      "filename" : "C072BA8A-431B-43A5-B90F-8A44C185840B.jpg",
+      "key" : "d2-a1",
+      "timestamp" : "2026-07-14T13:35:53Z"
     }
   ],
   "travelers" : [
-    {
-      "checkIns" : [
-        {
-          "dayID" : -1,
-          "itemName" : "Fly Boston to Iceland",
-          "key" : "d-1-a2",
-          "latitude" : 42.37031915384049,
-          "longitude" : -71.0212835110328,
-          "timestamp" : "2026-07-13T01:18:43Z"
-        },
-        {
-          "dayID" : 1,
-          "itemName" : "Bridge Between Continents",
-          "key" : "d1-a0",
-          "latitude" : 42.36838063719323,
-          "longitude" : -71.01702794099985,
-          "timestamp" : "2026-07-13T10:23:08Z"
-        },
-        {
-          "dayID" : 1,
-          "itemName" : "Gunnuhver geothermal",
-          "key" : "d1-a1",
-          "latitude" : 42.36838063719323,
-          "longitude" : -71.01702794099985,
-          "timestamp" : "2026-07-13T11:41:40Z"
-        },
-        {
-          "dayID" : 1,
-          "itemName" : "Brimketill lava pool",
-          "key" : "d1-a4",
-          "latitude" : 42.36838063719323,
-          "longitude" : -71.01702794099985,
-          "timestamp" : "2026-07-13T11:41:36Z"
-        },
-        {
-          "dayID" : 1,
-          "itemName" : "Blue Lagoon & LAVA Restaurant",
-          "key" : "d1-a5",
-          "timestamp" : "2026-07-13T20:38:15Z"
-        },
-        {
-          "dayID" : 1,
-          "itemName" : "Pickup Land Cruiser",
-          "key" : "d1-a6",
-          "latitude" : 42.36838063719323,
-          "longitude" : -71.01702794099985,
-          "timestamp" : "2026-07-13T09:34:55Z"
-        },
-        {
-          "dayID" : 2,
-          "itemName" : "Silfra fissure snorkeling",
-          "key" : "d2-a0",
-          "timestamp" : "2026-07-14T11:08:02Z"
-        },
-        {
-          "dayID" : 2,
-          "itemName" : "Þingvellir National Park",
-          "key" : "d2-a1",
-          "timestamp" : "2026-07-14T13:34:55Z"
-        },
-        {
-          "dayID" : 2,
-          "itemName" : "Geysir & Strokkur",
-          "key" : "d2-a2",
-          "timestamp" : "2026-07-14T15:18:23Z"
-        }
-      ],
-      "colorHex" : "#3180A8",
-      "customEvents" : [
-
-      ],
-      "deletedEventIDs" : [
-        "72F18AEC-99EF-4D55-B498-448DE505E501",
-        "54A846B9-6D87-40D2-995B-E807631D15DF",
-        "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
-        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
-        "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
-        "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
-        "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
-        "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE"
-      ],
-      "gpsPointCount" : 20,
-      "gpsTrack" : [
-        {
-          "acc" : 14.403975080018844,
-          "lat" : 42.66683791096425,
-          "lng" : -71.58970040148347,
-          "ts" : "2026-07-12T22:44:31Z"
-        },
-        {
-          "acc" : 14.403975080018844,
-          "lat" : 42.66683791096425,
-          "lng" : -71.58970040148347,
-          "ts" : "2026-07-12T22:44:31Z"
-        },
-        {
-          "acc" : 14.495014000000001,
-          "lat" : 42.66683791096425,
-          "lng" : -71.58970040148347,
-          "ts" : "2026-07-12T22:44:31Z"
-        },
-        {
-          "acc" : 5,
-          "lat" : 42.68065866666667,
-          "lng" : -71.46312083333333,
-          "ts" : "2026-07-12T23:43:45Z"
-        },
-        {
-          "acc" : 5,
-          "lat" : 42.660296833333334,
-          "lng" : -71.42981033333334,
-          "ts" : "2026-07-12T23:48:45Z"
-        },
-        {
-          "acc" : 5,
-          "lat" : 42.60048633333334,
-          "lng" : -71.32224933333333,
-          "ts" : "2026-07-12T23:55:20Z"
-        },
-        {
-          "acc" : 5,
-          "lat" : 42.60023066666666,
-          "lng" : -71.32203249999999,
-          "ts" : "2026-07-12T23:55:20Z"
-        },
-        {
-          "acc" : 12.716531199847996,
-          "lat" : 42.36943356519872,
-          "lng" : -71.01985340144938,
-          "ts" : "2026-07-13T00:45:41Z"
-        },
-        {
-          "acc" : 24.103136304273907,
-          "lat" : 42.370315087542686,
-          "lng" : -71.02146461764768,
-          "ts" : "2026-07-13T01:18:14Z"
-        },
-        {
-          "acc" : 24.103136304273907,
-          "lat" : 42.370315087542686,
-          "lng" : -71.02146461764768,
-          "ts" : "2026-07-13T01:18:14Z"
-        },
-        {
-          "acc" : 32.395013999999996,
-          "lat" : 42.37032172711337,
-          "lng" : -71.02140949173017,
-          "ts" : "2026-07-13T01:18:14Z"
-        },
-        {
-          "acc" : 28.116654311464284,
-          "lat" : 42.37031915384049,
-          "lng" : -71.0212835110328,
-          "ts" : "2026-07-13T01:18:14Z"
-        },
-        {
-          "acc" : 26.144316495522666,
-          "lat" : 42.36871587825384,
-          "lng" : -71.018626070631,
-          "ts" : "2026-07-13T01:25:38Z"
-        },
-        {
-          "acc" : 26.144316495522666,
-          "lat" : 42.36871587825384,
-          "lng" : -71.018626070631,
-          "ts" : "2026-07-13T01:25:39Z"
-        },
-        {
-          "acc" : 84.93166318885092,
-          "lat" : 42.36838066428436,
-          "lng" : -71.01702793940191,
-          "ts" : "2026-07-13T02:42:20Z"
-        },
-        {
-          "acc" : 84.93166318885092,
-          "lat" : 42.36838066428436,
-          "lng" : -71.01702793940191,
-          "ts" : "2026-07-13T02:42:20Z"
-        },
-        {
-          "acc" : 84.9193528748747,
-          "lat" : 42.36838063699888,
-          "lng" : -71.01702794065915,
-          "ts" : "2026-07-13T02:42:20Z"
-        },
-        {
-          "acc" : 84.9193528748747,
-          "lat" : 42.36838063699888,
-          "lng" : -71.01702794065915,
-          "ts" : "2026-07-13T02:42:20Z"
-        },
-        {
-          "acc" : 84.91936511818614,
-          "lat" : 42.36838063719323,
-          "lng" : -71.01702794099985,
-          "ts" : "2026-07-13T02:42:20Z"
-        },
-        {
-          "acc" : 84.91936562582717,
-          "lat" : 42.36838063719323,
-          "lng" : -71.01702794099985,
-          "ts" : "2026-07-13T02:42:20Z"
-        }
-      ],
-      "hikes" : [
-
-      ],
-      "hikesCompleted" : 0,
-      "name" : "Becah",
-      "notes" : [
-
-      ],
-      "ratings" : [
-        {
-          "dayID" : 1,
-          "itemName" : "Bridge Between Continents",
-          "key" : "d1-a0",
-          "rating" : 5
-        }
-      ],
-      "totalHikeDistanceKm" : 0,
-      "waterfallsVisited" : 0
-    },
     {
       "checkIns" : [
         {
@@ -1403,6 +1180,7 @@
           "id" : "AF7482C2-208D-4491-8769-4995975659A9",
           "name" : "Efstidalur II Ice Cream",
           "notes" : "",
+          "scheduleAfterIndex" : 7,
           "type" : "Food"
         },
         {
@@ -1411,6 +1189,7 @@
           "id" : "C4D9106A-E668-4776-BC85-DB53A48976A3",
           "name" : "Breakfast",
           "notes" : "",
+          "scheduleAfterIndex" : 2,
           "type" : "Food"
         },
         {
@@ -1422,6 +1201,7 @@
           "longitude" : -22.703900399999995,
           "name" : "Volcano Man",
           "notes" : "",
+          "scheduleAfterIndex" : 5,
           "type" : "Activity"
         },
         {
@@ -1433,6 +1213,7 @@
           "longitude" : -21.92736755039493,
           "name" : "Hallgrimalorkja Church",
           "notes" : "Very stark! Love me a church.",
+          "scheduleAfterIndex" : 11,
           "type" : "Activity"
         },
         {
@@ -1462,6 +1243,7 @@
           "longitude" : -21.121443234518303,
           "name" : "Waterfall",
           "notes" : "",
+          "scheduleAfterIndex" : 4,
           "type" : "Activity"
         },
         {
@@ -1473,6 +1255,7 @@
           "longitude" : -21.11717342774428,
           "name" : "Waterfall",
           "notes" : "",
+          "scheduleAfterIndex" : 4,
           "type" : "Activity"
         },
         {
@@ -1502,6 +1285,7 @@
           "longitude" : -20.729553538721117,
           "name" : "Vinastrati Veitingahis",
           "notes" : "Homemade sourdough and beef from next door. And cokes for $9.",
+          "scheduleAfterIndex" : 5,
           "type" : "Food"
         },
         {
@@ -1511,20 +1295,21 @@
           "id" : "46297DCA-52A7-4E84-8125-15A7B83D3030",
           "name" : "Gullfoss Falls",
           "notes" : "",
+          "scheduleAfterIndex" : 8,
           "type" : "Activity"
         }
       ],
       "deletedEventIDs" : [
-        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
-        "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
         "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
+        "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
         "72F18AEC-99EF-4D55-B498-448DE505E501",
         "54A846B9-6D87-40D2-995B-E807631D15DF",
+        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
-        "DA7494B6-485B-406D-8AA3-68DD6D0B24CE"
+        "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE"
       ],
-      "gpsPointCount" : 304,
+      "gpsPointCount" : 309,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -3349,6 +3134,36 @@
           "lat" : 64.14575149382823,
           "lng" : -21.929606140525987,
           "ts" : "2026-07-14T18:42:23Z"
+        },
+        {
+          "acc" : 13.82625131923487,
+          "lat" : 64.14572383122254,
+          "lng" : -21.929623045512862,
+          "ts" : "2026-07-14T18:43:23Z"
+        },
+        {
+          "acc" : 13.82625131923487,
+          "lat" : 64.14572383122254,
+          "lng" : -21.929623045512862,
+          "ts" : "2026-07-14T18:43:23Z"
+        },
+        {
+          "acc" : 19.095014,
+          "lat" : 64.14572383122254,
+          "lng" : -21.929623045512862,
+          "ts" : "2026-07-14T18:43:23Z"
+        },
+        {
+          "acc" : 11.712445793323779,
+          "lat" : 64.14144749881358,
+          "lng" : -21.93739581535173,
+          "ts" : "2026-07-15T10:21:39Z"
+        },
+        {
+          "acc" : 11.717340839557082,
+          "lat" : 64.14144749881372,
+          "lng" : -21.937395815351827,
+          "ts" : "2026-07-15T10:21:39Z"
         }
       ],
       "hikes" : [
@@ -3553,6 +3368,229 @@
       ],
       "totalHikeDistanceKm" : 4,
       "waterfallsVisited" : 4
+    },
+    {
+      "checkIns" : [
+        {
+          "dayID" : -1,
+          "itemName" : "Fly Boston to Iceland",
+          "key" : "d-1-a2",
+          "latitude" : 42.37031915384049,
+          "longitude" : -71.0212835110328,
+          "timestamp" : "2026-07-13T01:18:43Z"
+        },
+        {
+          "dayID" : 1,
+          "itemName" : "Bridge Between Continents",
+          "key" : "d1-a0",
+          "latitude" : 42.36838063719323,
+          "longitude" : -71.01702794099985,
+          "timestamp" : "2026-07-13T10:23:08Z"
+        },
+        {
+          "dayID" : 1,
+          "itemName" : "Gunnuhver geothermal",
+          "key" : "d1-a1",
+          "latitude" : 42.36838063719323,
+          "longitude" : -71.01702794099985,
+          "timestamp" : "2026-07-13T11:41:40Z"
+        },
+        {
+          "dayID" : 1,
+          "itemName" : "Brimketill lava pool",
+          "key" : "d1-a4",
+          "latitude" : 42.36838063719323,
+          "longitude" : -71.01702794099985,
+          "timestamp" : "2026-07-13T11:41:36Z"
+        },
+        {
+          "dayID" : 1,
+          "itemName" : "Blue Lagoon & LAVA Restaurant",
+          "key" : "d1-a5",
+          "timestamp" : "2026-07-13T20:38:15Z"
+        },
+        {
+          "dayID" : 1,
+          "itemName" : "Pickup Land Cruiser",
+          "key" : "d1-a6",
+          "latitude" : 42.36838063719323,
+          "longitude" : -71.01702794099985,
+          "timestamp" : "2026-07-13T09:34:55Z"
+        },
+        {
+          "dayID" : 2,
+          "itemName" : "Silfra fissure snorkeling",
+          "key" : "d2-a0",
+          "timestamp" : "2026-07-14T11:08:02Z"
+        },
+        {
+          "dayID" : 2,
+          "itemName" : "Þingvellir National Park",
+          "key" : "d2-a1",
+          "timestamp" : "2026-07-14T13:34:55Z"
+        },
+        {
+          "dayID" : 2,
+          "itemName" : "Geysir & Strokkur",
+          "key" : "d2-a2",
+          "timestamp" : "2026-07-14T15:18:23Z"
+        }
+      ],
+      "colorHex" : "#3180A8",
+      "customEvents" : [
+
+      ],
+      "deletedEventIDs" : [
+        "72F18AEC-99EF-4D55-B498-448DE505E501",
+        "54A846B9-6D87-40D2-995B-E807631D15DF",
+        "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
+        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
+        "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
+        "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
+        "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
+        "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE"
+      ],
+      "gpsPointCount" : 20,
+      "gpsTrack" : [
+        {
+          "acc" : 14.403975080018844,
+          "lat" : 42.66683791096425,
+          "lng" : -71.58970040148347,
+          "ts" : "2026-07-12T22:44:31Z"
+        },
+        {
+          "acc" : 14.403975080018844,
+          "lat" : 42.66683791096425,
+          "lng" : -71.58970040148347,
+          "ts" : "2026-07-12T22:44:31Z"
+        },
+        {
+          "acc" : 14.495014000000001,
+          "lat" : 42.66683791096425,
+          "lng" : -71.58970040148347,
+          "ts" : "2026-07-12T22:44:31Z"
+        },
+        {
+          "acc" : 5,
+          "lat" : 42.68065866666667,
+          "lng" : -71.46312083333333,
+          "ts" : "2026-07-12T23:43:45Z"
+        },
+        {
+          "acc" : 5,
+          "lat" : 42.660296833333334,
+          "lng" : -71.42981033333334,
+          "ts" : "2026-07-12T23:48:45Z"
+        },
+        {
+          "acc" : 5,
+          "lat" : 42.60048633333334,
+          "lng" : -71.32224933333333,
+          "ts" : "2026-07-12T23:55:20Z"
+        },
+        {
+          "acc" : 5,
+          "lat" : 42.60023066666666,
+          "lng" : -71.32203249999999,
+          "ts" : "2026-07-12T23:55:20Z"
+        },
+        {
+          "acc" : 12.716531199847996,
+          "lat" : 42.36943356519872,
+          "lng" : -71.01985340144938,
+          "ts" : "2026-07-13T00:45:41Z"
+        },
+        {
+          "acc" : 24.103136304273907,
+          "lat" : 42.370315087542686,
+          "lng" : -71.02146461764768,
+          "ts" : "2026-07-13T01:18:14Z"
+        },
+        {
+          "acc" : 24.103136304273907,
+          "lat" : 42.370315087542686,
+          "lng" : -71.02146461764768,
+          "ts" : "2026-07-13T01:18:14Z"
+        },
+        {
+          "acc" : 32.395013999999996,
+          "lat" : 42.37032172711337,
+          "lng" : -71.02140949173017,
+          "ts" : "2026-07-13T01:18:14Z"
+        },
+        {
+          "acc" : 28.116654311464284,
+          "lat" : 42.37031915384049,
+          "lng" : -71.0212835110328,
+          "ts" : "2026-07-13T01:18:14Z"
+        },
+        {
+          "acc" : 26.144316495522666,
+          "lat" : 42.36871587825384,
+          "lng" : -71.018626070631,
+          "ts" : "2026-07-13T01:25:38Z"
+        },
+        {
+          "acc" : 26.144316495522666,
+          "lat" : 42.36871587825384,
+          "lng" : -71.018626070631,
+          "ts" : "2026-07-13T01:25:39Z"
+        },
+        {
+          "acc" : 84.93166318885092,
+          "lat" : 42.36838066428436,
+          "lng" : -71.01702793940191,
+          "ts" : "2026-07-13T02:42:20Z"
+        },
+        {
+          "acc" : 84.93166318885092,
+          "lat" : 42.36838066428436,
+          "lng" : -71.01702793940191,
+          "ts" : "2026-07-13T02:42:20Z"
+        },
+        {
+          "acc" : 84.9193528748747,
+          "lat" : 42.36838063699888,
+          "lng" : -71.01702794065915,
+          "ts" : "2026-07-13T02:42:20Z"
+        },
+        {
+          "acc" : 84.9193528748747,
+          "lat" : 42.36838063699888,
+          "lng" : -71.01702794065915,
+          "ts" : "2026-07-13T02:42:20Z"
+        },
+        {
+          "acc" : 84.91936511818614,
+          "lat" : 42.36838063719323,
+          "lng" : -71.01702794099985,
+          "ts" : "2026-07-13T02:42:20Z"
+        },
+        {
+          "acc" : 84.91936562582717,
+          "lat" : 42.36838063719323,
+          "lng" : -71.01702794099985,
+          "ts" : "2026-07-13T02:42:20Z"
+        }
+      ],
+      "hikes" : [
+
+      ],
+      "hikesCompleted" : 0,
+      "name" : "Becah",
+      "notes" : [
+
+      ],
+      "ratings" : [
+        {
+          "dayID" : 1,
+          "itemName" : "Bridge Between Continents",
+          "key" : "d1-a0",
+          "rating" : 5
+        }
+      ],
+      "totalHikeDistanceKm" : 0,
+      "waterfallsVisited" : 0
     },
     {
       "checkIns" : [
