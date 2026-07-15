@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-15T15:03:49Z",
+  "lastUpdated" : "2026-07-15T16:28:21Z",
   "photos" : [
     {
       "activityName" : "Fly Boston to Iceland",
@@ -634,6 +634,41 @@
       "filename" : "C072BA8A-431B-43A5-B90F-8A44C185840B.jpg",
       "key" : "d2-a1",
       "timestamp" : "2026-07-14T13:35:53Z"
+    },
+    {
+      "activityName" : "Lunch",
+      "dayID" : 3,
+      "filename" : "B1B86CBF-2660-4546-974F-7FFA9F836476.jpg",
+      "key" : "d3-f1",
+      "timestamp" : "2026-07-15T15:06:24Z"
+    },
+    {
+      "activityName" : "Lunch",
+      "dayID" : 3,
+      "filename" : "5B4DE382-D062-4EDA-A142-474AC3CE3B30.jpg",
+      "key" : "d3-f1",
+      "timestamp" : "2026-07-15T15:06:24Z"
+    },
+    {
+      "activityName" : "Lunch",
+      "dayID" : 3,
+      "filename" : "78633897-1D8D-4961-8084-8A7967B315EF.jpg",
+      "key" : "d3-f1",
+      "timestamp" : "2026-07-15T15:06:24Z"
+    },
+    {
+      "activityName" : "Lunch",
+      "dayID" : 3,
+      "filename" : "14444E96-1BA5-45C3-B9EA-04645B51FFFC.jpg",
+      "key" : "d3-f1",
+      "timestamp" : "2026-07-15T15:06:24Z"
+    },
+    {
+      "activityName" : "Lunch",
+      "dayID" : 3,
+      "filename" : "8853B21A-3214-48AE-BD72-255F43FA549A.jpg",
+      "key" : "d3-f1",
+      "timestamp" : "2026-07-15T15:06:24Z"
     },
     {
       "activityName" : "Flight Boston to Reykjavík",
@@ -1137,13 +1172,13 @@
       ],
       "deletedEventIDs" : [
         "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
-        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
-        "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
-        "54A846B9-6D87-40D2-995B-E807631D15DF",
         "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
+        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "72F18AEC-99EF-4D55-B498-448DE505E501",
         "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
-        "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
+        "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
+        "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
+        "54A846B9-6D87-40D2-995B-E807631D15DF"
       ],
       "gpsPointCount" : 20,
       "gpsTrack" : [
