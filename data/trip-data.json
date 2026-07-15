@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-15T10:34:29Z",
+  "lastUpdated" : "2026-07-15T10:35:20Z",
   "photos" : [
     {
       "activityName" : "Flight Boston to Reykjavík",
@@ -944,6 +944,41 @@
       "timestamp" : "2026-07-14T16:51:10Z"
     },
     {
+      "activityName" : "World Cup Semifinal 1",
+      "dayID" : 2,
+      "filename" : "3ABBD32E-5292-4B26-A6BD-DFF8DDC4ED94.jpg",
+      "key" : "d2-a5",
+      "timestamp" : "2026-07-15T10:34:46Z"
+    },
+    {
+      "activityName" : "World Cup Semifinal 1",
+      "dayID" : 2,
+      "filename" : "E4BE6B89-D5C5-42B4-928E-1C3E8F0AF0C4.jpg",
+      "key" : "d2-a5",
+      "timestamp" : "2026-07-15T10:34:46Z"
+    },
+    {
+      "activityName" : "World Cup Semifinal 1",
+      "dayID" : 2,
+      "filename" : "22349409-B88B-45A3-AC46-DCA851521F77.jpg",
+      "key" : "d2-a5",
+      "timestamp" : "2026-07-15T10:34:46Z"
+    },
+    {
+      "activityName" : "Check in Galtafell",
+      "dayID" : 1,
+      "filename" : "4B9B8768-3591-450F-A124-718EBD250B38.jpg",
+      "key" : "d1-a7",
+      "timestamp" : "2026-07-15T10:35:10Z"
+    },
+    {
+      "activityName" : "Check in Galtafell",
+      "dayID" : 1,
+      "filename" : "60837761-B7FA-4C28-80FD-183725BE0A58.jpg",
+      "key" : "d1-a7",
+      "timestamp" : "2026-07-15T10:35:10Z"
+    },
+    {
       "activityName" : "Fly Boston to Iceland",
       "dayID" : -1,
       "filename" : "0C313879-463C-4704-9536-B47CD974FD5F.jpg",
@@ -1309,7 +1344,7 @@
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
         "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE"
       ],
-      "gpsPointCount" : 326,
+      "gpsPointCount" : 329,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -3266,6 +3301,24 @@
           "lat" : 64.14136832759772,
           "lng" : -21.937141206588496,
           "ts" : "2026-07-15T10:34:26Z"
+        },
+        {
+          "acc" : 7.982703299032689,
+          "lat" : 64.1413804611921,
+          "lng" : -21.937145245641016,
+          "ts" : "2026-07-15T10:34:39Z"
+        },
+        {
+          "acc" : 7.982703299032689,
+          "lat" : 64.1413804611921,
+          "lng" : -21.937145245641016,
+          "ts" : "2026-07-15T10:34:39Z"
+        },
+        {
+          "acc" : 8.095014,
+          "lat" : 64.1413804611921,
+          "lng" : -21.937145245641016,
+          "ts" : "2026-07-15T10:34:39Z"
         }
       ],
       "hikes" : [
