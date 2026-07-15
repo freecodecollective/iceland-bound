@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-15T10:21:40Z",
+  "lastUpdated" : "2026-07-15T10:23:27Z",
   "photos" : [
     {
       "activityName" : "Flight Boston to Reykjavík",
@@ -1309,7 +1309,7 @@
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
         "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE"
       ],
-      "gpsPointCount" : 309,
+      "gpsPointCount" : 310,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -3164,6 +3164,12 @@
           "lat" : 64.14144749881372,
           "lng" : -21.937395815351827,
           "ts" : "2026-07-15T10:21:39Z"
+        },
+        {
+          "acc" : 6.800337374123431,
+          "lat" : 64.14142490219663,
+          "lng" : -21.937305273663373,
+          "ts" : "2026-07-15T10:22:39Z"
         }
       ],
       "hikes" : [
@@ -3272,9 +3278,21 @@
           "itemName" : "Gullfoss waterfall",
           "key" : "d2-a3",
           "text" : "Bigger than Niagra, apparently! "
+        },
+        {
+          "dayID" : 2,
+          "itemName" : "World Cup Semifinal 1",
+          "key" : "d2-a5",
+          "text" : "Lebowski bar! Very dedicated to the movie. Sorry France didn't play better but vamos Spain! "
         }
       ],
       "ratings" : [
+        {
+          "dayID" : 0,
+          "itemName" : "custom-46297DCA-52A7-4E84-8125-15A7B83D3030",
+          "key" : "custom-46297DCA-52A7-4E84-8125-15A7B83D3030",
+          "rating" : 5
+        },
         {
           "dayID" : 0,
           "itemName" : "custom-8319D757-3245-494C-9C6F-F5A5F4AB2EE0",
@@ -3363,6 +3381,12 @@
           "dayID" : 2,
           "itemName" : "Gullfoss waterfall",
           "key" : "d2-a3",
+          "rating" : 5
+        },
+        {
+          "dayID" : 2,
+          "itemName" : "World Cup Semifinal 1",
+          "key" : "d2-a5",
           "rating" : 5
         }
       ],
