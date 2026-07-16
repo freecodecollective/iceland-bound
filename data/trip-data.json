@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-16T09:27:36Z",
+  "lastUpdated" : "2026-07-16T09:28:44Z",
   "localEdits" : {
     "custom-C4D9106A-E668-4776-BC85-DB53A48976A3" : {
       "sortOrder" : -3
@@ -1156,6 +1156,62 @@
       "timestamp" : "2026-07-16T09:27:24Z"
     },
     {
+      "activityName" : "Back To The Waterfall Before All The Tourist!",
+      "dayID" : 4,
+      "filename" : "8BD24A6C-DD8D-4AD7-82BF-A5B038D0E483.jpg",
+      "key" : "custom-5299C09C-E30A-4379-B1C3-B60906B2EEC6",
+      "timestamp" : "2026-07-16T09:28:39Z"
+    },
+    {
+      "activityName" : "Back To The Waterfall Before All The Tourist!",
+      "dayID" : 4,
+      "filename" : "51BDCC80-E4AE-4F49-B8D9-A90702CE9842.jpg",
+      "key" : "custom-5299C09C-E30A-4379-B1C3-B60906B2EEC6",
+      "timestamp" : "2026-07-16T09:28:39Z"
+    },
+    {
+      "activityName" : "Back To The Waterfall Before All The Tourist!",
+      "dayID" : 4,
+      "filename" : "04545545-06BF-4785-A5E8-EE6DE871AE3F.jpg",
+      "key" : "custom-5299C09C-E30A-4379-B1C3-B60906B2EEC6",
+      "timestamp" : "2026-07-16T09:28:39Z"
+    },
+    {
+      "activityName" : "Back To The Waterfall Before All The Tourist!",
+      "dayID" : 4,
+      "filename" : "2C80A8A9-6B8E-4B6C-BC6B-873EDD7B4496.jpg",
+      "key" : "custom-5299C09C-E30A-4379-B1C3-B60906B2EEC6",
+      "timestamp" : "2026-07-16T09:28:39Z"
+    },
+    {
+      "activityName" : "Back To The Waterfall Before All The Tourist!",
+      "dayID" : 4,
+      "filename" : "21FC8D0B-F074-4F83-AED4-2BEA7D86E55D.jpg",
+      "key" : "custom-5299C09C-E30A-4379-B1C3-B60906B2EEC6",
+      "timestamp" : "2026-07-16T09:28:39Z"
+    },
+    {
+      "activityName" : "Back To The Waterfall Before All The Tourist!",
+      "dayID" : 4,
+      "filename" : "7B361E91-C9CB-4543-AB8C-6B6548566803.jpg",
+      "key" : "custom-5299C09C-E30A-4379-B1C3-B60906B2EEC6",
+      "timestamp" : "2026-07-16T09:28:39Z"
+    },
+    {
+      "activityName" : "Back To The Waterfall Before All The Tourist!",
+      "dayID" : 4,
+      "filename" : "64A42AA5-C474-4E7C-BF35-5F32646F56E9.jpg",
+      "key" : "custom-5299C09C-E30A-4379-B1C3-B60906B2EEC6",
+      "timestamp" : "2026-07-16T09:28:40Z"
+    },
+    {
+      "activityName" : "Back To The Waterfall Before All The Tourist!",
+      "dayID" : 4,
+      "filename" : "F1B343B6-7CC5-4CF6-89F6-A8132A15A109.jpg",
+      "key" : "custom-5299C09C-E30A-4379-B1C3-B60906B2EEC6",
+      "timestamp" : "2026-07-16T09:28:40Z"
+    },
+    {
       "activityName" : "Fly Boston to Iceland",
       "dayID" : -1,
       "filename" : "0C313879-463C-4704-9536-B47CD974FD5F.jpg",
@@ -1318,6 +1374,12 @@
           "itemName" : "custom-46297DCA-52A7-4E84-8125-15A7B83D3030",
           "key" : "custom-46297DCA-52A7-4E84-8125-15A7B83D3030",
           "timestamp" : "2026-07-14T16:52:56Z"
+        },
+        {
+          "dayID" : 0,
+          "itemName" : "custom-5299C09C-E30A-4379-B1C3-B60906B2EEC6",
+          "key" : "custom-5299C09C-E30A-4379-B1C3-B60906B2EEC6",
+          "timestamp" : "2026-07-16T09:28:39Z"
         },
         {
           "dayID" : 0,
@@ -1676,6 +1738,16 @@
           "notes" : "",
           "scheduleAfterIndex" : 0,
           "type" : "Activity"
+        },
+        {
+          "activityCategory" : "Waterfall",
+          "createdBy" : "Chris",
+          "dayID" : 4,
+          "id" : "5299C09C-E30A-4379-B1C3-B60906B2EEC6",
+          "name" : "Back To The Waterfall Before All The Tourist!",
+          "notes" : "",
+          "scheduleAfterIndex" : 0,
+          "type" : "Activity"
         }
       ],
       "deletedEventIDs" : [
@@ -1688,7 +1760,7 @@
         "72F18AEC-99EF-4D55-B498-448DE505E501",
         "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE"
       ],
-      "gpsPointCount" : 1028,
+      "gpsPointCount" : 1030,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -4773,6 +4845,12 @@
           "lat" : 63.54279374907456,
           "lng" : -19.66480958530665,
           "ts" : "2026-07-16T09:26:51Z"
+        },
+        {
+          "acc" : 32.71189738320233,
+          "lat" : 63.54279336237756,
+          "lng" : -19.66480426887064,
+          "ts" : "2026-07-16T09:27:50Z"
         }
       ],
       "hikes" : [
@@ -5068,7 +5146,7 @@
         }
       ],
       "totalHikeDistanceKm" : 4,
-      "waterfallsVisited" : 6
+      "waterfallsVisited" : 7
     },
     {
       "checkIns" : [
