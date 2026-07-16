@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-16T11:09:49Z",
+  "lastUpdated" : "2026-07-16T11:09:55Z",
   "localEdits" : {
     "custom-5299C09C-E30A-4379-B1C3-B60906B2EEC6" : {
       "sortOrder" : -2
@@ -572,10 +572,10 @@
     },
     "d3-a3" : {
       "movedToDayID" : 4,
-      "sortOrder" : 1
+      "sortOrder" : 5
     },
     "d4-f0" : {
-      "name" : "Breakfastyyyyy",
+      "name" : "Breakfasty",
       "sortOrder" : 3
     },
     "d7-a0" : {
@@ -594,6 +594,167 @@
     }
   },
   "photos" : [
+    {
+      "activityName" : "Fly Boston to Iceland",
+      "dayID" : -1,
+      "filename" : "0C313879-463C-4704-9536-B47CD974FD5F.jpg",
+      "key" : "d-1-a2",
+      "timestamp" : "2026-07-13T01:18:40Z"
+    },
+    {
+      "activityName" : "Bridge Between Continents",
+      "dayID" : 1,
+      "filename" : "9D2849FE-87EC-43F4-818E-CA374B1FCB60.jpg",
+      "key" : "d1-a0",
+      "timestamp" : "2026-07-13T10:26:12Z"
+    },
+    {
+      "activityName" : "Bridge Between Continents",
+      "dayID" : 1,
+      "filename" : "CDDE779E-3153-4908-B2D4-F13FF9628C23.jpg",
+      "key" : "d1-a0",
+      "timestamp" : "2026-07-13T10:26:12Z"
+    },
+    {
+      "activityName" : "Bridge Between Continents",
+      "dayID" : 1,
+      "filename" : "AF747D64-8CB2-4D4B-8E00-01179AC84CC5.jpg",
+      "key" : "d1-a0",
+      "timestamp" : "2026-07-13T10:26:12Z"
+    },
+    {
+      "activityName" : "Bridge Between Continents",
+      "dayID" : 1,
+      "filename" : "F60C5890-01CF-4DF1-8F4C-2ED0ADB9AA23.jpg",
+      "key" : "d1-a0",
+      "timestamp" : "2026-07-13T10:26:12Z"
+    },
+    {
+      "activityName" : "Bridge Between Continents",
+      "dayID" : 1,
+      "filename" : "8C958C4E-4AC4-4644-B75F-511BC3663AB6.jpg",
+      "key" : "d1-a0",
+      "timestamp" : "2026-07-13T10:26:12Z"
+    },
+    {
+      "activityName" : "Bridge Between Continents",
+      "dayID" : 1,
+      "filename" : "254F9D2F-ED9B-4A08-A62A-5BFB48202111.jpg",
+      "key" : "d1-a0",
+      "timestamp" : "2026-07-13T10:26:12Z"
+    },
+    {
+      "activityName" : "Blue Lagoon & LAVA Restaurant",
+      "dayID" : 1,
+      "filename" : "BDC85D04-C030-4523-9C6C-8DC62FBB7017.jpg",
+      "key" : "d1-a5",
+      "timestamp" : "2026-07-13T20:38:17Z"
+    },
+    {
+      "activityName" : "Blue Lagoon & LAVA Restaurant",
+      "dayID" : 1,
+      "filename" : "1C4CACAE-0281-4736-AF11-A42FAD8D1479.jpg",
+      "key" : "d1-a5",
+      "timestamp" : "2026-07-13T20:38:17Z"
+    },
+    {
+      "activityName" : "Þingvellir National Park",
+      "dayID" : 2,
+      "filename" : "5A3B165E-D359-49C4-AB79-03AE3E0F7350.jpg",
+      "key" : "d2-a1",
+      "timestamp" : "2026-07-14T13:35:53Z"
+    },
+    {
+      "activityName" : "Þingvellir National Park",
+      "dayID" : 2,
+      "filename" : "BD716492-887E-45A7-BB00-C451CF9FD739.jpg",
+      "key" : "d2-a1",
+      "timestamp" : "2026-07-14T13:35:53Z"
+    },
+    {
+      "activityName" : "Þingvellir National Park",
+      "dayID" : 2,
+      "filename" : "C072BA8A-431B-43A5-B90F-8A44C185840B.jpg",
+      "key" : "d2-a1",
+      "timestamp" : "2026-07-14T13:35:53Z"
+    },
+    {
+      "activityName" : "Lunch",
+      "dayID" : 3,
+      "filename" : "B1B86CBF-2660-4546-974F-7FFA9F836476.jpg",
+      "key" : "d3-f1",
+      "timestamp" : "2026-07-15T15:06:24Z"
+    },
+    {
+      "activityName" : "Lunch",
+      "dayID" : 3,
+      "filename" : "5B4DE382-D062-4EDA-A142-474AC3CE3B30.jpg",
+      "key" : "d3-f1",
+      "timestamp" : "2026-07-15T15:06:24Z"
+    },
+    {
+      "activityName" : "Lunch",
+      "dayID" : 3,
+      "filename" : "78633897-1D8D-4961-8084-8A7967B315EF.jpg",
+      "key" : "d3-f1",
+      "timestamp" : "2026-07-15T15:06:24Z"
+    },
+    {
+      "activityName" : "Lunch",
+      "dayID" : 3,
+      "filename" : "14444E96-1BA5-45C3-B9EA-04645B51FFFC.jpg",
+      "key" : "d3-f1",
+      "timestamp" : "2026-07-15T15:06:24Z"
+    },
+    {
+      "activityName" : "Lunch",
+      "dayID" : 3,
+      "filename" : "8853B21A-3214-48AE-BD72-255F43FA549A.jpg",
+      "key" : "d3-f1",
+      "timestamp" : "2026-07-15T15:06:24Z"
+    },
+    {
+      "activityName" : "Gljúfrabúi",
+      "dayID" : 3,
+      "filename" : "D938BB0A-D4A1-4EE7-84CF-559CAC14D969.jpg",
+      "key" : "d3-a1",
+      "timestamp" : "2026-07-15T16:29:05Z"
+    },
+    {
+      "activityName" : "Gljúfrabúi",
+      "dayID" : 3,
+      "filename" : "D70512B6-D109-4832-B1F2-5FA1C205ABEC.jpg",
+      "key" : "d3-a1",
+      "timestamp" : "2026-07-15T16:29:05Z"
+    },
+    {
+      "activityName" : "Gljúfrabúi",
+      "dayID" : 3,
+      "filename" : "1A4F6644-F6FE-4CC2-9EF6-99C1C0009756.jpg",
+      "key" : "d3-a1",
+      "timestamp" : "2026-07-15T16:29:06Z"
+    },
+    {
+      "activityName" : "Gljúfrabúi",
+      "dayID" : 3,
+      "filename" : "05DA50F2-DEBC-412F-A315-EBDEDD45F187.jpg",
+      "key" : "d3-a1",
+      "timestamp" : "2026-07-15T16:29:06Z"
+    },
+    {
+      "activityName" : "Gljúfrabúi",
+      "dayID" : 3,
+      "filename" : "95A82FA0-4CD9-456E-8416-105392F06890.jpg",
+      "key" : "d3-a1",
+      "timestamp" : "2026-07-15T16:29:06Z"
+    },
+    {
+      "activityName" : "Skógafoss",
+      "dayID" : 4,
+      "filename" : "99440430-9FCE-42D7-9300-8FD714A106C3.jpg",
+      "key" : "d3-a3",
+      "timestamp" : "2026-07-16T10:05:46Z"
+    },
     {
       "activityName" : "Flight Boston to Reykjavík",
       "dayID" : 0,
@@ -1255,206 +1416,9 @@
       "filename" : "F9D9C418-CF64-42E6-BEE0-30CFFCD993A0.jpg",
       "key" : "d3-a3",
       "timestamp" : "2026-07-16T10:37:13Z"
-    },
-    {
-      "activityName" : "Fly Boston to Iceland",
-      "dayID" : -1,
-      "filename" : "0C313879-463C-4704-9536-B47CD974FD5F.jpg",
-      "key" : "d-1-a2",
-      "timestamp" : "2026-07-13T01:18:40Z"
-    },
-    {
-      "activityName" : "Bridge Between Continents",
-      "dayID" : 1,
-      "filename" : "9D2849FE-87EC-43F4-818E-CA374B1FCB60.jpg",
-      "key" : "d1-a0",
-      "timestamp" : "2026-07-13T10:26:12Z"
-    },
-    {
-      "activityName" : "Bridge Between Continents",
-      "dayID" : 1,
-      "filename" : "CDDE779E-3153-4908-B2D4-F13FF9628C23.jpg",
-      "key" : "d1-a0",
-      "timestamp" : "2026-07-13T10:26:12Z"
-    },
-    {
-      "activityName" : "Bridge Between Continents",
-      "dayID" : 1,
-      "filename" : "AF747D64-8CB2-4D4B-8E00-01179AC84CC5.jpg",
-      "key" : "d1-a0",
-      "timestamp" : "2026-07-13T10:26:12Z"
-    },
-    {
-      "activityName" : "Bridge Between Continents",
-      "dayID" : 1,
-      "filename" : "F60C5890-01CF-4DF1-8F4C-2ED0ADB9AA23.jpg",
-      "key" : "d1-a0",
-      "timestamp" : "2026-07-13T10:26:12Z"
-    },
-    {
-      "activityName" : "Bridge Between Continents",
-      "dayID" : 1,
-      "filename" : "8C958C4E-4AC4-4644-B75F-511BC3663AB6.jpg",
-      "key" : "d1-a0",
-      "timestamp" : "2026-07-13T10:26:12Z"
-    },
-    {
-      "activityName" : "Bridge Between Continents",
-      "dayID" : 1,
-      "filename" : "254F9D2F-ED9B-4A08-A62A-5BFB48202111.jpg",
-      "key" : "d1-a0",
-      "timestamp" : "2026-07-13T10:26:12Z"
-    },
-    {
-      "activityName" : "Blue Lagoon & LAVA Restaurant",
-      "dayID" : 1,
-      "filename" : "BDC85D04-C030-4523-9C6C-8DC62FBB7017.jpg",
-      "key" : "d1-a5",
-      "timestamp" : "2026-07-13T20:38:17Z"
-    },
-    {
-      "activityName" : "Blue Lagoon & LAVA Restaurant",
-      "dayID" : 1,
-      "filename" : "1C4CACAE-0281-4736-AF11-A42FAD8D1479.jpg",
-      "key" : "d1-a5",
-      "timestamp" : "2026-07-13T20:38:17Z"
-    },
-    {
-      "activityName" : "Þingvellir National Park",
-      "dayID" : 2,
-      "filename" : "5A3B165E-D359-49C4-AB79-03AE3E0F7350.jpg",
-      "key" : "d2-a1",
-      "timestamp" : "2026-07-14T13:35:53Z"
-    },
-    {
-      "activityName" : "Þingvellir National Park",
-      "dayID" : 2,
-      "filename" : "BD716492-887E-45A7-BB00-C451CF9FD739.jpg",
-      "key" : "d2-a1",
-      "timestamp" : "2026-07-14T13:35:53Z"
-    },
-    {
-      "activityName" : "Þingvellir National Park",
-      "dayID" : 2,
-      "filename" : "C072BA8A-431B-43A5-B90F-8A44C185840B.jpg",
-      "key" : "d2-a1",
-      "timestamp" : "2026-07-14T13:35:53Z"
-    },
-    {
-      "activityName" : "Lunch",
-      "dayID" : 3,
-      "filename" : "B1B86CBF-2660-4546-974F-7FFA9F836476.jpg",
-      "key" : "d3-f1",
-      "timestamp" : "2026-07-15T15:06:24Z"
-    },
-    {
-      "activityName" : "Lunch",
-      "dayID" : 3,
-      "filename" : "5B4DE382-D062-4EDA-A142-474AC3CE3B30.jpg",
-      "key" : "d3-f1",
-      "timestamp" : "2026-07-15T15:06:24Z"
-    },
-    {
-      "activityName" : "Lunch",
-      "dayID" : 3,
-      "filename" : "78633897-1D8D-4961-8084-8A7967B315EF.jpg",
-      "key" : "d3-f1",
-      "timestamp" : "2026-07-15T15:06:24Z"
-    },
-    {
-      "activityName" : "Lunch",
-      "dayID" : 3,
-      "filename" : "14444E96-1BA5-45C3-B9EA-04645B51FFFC.jpg",
-      "key" : "d3-f1",
-      "timestamp" : "2026-07-15T15:06:24Z"
-    },
-    {
-      "activityName" : "Lunch",
-      "dayID" : 3,
-      "filename" : "8853B21A-3214-48AE-BD72-255F43FA549A.jpg",
-      "key" : "d3-f1",
-      "timestamp" : "2026-07-15T15:06:24Z"
-    },
-    {
-      "activityName" : "Gljúfrabúi",
-      "dayID" : 3,
-      "filename" : "D938BB0A-D4A1-4EE7-84CF-559CAC14D969.jpg",
-      "key" : "d3-a1",
-      "timestamp" : "2026-07-15T16:29:05Z"
-    },
-    {
-      "activityName" : "Gljúfrabúi",
-      "dayID" : 3,
-      "filename" : "D70512B6-D109-4832-B1F2-5FA1C205ABEC.jpg",
-      "key" : "d3-a1",
-      "timestamp" : "2026-07-15T16:29:05Z"
-    },
-    {
-      "activityName" : "Gljúfrabúi",
-      "dayID" : 3,
-      "filename" : "1A4F6644-F6FE-4CC2-9EF6-99C1C0009756.jpg",
-      "key" : "d3-a1",
-      "timestamp" : "2026-07-15T16:29:06Z"
-    },
-    {
-      "activityName" : "Gljúfrabúi",
-      "dayID" : 3,
-      "filename" : "05DA50F2-DEBC-412F-A315-EBDEDD45F187.jpg",
-      "key" : "d3-a1",
-      "timestamp" : "2026-07-15T16:29:06Z"
-    },
-    {
-      "activityName" : "Gljúfrabúi",
-      "dayID" : 3,
-      "filename" : "95A82FA0-4CD9-456E-8416-105392F06890.jpg",
-      "key" : "d3-a1",
-      "timestamp" : "2026-07-15T16:29:06Z"
-    },
-    {
-      "activityName" : "Skógafoss",
-      "dayID" : 4,
-      "filename" : "99440430-9FCE-42D7-9300-8FD714A106C3.jpg",
-      "key" : "d3-a3",
-      "timestamp" : "2026-07-16T10:05:46Z"
     }
   ],
   "travelers" : [
-    {
-      "checkIns" : [
-
-      ],
-      "colorHex" : "#3180A8",
-      "customEvents" : [
-
-      ],
-      "deletedEventIDs" : [
-        "72F18AEC-99EF-4D55-B498-448DE505E501",
-        "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
-        "54A846B9-6D87-40D2-995B-E807631D15DF",
-        "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
-        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
-        "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
-        "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
-        "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
-      ],
-      "gpsPointCount" : 0,
-      "gpsTrack" : [
-
-      ],
-      "hikes" : [
-
-      ],
-      "hikesCompleted" : 0,
-      "name" : "Chris",
-      "notes" : [
-
-      ],
-      "ratings" : [
-
-      ],
-      "totalHikeDistanceKm" : 0,
-      "waterfallsVisited" : 0
-    },
     {
       "checkIns" : [
         {
@@ -1695,6 +1659,42 @@
       ],
       "totalHikeDistanceKm" : 0,
       "waterfallsVisited" : 7
+    },
+    {
+      "checkIns" : [
+
+      ],
+      "colorHex" : "#3180A8",
+      "customEvents" : [
+
+      ],
+      "deletedEventIDs" : [
+        "72F18AEC-99EF-4D55-B498-448DE505E501",
+        "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
+        "54A846B9-6D87-40D2-995B-E807631D15DF",
+        "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
+        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
+        "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
+        "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
+        "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
+      ],
+      "gpsPointCount" : 0,
+      "gpsTrack" : [
+
+      ],
+      "hikes" : [
+
+      ],
+      "hikesCompleted" : 0,
+      "name" : "Chris",
+      "notes" : [
+
+      ],
+      "ratings" : [
+
+      ],
+      "totalHikeDistanceKm" : 0,
+      "waterfallsVisited" : 0
     },
     {
       "checkIns" : [
