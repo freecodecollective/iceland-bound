@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-16T12:47:14Z",
+  "lastUpdated" : "2026-07-16T12:47:58Z",
   "localEdits" : {
     "custom-5299C09C-E30A-4379-B1C3-B60906B2EEC6" : {
       "sortOrder" : -2
@@ -1540,6 +1540,12 @@
         },
         {
           "dayID" : 0,
+          "itemName" : "custom-hike-7FF83750-8D70-4F19-BFE7-85F6ECA6FF6C",
+          "key" : "custom-hike-7FF83750-8D70-4F19-BFE7-85F6ECA6FF6C",
+          "timestamp" : "2026-07-16T12:47:18Z"
+        },
+        {
+          "dayID" : 0,
           "itemName" : "custom-hike-8D402D3F-6C03-4A25-B3F8-0D6DED6D576C",
           "key" : "custom-hike-8D402D3F-6C03-4A25-B3F8-0D6DED6D576C",
           "timestamp" : "2026-07-14T11:30:01Z"
@@ -1685,6 +1691,14 @@
           "latitude" : 63.9377672072284,
           "longitude" : -21.004124661455204,
           "timestamp" : "2026-07-15T14:35:21Z"
+        },
+        {
+          "dayID" : 4,
+          "itemName" : "Þakgil–Mælifell hike",
+          "key" : "d4-a0",
+          "latitude" : 63.529344239995325,
+          "longitude" : -18.887131581309834,
+          "timestamp" : "2026-07-16T12:47:24Z"
         },
         {
           "dayID" : 4,
@@ -1892,19 +1906,28 @@
           "name" : "Hike",
           "notes" : "",
           "type" : "Activity"
+        },
+        {
+          "activityCategory" : "Hiking",
+          "createdBy" : "Chris",
+          "dayID" : 4,
+          "id" : "hike-7FF83750-8D70-4F19-BFE7-85F6ECA6FF6C",
+          "name" : "Þakgil–Mælifell hike",
+          "notes" : "",
+          "type" : "Activity"
         }
       ],
       "deletedEventIDs" : [
-        "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
-        "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
-        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
         "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
         "54A846B9-6D87-40D2-995B-E807631D15DF",
         "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
-        "72F18AEC-99EF-4D55-B498-448DE505E501"
+        "72F18AEC-99EF-4D55-B498-448DE505E501",
+        "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
+        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
+        "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE"
       ],
-      "gpsPointCount" : 1081,
+      "gpsPointCount" : 1082,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -5151,6 +5174,12 @@
           "lat" : 63.529344239995325,
           "lng" : -18.887131581309834,
           "ts" : "2026-07-16T12:47:12Z"
+        },
+        {
+          "acc" : 9.54597964716602,
+          "lat" : 63.529254428753774,
+          "lng" : -18.88700192165791,
+          "ts" : "2026-07-16T12:47:27Z"
         }
       ],
       "hikes" : [
@@ -5185,6 +5214,20 @@
           "pointCount" : 0,
           "source" : "gps",
           "startTime" : "2026-07-15T23:04:34Z"
+        },
+        {
+          "distanceKm" : 0,
+          "name" : "Þakgil–Mælifell hike",
+          "pointCount" : 1,
+          "source" : "gps",
+          "startTime" : "2026-07-16T12:47:18Z"
+        },
+        {
+          "distanceKm" : 11.9,
+          "name" : "Þakgil–Mælifell hike",
+          "pointCount" : 0,
+          "source" : "checkin",
+          "startTime" : "2026-07-16T12:47:24Z"
         }
       ],
       "hikesCompleted" : 4,
@@ -5315,6 +5358,12 @@
           "itemName" : "Lunch",
           "key" : "d3-f1",
           "text" : "Our first Icelandic hotdog! Guess who got the one with Doritos?"
+        },
+        {
+          "dayID" : 4,
+          "itemName" : "Þakgil–Mælifell hike",
+          "key" : "d4-a0",
+          "text" : "Literally a straight up hike"
         }
       ],
       "ratings" : [
@@ -5452,12 +5501,18 @@
         },
         {
           "dayID" : 4,
+          "itemName" : "Þakgil–Mælifell hike",
+          "key" : "d4-a0",
+          "rating" : 5
+        },
+        {
+          "dayID" : 4,
           "itemName" : "Reynisfjara black sand beach",
           "key" : "d4-a1",
           "rating" : 5
         }
       ],
-      "totalHikeDistanceKm" : 4,
+      "totalHikeDistanceKm" : 15.9,
       "waterfallsVisited" : 8
     },
     {
