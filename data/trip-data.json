@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-16T09:26:16Z",
+  "lastUpdated" : "2026-07-16T09:27:36Z",
   "localEdits" : {
     "custom-C4D9106A-E668-4776-BC85-DB53A48976A3" : {
       "sortOrder" : -3
@@ -1135,6 +1135,27 @@
       "timestamp" : "2026-07-15T18:26:33Z"
     },
     {
+      "activityName" : "Volcano Exhibit At The Paxi Bakery",
+      "dayID" : 4,
+      "filename" : "7C7ECF02-A48C-45E5-AB33-4C0C216516F8.jpg",
+      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
+      "timestamp" : "2026-07-16T09:27:24Z"
+    },
+    {
+      "activityName" : "Volcano Exhibit At The Paxi Bakery",
+      "dayID" : 4,
+      "filename" : "4A4866B9-34B8-4D04-A32B-C67869FAAEA5.jpg",
+      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
+      "timestamp" : "2026-07-16T09:27:24Z"
+    },
+    {
+      "activityName" : "Volcano Exhibit At The Paxi Bakery",
+      "dayID" : 4,
+      "filename" : "7B850658-3B6A-42E6-ADDC-F07C80411B8B.jpg",
+      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
+      "timestamp" : "2026-07-16T09:27:24Z"
+    },
+    {
       "activityName" : "Fly Boston to Iceland",
       "dayID" : -1,
       "filename" : "0C313879-463C-4704-9536-B47CD974FD5F.jpg",
@@ -1643,6 +1664,18 @@
           "name" : "Þakgil–Mælifell hike",
           "notes" : "",
           "type" : "Activity"
+        },
+        {
+          "activityCategory" : "General",
+          "createdBy" : "Chris",
+          "dayID" : 4,
+          "id" : "B2C52987-0F31-4633-BD86-AA9BB671891F",
+          "latitude" : 63.54279336237756,
+          "longitude" : -19.66480426887064,
+          "name" : "Volcano Exhibit At The Paxi Bakery",
+          "notes" : "",
+          "scheduleAfterIndex" : 0,
+          "type" : "Activity"
         }
       ],
       "deletedEventIDs" : [
@@ -1655,7 +1688,7 @@
         "72F18AEC-99EF-4D55-B498-448DE505E501",
         "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE"
       ],
-      "gpsPointCount" : 1024,
+      "gpsPointCount" : 1028,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -4730,10 +4763,16 @@
           "ts" : "2026-07-16T09:20:51Z"
         },
         {
-          "acc" : 4.2327412165302185,
-          "lat" : 63.5428375111585,
-          "lng" : -19.665173357156053,
-          "ts" : "2026-07-16T09:26:15Z"
+          "acc" : 4.748651530191857,
+          "lat" : 63.54281114576262,
+          "lng" : -19.664931989022467,
+          "ts" : "2026-07-16T09:26:51Z"
+        },
+        {
+          "acc" : 28.795014,
+          "lat" : 63.54279374907456,
+          "lng" : -19.66480958530665,
+          "ts" : "2026-07-16T09:26:51Z"
         }
       ],
       "hikes" : [
