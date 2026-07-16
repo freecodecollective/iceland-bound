@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-16T13:41:21Z",
+  "lastUpdated" : "2026-07-16T14:13:26Z",
   "localEdits" : {
     "custom-5299C09C-E30A-4379-B1C3-B60906B2EEC6" : {
       "sortOrder" : -2
@@ -1582,6 +1582,12 @@
         },
         {
           "dayID" : 0,
+          "itemName" : "custom-hike-D12612E1-CE43-487D-9069-93D95A96BFF5",
+          "key" : "custom-hike-D12612E1-CE43-487D-9069-93D95A96BFF5",
+          "timestamp" : "2026-07-16T13:42:01Z"
+        },
+        {
+          "dayID" : 0,
           "itemName" : "custom-hike-D43BD3B8-3548-475D-BBB1-F38BFBF83198",
           "key" : "custom-hike-D43BD3B8-3548-475D-BBB1-F38BFBF83198",
           "timestamp" : "2026-07-14T11:49:48Z"
@@ -1945,19 +1951,28 @@
           "name" : "Þakgil–Mælifell hike",
           "notes" : "",
           "type" : "Activity"
+        },
+        {
+          "activityCategory" : "Hiking",
+          "createdBy" : "Chris",
+          "dayID" : 4,
+          "id" : "hike-D12612E1-CE43-487D-9069-93D95A96BFF5",
+          "name" : "Þakgil–Mælifell hike",
+          "notes" : "",
+          "type" : "Activity"
         }
       ],
       "deletedEventIDs" : [
+        "54A846B9-6D87-40D2-995B-E807631D15DF",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
-        "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
         "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
-        "72F18AEC-99EF-4D55-B498-448DE505E501",
-        "54A846B9-6D87-40D2-995B-E807631D15DF",
+        "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
         "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
+        "72F18AEC-99EF-4D55-B498-448DE505E501",
         "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A"
       ],
-      "gpsPointCount" : 1094,
+      "gpsPointCount" : 1102,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -5240,6 +5255,30 @@
           "lat" : 63.54172591648271,
           "lng" : -18.908403168790976,
           "ts" : "2026-07-16T13:41:20Z"
+        },
+        {
+          "acc" : 90.9368801955439,
+          "lat" : 63.541953745750945,
+          "lng" : -18.90863996178863,
+          "ts" : "2026-07-16T13:41:36Z"
+        },
+        {
+          "acc" : 159.6264536394531,
+          "lat" : 63.541787760596925,
+          "lng" : -18.908517775509527,
+          "ts" : "2026-07-16T13:41:36Z"
+        },
+        {
+          "acc" : 159.6264536394531,
+          "lat" : 63.541787760596925,
+          "lng" : -18.908517775509527,
+          "ts" : "2026-07-16T13:41:38Z"
+        },
+        {
+          "acc" : 3.755626577714726,
+          "lat" : 63.548249683707695,
+          "lng" : -18.933394919187748,
+          "ts" : "2026-07-16T14:13:26Z"
         }
       ],
       "hikes" : [
@@ -5277,10 +5316,18 @@
         },
         {
           "distanceKm" : 0,
+          "endTime" : "2026-07-16T13:41:38Z",
           "name" : "Þakgil–Mælifell hike",
           "pointCount" : 1,
           "source" : "gps",
           "startTime" : "2026-07-16T12:47:18Z"
+        },
+        {
+          "distanceKm" : 0,
+          "name" : "Þakgil–Mælifell hike",
+          "pointCount" : 1,
+          "source" : "gps",
+          "startTime" : "2026-07-16T13:42:01Z"
         },
         {
           "distanceKm" : 11.9,
@@ -5290,7 +5337,7 @@
           "startTime" : "2026-07-16T12:47:24Z"
         }
       ],
-      "hikesCompleted" : 4,
+      "hikesCompleted" : 5,
       "name" : "Chris",
       "notes" : [
         {
