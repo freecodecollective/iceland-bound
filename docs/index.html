@@ -2095,6 +2095,7 @@ function getEffectiveActivities(day) {
   day.activities.forEach(function(act, idx) {
     var key = 'd' + day.id + '-a' + idx;
     var edit = edits[key];
+    if (edit && edit.hidden) return;
     if (edit && edit.movedToDayID != null && edit.movedToDayID !== day.id) return;
     var effective = Object.assign({}, act);
     if (edit) {
@@ -2111,7 +2112,7 @@ function getEffectiveActivities(day) {
     otherDay.activities.forEach(function(act, idx) {
       var key = 'd' + otherDay.id + '-a' + idx;
       var edit = edits[key];
-      if (!edit || edit.movedToDayID !== day.id) return;
+      if (!edit || edit.movedToDayID !== day.id || edit.hidden) return;
       var effective = Object.assign({}, act);
       if (edit.name) effective.name = edit.name;
       if (edit.duration) effective.duration = edit.duration;
@@ -2132,6 +2133,7 @@ function getEffectiveFood(day) {
   day.food.forEach(function(f, idx) {
     var key = 'd' + day.id + '-f' + idx;
     var edit = edits[key];
+    if (edit && edit.hidden) return;
     if (edit && edit.movedToDayID != null && edit.movedToDayID !== day.id) return;
     var effective = Object.assign({}, f);
     if (edit) {
@@ -2147,7 +2149,7 @@ function getEffectiveFood(day) {
     otherDay.food.forEach(function(f, idx) {
       var key = 'd' + otherDay.id + '-f' + idx;
       var edit = edits[key];
-      if (!edit || edit.movedToDayID !== day.id) return;
+      if (!edit || edit.movedToDayID !== day.id || edit.hidden) return;
       var effective = Object.assign({}, f);
       if (edit.name) effective.name = edit.name;
       if (edit.desc) effective.desc = edit.desc;
