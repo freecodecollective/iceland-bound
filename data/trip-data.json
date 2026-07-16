@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-16T21:32:50Z",
+  "lastUpdated" : "2026-07-16T21:34:12Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805929820.326636,
@@ -572,7 +572,7 @@
       "sortOrder" : -3
     },
     "custom-hike-7FF83750-8D70-4F19-BFE7-85F6ECA6FF6C" : {
-      "editedAt" : 805929772.308244,
+      "editedAt" : 805930375.303732,
       "sortOrder" : 30
     },
     "custom-hike-A469A451-1F74-4BAE-9270-3434A5D8EDC5" : {
@@ -628,7 +628,7 @@
       "sortOrder" : 16
     },
     "d4-f3" : {
-      "editedAt" : 805929845.273111,
+      "editedAt" : 805930381.290104,
       "name" : "Dinner at Black Crust Pizza ",
       "sortOrder" : 40
     },
@@ -638,9 +638,10 @@
     },
     "d7-f0" : {
       "desc" : "Relaxed start at Stracta2",
+      "editedAt" : 805930452.174213,
       "movedToDayID" : 8,
       "name" : "Breakfast2",
-      "sortOrder" : 3
+      "sortOrder" : 2
     },
     "d8-f0" : {
       "movedToDayID" : 7,
@@ -665,6 +666,10 @@
     "sched-d4-6" : {
       "editedAt" : 805926985.609848,
       "sortOrder" : 22
+    },
+    "sched-d8-1" : {
+      "editedAt" : 805930452.174048,
+      "sortOrder" : 0
     }
   },
   "photos" : [
@@ -2162,19 +2167,19 @@
         }
       ],
       "deletedEventIDs" : [
-        "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
-        "54A846B9-6D87-40D2-995B-E807631D15DF",
-        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
-        "hike-A469A451-1F74-4BAE-9270-3434A5D8EDC5",
-        "5D703179-6A84-453A-89FD-42202043885F",
-        "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
         "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
         "hike-D12612E1-CE43-487D-9069-93D95A96BFF5",
         "72F18AEC-99EF-4D55-B498-448DE505E501",
         "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
-        "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A"
+        "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
+        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
+        "hike-A469A451-1F74-4BAE-9270-3434A5D8EDC5",
+        "5D703179-6A84-453A-89FD-42202043885F",
+        "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
+        "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
+        "54A846B9-6D87-40D2-995B-E807631D15DF"
       ],
-      "gpsPointCount" : 1203,
+      "gpsPointCount" : 1206,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -5787,6 +5792,12 @@
           "lat" : 63.448431876402516,
           "lng" : -19.147607959286425,
           "ts" : "2026-07-16T21:32:50Z"
+        },
+        {
+          "acc" : 16.35075815203778,
+          "lat" : 63.44843928911209,
+          "lng" : -19.14755567146109,
+          "ts" : "2026-07-16T21:33:46Z"
         }
       ],
       "hikes" : [
@@ -5993,7 +6004,7 @@
           "dayID" : 4,
           "itemName" : "Dinner",
           "key" : "d4-f3",
-          "text" : "It was ok. The black crust is a gimic. But it's pizza so we were"
+          "text" : "It was ok. The black crust is a gimic. But it's pizza so we were happy. "
         }
       ],
       "ratings" : [
