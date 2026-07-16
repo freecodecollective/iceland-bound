@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-16T14:14:21Z",
+  "lastUpdated" : "2026-07-16T14:21:29Z",
   "localEdits" : {
     "custom-5299C09C-E30A-4379-B1C3-B60906B2EEC6" : {
       "sortOrder" : -2
@@ -1338,6 +1338,41 @@
       "videoFilename" : "70F652D4-4DD8-480D-A703-D7115A818BA7.mov"
     },
     {
+      "activityName" : "Þakgil–Mælifell hike",
+      "dayID" : 4,
+      "filename" : "06544DCC-0ECA-4A3D-A5DC-413FBF79E81A.jpg",
+      "key" : "d4-a0",
+      "timestamp" : "2026-07-16T14:14:34Z"
+    },
+    {
+      "activityName" : "Þakgil–Mælifell hike",
+      "dayID" : 4,
+      "filename" : "BCDA38CB-67D9-445A-A740-D305166DF109.jpg",
+      "key" : "d4-a0",
+      "timestamp" : "2026-07-16T14:14:34Z"
+    },
+    {
+      "activityName" : "Þakgil–Mælifell hike",
+      "dayID" : 4,
+      "filename" : "8E47F952-6A80-4FE0-9DC4-97A7AF8A5C13.jpg",
+      "key" : "d4-a0",
+      "timestamp" : "2026-07-16T14:14:34Z"
+    },
+    {
+      "activityName" : "Þakgil–Mælifell hike",
+      "dayID" : 4,
+      "filename" : "622D4252-1A4B-48D5-9E4E-E1ECF7502FE8.jpg",
+      "key" : "d4-a0",
+      "timestamp" : "2026-07-16T14:14:34Z"
+    },
+    {
+      "activityName" : "Þakgil–Mælifell hike",
+      "dayID" : 4,
+      "filename" : "528D419F-0E97-484E-8B85-D668C32CD70E.jpg",
+      "key" : "d4-a0",
+      "timestamp" : "2026-07-16T14:14:34Z"
+    },
+    {
       "activityName" : "Fly Boston to Iceland",
       "dayID" : -1,
       "filename" : "0C313879-463C-4704-9536-B47CD974FD5F.jpg",
@@ -1987,7 +2022,7 @@
         "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0"
       ],
-      "gpsPointCount" : 1108,
+      "gpsPointCount" : 1110,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -5312,6 +5347,18 @@
           "lat" : 63.547928080594154,
           "lng" : -18.9338148830935,
           "ts" : "2026-07-16T14:14:10Z"
+        },
+        {
+          "acc" : 4.184508357982198,
+          "lat" : 63.546107962040075,
+          "lng" : -18.933053005685505,
+          "ts" : "2026-07-16T14:19:05Z"
+        },
+        {
+          "acc" : 8.050575911433736,
+          "lat" : 63.545150242501514,
+          "lng" : -18.931877906929476,
+          "ts" : "2026-07-16T14:20:57Z"
         }
       ],
       "hikes" : [
@@ -5364,9 +5411,9 @@
           "startTime" : "2026-07-16T13:42:01Z"
         },
         {
-          "distanceKm" : 0,
+          "distanceKm" : 0.33,
           "name" : "Þakgil–Mælifell hike",
-          "pointCount" : 3,
+          "pointCount" : 5,
           "source" : "gps",
           "startTime" : "2026-07-16T14:14:09Z"
         },
@@ -5660,7 +5707,7 @@
           "rating" : 5
         }
       ],
-      "totalHikeDistanceKm" : 15.9,
+      "totalHikeDistanceKm" : 16.3,
       "waterfallsVisited" : 8
     },
     {
