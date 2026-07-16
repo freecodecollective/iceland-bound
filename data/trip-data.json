@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-16T09:55:55Z",
+  "lastUpdated" : "2026-07-16T09:57:09Z",
   "localEdits" : {
     "custom-B2C52987-0F31-4633-BD86-AA9BB671891F" : {
       "sortOrder" : 8.5
@@ -1390,6 +1390,12 @@
         },
         {
           "dayID" : 0,
+          "itemName" : "custom-5D703179-6A84-453A-89FD-42202043885F",
+          "key" : "custom-5D703179-6A84-453A-89FD-42202043885F",
+          "timestamp" : "2026-07-16T09:56:56Z"
+        },
+        {
+          "dayID" : 0,
           "itemName" : "custom-8F24F1D6-C1EA-4AF1-9A36-C578F18371FC",
           "key" : "custom-8F24F1D6-C1EA-4AF1-9A36-C578F18371FC",
           "latitude" : 64.22067987329959,
@@ -1763,6 +1769,17 @@
           "notes" : "",
           "scheduleAfterIndex" : 0,
           "type" : "Activity"
+        },
+        {
+          "activityCategory" : "Hiking",
+          "createdBy" : "Chris",
+          "dayID" : 4,
+          "id" : "5D703179-6A84-453A-89FD-42202043885F",
+          "latitude" : 63.530737906360116,
+          "longitude" : -19.51048270052594,
+          "name" : "Hike",
+          "notes" : "",
+          "type" : "Activity"
         }
       ],
       "deletedEventIDs" : [
@@ -1775,7 +1792,7 @@
         "72F18AEC-99EF-4D55-B498-448DE505E501",
         "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE"
       ],
-      "gpsPointCount" : 1038,
+      "gpsPointCount" : 1040,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -4892,10 +4909,16 @@
           "ts" : "2026-07-16T09:50:10Z"
         },
         {
-          "acc" : 156.6740618804659,
-          "lat" : 63.526737163991974,
-          "lng" : -19.511435941113724,
-          "ts" : "2026-07-16T09:51:12Z"
+          "acc" : 11.383888113525447,
+          "lat" : 63.53077409745343,
+          "lng" : -19.510655359958047,
+          "ts" : "2026-07-16T09:55:56Z"
+        },
+        {
+          "acc" : 27.995801363677074,
+          "lat" : 63.530737906360116,
+          "lng" : -19.51048270052594,
+          "ts" : "2026-07-16T09:56:20Z"
         }
       ],
       "hikes" : [
