@@ -1550,17 +1550,63 @@ function renderGPSTrack() {
   var puffinLat = null, puffinLng = null, puffinTime = null, puffinName = 'Chris';
 
   if (traveler && traveler.gpsTrack && traveler.gpsTrack.length > 0) {
-    var points = traveler.gpsTrack.map(function(p) { return [p.lat, p.lng]; });
+    // Filter to only Iceland GPS points (lat > 63) to avoid the Boston→Iceland jump
+    var icelandPoints = traveler.gpsTrack.filter(function(p) { return p.lat > 63; });
+    var points = icelandPoints.map(function(p) { return [p.lat, p.lng]; });
 
-    gpsTrackLayer = L.polyline(points, {
-      color: '#60a5fa', weight: 3, opacity: 0.7,
-      dashArray: '8, 6', lineCap: 'round', lineJoin: 'round'
-    }).addTo(tripMap);
+    // Show straight-line fallback immediately, then upgrade to road-snapped
+    gpsTrackLayer = L.layerGroup().addTo(tripMap);
+    var fallbackLine = L.polyline(points, {
+      color: '#60a5fa', weight: 3, opacity: 0.35,
+      dashArray: '4, 8', lineCap: 'round', lineJoin: 'round'
+    }).addTo(gpsTrackLayer);
+
+    // Snap GPS points to roads via OSRM in batches of up to 100
+    (function snapToRoads() {
+      var batchSize = 100;
+      var allSnapped = [];
+      var batches = [];
+      for (var b = 0; b < icelandPoints.length; b += batchSize) {
+        batches.push(icelandPoints.slice(b, b + batchSize));
+      }
+      // Overlap batches by 1 point for continuity
+      var processed = 0;
+      function doBatch(idx) {
+        if (idx >= batches.length) {
+          if (allSnapped.length > 1) {
+            gpsTrackLayer.removeLayer(fallbackLine);
+            L.polyline(allSnapped, {
+              color: '#60a5fa', weight: 3.5, opacity: 0.8,
+              lineCap: 'round', lineJoin: 'round'
+            }).addTo(gpsTrackLayer);
+          }
+          return;
+        }
+        var batch = batches[idx];
+        var coords = batch.map(function(p) { return p.lng + ',' + p.lat; }).join(';');
+        var radii = batch.map(function(p) { return Math.min(Math.max(Math.round(p.acc || 50), 20), 500); }).join(';');
+        var timestamps = batch.map(function(p) { return Math.round(new Date(p.ts).getTime() / 1000); }).join(';');
+        var url = 'https://router.project-osrm.org/match/v1/driving/' + coords +
+          '?overview=full&geometries=geojson&radiuses=' + radii + '&timestamps=' + timestamps;
+        fetch(url).then(function(r) { return r.json(); }).then(function(data) {
+          if (data.matchings) {
+            for (var m = 0; m < data.matchings.length; m++) {
+              var geom = data.matchings[m].geometry.coordinates;
+              for (var g = 0; g < geom.length; g++) {
+                allSnapped.push([geom[g][1], geom[g][0]]);
+              }
+            }
+          }
+          doBatch(idx + 1);
+        }).catch(function() { doBatch(idx + 1); });
+      }
+      doBatch(0);
+    })();
 
     gpsDotsLayer = L.layerGroup();
-    var dotInterval = Math.max(1, Math.floor(traveler.gpsTrack.length / 60));
-    for (var i = 0; i < traveler.gpsTrack.length; i += dotInterval) {
-      L.circleMarker([traveler.gpsTrack[i].lat, traveler.gpsTrack[i].lng], {
+    var dotInterval = Math.max(1, Math.floor(icelandPoints.length / 60));
+    for (var i = 0; i < icelandPoints.length; i += dotInterval) {
+      L.circleMarker([icelandPoints[i].lat, icelandPoints[i].lng], {
         radius: 2.5, fillColor: '#60a5fa', color: '#60a5fa',
         weight: 0, fillOpacity: 0.5
       }).addTo(gpsDotsLayer);
