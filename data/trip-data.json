@@ -549,8 +549,11 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-16T09:49:29Z",
+  "lastUpdated" : "2026-07-16T09:51:01Z",
   "localEdits" : {
+    "custom-B2C52987-0F31-4633-BD86-AA9BB671891F" : {
+      "sortOrder" : 8.5
+    },
     "custom-C4D9106A-E668-4776-BC85-DB53A48976A3" : {
       "sortOrder" : -3
     },
@@ -565,7 +568,8 @@
       "sortOrder" : -2
     },
     "d3-a3" : {
-      "movedToDayID" : 4
+      "movedToDayID" : 4,
+      "sortOrder" : 5
     },
     "d4-f0" : {
       "name" : "Breakfastyyyyy",
@@ -1542,6 +1546,14 @@
         },
         {
           "dayID" : 3,
+          "itemName" : "Skógafoss",
+          "key" : "d3-a3",
+          "latitude" : 63.52673295648461,
+          "longitude" : -19.51145415814444,
+          "timestamp" : "2026-07-16T09:50:51Z"
+        },
+        {
+          "dayID" : 3,
           "itemName" : "World Cup Semifinal 2",
           "key" : "d3-a5",
           "latitude" : 63.41757374306613,
@@ -1763,7 +1775,7 @@
         "72F18AEC-99EF-4D55-B498-448DE505E501",
         "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE"
       ],
-      "gpsPointCount" : 1036,
+      "gpsPointCount" : 1037,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -4874,10 +4886,10 @@
           "ts" : "2026-07-16T09:44:55Z"
         },
         {
-          "acc" : 135.73406478919313,
-          "lat" : 63.52672910695322,
-          "lng" : -19.511471271801803,
-          "ts" : "2026-07-16T09:49:13Z"
+          "acc" : 146.01943763943402,
+          "lat" : 63.52673295648461,
+          "lng" : -19.51145415814444,
+          "ts" : "2026-07-16T09:50:10Z"
         }
       ],
       "hikes" : [
@@ -5173,7 +5185,7 @@
         }
       ],
       "totalHikeDistanceKm" : 4,
-      "waterfallsVisited" : 7
+      "waterfallsVisited" : 8
     },
     {
       "checkIns" : [
