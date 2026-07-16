@@ -549,8 +549,11 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-16T10:04:04Z",
+  "lastUpdated" : "2026-07-16T10:05:03Z",
   "localEdits" : {
+    "custom-5299C09C-E30A-4379-B1C3-B60906B2EEC6" : {
+      "sortOrder" : -2
+    },
     "custom-B2C52987-0F31-4633-BD86-AA9BB671891F" : {
       "sortOrder" : 8.5
     },
@@ -569,7 +572,7 @@
     },
     "d3-a3" : {
       "movedToDayID" : 4,
-      "sortOrder" : 5
+      "sortOrder" : -2
     },
     "d4-f0" : {
       "name" : "Breakfastyyyyy",
@@ -1800,7 +1803,7 @@
         "72F18AEC-99EF-4D55-B498-448DE505E501",
         "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE"
       ],
-      "gpsPointCount" : 1048,
+      "gpsPointCount" : 1050,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -4945,6 +4948,12 @@
           "lat" : 63.53181151059465,
           "lng" : -19.510549291423466,
           "ts" : "2026-07-16T10:04:02Z"
+        },
+        {
+          "acc" : 23.879201089090103,
+          "lat" : 63.53181128603113,
+          "lng" : -19.5105496089419,
+          "ts" : "2026-07-16T10:05:02Z"
         }
       ],
       "hikes" : [
