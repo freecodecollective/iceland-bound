@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-16T10:36:16Z",
+  "lastUpdated" : "2026-07-16T10:37:15Z",
   "localEdits" : {
     "custom-5299C09C-E30A-4379-B1C3-B60906B2EEC6" : {
       "sortOrder" : -2
@@ -1220,6 +1220,41 @@
       "filename" : "F1B343B6-7CC5-4CF6-89F6-A8132A15A109.jpg",
       "key" : "custom-5299C09C-E30A-4379-B1C3-B60906B2EEC6",
       "timestamp" : "2026-07-16T09:28:40Z"
+    },
+    {
+      "activityName" : "Skógafoss",
+      "dayID" : 4,
+      "filename" : "A52EFCCD-08A4-49A2-AC30-FD98C31B3C40.jpg",
+      "key" : "d3-a3",
+      "timestamp" : "2026-07-16T10:37:13Z"
+    },
+    {
+      "activityName" : "Skógafoss",
+      "dayID" : 4,
+      "filename" : "A03A1CB1-AE08-4F50-A489-49CDAED10242.jpg",
+      "key" : "d3-a3",
+      "timestamp" : "2026-07-16T10:37:13Z"
+    },
+    {
+      "activityName" : "Skógafoss",
+      "dayID" : 4,
+      "filename" : "BD0ED14A-D294-4D54-9ACD-336823518697.jpg",
+      "key" : "d3-a3",
+      "timestamp" : "2026-07-16T10:37:13Z"
+    },
+    {
+      "activityName" : "Skógafoss",
+      "dayID" : 4,
+      "filename" : "17DD4555-5FC8-4C0B-82C9-A5E85CB42F30.jpg",
+      "key" : "d3-a3",
+      "timestamp" : "2026-07-16T10:37:13Z"
+    },
+    {
+      "activityName" : "Skógafoss",
+      "dayID" : 4,
+      "filename" : "F9D9C418-CF64-42E6-BEE0-30CFFCD993A0.jpg",
+      "key" : "d3-a3",
+      "timestamp" : "2026-07-16T10:37:13Z"
     },
     {
       "activityName" : "Fly Boston to Iceland",
