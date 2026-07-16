@@ -1545,7 +1545,7 @@ function renderGPSTrack() {
   if (gpsDotsLayer) { tripMap.removeLayer(gpsDotsLayer); gpsDotsLayer = null; }
   if (puffinMarker) { tripMap.removeLayer(puffinMarker); puffinMarker = null; }
 
-  var traveler = syncData.travelers.find(function(t) { return t.name === 'Chris' && t.gpsTrack && t.gpsTrack.length > 0; });
+  var traveler = syncData.travelers.find(function(t) { return t.name.toLowerCase() === 'chris' && t.gpsTrack && t.gpsTrack.length > 0; });
 
   var puffinLat = null, puffinLng = null, puffinTime = null, puffinName = 'Chris';
 
@@ -1574,7 +1574,7 @@ function renderGPSTrack() {
   }
 
   if (puffinLat === null) {
-    var chris = syncData.travelers.find(function(t) { return t.name === 'Chris'; }) || syncData.travelers[0];
+    var chris = syncData.travelers.find(function(t) { return t.name.toLowerCase() === 'chris'; });
     if (chris && chris.checkIns && chris.checkIns.length > 0) {
       puffinName = chris.name;
       var sorted = chris.checkIns.slice().sort(function(a, b) { return a.timestamp < b.timestamp ? 1 : -1; });
