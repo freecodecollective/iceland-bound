@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-17T11:34:28Z",
+  "lastUpdated" : "2026-07-17T11:35:31Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -1593,6 +1593,13 @@
       "timestamp" : "2026-07-17T10:46:15Z"
     },
     {
+      "activityName" : "Skeiðará Bridge Monument",
+      "dayID" : 5,
+      "filename" : "3998B827-58CC-4BB6-8078-96A60EF0D494.jpg",
+      "key" : "custom-7C2C6778-9BF0-4971-A772-C116EC97A547",
+      "timestamp" : "2026-07-17T11:35:22Z"
+    },
+    {
       "activityName" : "Fly Boston to Iceland",
       "dayID" : -1,
       "filename" : "0C313879-463C-4704-9536-B47CD974FD5F.jpg",
@@ -2542,6 +2549,17 @@
           "notes" : "",
           "scheduleAfterIndex" : 2,
           "type" : "Activity"
+        },
+        {
+          "createdBy" : "Chris",
+          "dayID" : 5,
+          "id" : "7C2C6778-9BF0-4971-A772-C116EC97A547",
+          "latitude" : 63.9849225512859,
+          "longitude" : -16.959914953199508,
+          "name" : "Skeiðará Bridge Monument",
+          "notes" : "",
+          "scheduleAfterIndex" : 4,
+          "type" : "Sightseeing"
         }
       ],
       "deletedEventIDs" : [
