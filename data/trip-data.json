@@ -549,12 +549,16 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-17T10:40:26Z",
+  "lastUpdated" : "2026-07-17T10:41:14Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
       "name" : "2 More waterfalls ",
       "sortOrder" : 14
+    },
+    "custom-298742A5-B75F-4771-B3F1-497F32E42692" : {
+      "editedAt" : 805977673.499882,
+      "sortOrder" : 6
     },
     "custom-5299C09C-E30A-4379-B1C3-B60906B2EEC6" : {
       "editedAt" : 805930317.272862,
@@ -611,9 +615,9 @@
       "sortOrder" : 20
     },
     "d4-a3" : {
-      "editedAt" : 805977589.069607,
+      "editedAt" : 805977673.499858,
       "movedToDayID" : 5,
-      "sortOrder" : 24
+      "sortOrder" : 4
     },
     "d4-a4" : {
       "editedAt" : 805976204.091903,
@@ -634,24 +638,45 @@
       "sortOrder" : 26
     },
     "d5-a0" : {
-      "editedAt" : 805970743.694331,
-      "sortOrder" : 2
+      "editedAt" : 805977673.499911,
+      "name" : "Fjaðrárgljúfur canyon (skip)",
+      "sortOrder" : 8
     },
     "d5-a1" : {
-      "editedAt" : 805967388.173274,
-      "sortOrder" : 6
+      "editedAt" : 805977638.113848,
+      "sortOrder" : 10
     },
     "d5-a2" : {
-      "editedAt" : 805967397.294193,
-      "sortOrder" : 12
+      "editedAt" : 805977638.113911,
+      "sortOrder" : 16
+    },
+    "d5-a3" : {
+      "editedAt" : 805977638.113952,
+      "sortOrder" : 20
+    },
+    "d5-a4" : {
+      "editedAt" : 805977638.113973,
+      "sortOrder" : 22
+    },
+    "d5-a5" : {
+      "editedAt" : 805977638.11408,
+      "sortOrder" : 32
+    },
+    "d5-a6" : {
+      "editedAt" : 805977638.114034,
+      "sortOrder" : 28
     },
     "d5-f0" : {
-      "editedAt" : 805970743.694481,
-      "sortOrder" : 4
+      "editedAt" : 805977673.4997,
+      "sortOrder" : 0
+    },
+    "d5-f1" : {
+      "editedAt" : 805977638.114013,
+      "sortOrder" : 26
     },
     "d5-f3" : {
-      "editedAt" : 805967388.173299,
-      "sortOrder" : 8
+      "editedAt" : 805977638.11387,
+      "sortOrder" : 12
     },
     "d6-a4" : {
       "editedAt" : 805930468.193301
@@ -706,12 +731,24 @@
       "sortOrder" : 16
     },
     "sched-d5-1" : {
-      "editedAt" : 805970662.076196,
-      "sortOrder" : 0
+      "editedAt" : 805977673.499831,
+      "sortOrder" : 2
+    },
+    "sched-d5-10" : {
+      "editedAt" : 805977638.113993,
+      "sortOrder" : 24
+    },
+    "sched-d5-13" : {
+      "editedAt" : 805977638.114054,
+      "sortOrder" : 30
+    },
+    "sched-d5-5" : {
+      "editedAt" : 805977638.11389,
+      "sortOrder" : 14
     },
     "sched-d5-7" : {
-      "editedAt" : 805967397.294245,
-      "sortOrder" : 14
+      "editedAt" : 805977638.113933,
+      "sortOrder" : 18
     },
     "sched-d8-1" : {
       "editedAt" : 805930452.174048,
