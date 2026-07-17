@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-17T12:32:31Z",
+  "lastUpdated" : "2026-07-17T12:33:30Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -661,7 +661,7 @@
       "sortOrder" : 36
     },
     "d5-a2" : {
-      "editedAt" : 805983286.812951,
+      "editedAt" : 805984397.316077,
       "sortOrder" : 16
     },
     "d5-a3" : {
@@ -2368,6 +2368,14 @@
           "latitude" : 63.448528774933386,
           "longitude" : -19.147848367510655,
           "timestamp" : "2026-07-16T21:23:56Z"
+        },
+        {
+          "dayID" : 5,
+          "itemName" : "Fjallsárlón Glacier Hike & Boat Tour",
+          "key" : "d5-a2",
+          "latitude" : 64.0162169092558,
+          "longitude" : -16.366115691853853,
+          "timestamp" : "2026-07-17T12:33:19Z"
         }
       ],
       "colorHex" : "#3180A8",
