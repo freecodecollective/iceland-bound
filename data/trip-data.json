@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-17T10:45:37Z",
+  "lastUpdated" : "2026-07-17T10:46:31Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -557,7 +557,7 @@
       "sortOrder" : 14
     },
     "custom-298742A5-B75F-4771-B3F1-497F32E42692" : {
-      "editedAt" : 805977678.311286,
+      "editedAt" : 805977967.57473,
       "sortOrder" : 8
     },
     "custom-5299C09C-E30A-4379-B1C3-B60906B2EEC6" : {
@@ -574,6 +574,10 @@
     },
     "custom-C4D9106A-E668-4776-BC85-DB53A48976A3" : {
       "sortOrder" : -3
+    },
+    "custom-C610971D-8102-43AE-A475-03894043520F" : {
+      "editedAt" : 805977983.758285,
+      "sortOrder" : 10
     },
     "custom-hike-7FF83750-8D70-4F19-BFE7-85F6ECA6FF6C" : {
       "editedAt" : 805931351.41647,
@@ -643,40 +647,40 @@
       "sortOrder" : 6
     },
     "d5-a1" : {
-      "editedAt" : 805977638.113848,
-      "sortOrder" : 10
+      "editedAt" : 805977965.713311,
+      "sortOrder" : 12
     },
     "d5-a2" : {
-      "editedAt" : 805977638.113911,
-      "sortOrder" : 16
+      "editedAt" : 805977965.713404,
+      "sortOrder" : 18
     },
     "d5-a3" : {
-      "editedAt" : 805977638.113952,
-      "sortOrder" : 20
-    },
-    "d5-a4" : {
-      "editedAt" : 805977638.113973,
+      "editedAt" : 805977965.713464,
       "sortOrder" : 22
     },
+    "d5-a4" : {
+      "editedAt" : 805977965.713497,
+      "sortOrder" : 24
+    },
     "d5-a5" : {
-      "editedAt" : 805977638.11408,
-      "sortOrder" : 32
+      "editedAt" : 805977965.71364,
+      "sortOrder" : 34
     },
     "d5-a6" : {
-      "editedAt" : 805977638.114034,
-      "sortOrder" : 28
+      "editedAt" : 805977965.713585,
+      "sortOrder" : 30
     },
     "d5-f0" : {
       "editedAt" : 805977673.4997,
       "sortOrder" : 0
     },
     "d5-f1" : {
-      "editedAt" : 805977638.114013,
-      "sortOrder" : 26
+      "editedAt" : 805977965.713557,
+      "sortOrder" : 28
     },
     "d5-f3" : {
-      "editedAt" : 805977638.11387,
-      "sortOrder" : 12
+      "editedAt" : 805977965.713344,
+      "sortOrder" : 14
     },
     "d6-a2" : {
       "editedAt" : 805977864.930507
@@ -738,20 +742,20 @@
       "sortOrder" : 2
     },
     "sched-d5-10" : {
-      "editedAt" : 805977638.113993,
-      "sortOrder" : 24
+      "editedAt" : 805977965.713529,
+      "sortOrder" : 26
     },
     "sched-d5-13" : {
-      "editedAt" : 805977638.114054,
-      "sortOrder" : 30
+      "editedAt" : 805977965.713613,
+      "sortOrder" : 32
     },
     "sched-d5-5" : {
-      "editedAt" : 805977638.11389,
-      "sortOrder" : 14
+      "editedAt" : 805977965.713373,
+      "sortOrder" : 16
     },
     "sched-d5-7" : {
-      "editedAt" : 805977638.113933,
-      "sortOrder" : 18
+      "editedAt" : 805977965.713435,
+      "sortOrder" : 20
     },
     "sched-d8-1" : {
       "editedAt" : 805930452.174048,
@@ -1572,6 +1576,20 @@
       "filename" : "AEC3FABE-7D61-4AC9-B0A1-B95BFAB779BB.jpg",
       "key" : "d4-a3",
       "timestamp" : "2026-07-17T10:40:16Z"
+    },
+    {
+      "activityName" : "Kirkjugólf",
+      "dayID" : 5,
+      "filename" : "12729C91-A4A7-4BCF-99F2-644E796B363B.jpg",
+      "key" : "custom-298742A5-B75F-4771-B3F1-497F32E42692",
+      "timestamp" : "2026-07-17T10:46:15Z"
+    },
+    {
+      "activityName" : "Kirkjugólf",
+      "dayID" : 5,
+      "filename" : "D96873D1-4DBA-46C5-9B25-EF7D56F21AA5.jpg",
+      "key" : "custom-298742A5-B75F-4771-B3F1-497F32E42692",
+      "timestamp" : "2026-07-17T10:46:15Z"
     },
     {
       "activityName" : "Fly Boston to Iceland",
@@ -2513,6 +2531,16 @@
           "notes" : "",
           "scheduleAfterIndex" : 1,
           "type" : "Sightseeing"
+        },
+        {
+          "activityCategory" : "Waterfall",
+          "createdBy" : "Chris",
+          "dayID" : 5,
+          "id" : "C610971D-8102-43AE-A475-03894043520F",
+          "name" : "Stjornafoss",
+          "notes" : "",
+          "scheduleAfterIndex" : 2,
+          "type" : "Activity"
         }
       ],
       "deletedEventIDs" : [
@@ -2529,7 +2557,7 @@
         "54A846B9-6D87-40D2-995B-E807631D15DF",
         "A1FA3647-B0AE-4B53-B589-B9F10A0B035D"
       ],
-      "gpsPointCount" : 1298,
+      "gpsPointCount" : 1299,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -6426,10 +6454,10 @@
           "ts" : "2026-07-17T10:42:05Z"
         },
         {
-          "acc" : 5.421507968437826,
-          "lat" : 63.79524068490152,
-          "lng" : -18.046274028048966,
-          "ts" : "2026-07-17T10:44:05Z"
+          "acc" : 2.208184034538183,
+          "lat" : 63.79622727537523,
+          "lng" : -18.047784384858367,
+          "ts" : "2026-07-17T10:46:05Z"
         }
       ],
       "hikes" : [
@@ -6810,7 +6838,7 @@
         }
       ],
       "totalHikeDistanceKm" : 16.3,
-      "waterfallsVisited" : 9
+      "waterfallsVisited" : 10
     },
     {
       "checkIns" : [
