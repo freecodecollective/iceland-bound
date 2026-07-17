@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-17T07:55:19Z",
+  "lastUpdated" : "2026-07-17T07:56:46Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805931377.530647,
@@ -2385,20 +2385,20 @@
         }
       ],
       "deletedEventIDs" : [
+        "5D703179-6A84-453A-89FD-42202043885F",
         "hike-D12612E1-CE43-487D-9069-93D95A96BFF5",
-        "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
-        "hike-7FF83750-8D70-4F19-BFE7-85F6ECA6FF6C",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
         "72F18AEC-99EF-4D55-B498-448DE505E501",
         "54A846B9-6D87-40D2-995B-E807631D15DF",
         "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
         "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
-        "5D703179-6A84-453A-89FD-42202043885F",
-        "hike-A469A451-1F74-4BAE-9270-3434A5D8EDC5",
-        "A1FA3647-B0AE-4B53-B589-B9F10A0B035D"
+        "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
+        "hike-7FF83750-8D70-4F19-BFE7-85F6ECA6FF6C",
+        "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
+        "hike-A469A451-1F74-4BAE-9270-3434A5D8EDC5"
       ],
-      "gpsPointCount" : 1242,
+      "gpsPointCount" : 1244,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -6125,6 +6125,12 @@
           "lat" : 63.4484329772947,
           "lng" : -19.147610824459317,
           "ts" : "2026-07-17T07:55:19Z"
+        },
+        {
+          "acc" : 14.186618661609272,
+          "lat" : 63.44842905482561,
+          "lng" : -19.147636396996802,
+          "ts" : "2026-07-17T07:55:46Z"
         }
       ],
       "hikes" : [
