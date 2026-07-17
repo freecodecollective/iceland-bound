@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-17T11:53:29Z",
+  "lastUpdated" : "2026-07-17T11:54:30Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -2565,6 +2565,17 @@
           "notes" : "",
           "scheduleAfterIndex" : 4,
           "type" : "Sightseeing"
+        },
+        {
+          "createdBy" : "Chris",
+          "dayID" : 5,
+          "id" : "529A2F03-1570-4A8C-AA36-FBC7814EDE85",
+          "latitude" : 63.90708074243548,
+          "longitude" : -16.70706412505228,
+          "name" : "Hof Church Hofskirkja",
+          "notes" : "",
+          "scheduleAfterIndex" : 4,
+          "type" : "Sightseeing"
         }
       ],
       "deletedEventIDs" : [
@@ -2581,7 +2592,7 @@
         "54A846B9-6D87-40D2-995B-E807631D15DF",
         "A1FA3647-B0AE-4B53-B589-B9F10A0B035D"
       ],
-      "gpsPointCount" : 1330,
+      "gpsPointCount" : 1331,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -6574,10 +6585,10 @@
           "ts" : "2026-07-17T11:49:40Z"
         },
         {
-          "acc" : 5.12198866185013,
-          "lat" : 63.90679261028463,
-          "lng" : -16.707132229770327,
-          "ts" : "2026-07-17T11:51:41Z"
+          "acc" : 7.380308765819789,
+          "lat" : 63.90708281325484,
+          "lng" : -16.70708701024294,
+          "ts" : "2026-07-17T11:53:42Z"
         }
       ],
       "hikes" : [
