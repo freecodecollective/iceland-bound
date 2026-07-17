@@ -549,38 +549,31 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-17T08:57:50Z",
+  "lastUpdated" : "2026-07-17T10:57:17Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
-      "editedAt" : 805931377.530647,
       "name" : "2 More waterfalls ",
       "sortOrder" : 14
     },
     "custom-5299C09C-E30A-4379-B1C3-B60906B2EEC6" : {
-      "editedAt" : 805930317.272862,
       "sortOrder" : 2
     },
     "custom-5D703179-6A84-453A-89FD-42202043885F" : {
-      "editedAt" : 805928347.497897,
       "sortOrder" : 28
     },
     "custom-B2C52987-0F31-4633-BD86-AA9BB671891F" : {
-      "editedAt" : 805931450.411918,
       "sortOrder" : 8
     },
     "custom-C4D9106A-E668-4776-BC85-DB53A48976A3" : {
       "sortOrder" : -3
     },
     "custom-hike-7FF83750-8D70-4F19-BFE7-85F6ECA6FF6C" : {
-      "editedAt" : 805931351.41647,
       "sortOrder" : 22
     },
     "custom-hike-A469A451-1F74-4BAE-9270-3434A5D8EDC5" : {
-      "editedAt" : 805928347.498207,
       "sortOrder" : 34
     },
     "custom-hike-D12612E1-CE43-487D-9069-93D95A96BFF5" : {
-      "editedAt" : 805928347.498132,
       "sortOrder" : 32
     },
     "d-1-a0" : {
@@ -594,126 +587,100 @@
       "sortOrder" : -2
     },
     "d3-a3" : {
-      "editedAt" : 805931404.646975,
       "movedToDayID" : 4,
       "sortOrder" : 4
     },
     "d4-a0" : {
-      "editedAt" : 805931387.330614,
       "sortOrder" : 12
     },
     "d4-a1" : {
-      "editedAt" : 805931530.20496,
       "sortOrder" : 10
     },
     "d4-a2" : {
-      "editedAt" : 805931377.530702,
       "sortOrder" : 20
     },
     "d4-a3" : {
-      "editedAt" : 805931377.530723,
       "sortOrder" : 24
     },
     "d4-a4" : {
-      "editedAt" : 805931377.530692,
       "sortOrder" : 18
     },
     "d4-f0" : {
-      "editedAt" : 805931389.775711,
       "sortOrder" : 0
     },
     "d4-f1" : {
-      "editedAt" : 805931338.449994,
-      "hidden" : true,
       "sortOrder" : 16
     },
     "d4-f3" : {
-      "editedAt" : 805931377.530733,
       "name" : "Dinner at Black Crust Pizza ",
       "sortOrder" : 26
     },
     "d5-a0" : {
-      "editedAt" : 805970743.694331,
       "sortOrder" : 2
     },
     "d5-a1" : {
-      "editedAt" : 805967388.173274,
       "sortOrder" : 6
     },
     "d5-a2" : {
-      "editedAt" : 805967397.294193,
       "sortOrder" : 12
     },
     "d5-f0" : {
-      "editedAt" : 805970743.694481,
       "sortOrder" : 4
     },
     "d5-f3" : {
-      "editedAt" : 805967388.173299,
       "sortOrder" : 8
     },
     "d6-a4" : {
-      "editedAt" : 805930468.193301
+
     },
     "d6-f1" : {
-      "editedAt" : 805930470.889163
+
     },
     "d7-a0" : {
       "name" : "1DC-3 plane wreck Sólheimasandur",
       "sortOrder" : -1
     },
     "d7-a3" : {
-      "editedAt" : 805930462.219251
+
     },
     "d7-f0" : {
       "desc" : "Relaxed start at Stracta2",
-      "editedAt" : 805930452.174213,
       "movedToDayID" : 8,
       "name" : "Breakfast2",
       "sortOrder" : 2
     },
     "d8-a3" : {
-      "editedAt" : 805930452.968912
+
     },
     "d8-a4" : {
-      "editedAt" : 805930455.679022
+
     },
     "d8-f0" : {
       "movedToDayID" : 7,
       "sortOrder" : 1
     },
     "sched-d4-1" : {
-      "editedAt" : 805926985.609805,
       "sortOrder" : 6
     },
     "sched-d4-10" : {
-      "editedAt" : 805931342.476391,
-      "hidden" : true,
       "sortOrder" : 18
     },
     "sched-d4-12" : {
-      "editedAt" : 805931377.530713,
       "sortOrder" : 22
     },
     "sched-d4-3" : {
-      "editedAt" : 805931345.391152,
-      "hidden" : true,
       "sortOrder" : 14
     },
     "sched-d4-6" : {
-      "editedAt" : 805931377.530681,
       "sortOrder" : 16
     },
     "sched-d5-1" : {
-      "editedAt" : 805970662.076196,
       "sortOrder" : 0
     },
     "sched-d5-7" : {
-      "editedAt" : 805967397.294245,
       "sortOrder" : 14
     },
     "sched-d8-1" : {
-      "editedAt" : 805930452.174048,
       "sortOrder" : 0
     }
   },
@@ -1912,6 +1879,46 @@
     }
   ],
   "travelers" : [
+    {
+      "checkIns" : [
+
+      ],
+      "colorHex" : "#BF613B",
+      "customEvents" : [
+
+      ],
+      "deletedEventIDs" : [
+        "hike-7FF83750-8D70-4F19-BFE7-85F6ECA6FF6C",
+        "hike-D12612E1-CE43-487D-9069-93D95A96BFF5",
+        "54A846B9-6D87-40D2-995B-E807631D15DF",
+        "5D703179-6A84-453A-89FD-42202043885F",
+        "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
+        "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
+        "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
+        "72F18AEC-99EF-4D55-B498-448DE505E501",
+        "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
+        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
+        "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
+        "hike-A469A451-1F74-4BAE-9270-3434A5D8EDC5"
+      ],
+      "gpsPointCount" : 0,
+      "gpsTrack" : [
+
+      ],
+      "hikes" : [
+
+      ],
+      "hikesCompleted" : 0,
+      "name" : "Will",
+      "notes" : [
+
+      ],
+      "ratings" : [
+
+      ],
+      "totalHikeDistanceKm" : 0,
+      "waterfallsVisited" : 5
+    },
     {
       "checkIns" : [
         {
@@ -6805,46 +6812,6 @@
       ],
       "totalHikeDistanceKm" : 16.3,
       "waterfallsVisited" : 9
-    },
-    {
-      "checkIns" : [
-
-      ],
-      "colorHex" : "#BF613B",
-      "customEvents" : [
-
-      ],
-      "deletedEventIDs" : [
-        "hike-D12612E1-CE43-487D-9069-93D95A96BFF5",
-        "54A846B9-6D87-40D2-995B-E807631D15DF",
-        "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
-        "5D703179-6A84-453A-89FD-42202043885F",
-        "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
-        "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
-        "72F18AEC-99EF-4D55-B498-448DE505E501",
-        "hike-A469A451-1F74-4BAE-9270-3434A5D8EDC5",
-        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
-        "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
-        "hike-7FF83750-8D70-4F19-BFE7-85F6ECA6FF6C",
-        "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
-      ],
-      "gpsPointCount" : 0,
-      "gpsTrack" : [
-
-      ],
-      "hikes" : [
-
-      ],
-      "hikesCompleted" : 0,
-      "name" : "Will",
-      "notes" : [
-
-      ],
-      "ratings" : [
-
-      ],
-      "totalHikeDistanceKm" : 0,
-      "waterfallsVisited" : 5
     },
     {
       "checkIns" : [
