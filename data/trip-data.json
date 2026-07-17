@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-17T21:46:19Z",
+  "lastUpdated" : "2026-07-17T21:47:19Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -661,7 +661,7 @@
       "sortOrder" : 36
     },
     "d5-a2" : {
-      "editedAt" : 806017454.545262,
+      "editedAt" : 806017623.505112,
       "sortOrder" : 16
     },
     "d5-a3" : {
@@ -1661,6 +1661,184 @@
       "filename" : "50F1E15E-99B8-4E3E-8D40-E4F54AB7B829.jpg",
       "key" : "d5-f1",
       "timestamp" : "2026-07-17T21:44:09Z"
+    },
+    {
+      "activityName" : "Fjallsárlón Glacier Hike & Boat Tour",
+      "dayID" : 5,
+      "filename" : "477B669A-C732-4BA4-8362-4EE6FEE5225F.jpg",
+      "key" : "d5-a2",
+      "timestamp" : "2026-07-17T21:46:47Z"
+    },
+    {
+      "activityName" : "Fjallsárlón Glacier Hike & Boat Tour",
+      "dayID" : 5,
+      "filename" : "F6B5ACC1-6951-4880-93FE-78A4A4C03B73.jpg",
+      "key" : "d5-a2",
+      "timestamp" : "2026-07-17T21:47:04Z"
+    },
+    {
+      "activityName" : "Fjallsárlón Glacier Hike & Boat Tour",
+      "dayID" : 5,
+      "filename" : "091D6667-29FE-4D76-9E65-54710B983409.jpg",
+      "key" : "d5-a2",
+      "timestamp" : "2026-07-17T21:47:04Z"
+    },
+    {
+      "activityName" : "Fjallsárlón Glacier Hike & Boat Tour",
+      "dayID" : 5,
+      "filename" : "19E4D490-EC26-45EF-A62B-7ED6B8563B4E_thumb.jpg",
+      "key" : "d5-a2",
+      "timestamp" : "2026-07-17T21:47:04Z",
+      "videoFilename" : "19E4D490-EC26-45EF-A62B-7ED6B8563B4E.mov"
+    },
+    {
+      "activityName" : "Fjallsárlón Glacier Hike & Boat Tour",
+      "dayID" : 5,
+      "filename" : "473785AC-C663-4EAD-900F-041A5B840064.jpg",
+      "key" : "d5-a2",
+      "timestamp" : "2026-07-17T21:47:08Z"
+    },
+    {
+      "activityName" : "Fjallsárlón Glacier Hike & Boat Tour",
+      "dayID" : 5,
+      "filename" : "5E33DFDC-A8A0-4F83-9FD2-3B3BB04942B4.jpg",
+      "key" : "d5-a2",
+      "timestamp" : "2026-07-17T21:47:08Z"
+    },
+    {
+      "activityName" : "Fjallsárlón Glacier Hike & Boat Tour",
+      "dayID" : 5,
+      "filename" : "8091FCD5-D8DB-404D-9836-CC11A9C3133C_thumb.jpg",
+      "key" : "d5-a2",
+      "timestamp" : "2026-07-17T21:47:08Z",
+      "videoFilename" : "8091FCD5-D8DB-404D-9836-CC11A9C3133C.mov"
+    },
+    {
+      "activityName" : "Fjallsárlón Glacier Hike & Boat Tour",
+      "dayID" : 5,
+      "filename" : "361E3027-08B7-49C1-AF84-E21FD674B623.jpg",
+      "key" : "d5-a2",
+      "timestamp" : "2026-07-17T21:47:08Z"
+    },
+    {
+      "activityName" : "Fjallsárlón Glacier Hike & Boat Tour",
+      "dayID" : 5,
+      "filename" : "E054F9C7-F771-4C19-A5BE-885858D44D4F.jpg",
+      "key" : "d5-a2",
+      "timestamp" : "2026-07-17T21:47:08Z"
+    },
+    {
+      "activityName" : "Fjallsárlón Glacier Hike & Boat Tour",
+      "dayID" : 5,
+      "filename" : "1B02B503-2B82-45EE-A137-0FA9C2CD6B2A.jpg",
+      "key" : "d5-a2",
+      "timestamp" : "2026-07-17T21:47:08Z"
+    },
+    {
+      "activityName" : "Fjallsárlón Glacier Hike & Boat Tour",
+      "dayID" : 5,
+      "filename" : "3B7BB02B-86DB-4092-B12C-B4B595028797.jpg",
+      "key" : "d5-a2",
+      "timestamp" : "2026-07-17T21:47:08Z"
+    },
+    {
+      "activityName" : "Fjallsárlón Glacier Hike & Boat Tour",
+      "dayID" : 5,
+      "filename" : "51FFE993-954D-49F8-9A60-9EF0720D9CDA.jpg",
+      "key" : "d5-a2",
+      "timestamp" : "2026-07-17T21:47:08Z"
+    },
+    {
+      "activityName" : "Fjallsárlón Glacier Hike & Boat Tour",
+      "dayID" : 5,
+      "filename" : "91FE3A0A-0A92-4F1D-A13A-C43D40A0071C.jpg",
+      "key" : "d5-a2",
+      "timestamp" : "2026-07-17T21:47:08Z"
+    },
+    {
+      "activityName" : "Fjallsárlón Glacier Hike & Boat Tour",
+      "dayID" : 5,
+      "filename" : "15097A5A-3499-46CC-8F3E-55F81BBEF3B6.jpg",
+      "key" : "d5-a2",
+      "timestamp" : "2026-07-17T21:47:08Z"
+    },
+    {
+      "activityName" : "Fjallsárlón Glacier Hike & Boat Tour",
+      "dayID" : 5,
+      "filename" : "79708BA3-A61D-4328-A674-5AB7B1BE7E59.jpg",
+      "key" : "d5-a2",
+      "timestamp" : "2026-07-17T21:47:08Z"
+    },
+    {
+      "activityName" : "Fjallsárlón Glacier Hike & Boat Tour",
+      "dayID" : 5,
+      "filename" : "60303731-BCA9-426C-A02A-5302B9969754.jpg",
+      "key" : "d5-a2",
+      "timestamp" : "2026-07-17T21:47:08Z"
+    },
+    {
+      "activityName" : "Fjallsárlón Glacier Hike & Boat Tour",
+      "dayID" : 5,
+      "filename" : "4FC8E04C-A073-4D04-9A1B-93A66BEC477A.jpg",
+      "key" : "d5-a2",
+      "timestamp" : "2026-07-17T21:47:08Z"
+    },
+    {
+      "activityName" : "Fjallsárlón Glacier Hike & Boat Tour",
+      "dayID" : 5,
+      "filename" : "C5941C24-4B1D-4150-892D-B1015696CDC5.jpg",
+      "key" : "d5-a2",
+      "timestamp" : "2026-07-17T21:47:08Z"
+    },
+    {
+      "activityName" : "Fjallsárlón Glacier Hike & Boat Tour",
+      "dayID" : 5,
+      "filename" : "D9832B46-BA7F-4FF7-BA2E-7FC3918A1A3A.jpg",
+      "key" : "d5-a2",
+      "timestamp" : "2026-07-17T21:47:08Z"
+    },
+    {
+      "activityName" : "Fjallsárlón Glacier Hike & Boat Tour",
+      "dayID" : 5,
+      "filename" : "6D9038BD-2889-49E6-87AB-EE02C5C74C60.jpg",
+      "key" : "d5-a2",
+      "timestamp" : "2026-07-17T21:47:08Z"
+    },
+    {
+      "activityName" : "Fjallsárlón Glacier Hike & Boat Tour",
+      "dayID" : 5,
+      "filename" : "07C361F1-5A30-4E7A-BE0A-B9C36B67852E.jpg",
+      "key" : "d5-a2",
+      "timestamp" : "2026-07-17T21:47:08Z"
+    },
+    {
+      "activityName" : "Fjallsárlón Glacier Hike & Boat Tour",
+      "dayID" : 5,
+      "filename" : "E49219A2-B6F4-404A-9656-3412C54C525C.jpg",
+      "key" : "d5-a2",
+      "timestamp" : "2026-07-17T21:47:08Z"
+    },
+    {
+      "activityName" : "Fjallsárlón Glacier Hike & Boat Tour",
+      "dayID" : 5,
+      "filename" : "0705BBA8-5D97-42FE-A9AC-12F9E96FDB86.jpg",
+      "key" : "d5-a2",
+      "timestamp" : "2026-07-17T21:47:08Z"
+    },
+    {
+      "activityName" : "Fjallsárlón Glacier Hike & Boat Tour",
+      "dayID" : 5,
+      "filename" : "0927D778-09FF-4B02-8D36-6A64DA29303C.jpg",
+      "key" : "d5-a2",
+      "timestamp" : "2026-07-17T21:47:08Z"
+    },
+    {
+      "activityName" : "Fjallsárlón Glacier Hike & Boat Tour",
+      "dayID" : 5,
+      "filename" : "1349536F-8DF9-45AC-A891-56D1C8B564A9_thumb.jpg",
+      "key" : "d5-a2",
+      "timestamp" : "2026-07-17T21:47:08Z",
+      "videoFilename" : "1349536F-8DF9-45AC-A891-56D1C8B564A9.mov"
     },
     {
       "activityName" : "Fly Boston to Iceland",
@@ -2666,7 +2844,7 @@
         "54A846B9-6D87-40D2-995B-E807631D15DF",
         "A1FA3647-B0AE-4B53-B589-B9F10A0B035D"
       ],
-      "gpsPointCount" : 2049,
+      "gpsPointCount" : 2051,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -5745,6 +5923,12 @@
           "lat" : 64.26225697221965,
           "lng" : -15.20264319318675,
           "ts" : "2026-07-17T21:46:16Z"
+        },
+        {
+          "acc" : 2.005508903654887,
+          "lat" : 64.26956627528733,
+          "lng" : -15.20227752825799,
+          "ts" : "2026-07-17T21:47:18Z"
         }
       ],
       "hikes" : [
