@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-17T10:41:14Z",
+  "lastUpdated" : "2026-07-17T10:41:27Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -557,8 +557,8 @@
       "sortOrder" : 14
     },
     "custom-298742A5-B75F-4771-B3F1-497F32E42692" : {
-      "editedAt" : 805977673.499882,
-      "sortOrder" : 6
+      "editedAt" : 805977678.311286,
+      "sortOrder" : 8
     },
     "custom-5299C09C-E30A-4379-B1C3-B60906B2EEC6" : {
       "editedAt" : 805930317.272862,
@@ -638,9 +638,9 @@
       "sortOrder" : 26
     },
     "d5-a0" : {
-      "editedAt" : 805977673.499911,
+      "editedAt" : 805977678.311227,
       "name" : "Fjaðrárgljúfur canyon (skip)",
-      "sortOrder" : 8
+      "sortOrder" : 6
     },
     "d5-a1" : {
       "editedAt" : 805977638.113848,
