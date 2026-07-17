@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-17T07:56:46Z",
+  "lastUpdated" : "2026-07-17T07:57:46Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805931377.530647,
@@ -1511,6 +1511,27 @@
       "timestamp" : "2026-07-16T15:27:10Z"
     },
     {
+      "activityName" : "Fjaðrárgljúfur canyon",
+      "dayID" : 5,
+      "filename" : "61D7F07E-B822-4AC7-9AA0-9C65EE1FAA15.jpg",
+      "key" : "d5-a0",
+      "timestamp" : "2026-07-17T07:57:44Z"
+    },
+    {
+      "activityName" : "Fjaðrárgljúfur canyon",
+      "dayID" : 5,
+      "filename" : "E8FA6EE6-CC4D-407B-83A6-D8E965B1584E.jpg",
+      "key" : "d5-a0",
+      "timestamp" : "2026-07-17T07:57:44Z"
+    },
+    {
+      "activityName" : "Fjaðrárgljúfur canyon",
+      "dayID" : 5,
+      "filename" : "D6267496-A263-4397-B233-36C719AFEAD1.jpg",
+      "key" : "d5-a0",
+      "timestamp" : "2026-07-17T07:57:44Z"
+    },
+    {
       "activityName" : "Fly Boston to Iceland",
       "dayID" : -1,
       "filename" : "0C313879-463C-4704-9536-B47CD974FD5F.jpg",
@@ -2398,7 +2419,7 @@
         "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
         "hike-A469A451-1F74-4BAE-9270-3434A5D8EDC5"
       ],
-      "gpsPointCount" : 1244,
+      "gpsPointCount" : 1245,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -6131,6 +6152,12 @@
           "lat" : 63.44842905482561,
           "lng" : -19.147636396996802,
           "ts" : "2026-07-17T07:55:46Z"
+        },
+        {
+          "acc" : 11.695014,
+          "lat" : 63.44843369039028,
+          "lng" : -19.147600841277534,
+          "ts" : "2026-07-17T07:57:46Z"
         }
       ],
       "hikes" : [
