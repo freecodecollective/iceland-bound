@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-18T17:14:41Z",
+  "lastUpdated" : "2026-07-18T17:15:41Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -2614,7 +2614,7 @@
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
       ],
-      "gpsPointCount" : 3272,
+      "gpsPointCount" : 3274,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -5893,10 +5893,10 @@
           "ts" : "2026-07-18T17:13:53Z"
         },
         {
-          "acc" : 2.0056852510178715,
-          "lat" : 64.06999082241317,
-          "lng" : -18.236079651197745,
-          "ts" : "2026-07-18T17:14:24Z"
+          "acc" : 2.0905305939177388,
+          "lat" : 64.07013362664658,
+          "lng" : -18.23638881246366,
+          "ts" : "2026-07-18T17:15:26Z"
         }
       ],
       "hikes" : [
@@ -5965,9 +5965,9 @@
           "startTime" : "2026-07-18T12:48:58Z"
         },
         {
-          "distanceKm" : 2.01,
+          "distanceKm" : 2.04,
           "name" : "Lakagigar (Laki) Hike",
-          "pointCount" : 115,
+          "pointCount" : 117,
           "source" : "gps",
           "startTime" : "2026-07-18T16:16:22Z"
         },
@@ -6327,7 +6327,7 @@
           "rating" : 5
         }
       ],
-      "totalHikeDistanceKm" : 22.1,
+      "totalHikeDistanceKm" : 22.2,
       "waterfallsVisited" : 11
     }
   ]
