@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-18T17:03:41Z",
+  "lastUpdated" : "2026-07-18T17:04:41Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -2614,7 +2614,7 @@
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
       ],
-      "gpsPointCount" : 3250,
+      "gpsPointCount" : 3252,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -5869,10 +5869,10 @@
           "ts" : "2026-07-18T17:01:41Z"
         },
         {
-          "acc" : 2.2966158106266565,
-          "lat" : 64.06850699556985,
-          "lng" : -18.242220679367676,
-          "ts" : "2026-07-18T17:03:12Z"
+          "acc" : 2.132140286959056,
+          "lat" : 64.06850986587,
+          "lng" : -18.24220299105197,
+          "ts" : "2026-07-18T17:04:13Z"
         }
       ],
       "hikes" : [
@@ -5943,7 +5943,7 @@
         {
           "distanceKm" : 1.62,
           "name" : "Lakagigar (Laki) Hike",
-          "pointCount" : 93,
+          "pointCount" : 95,
           "source" : "gps",
           "startTime" : "2026-07-18T16:16:22Z"
         },
