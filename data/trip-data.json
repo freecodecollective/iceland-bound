@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-18T13:08:41Z",
+  "lastUpdated" : "2026-07-18T13:21:00Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -580,6 +580,9 @@
     "custom-806D63B0-0465-4A87-9580-E7D7087AFE89" : {
       "editedAt" : 806071748.32541,
       "sortOrder" : 4
+    },
+    "custom-9BFB2903-EDD2-41D5-9DC2-51B7B1C5F16F" : {
+      "editedAt" : 806073588.503847
     },
     "custom-B2C52987-0F31-4633-BD86-AA9BB671891F" : {
       "editedAt" : 805931450.411918,
@@ -1967,6 +1970,27 @@
       "timestamp" : "2026-07-18T12:01:15Z"
     },
     {
+      "activityName" : "Basalt Column Waterfall",
+      "dayID" : 6,
+      "filename" : "705AC99E-5A87-4812-9603-82CB45566E4F.jpg",
+      "key" : "custom-9BFB2903-EDD2-41D5-9DC2-51B7B1C5F16F",
+      "timestamp" : "2026-07-18T13:19:13Z"
+    },
+    {
+      "activityName" : "Basalt Column Waterfall",
+      "dayID" : 6,
+      "filename" : "99BE8A19-C72B-48FB-8D7B-EDEC4713412D.jpg",
+      "key" : "custom-9BFB2903-EDD2-41D5-9DC2-51B7B1C5F16F",
+      "timestamp" : "2026-07-18T13:19:13Z"
+    },
+    {
+      "activityName" : "Basalt Column Waterfall",
+      "dayID" : 6,
+      "filename" : "46593D2D-532F-4926-A40E-1D759C20B3AC.jpg",
+      "key" : "custom-9BFB2903-EDD2-41D5-9DC2-51B7B1C5F16F",
+      "timestamp" : "2026-07-18T13:20:01Z"
+    },
+    {
       "activityName" : "Fly Boston to Iceland",
       "dayID" : -1,
       "filename" : "0C313879-463C-4704-9536-B47CD974FD5F.jpg",
@@ -2524,6 +2548,12 @@
         },
         {
           "dayID" : 0,
+          "itemName" : "custom-9BFB2903-EDD2-41D5-9DC2-51B7B1C5F16F",
+          "key" : "custom-9BFB2903-EDD2-41D5-9DC2-51B7B1C5F16F",
+          "timestamp" : "2026-07-18T13:19:13Z"
+        },
+        {
+          "dayID" : 0,
           "itemName" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
           "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
           "latitude" : 63.53183990267036,
@@ -3044,6 +3074,18 @@
           "name" : "Svartifoss hike (Skaftafell) (skip)",
           "notes" : "",
           "type" : "Activity"
+        },
+        {
+          "activityCategory" : "Waterfall",
+          "createdBy" : "Chris",
+          "dayID" : 6,
+          "id" : "9BFB2903-EDD2-41D5-9DC2-51B7B1C5F16F",
+          "latitude" : 64.02548863961805,
+          "longitude" : -16.974342705590924,
+          "name" : "Basalt Column Waterfall",
+          "notes" : "",
+          "scheduleAfterIndex" : 2,
+          "type" : "Activity"
         }
       ],
       "deletedEventIDs" : [
@@ -3060,7 +3102,7 @@
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
       ],
-      "gpsPointCount" : 2825,
+      "gpsPointCount" : 2849,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -6453,10 +6495,40 @@
           "ts" : "2026-07-18T13:06:18Z"
         },
         {
-          "acc" : 2.0700355092068716,
-          "lat" : 64.02190725650132,
-          "lng" : -16.978602124310818,
-          "ts" : "2026-07-18T13:08:19Z"
+          "acc" : 2.085085638326804,
+          "lat" : 64.02216952995029,
+          "lng" : -16.978227424063565,
+          "ts" : "2026-07-18T13:08:50Z"
+        },
+        {
+          "acc" : 2.071937138956606,
+          "lat" : 64.02343920332092,
+          "lng" : -16.975974348262607,
+          "ts" : "2026-07-18T13:11:24Z"
+        },
+        {
+          "acc" : 2.045145620412655,
+          "lat" : 64.02505361607192,
+          "lng" : -16.974200350428845,
+          "ts" : "2026-07-18T13:13:56Z"
+        },
+        {
+          "acc" : 2.0881526121918776,
+          "lat" : 64.02568821122502,
+          "lng" : -16.97404702328407,
+          "ts" : "2026-07-18T13:16:29Z"
+        },
+        {
+          "acc" : 2.123547814341814,
+          "lat" : 64.0254886460244,
+          "lng" : -16.97434372781231,
+          "ts" : "2026-07-18T13:19:02Z"
+        },
+        {
+          "acc" : 2.040786858917672,
+          "lat" : 64.02482883443473,
+          "lng" : -16.97429082343172,
+          "ts" : "2026-07-18T13:20:32Z"
         }
       ],
       "hikes" : [
@@ -6517,9 +6589,9 @@
           "startTime" : "2026-07-16T14:14:09Z"
         },
         {
-          "distanceKm" : 1.36,
+          "distanceKm" : 1.98,
           "name" : "Svartifoss hike (Skaftafell) (skip)",
-          "pointCount" : 39,
+          "pointCount" : 63,
           "source" : "gps",
           "startTime" : "2026-07-18T12:48:58Z"
         },
@@ -6724,6 +6796,12 @@
         },
         {
           "dayID" : 0,
+          "itemName" : "custom-9BFB2903-EDD2-41D5-9DC2-51B7B1C5F16F",
+          "key" : "custom-9BFB2903-EDD2-41D5-9DC2-51B7B1C5F16F",
+          "rating" : 5
+        },
+        {
+          "dayID" : 0,
           "itemName" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
           "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
           "rating" : 5
@@ -6873,8 +6951,8 @@
           "rating" : 5
         }
       ],
-      "totalHikeDistanceKm" : 17.6,
-      "waterfallsVisited" : 10
+      "totalHikeDistanceKm" : 18.3,
+      "waterfallsVisited" : 11
     },
     {
       "checkIns" : [
