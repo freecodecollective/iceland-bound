@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-18T13:05:42Z",
+  "lastUpdated" : "2026-07-18T13:06:40Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -3060,7 +3060,7 @@
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
       ],
-      "gpsPointCount" : 2819,
+      "gpsPointCount" : 2821,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -6447,10 +6447,10 @@
           "ts" : "2026-07-18T13:03:45Z"
         },
         {
-          "acc" : 2.0921233534047006,
-          "lat" : 64.02048933716158,
-          "lng" : -16.979130624808406,
-          "ts" : "2026-07-18T13:05:17Z"
+          "acc" : 2.079503230966149,
+          "lat" : 64.02117628193744,
+          "lng" : -16.979126101012753,
+          "ts" : "2026-07-18T13:06:18Z"
         }
       ],
       "hikes" : [
@@ -6511,9 +6511,9 @@
           "startTime" : "2026-07-16T14:14:09Z"
         },
         {
-          "distanceKm" : 1.18,
+          "distanceKm" : 1.26,
           "name" : "Svartifoss hike (Skaftafell) (skip)",
-          "pointCount" : 33,
+          "pointCount" : 35,
           "source" : "gps",
           "startTime" : "2026-07-18T12:48:58Z"
         },
@@ -6867,7 +6867,7 @@
           "rating" : 5
         }
       ],
-      "totalHikeDistanceKm" : 17.4,
+      "totalHikeDistanceKm" : 17.5,
       "waterfallsVisited" : 10
     },
     {
