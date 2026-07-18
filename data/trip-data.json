@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-18T17:39:41Z",
+  "lastUpdated" : "2026-07-18T18:01:23Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -608,6 +608,9 @@
     "custom-hike-A469A451-1F74-4BAE-9270-3434A5D8EDC5" : {
       "editedAt" : 805928347.498207,
       "sortOrder" : 34
+    },
+    "custom-hike-BA88BD66-FFC1-438C-B731-804E7A9A7FB8" : {
+      "editedAt" : 806090253.486233
     },
     "custom-hike-D12612E1-CE43-487D-9069-93D95A96BFF5" : {
       "editedAt" : 805928347.498132,
@@ -1990,6 +1993,48 @@
       "filename" : "46593D2D-532F-4926-A40E-1D759C20B3AC.jpg",
       "key" : "custom-9BFB2903-EDD2-41D5-9DC2-51B7B1C5F16F",
       "timestamp" : "2026-07-18T13:20:01Z"
+    },
+    {
+      "activityName" : "Lakagigar (Laki) Hike",
+      "dayID" : 6,
+      "filename" : "D790394E-3700-4FEF-8F16-86F71AE86426.jpg",
+      "key" : "custom-hike-BA88BD66-FFC1-438C-B731-804E7A9A7FB8",
+      "timestamp" : "2026-07-18T17:58:05Z"
+    },
+    {
+      "activityName" : "Lakagigar (Laki) Hike",
+      "dayID" : 6,
+      "filename" : "6120F34A-4884-48AD-98DE-DFC9B4875C64.jpg",
+      "key" : "custom-hike-BA88BD66-FFC1-438C-B731-804E7A9A7FB8",
+      "timestamp" : "2026-07-18T17:58:05Z"
+    },
+    {
+      "activityName" : "Lakagigar (Laki) Hike",
+      "dayID" : 6,
+      "filename" : "E7244B5C-0E6A-4700-8B5E-2A727DBECF09.jpg",
+      "key" : "custom-hike-BA88BD66-FFC1-438C-B731-804E7A9A7FB8",
+      "timestamp" : "2026-07-18T17:58:05Z"
+    },
+    {
+      "activityName" : "Lakagigar (Laki) Hike",
+      "dayID" : 6,
+      "filename" : "953674A2-1314-448A-955C-B5243D0622CA.jpg",
+      "key" : "custom-hike-BA88BD66-FFC1-438C-B731-804E7A9A7FB8",
+      "timestamp" : "2026-07-18T17:58:05Z"
+    },
+    {
+      "activityName" : "Lakagigar (Laki) Hike",
+      "dayID" : 6,
+      "filename" : "820A4049-A1EF-4AA4-9341-CFF38E0EEE6B.jpg",
+      "key" : "custom-hike-BA88BD66-FFC1-438C-B731-804E7A9A7FB8",
+      "timestamp" : "2026-07-18T17:58:05Z"
+    },
+    {
+      "activityName" : "Lakagigar (Laki) Hike",
+      "dayID" : 6,
+      "filename" : "EE6250F8-1E20-47B7-9889-A23E919FA82F.jpg",
+      "key" : "custom-hike-BA88BD66-FFC1-438C-B731-804E7A9A7FB8",
+      "timestamp" : "2026-07-18T17:58:05Z"
     }
   ],
   "travelers" : [
@@ -2614,7 +2659,7 @@
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
       ],
-      "gpsPointCount" : 3321,
+      "gpsPointCount" : 3364,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -5941,10 +5986,52 @@
           "ts" : "2026-07-18T17:38:22Z"
         },
         {
-          "acc" : 2.2577318120379726,
-          "lat" : 64.06123077636774,
-          "lng" : -18.236238971236112,
-          "ts" : "2026-07-18T17:39:23Z"
+          "acc" : 2.1275662149069716,
+          "lat" : 64.06059863127741,
+          "lng" : -18.239227726841374,
+          "ts" : "2026-07-18T17:41:25Z"
+        },
+        {
+          "acc" : 2.450790369471892,
+          "lat" : 64.0618328880058,
+          "lng" : -18.241186828140386,
+          "ts" : "2026-07-18T17:44:29Z"
+        },
+        {
+          "acc" : 2.2861750640931673,
+          "lat" : 64.06276605604961,
+          "lng" : -18.243379998189837,
+          "ts" : "2026-07-18T17:47:32Z"
+        },
+        {
+          "acc" : 2.2292070494246023,
+          "lat" : 64.06277915795039,
+          "lng" : -18.244195437735804,
+          "ts" : "2026-07-18T17:50:35Z"
+        },
+        {
+          "acc" : 6.654601978715017,
+          "lat" : 64.06278022116894,
+          "lng" : -18.244164234643304,
+          "ts" : "2026-07-18T17:53:39Z"
+        },
+        {
+          "acc" : 6.818840335693001,
+          "lat" : 64.06268087434756,
+          "lng" : -18.244278798690306,
+          "ts" : "2026-07-18T17:56:41Z"
+        },
+        {
+          "acc" : 5.425522028309468,
+          "lat" : 64.06533775083908,
+          "lng" : -18.2512983191286,
+          "ts" : "2026-07-18T17:59:44Z"
+        },
+        {
+          "acc" : 5.116479179637636,
+          "lat" : 64.07026015192451,
+          "lng" : -18.26028894967798,
+          "ts" : "2026-07-18T18:01:16Z"
         }
       ],
       "hikes" : [
@@ -6013,9 +6100,10 @@
           "startTime" : "2026-07-18T12:48:58Z"
         },
         {
-          "distanceKm" : 3.21,
+          "distanceKm" : 3.81,
+          "endTime" : "2026-07-18T17:56:41Z",
           "name" : "Lakagigar (Laki) Hike",
-          "pointCount" : 164,
+          "pointCount" : 197,
           "source" : "gps",
           "startTime" : "2026-07-18T16:16:22Z"
         },
@@ -6027,7 +6115,7 @@
           "startTime" : "2026-07-16T12:47:24Z"
         }
       ],
-      "hikesCompleted" : 8,
+      "hikesCompleted" : 9,
       "name" : "Chris",
       "notes" : [
         {
@@ -6053,6 +6141,12 @@
           "itemName" : "custom-FEF4A851-70D3-47A3-B6CD-91B82F2BF2D3",
           "key" : "custom-FEF4A851-70D3-47A3-B6CD-91B82F2BF2D3",
           "text" : "Our first off roading adventure in the Land Cruiser"
+        },
+        {
+          "dayID" : 0,
+          "itemName" : "custom-hike-BA88BD66-FFC1-438C-B731-804E7A9A7FB8",
+          "key" : "custom-hike-BA88BD66-FFC1-438C-B731-804E7A9A7FB8",
+          "text" : "Volcano craters as the as the eye can see. "
         },
         {
           "dayID" : 0,
@@ -6244,6 +6338,12 @@
         },
         {
           "dayID" : 0,
+          "itemName" : "custom-hike-BA88BD66-FFC1-438C-B731-804E7A9A7FB8",
+          "key" : "custom-hike-BA88BD66-FFC1-438C-B731-804E7A9A7FB8",
+          "rating" : 5
+        },
+        {
+          "dayID" : 0,
           "itemName" : "Flight Boston to Reykjavík",
           "key" : "d0-a0",
           "rating" : 5
@@ -6375,7 +6475,7 @@
           "rating" : 5
         }
       ],
-      "totalHikeDistanceKm" : 23.3,
+      "totalHikeDistanceKm" : 23.9,
       "waterfallsVisited" : 11
     }
   ]
