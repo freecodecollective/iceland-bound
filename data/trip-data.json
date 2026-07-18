@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-18T15:58:48Z",
+  "lastUpdated" : "2026-07-18T16:43:14Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -582,7 +582,8 @@
       "sortOrder" : 4
     },
     "custom-9BFB2903-EDD2-41D5-9DC2-51B7B1C5F16F" : {
-      "editedAt" : 806073588.503847
+      "editedAt" : 806084059.86584,
+      "sortOrder" : 8
     },
     "custom-B2C52987-0F31-4633-BD86-AA9BB671891F" : {
       "editedAt" : 805931450.411918,
@@ -597,8 +598,8 @@
       "sortOrder" : 8
     },
     "custom-hike-423A5DE5-66C0-4445-9F57-2F56A021559F" : {
-      "editedAt" : 806071757.775166,
-      "sortOrder" : 6
+      "editedAt" : 806084059.865871,
+      "sortOrder" : 10
     },
     "custom-hike-7FF83750-8D70-4F19-BFE7-85F6ECA6FF6C" : {
       "editedAt" : 805931351.41647,
@@ -668,9 +669,9 @@
       "sortOrder" : 34
     },
     "d5-a1" : {
-      "editedAt" : 806071748.326213,
+      "editedAt" : 806084059.866235,
       "movedToDayID" : 6,
-      "sortOrder" : 36
+      "sortOrder" : 38
     },
     "d5-a2" : {
       "editedAt" : 806017676.173875,
@@ -681,9 +682,9 @@
       "sortOrder" : 22
     },
     "d5-a4" : {
-      "editedAt" : 806071748.326176,
+      "editedAt" : 806084060.860006,
       "movedToDayID" : 6,
-      "sortOrder" : 34
+      "sortOrder" : 6
     },
     "d5-a5" : {
       "editedAt" : 806019443.143455,
@@ -711,32 +712,32 @@
       "editedAt" : 806011011.695866
     },
     "d6-a2" : {
-      "editedAt" : 806071757.775339,
-      "sortOrder" : 16
+      "editedAt" : 806084074.701155,
+      "sortOrder" : 12
     },
     "d6-a3" : {
-      "editedAt" : 806071757.775363,
-      "sortOrder" : 18
+      "editedAt" : 806084084.731266,
+      "sortOrder" : 24
     },
     "d6-a4" : {
-      "editedAt" : 806071751.795978,
-      "sortOrder" : 20
+      "editedAt" : 806084084.731045,
+      "sortOrder" : 16
     },
     "d6-a5" : {
-      "editedAt" : 806071751.796008,
-      "sortOrder" : 22
+      "editedAt" : 806084059.86608,
+      "sortOrder" : 26
     },
     "d6-a6" : {
-      "editedAt" : 806071757.775262,
-      "sortOrder" : 10
+      "editedAt" : 806084084.731172,
+      "sortOrder" : 18
     },
     "d6-f1" : {
-      "editedAt" : 806071748.326137,
-      "sortOrder" : 32
+      "editedAt" : 806084059.866207,
+      "sortOrder" : 36
     },
     "d6-f2" : {
-      "editedAt" : 806071748.326058,
-      "sortOrder" : 28
+      "editedAt" : 806084059.86616,
+      "sortOrder" : 32
     },
     "d6-stay" : {
       "editedAt" : 806020009.626864
@@ -808,28 +809,28 @@
       "sortOrder" : 20
     },
     "sched-d6-10" : {
-      "editedAt" : 806071751.796034,
-      "sortOrder" : 24
+      "editedAt" : 806084059.866106,
+      "sortOrder" : 28
     },
     "sched-d6-11" : {
-      "editedAt" : 806071748.32602,
-      "sortOrder" : 26
-    },
-    "sched-d6-13" : {
-      "editedAt" : 806071748.326099,
+      "editedAt" : 806084059.866133,
       "sortOrder" : 30
     },
+    "sched-d6-13" : {
+      "editedAt" : 806084059.866184,
+      "sortOrder" : 34
+    },
     "sched-d6-2" : {
-      "editedAt" : 806071757.775234,
-      "sortOrder" : 8
+      "editedAt" : 806084074.701239,
+      "sortOrder" : 14
     },
     "sched-d6-4" : {
-      "editedAt" : 806071757.775287,
-      "sortOrder" : 12
+      "editedAt" : 806084084.731207,
+      "sortOrder" : 20
     },
     "sched-d6-5" : {
-      "editedAt" : 806071757.775314,
-      "sortOrder" : 14
+      "editedAt" : 806084084.731236,
+      "sortOrder" : 22
     },
     "sched-d8-1" : {
       "editedAt" : 805930452.174048,
@@ -2106,6 +2107,12 @@
         },
         {
           "dayID" : 0,
+          "itemName" : "custom-hike-BA88BD66-FFC1-438C-B731-804E7A9A7FB8",
+          "key" : "custom-hike-BA88BD66-FFC1-438C-B731-804E7A9A7FB8",
+          "timestamp" : "2026-07-18T16:16:22Z"
+        },
+        {
+          "dayID" : 0,
           "itemName" : "custom-hike-D12612E1-CE43-487D-9069-93D95A96BFF5",
           "key" : "custom-hike-D12612E1-CE43-487D-9069-93D95A96BFF5",
           "timestamp" : "2026-07-16T13:42:01Z"
@@ -2307,6 +2314,14 @@
           "latitude" : 64.0162169092558,
           "longitude" : -16.366115691853853,
           "timestamp" : "2026-07-17T12:33:19Z"
+        },
+        {
+          "dayID" : 6,
+          "itemName" : "Laki summit + lunch",
+          "key" : "d6-a4",
+          "latitude" : 64.06276279182039,
+          "longitude" : -18.244152859996284,
+          "timestamp" : "2026-07-18T16:13:55Z"
         }
       ],
       "colorHex" : "#3180A8",
@@ -2574,6 +2589,15 @@
           "notes" : "",
           "scheduleAfterIndex" : 2,
           "type" : "Activity"
+        },
+        {
+          "activityCategory" : "Hiking",
+          "createdBy" : "Chris",
+          "dayID" : 6,
+          "id" : "hike-BA88BD66-FFC1-438C-B731-804E7A9A7FB8",
+          "name" : "Lakagigar (Laki) Hike",
+          "notes" : "",
+          "type" : "Activity"
         }
       ],
       "deletedEventIDs" : [
@@ -2590,7 +2614,7 @@
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
       ],
-      "gpsPointCount" : 3136,
+      "gpsPointCount" : 3210,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -5731,10 +5755,82 @@
           "ts" : "2026-07-18T15:56:06Z"
         },
         {
-          "acc" : 3.1777286336256814,
-          "lat" : 64.0528170453908,
-          "lng" : -18.244837115470098,
-          "ts" : "2026-07-18T15:58:14Z"
+          "acc" : 6.20743284641004,
+          "lat" : 64.05499347960495,
+          "lng" : -18.24622991239925,
+          "ts" : "2026-07-18T16:00:16Z"
+        },
+        {
+          "acc" : 44.22154668304891,
+          "lat" : 64.06276281668943,
+          "lng" : -18.24415992668864,
+          "ts" : "2026-07-18T16:04:27Z"
+        },
+        {
+          "acc" : 48.077598429050646,
+          "lat" : 64.06257230744532,
+          "lng" : -18.244271830820924,
+          "ts" : "2026-07-18T16:08:07Z"
+        },
+        {
+          "acc" : 63.895013999999996,
+          "lat" : 64.06278424762928,
+          "lng" : -18.244196998547878,
+          "ts" : "2026-07-18T16:16:00Z"
+        },
+        {
+          "acc" : 6.594399776781894,
+          "lat" : 64.06283923032191,
+          "lng" : -18.243990798282855,
+          "ts" : "2026-07-18T16:18:55Z"
+        },
+        {
+          "acc" : 2.247610323638493,
+          "lat" : 64.0639386741669,
+          "lng" : -18.244378092840847,
+          "ts" : "2026-07-18T16:22:00Z"
+        },
+        {
+          "acc" : 2.143062086354061,
+          "lat" : 64.06524319929923,
+          "lng" : -18.246149929729896,
+          "ts" : "2026-07-18T16:25:04Z"
+        },
+        {
+          "acc" : 2.4875794955736157,
+          "lat" : 64.06629821884589,
+          "lng" : -18.246644791318285,
+          "ts" : "2026-07-18T16:28:06Z"
+        },
+        {
+          "acc" : 2.241179697747981,
+          "lat" : 64.06761626330209,
+          "lng" : -18.245558896378952,
+          "ts" : "2026-07-18T16:31:09Z"
+        },
+        {
+          "acc" : 2.903643875955752,
+          "lat" : 64.06735884703974,
+          "lng" : -18.246759929756344,
+          "ts" : "2026-07-18T16:34:12Z"
+        },
+        {
+          "acc" : 2.095104657535091,
+          "lat" : 64.06665967204721,
+          "lng" : -18.248367849157113,
+          "ts" : "2026-07-18T16:37:15Z"
+        },
+        {
+          "acc" : 2.2347007411630053,
+          "lat" : 64.06569848633308,
+          "lng" : -18.246238619421558,
+          "ts" : "2026-07-18T16:40:19Z"
+        },
+        {
+          "acc" : 2.032007617161695,
+          "lat" : 64.06624708116766,
+          "lng" : -18.244060862417495,
+          "ts" : "2026-07-18T16:42:52Z"
         }
       ],
       "hikes" : [
@@ -5801,6 +5897,13 @@
           "pointCount" : 119,
           "source" : "gps",
           "startTime" : "2026-07-18T12:48:58Z"
+        },
+        {
+          "distanceKm" : 1.11,
+          "name" : "Lakagigar (Laki) Hike",
+          "pointCount" : 53,
+          "source" : "gps",
+          "startTime" : "2026-07-18T16:16:22Z"
         },
         {
           "distanceKm" : 11.9,
@@ -6158,7 +6261,7 @@
           "rating" : 5
         }
       ],
-      "totalHikeDistanceKm" : 20.1,
+      "totalHikeDistanceKm" : 21.2,
       "waterfallsVisited" : 11
     }
   ]
