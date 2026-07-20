@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-20T12:56:42Z",
+  "lastUpdated" : "2026-07-20T12:57:56Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -772,32 +772,38 @@
       "name" : "Lunch  at Greenhouse"
     },
     "d8-a0" : {
-      "editedAt" : 806244941.471771,
-      "movedToDayID" : 9
+      "editedAt" : 806245059.047997,
+      "movedToDayID" : 9,
+      "sortOrder" : 0
     },
     "d8-a1" : {
-      "editedAt" : 806244927.305035,
+      "editedAt" : 806245031.416628,
       "movedToDayID" : 9
     },
     "d8-a3" : {
-      "editedAt" : 806244913.804148,
-      "movedToDayID" : 9
+      "editedAt" : 806245059.048394,
+      "movedToDayID" : 9,
+      "sortOrder" : 26
     },
     "d8-a4" : {
-      "editedAt" : 806244934.319769,
-      "movedToDayID" : 9
+      "editedAt" : 806245059.048422,
+      "movedToDayID" : 9,
+      "sortOrder" : 28
     },
     "d8-a5" : {
-      "editedAt" : 806244949.905534,
-      "movedToDayID" : 9
+      "editedAt" : 806245059.048446,
+      "movedToDayID" : 9,
+      "sortOrder" : 30
     },
     "d8-a6" : {
-      "editedAt" : 806244962.258533,
-      "movedToDayID" : 9
+      "editedAt" : 806245059.04847,
+      "movedToDayID" : 9,
+      "sortOrder" : 32
     },
     "d8-a7" : {
-      "editedAt" : 806244975.29473,
-      "movedToDayID" : 9
+      "editedAt" : 806245059.048494,
+      "movedToDayID" : 9,
+      "sortOrder" : 34
     },
     "d8-f0" : {
       "editedAt" : 806171013.595503,
@@ -805,11 +811,44 @@
       "sortOrder" : 0
     },
     "d8-f1" : {
-      "editedAt" : 806244955.265781,
-      "movedToDayID" : 9
+      "editedAt" : 806245059.04852,
+      "movedToDayID" : 9,
+      "sortOrder" : 36
     },
     "d8-f2" : {
       "editedAt" : 806244993.071692
+    },
+    "d9-a0" : {
+      "editedAt" : 806245059.048213,
+      "sortOrder" : 10
+    },
+    "d9-a1" : {
+      "editedAt" : 806245059.048242,
+      "sortOrder" : 12
+    },
+    "d9-a2" : {
+      "editedAt" : 806245059.048272,
+      "sortOrder" : 14
+    },
+    "d9-a3" : {
+      "editedAt" : 806245059.048297,
+      "sortOrder" : 16
+    },
+    "d9-a5" : {
+      "editedAt" : 806245059.048369,
+      "sortOrder" : 22
+    },
+    "d9-f0" : {
+      "editedAt" : 806245059.048098,
+      "sortOrder" : 2
+    },
+    "d9-f1" : {
+      "editedAt" : 806245059.048345,
+      "sortOrder" : 20
+    },
+    "d9-f2" : {
+      "editedAt" : 806245059.048153,
+      "sortOrder" : 6
     },
     "sched-d4-1" : {
       "editedAt" : 805926985.609805,
@@ -880,6 +919,18 @@
     "sched-d8-1" : {
       "editedAt" : 805930452.174048,
       "sortOrder" : 0
+    },
+    "sched-d9-1" : {
+      "editedAt" : 806245059.048127,
+      "sortOrder" : 4
+    },
+    "sched-d9-3" : {
+      "editedAt" : 806245059.048184,
+      "sortOrder" : 8
+    },
+    "sched-d9-8" : {
+      "editedAt" : 806245059.048321,
+      "sortOrder" : 18
     }
   },
   "photos" : [
@@ -2820,7 +2871,7 @@
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
       ],
-      "gpsPointCount" : 6346,
+      "gpsPointCount" : 6347,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -5997,10 +6048,10 @@
           "ts" : "2026-07-20T12:47:14Z"
         },
         {
-          "acc" : 124.64167863814973,
-          "lat" : 64.02394886791659,
-          "lng" : -21.212160199796205,
-          "ts" : "2026-07-20T12:56:41Z"
+          "acc" : 131.73577754922832,
+          "lat" : 64.02381062913048,
+          "lng" : -21.212122829806457,
+          "ts" : "2026-07-20T12:57:13Z"
         }
       ],
       "hikes" : [
