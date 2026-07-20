@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-20T12:59:48Z",
+  "lastUpdated" : "2026-07-20T13:02:43Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -580,6 +580,10 @@
     "custom-806D63B0-0465-4A87-9580-E7D7087AFE89" : {
       "editedAt" : 806071748.32541,
       "sortOrder" : 4
+    },
+    "custom-90B5FE66-8F60-4E3A-9488-9C2DC2FECC94" : {
+      "editedAt" : 806245215.63283,
+      "sortOrder" : 6
     },
     "custom-9BFB2903-EDD2-41D5-9DC2-51B7B1C5F16F" : {
       "editedAt" : 806084059.86584,
@@ -817,7 +821,8 @@
       "sortOrder" : 12
     },
     "d8-f2" : {
-      "editedAt" : 806244993.071692
+      "editedAt" : 806245215.63314,
+      "sortOrder" : 18
     },
     "d9-a0" : {
       "editedAt" : 806245169.887973,
@@ -920,6 +925,26 @@
     "sched-d8-1" : {
       "editedAt" : 805930452.174048,
       "sortOrder" : 0
+    },
+    "sched-d8-13" : {
+      "editedAt" : 806245215.632988,
+      "sortOrder" : 10
+    },
+    "sched-d8-15" : {
+      "editedAt" : 806245215.63303,
+      "sortOrder" : 12
+    },
+    "sched-d8-16" : {
+      "editedAt" : 806245215.633067,
+      "sortOrder" : 14
+    },
+    "sched-d8-17" : {
+      "editedAt" : 806245215.633103,
+      "sortOrder" : 16
+    },
+    "sched-d8-20" : {
+      "editedAt" : 806245215.633176,
+      "sortOrder" : 20
     },
     "sched-d9-1" : {
       "editedAt" : 806245084.561976,
