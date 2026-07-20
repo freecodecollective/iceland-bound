@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-20T12:54:42Z",
+  "lastUpdated" : "2026-07-20T12:55:42Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -771,14 +771,21 @@
       "editedAt" : 806159547.39189,
       "name" : "Lunch  at Greenhouse"
     },
+    "d8-a0" : {
+      "editedAt" : 806244941.471771,
+      "movedToDayID" : 9
+    },
     "d8-a1" : {
-      "editedAt" : 806171153.960251
+      "editedAt" : 806244927.305035,
+      "movedToDayID" : 9
     },
     "d8-a3" : {
-      "editedAt" : 805930452.968912
+      "editedAt" : 806244913.804148,
+      "movedToDayID" : 9
     },
     "d8-a4" : {
-      "editedAt" : 806171145.230077
+      "editedAt" : 806244934.319769,
+      "movedToDayID" : 9
     },
     "d8-f0" : {
       "editedAt" : 806171013.595503,
@@ -2107,6 +2114,35 @@
       "filename" : "C56FA76F-F394-4331-8D00-D57BE12ADC98.jpg",
       "key" : "d7-a3",
       "timestamp" : "2026-07-20T12:36:53Z"
+    },
+    {
+      "activityName" : "Reykjadalur Hot Spring Thermal River Reykjadalur gönguleið",
+      "dayID" : 8,
+      "filename" : "C446391B-9E5C-439A-9347-D3A13245AF38.jpg",
+      "key" : "custom-90B5FE66-8F60-4E3A-9488-9C2DC2FECC94",
+      "timestamp" : "2026-07-20T12:55:03Z"
+    },
+    {
+      "activityName" : "Reykjadalur Hot Spring Thermal River Reykjadalur gönguleið",
+      "dayID" : 8,
+      "filename" : "CF05A742-4C0D-4096-8A3E-47CCCE5EA0B5_thumb.jpg",
+      "key" : "custom-90B5FE66-8F60-4E3A-9488-9C2DC2FECC94",
+      "timestamp" : "2026-07-20T12:55:03Z",
+      "videoFilename" : "CF05A742-4C0D-4096-8A3E-47CCCE5EA0B5.mov"
+    },
+    {
+      "activityName" : "Reykjadalur Hot Spring Thermal River Reykjadalur gönguleið",
+      "dayID" : 8,
+      "filename" : "EA4258A5-C5C3-4AB7-8122-CBF20DF94E49.jpg",
+      "key" : "custom-90B5FE66-8F60-4E3A-9488-9C2DC2FECC94",
+      "timestamp" : "2026-07-20T12:55:03Z"
+    },
+    {
+      "activityName" : "Reykjadalur Hot Spring Thermal River Reykjadalur gönguleið",
+      "dayID" : 8,
+      "filename" : "A7BDFCB4-61A0-4425-BFA5-115E16B013BB.jpg",
+      "key" : "custom-90B5FE66-8F60-4E3A-9488-9C2DC2FECC94",
+      "timestamp" : "2026-07-20T12:55:03Z"
     }
   ],
   "travelers" : [
@@ -2151,6 +2187,12 @@
           "latitude" : 64.22067987329959,
           "longitude" : -20.729553538721117,
           "timestamp" : "2026-07-14T14:07:29Z"
+        },
+        {
+          "dayID" : 0,
+          "itemName" : "custom-90B5FE66-8F60-4E3A-9488-9C2DC2FECC94",
+          "key" : "custom-90B5FE66-8F60-4E3A-9488-9C2DC2FECC94",
+          "timestamp" : "2026-07-20T12:55:03Z"
         },
         {
           "dayID" : 0,
@@ -2731,6 +2773,18 @@
           "name" : "Lakagigar (Laki) Hike",
           "notes" : "",
           "type" : "Activity"
+        },
+        {
+          "activityCategory" : "Hiking",
+          "createdBy" : "Chris",
+          "dayID" : 8,
+          "id" : "90B5FE66-8F60-4E3A-9488-9C2DC2FECC94",
+          "latitude" : 64.02765709459663,
+          "longitude" : -21.214190620014758,
+          "name" : "Reykjadalur Hot Spring Thermal River Reykjadalur gönguleið",
+          "notes" : "",
+          "scheduleAfterIndex" : 2,
+          "type" : "Activity"
         }
       ],
       "deletedEventIDs" : [
@@ -2747,7 +2801,7 @@
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
       ],
-      "gpsPointCount" : 6342,
+      "gpsPointCount" : 6344,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -5924,10 +5978,10 @@
           "ts" : "2026-07-20T12:47:14Z"
         },
         {
-          "acc" : 198.94603621260765,
-          "lat" : 64.02374408751326,
-          "lng" : -21.211977105732583,
-          "ts" : "2026-07-20T12:53:52Z"
+          "acc" : 134.52774486437377,
+          "lat" : 64.02449577483549,
+          "lng" : -21.212489747348197,
+          "ts" : "2026-07-20T12:55:38Z"
         }
       ],
       "hikes" : [
