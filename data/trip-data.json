@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-20T15:13:42Z",
+  "lastUpdated" : "2026-07-20T15:14:41Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -2261,6 +2261,20 @@
       "filename" : "159ADED0-F4ED-4E26-9355-6CD70AA8E0A2.jpg",
       "key" : "custom-660BC7A1-9415-4E8F-95CA-A9F2D20A474A",
       "timestamp" : "2026-07-20T15:13:12Z"
+    },
+    {
+      "activityName" : "Reykjadalur Hot Spring Thermal River Reykjadalur gönguleið",
+      "dayID" : 8,
+      "filename" : "67ADE694-23B1-486A-B79E-37592D721269.jpg",
+      "key" : "custom-90B5FE66-8F60-4E3A-9488-9C2DC2FECC94",
+      "timestamp" : "2026-07-20T15:14:23Z"
+    },
+    {
+      "activityName" : "Reykjadalur Hot Spring Thermal River Reykjadalur gönguleið",
+      "dayID" : 8,
+      "filename" : "BB330BDE-3ED8-465E-90EA-55AEDAF7E8ED.jpg",
+      "key" : "custom-90B5FE66-8F60-4E3A-9488-9C2DC2FECC94",
+      "timestamp" : "2026-07-20T15:14:23Z"
     }
   ],
   "travelers" : [
@@ -2936,7 +2950,7 @@
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
       ],
-      "gpsPointCount" : 6448,
+      "gpsPointCount" : 6450,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -6167,10 +6181,10 @@
           "ts" : "2026-07-20T15:11:58Z"
         },
         {
-          "acc" : 3.492236770431381,
-          "lat" : 64.02156462645853,
-          "lng" : -21.211143294397115,
-          "ts" : "2026-07-20T15:13:34Z"
+          "acc" : 3.2345835040219457,
+          "lat" : 64.02159820811814,
+          "lng" : -21.211063490624067,
+          "ts" : "2026-07-20T15:14:36Z"
         }
       ],
       "hikes" : [
@@ -6274,6 +6288,12 @@
           "itemName" : "custom-8F24F1D6-C1EA-4AF1-9A36-C578F18371FC",
           "key" : "custom-8F24F1D6-C1EA-4AF1-9A36-C578F18371FC",
           "text" : "Homemade sourdough and beef from next door. And $9 cokes. "
+        },
+        {
+          "dayID" : 0,
+          "itemName" : "custom-90B5FE66-8F60-4E3A-9488-9C2DC2FECC94",
+          "key" : "custom-90B5FE66-8F60-4E3A-9488-9C2DC2FECC94",
+          "text" : "One of us stopped at the Hot Springs for a nice soak, and the three more athletic ones went to the summit to add some mileage!\n\n"
         },
         {
           "dayID" : 0,
