@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-20T15:12:42Z",
+  "lastUpdated" : "2026-07-20T15:13:42Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -586,7 +586,7 @@
       "sortOrder" : 4
     },
     "custom-90B5FE66-8F60-4E3A-9488-9C2DC2FECC94" : {
-      "editedAt" : 806245215.63283,
+      "editedAt" : 806253195.770326,
       "sortOrder" : 6
     },
     "custom-9BFB2903-EDD2-41D5-9DC2-51B7B1C5F16F" : {
@@ -2254,6 +2254,13 @@
       "filename" : "D3519CAF-B799-4A25-9426-83258A5A1AAD.jpg",
       "key" : "custom-660BC7A1-9415-4E8F-95CA-A9F2D20A474A",
       "timestamp" : "2026-07-20T13:14:38Z"
+    },
+    {
+      "activityName" : "Waterfall",
+      "dayID" : 8,
+      "filename" : "159ADED0-F4ED-4E26-9355-6CD70AA8E0A2.jpg",
+      "key" : "custom-660BC7A1-9415-4E8F-95CA-A9F2D20A474A",
+      "timestamp" : "2026-07-20T15:13:12Z"
     }
   ],
   "travelers" : [
@@ -2929,7 +2936,7 @@
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
       ],
-      "gpsPointCount" : 6446,
+      "gpsPointCount" : 6448,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -6160,10 +6167,10 @@
           "ts" : "2026-07-20T15:11:58Z"
         },
         {
-          "acc" : 7.281156049677607,
-          "lat" : 64.02156476594374,
-          "lng" : -21.21108074656274,
-          "ts" : "2026-07-20T15:12:28Z"
+          "acc" : 3.492236770431381,
+          "lat" : 64.02156462645853,
+          "lng" : -21.211143294397115,
+          "ts" : "2026-07-20T15:13:34Z"
         }
       ],
       "hikes" : [
