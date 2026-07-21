@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-21T23:12:16Z",
+  "lastUpdated" : "2026-07-21T23:12:58Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -630,7 +630,7 @@
       "sortOrder" : 22
     },
     "custom-E1C6F7AD-E850-47EF-A586-30B02E40D8BF" : {
-      "editedAt" : 806368004.664653,
+      "editedAt" : 806368366.193237,
       "sortOrder" : 28
     },
     "custom-FABE43F1-BEEB-495E-9509-E81217EA709D" : {
@@ -3411,7 +3411,7 @@
         "hike-D12612E1-CE43-487D-9069-93D95A96BFF5",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
       ],
-      "gpsPointCount" : 8022,
+      "gpsPointCount" : 8024,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -6426,10 +6426,10 @@
           "ts" : "2026-07-21T23:09:19Z"
         },
         {
-          "acc" : 4.626337020008106,
-          "lat" : 64.76642735005842,
-          "lng" : -23.63180332986,
-          "ts" : "2026-07-21T23:11:55Z"
+          "acc" : 7.093567793736868,
+          "lat" : 64.76642738084338,
+          "lng" : -23.63180444868596,
+          "ts" : "2026-07-21T23:12:56Z"
         }
       ],
       "hikes" : [
@@ -6553,6 +6553,12 @@
           "itemName" : "custom-529A2F03-1570-4A8C-AA36-FBC7814EDE85",
           "key" : "custom-529A2F03-1570-4A8C-AA36-FBC7814EDE85",
           "text" : "Last stuff the turf house churches built in the late 1800s"
+        },
+        {
+          "dayID" : 0,
+          "itemName" : "custom-671D3C83-2988-4BFF-BCA0-2C071117A4DD",
+          "key" : "custom-671D3C83-2988-4BFF-BCA0-2C071117A4DD",
+          "text" : "Really fun troll garden with lots of children's fairytales and mini activities. "
         },
         {
           "dayID" : 0,
