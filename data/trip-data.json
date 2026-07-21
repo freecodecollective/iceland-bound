@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-21T23:15:23Z",
+  "lastUpdated" : "2026-07-21T23:16:15Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -674,7 +674,7 @@
       "editedAt" : 806257399.018601
     },
     "d10-a2" : {
-      "editedAt" : 806368467.988228,
+      "editedAt" : 806368525.045319,
       "movedToDayID" : 9,
       "sortOrder" : 32
     },
@@ -2557,6 +2557,20 @@
       "filename" : "22FBFEB0-9C81-42D9-B6E0-CFA4097122F4.jpg",
       "key" : "custom-5D1EAA69-A560-461B-8310-A144F6AF5F0F",
       "timestamp" : "2026-07-21T23:06:28Z"
+    },
+    {
+      "activityName" : "Kirkjufell + Kirkjufellsfoss",
+      "dayID" : 9,
+      "filename" : "CC14B54D-CAA4-4F23-B20F-A3522949B9B2.jpg",
+      "key" : "d10-a2",
+      "timestamp" : "2026-07-21T23:15:34Z"
+    },
+    {
+      "activityName" : "Kirkjufell + Kirkjufellsfoss",
+      "dayID" : 9,
+      "filename" : "6879D06A-E160-419A-AF30-7E71B463A60A.jpg",
+      "key" : "d10-a2",
+      "timestamp" : "2026-07-21T23:15:34Z"
     }
   ],
   "travelers" : [
@@ -3411,7 +3425,7 @@
         "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
       ],
-      "gpsPointCount" : 8014,
+      "gpsPointCount" : 8015,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -6420,10 +6434,10 @@
           "ts" : "2026-07-21T23:00:49Z"
         },
         {
-          "acc" : 19.920257407297445,
-          "lat" : 64.76642740221347,
-          "lng" : -23.63180458316339,
-          "ts" : "2026-07-21T23:15:21Z"
+          "acc" : 11.199184047832826,
+          "lat" : 64.76643245113496,
+          "lng" : -23.631761036657895,
+          "ts" : "2026-07-21T23:15:52Z"
         }
       ],
       "hikes" : [
