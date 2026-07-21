@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-21T23:11:31Z",
+  "lastUpdated" : "2026-07-21T23:11:58Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -625,7 +625,8 @@
       "sortOrder" : 8
     },
     "custom-D7E5583C-D2A9-4FF9-93B1-F024F85FE315" : {
-      "editedAt" : 806368004.664574,
+      "editedAt" : 806368307.830974,
+      "name" : "Fossarétt sheep pens",
       "sortOrder" : 22
     },
     "custom-E1C6F7AD-E850-47EF-A586-30B02E40D8BF" : {
@@ -3410,7 +3411,7 @@
         "hike-D12612E1-CE43-487D-9069-93D95A96BFF5",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
       ],
-      "gpsPointCount" : 8021,
+      "gpsPointCount" : 8022,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -6425,10 +6426,10 @@
           "ts" : "2026-07-21T23:09:19Z"
         },
         {
-          "acc" : 4.707635396282752,
-          "lat" : 64.76642733866657,
-          "lng" : -23.631802915841035,
-          "ts" : "2026-07-21T23:11:25Z"
+          "acc" : 4.626337020008106,
+          "lat" : 64.76642735005842,
+          "lng" : -23.63180332986,
+          "ts" : "2026-07-21T23:11:55Z"
         }
       ],
       "hikes" : [
