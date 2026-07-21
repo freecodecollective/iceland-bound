@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-21T12:04:43Z",
+  "lastUpdated" : "2026-07-21T12:05:21Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -612,7 +612,7 @@
       "sortOrder" : 8
     },
     "custom-D7E5583C-D2A9-4FF9-93B1-F024F85FE315" : {
-      "editedAt" : 806326475.418453
+      "editedAt" : 806328296.015212
     },
     "custom-hike-423A5DE5-66C0-4445-9F57-2F56A021559F" : {
       "editedAt" : 806084059.865871,
@@ -2313,6 +2313,27 @@
       "filename" : "736E9593-985D-48FF-BDBD-124B688EDEEC.jpg",
       "key" : "custom-A2020E59-3F6F-4324-B7E8-56DF605AD22C",
       "timestamp" : "2026-07-21T11:34:33Z"
+    },
+    {
+      "activityName" : "Fossarétt",
+      "dayID" : 9,
+      "filename" : "8161680D-0DE7-470D-8BC2-34C29B07023C.jpg",
+      "key" : "custom-D7E5583C-D2A9-4FF9-93B1-F024F85FE315",
+      "timestamp" : "2026-07-21T12:05:10Z"
+    },
+    {
+      "activityName" : "Fossarétt",
+      "dayID" : 9,
+      "filename" : "5144A669-C055-4B5A-9863-CB3EB24FD9BE.jpg",
+      "key" : "custom-D7E5583C-D2A9-4FF9-93B1-F024F85FE315",
+      "timestamp" : "2026-07-21T12:05:10Z"
+    },
+    {
+      "activityName" : "Fossarétt",
+      "dayID" : 9,
+      "filename" : "2199EE11-2094-4385-BC42-DC8EB06B540F.jpg",
+      "key" : "custom-D7E5583C-D2A9-4FF9-93B1-F024F85FE315",
+      "timestamp" : "2026-07-21T12:05:10Z"
     }
   ],
   "travelers" : [
@@ -3071,7 +3092,7 @@
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
       ],
-      "gpsPointCount" : 7199,
+      "gpsPointCount" : 7200,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -6164,10 +6185,10 @@
           "ts" : "2026-07-21T12:03:33Z"
         },
         {
-          "acc" : 3.641147473364577,
-          "lat" : 64.39143599375265,
-          "lng" : -21.429707236462647,
-          "ts" : "2026-07-21T12:04:34Z"
+          "acc" : 6.7004555844832465,
+          "lat" : 64.3914245638873,
+          "lng" : -21.429706157802357,
+          "ts" : "2026-07-21T12:05:05Z"
         }
       ],
       "hikes" : [
