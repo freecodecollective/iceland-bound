@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-21T11:34:40Z",
+  "lastUpdated" : "2026-07-21T11:37:43Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -2406,6 +2406,14 @@
         },
         {
           "dayID" : 0,
+          "itemName" : "custom-D7E5583C-D2A9-4FF9-93B1-F024F85FE315",
+          "key" : "custom-D7E5583C-D2A9-4FF9-93B1-F024F85FE315",
+          "latitude" : 64.35318008915279,
+          "longitude" : -21.45454842409726,
+          "timestamp" : "2026-07-21T11:34:49Z"
+        },
+        {
+          "dayID" : 0,
           "itemName" : "custom-EF303FEC-04BD-4062-8386-EC36C0712FFD",
           "key" : "custom-EF303FEC-04BD-4062-8386-EC36C0712FFD",
           "timestamp" : "2026-07-14T12:17:55Z"
@@ -3063,7 +3071,7 @@
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
       ],
-      "gpsPointCount" : 7140,
+      "gpsPointCount" : 7146,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -6126,10 +6134,16 @@
           "ts" : "2026-07-21T11:27:39Z"
         },
         {
-          "acc" : 18.96027164696294,
-          "lat" : 64.3531800703293,
-          "lng" : -21.45454663586032,
-          "ts" : "2026-07-21T11:34:16Z"
+          "acc" : 18.918214317360775,
+          "lat" : 64.3531800839547,
+          "lng" : -21.454547930036366,
+          "ts" : "2026-07-21T11:34:47Z"
+        },
+        {
+          "acc" : 2.0104637669029075,
+          "lat" : 64.35304268236403,
+          "lng" : -21.453290362237333,
+          "ts" : "2026-07-21T11:37:18Z"
         }
       ],
       "hikes" : [
@@ -6263,6 +6277,12 @@
           "itemName" : "custom-90B5FE66-8F60-4E3A-9488-9C2DC2FECC94",
           "key" : "custom-90B5FE66-8F60-4E3A-9488-9C2DC2FECC94",
           "text" : "One of us stopped at the Hot Springs for a nice soak, and the three more athletic ones went to the summit to add some mileage!\n\nThe one who stayed for a second was also the one who got back early enough for a beer. "
+        },
+        {
+          "dayID" : 0,
+          "itemName" : "custom-D7E5583C-D2A9-4FF9-93B1-F024F85FE315",
+          "key" : "custom-D7E5583C-D2A9-4FF9-93B1-F024F85FE315",
+          "text" : "Viking sheep pens!"
         },
         {
           "dayID" : 0,
@@ -6462,6 +6482,12 @@
           "dayID" : 0,
           "itemName" : "custom-C4D9106A-E668-4776-BC85-DB53A48976A3",
           "key" : "custom-C4D9106A-E668-4776-BC85-DB53A48976A3",
+          "rating" : 5
+        },
+        {
+          "dayID" : 0,
+          "itemName" : "custom-D7E5583C-D2A9-4FF9-93B1-F024F85FE315",
+          "key" : "custom-D7E5583C-D2A9-4FF9-93B1-F024F85FE315",
           "rating" : 5
         },
         {
