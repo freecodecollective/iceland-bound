@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-21T17:33:42Z",
+  "lastUpdated" : "2026-07-21T17:34:41Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -3251,7 +3251,7 @@
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
       ],
-      "gpsPointCount" : 7829,
+      "gpsPointCount" : 7831,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -6386,10 +6386,10 @@
           "ts" : "2026-07-21T17:26:59Z"
         },
         {
-          "acc" : 9.41205974227827,
-          "lat" : 64.93667577358016,
-          "lng" : -23.306276577931413,
-          "ts" : "2026-07-21T17:33:35Z"
+          "acc" : 11.140127408891622,
+          "lat" : 64.93670446777728,
+          "lng" : -23.306266322102672,
+          "ts" : "2026-07-21T17:34:37Z"
         }
       ],
       "hikes" : [
@@ -6490,9 +6490,9 @@
           "startTime" : "2026-07-20T16:12:05Z"
         },
         {
-          "distanceKm" : 1.31,
+          "distanceKm" : 1.32,
           "name" : "Kirkjufell",
-          "pointCount" : 123,
+          "pointCount" : 125,
           "source" : "gps",
           "startTime" : "2026-07-21T16:31:31Z"
         },
