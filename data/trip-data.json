@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-21T13:49:41Z",
+  "lastUpdated" : "2026-07-21T13:50:13Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -559,6 +559,9 @@
     "custom-298742A5-B75F-4771-B3F1-497F32E42692" : {
       "editedAt" : 805980977.565671,
       "sortOrder" : 6
+    },
+    "custom-35BA11EF-7EA8-4478-80F7-96C299101845" : {
+      "editedAt" : 806334601.108016
     },
     "custom-5299C09C-E30A-4379-B1C3-B60906B2EEC6" : {
       "editedAt" : 805930317.272862,
@@ -2371,6 +2374,14 @@
         },
         {
           "dayID" : 0,
+          "itemName" : "custom-35BA11EF-7EA8-4478-80F7-96C299101845",
+          "key" : "custom-35BA11EF-7EA8-4478-80F7-96C299101845",
+          "latitude" : 64.5637677489603,
+          "longitude" : -21.7661796041174,
+          "timestamp" : "2026-07-21T13:50:02Z"
+        },
+        {
+          "dayID" : 0,
           "itemName" : "custom-46297DCA-52A7-4E84-8125-15A7B83D3030",
           "key" : "custom-46297DCA-52A7-4E84-8125-15A7B83D3030",
           "timestamp" : "2026-07-14T16:52:56Z"
@@ -3119,6 +3130,16 @@
           "name" : "Troll Garden",
           "notes" : "",
           "type" : "Activity"
+        },
+        {
+          "createdBy" : "Chris",
+          "dayID" : 9,
+          "id" : "35BA11EF-7EA8-4478-80F7-96C299101845",
+          "latitude" : 64.56376775279637,
+          "longitude" : -21.7661796079846,
+          "name" : "Waffles At Skemman Kaffihus",
+          "notes" : "In a tractor village",
+          "type" : "Food"
         }
       ],
       "deletedEventIDs" : [
@@ -3135,7 +3156,7 @@
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
       ],
-      "gpsPointCount" : 7395,
+      "gpsPointCount" : 7396,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -6312,10 +6333,10 @@
           "ts" : "2026-07-21T13:48:30Z"
         },
         {
-          "acc" : 16.056068863073637,
-          "lat" : 64.56376945188521,
-          "lng" : -21.766181320866885,
-          "ts" : "2026-07-21T13:49:35Z"
+          "acc" : 14.782425142313352,
+          "lat" : 64.56376774751769,
+          "lng" : -21.766179602663073,
+          "ts" : "2026-07-21T13:50:05Z"
         }
       ],
       "hikes" : [
@@ -6614,6 +6635,12 @@
         }
       ],
       "ratings" : [
+        {
+          "dayID" : 0,
+          "itemName" : "custom-35BA11EF-7EA8-4478-80F7-96C299101845",
+          "key" : "custom-35BA11EF-7EA8-4478-80F7-96C299101845",
+          "rating" : 5
+        },
         {
           "dayID" : 0,
           "itemName" : "custom-46297DCA-52A7-4E84-8125-15A7B83D3030",
