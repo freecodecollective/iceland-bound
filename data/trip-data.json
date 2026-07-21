@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-21T16:31:25Z",
+  "lastUpdated" : "2026-07-21T16:31:50Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -2601,6 +2601,12 @@
         },
         {
           "dayID" : 0,
+          "itemName" : "custom-hike-AA12D923-CEBF-48C1-B9AB-5F7E45244F01",
+          "key" : "custom-hike-AA12D923-CEBF-48C1-B9AB-5F7E45244F01",
+          "timestamp" : "2026-07-21T16:31:31Z"
+        },
+        {
+          "dayID" : 0,
           "itemName" : "custom-hike-BA88BD66-FFC1-438C-B731-804E7A9A7FB8",
           "key" : "custom-hike-BA88BD66-FFC1-438C-B731-804E7A9A7FB8",
           "timestamp" : "2026-07-18T16:16:22Z"
@@ -3220,6 +3226,15 @@
           "name" : "Road Tripping",
           "notes" : "",
           "type" : "Activity"
+        },
+        {
+          "activityCategory" : "Hiking",
+          "createdBy" : "Chris",
+          "dayID" : 9,
+          "id" : "hike-AA12D923-CEBF-48C1-B9AB-5F7E45244F01",
+          "name" : "Kirkjufell",
+          "notes" : "",
+          "type" : "Activity"
         }
       ],
       "deletedEventIDs" : [
@@ -3236,7 +3251,7 @@
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
       ],
-      "gpsPointCount" : 7706,
+      "gpsPointCount" : 7707,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -6323,10 +6338,10 @@
           "ts" : "2026-07-21T16:24:23Z"
         },
         {
-          "acc" : 2.0286227974850135,
-          "lat" : 64.92794440863062,
-          "lng" : -23.31353856723247,
-          "ts" : "2026-07-21T16:31:17Z"
+          "acc" : 2.5395260432464912,
+          "lat" : 64.92794437111942,
+          "lng" : -23.313540436682548,
+          "ts" : "2026-07-21T16:31:32Z"
         }
       ],
       "hikes" : [
@@ -6425,6 +6440,13 @@
           "pointCount" : 1,
           "source" : "gps",
           "startTime" : "2026-07-20T16:12:05Z"
+        },
+        {
+          "distanceKm" : 0,
+          "name" : "Kirkjufell",
+          "pointCount" : 1,
+          "source" : "gps",
+          "startTime" : "2026-07-21T16:31:31Z"
         },
         {
           "distanceKm" : 11.9,
