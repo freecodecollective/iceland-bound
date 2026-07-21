@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-21T12:45:41Z",
+  "lastUpdated" : "2026-07-21T12:46:04Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -576,6 +576,9 @@
     "custom-660BC7A1-9415-4E8F-95CA-A9F2D20A474A" : {
       "editedAt" : 806246072.14427,
       "sortOrder" : 8
+    },
+    "custom-671D3C83-2988-4BFF-BCA0-2C071117A4DD" : {
+      "editedAt" : 806330746.701976
     },
     "custom-7C2C6778-9BF0-4971-A772-C116EC97A547" : {
       "editedAt" : 806017676.173829,
@@ -2334,6 +2337,27 @@
       "filename" : "2199EE11-2094-4385-BC42-DC8EB06B540F.jpg",
       "key" : "custom-D7E5583C-D2A9-4FF9-93B1-F024F85FE315",
       "timestamp" : "2026-07-21T12:05:10Z"
+    },
+    {
+      "activityName" : "Troll Garden",
+      "dayID" : 9,
+      "filename" : "D64DDA72-AEB2-4C85-A935-9C65081A9CF4.jpg",
+      "key" : "custom-671D3C83-2988-4BFF-BCA0-2C071117A4DD",
+      "timestamp" : "2026-07-21T12:46:01Z"
+    },
+    {
+      "activityName" : "Troll Garden",
+      "dayID" : 9,
+      "filename" : "8487BB00-6159-457A-B5E9-9236C789CFC1.jpg",
+      "key" : "custom-671D3C83-2988-4BFF-BCA0-2C071117A4DD",
+      "timestamp" : "2026-07-21T12:46:01Z"
+    },
+    {
+      "activityName" : "Troll Garden",
+      "dayID" : 9,
+      "filename" : "8F84AF72-8436-4F7A-B262-B7BEB3341A26.jpg",
+      "key" : "custom-671D3C83-2988-4BFF-BCA0-2C071117A4DD",
+      "timestamp" : "2026-07-21T12:46:01Z"
     }
   ],
   "travelers" : [
@@ -2376,6 +2400,14 @@
           "itemName" : "custom-660BC7A1-9415-4E8F-95CA-A9F2D20A474A",
           "key" : "custom-660BC7A1-9415-4E8F-95CA-A9F2D20A474A",
           "timestamp" : "2026-07-20T13:12:52Z"
+        },
+        {
+          "dayID" : 0,
+          "itemName" : "custom-671D3C83-2988-4BFF-BCA0-2C071117A4DD",
+          "key" : "custom-671D3C83-2988-4BFF-BCA0-2C071117A4DD",
+          "latitude" : 64.59250768058368,
+          "longitude" : -21.578459630124353,
+          "timestamp" : "2026-07-21T12:45:48Z"
         },
         {
           "dayID" : 0,
@@ -3103,7 +3135,7 @@
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
       ],
-      "gpsPointCount" : 7279,
+      "gpsPointCount" : 7280,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -6226,10 +6258,10 @@
           "ts" : "2026-07-21T12:39:13Z"
         },
         {
-          "acc" : 2.344281436414537,
-          "lat" : 64.59252304730175,
-          "lng" : -21.578363662081763,
-          "ts" : "2026-07-21T12:45:20Z"
+          "acc" : 2.1041008919108948,
+          "lat" : 64.5924978879712,
+          "lng" : -21.57853301670501,
+          "ts" : "2026-07-21T12:45:51Z"
         }
       ],
       "hikes" : [
