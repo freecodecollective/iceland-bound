@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-21T23:06:10Z",
+  "lastUpdated" : "2026-07-21T23:06:38Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -2501,6 +2501,41 @@
       "filename" : "B6262238-49D4-48FB-B8F5-67B507FA796F.jpg",
       "key" : "custom-FABE43F1-BEEB-495E-9509-E81217EA709D",
       "timestamp" : "2026-07-21T23:03:41Z"
+    },
+    {
+      "activityName" : "Murals of Hellissandur",
+      "dayID" : 9,
+      "filename" : "D3BA9D5E-3F7E-4521-A94E-369EB0422BE7.jpg",
+      "key" : "custom-5D1EAA69-A560-461B-8310-A144F6AF5F0F",
+      "timestamp" : "2026-07-21T23:06:28Z"
+    },
+    {
+      "activityName" : "Murals of Hellissandur",
+      "dayID" : 9,
+      "filename" : "1F75B632-4AE5-43A2-9A66-4A08542D3264.jpg",
+      "key" : "custom-5D1EAA69-A560-461B-8310-A144F6AF5F0F",
+      "timestamp" : "2026-07-21T23:06:28Z"
+    },
+    {
+      "activityName" : "Murals of Hellissandur",
+      "dayID" : 9,
+      "filename" : "5F39BF53-933C-40F4-B9A4-5B9E9FE2D248.jpg",
+      "key" : "custom-5D1EAA69-A560-461B-8310-A144F6AF5F0F",
+      "timestamp" : "2026-07-21T23:06:28Z"
+    },
+    {
+      "activityName" : "Murals of Hellissandur",
+      "dayID" : 9,
+      "filename" : "7F33C50B-47B7-456D-ABC2-C6DE40FEDAFB.jpg",
+      "key" : "custom-5D1EAA69-A560-461B-8310-A144F6AF5F0F",
+      "timestamp" : "2026-07-21T23:06:28Z"
+    },
+    {
+      "activityName" : "Murals of Hellissandur",
+      "dayID" : 9,
+      "filename" : "22FBFEB0-9C81-42D9-B6E0-CFA4097122F4.jpg",
+      "key" : "custom-5D1EAA69-A560-461B-8310-A144F6AF5F0F",
+      "timestamp" : "2026-07-21T23:06:28Z"
     }
   ],
   "travelers" : [
@@ -3331,6 +3366,14 @@
           "name" : "Svörtuloft Lighthouse Skálasnagaviti við Svörtuloft",
           "notes" : "A Wes Anderson inspired lighthouse at the edge of the country. Pretty stunning!",
           "type" : "Activity"
+        },
+        {
+          "createdBy" : "Chris",
+          "dayID" : 9,
+          "id" : "5D1EAA69-A560-461B-8310-A144F6AF5F0F",
+          "name" : "Murals of Hellissandur",
+          "notes" : "The street art capital of Iceland. \n\nIn the summer of 2018, a team of international artists including Camilo Arias, Ban Pesk, and Luis Rincon were summoned to Hellissandur by Kári Viðarsson, creator of \"The Freezer,\" to transform an abandoned fish factory and several unadorned buildings around town into 30 large works of art. Each mural is inspired by a local story, from Iceland's only recorded serial killer Áxlar-Björn to Jules Verne's \"The Journey to the Center of the Earth,\" where a professor, his nephew, and a guide try to reach the center of the Earth through the Snæfellsjökull volcano located a mile and a half from Hellissandur.\n\n",
+          "type" : "Sightseeing"
         }
       ],
       "deletedEventIDs" : [
@@ -3347,7 +3390,7 @@
         "hike-D12612E1-CE43-487D-9069-93D95A96BFF5",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
       ],
-      "gpsPointCount" : 8011,
+      "gpsPointCount" : 8012,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -6356,10 +6399,10 @@
           "ts" : "2026-07-21T23:00:49Z"
         },
         {
-          "acc" : 8.242442040361604,
-          "lat" : 64.76641968414307,
-          "lng" : -23.631830284190745,
-          "ts" : "2026-07-21T23:06:01Z"
+          "acc" : 6.330363037947685,
+          "lat" : 64.76641954738108,
+          "lng" : -23.631830147158038,
+          "ts" : "2026-07-21T23:06:38Z"
         }
       ],
       "hikes" : [
