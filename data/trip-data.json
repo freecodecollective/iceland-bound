@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-21T23:10:21Z",
+  "lastUpdated" : "2026-07-21T23:10:26Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -574,8 +574,8 @@
       "sortOrder" : 10
     },
     "custom-5D1EAA69-A560-461B-8310-A144F6AF5F0F" : {
-      "editedAt" : 806368004.664758,
-      "sortOrder" : 36
+      "editedAt" : 806368222.897202,
+      "sortOrder" : 34
     },
     "custom-5D703179-6A84-453A-89FD-42202043885F" : {
       "editedAt" : 805928347.497897,
@@ -633,8 +633,8 @@
       "sortOrder" : 28
     },
     "custom-FABE43F1-BEEB-495E-9509-E81217EA709D" : {
-      "editedAt" : 806368012.01395,
-      "sortOrder" : 34
+      "editedAt" : 806368222.897413,
+      "sortOrder" : 38
     },
     "custom-hike-423A5DE5-66C0-4445-9F57-2F56A021559F" : {
       "editedAt" : 806084059.865871,
@@ -898,9 +898,9 @@
     },
     "d9-f1" : {
       "desc" : "Best meal of the trip! ",
-      "editedAt" : 806368004.664783,
+      "editedAt" : 806368222.897355,
       "name" : "Dinner at Matarlist",
-      "sortOrder" : 38
+      "sortOrder" : 36
     },
     "d9-f2" : {
       "editedAt" : 806257384.052607,
@@ -3401,7 +3401,7 @@
         "hike-D12612E1-CE43-487D-9069-93D95A96BFF5",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
       ],
-      "gpsPointCount" : 8018,
+      "gpsPointCount" : 8019,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -6416,10 +6416,10 @@
           "ts" : "2026-07-21T23:09:19Z"
         },
         {
-          "acc" : 6.217361165562115,
-          "lat" : 64.76642724687174,
-          "lng" : -23.631799579706804,
-          "ts" : "2026-07-21T23:09:49Z"
+          "acc" : 6.469985149599603,
+          "lat" : 64.76642728577083,
+          "lng" : -23.631800993429767,
+          "ts" : "2026-07-21T23:10:23Z"
         }
       ],
       "hikes" : [
