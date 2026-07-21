@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-21T11:23:41Z",
+  "lastUpdated" : "2026-07-21T11:24:37Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -2286,6 +2286,13 @@
       "filename" : "BB330BDE-3ED8-465E-90EA-55AEDAF7E8ED.jpg",
       "key" : "custom-90B5FE66-8F60-4E3A-9488-9C2DC2FECC94",
       "timestamp" : "2026-07-20T15:14:23Z"
+    },
+    {
+      "activityName" : "Stedjl: A Goblet On One Thin Foot",
+      "dayID" : 9,
+      "filename" : "B08C6F7F-528C-4657-8871-3C4268D3BB81.jpg",
+      "key" : "custom-A2020E59-3F6F-4324-B7E8-56DF605AD22C",
+      "timestamp" : "2026-07-21T11:24:11Z"
     }
   ],
   "travelers" : [
@@ -2990,6 +2997,17 @@
           "name" : "Laki \/ Lakagígar craters",
           "notes" : "",
           "type" : "Activity"
+        },
+        {
+          "activityCategory" : "General",
+          "createdBy" : "Chris",
+          "dayID" : 9,
+          "id" : "A2020E59-3F6F-4324-B7E8-56DF605AD22C",
+          "latitude" : 64.35991516927163,
+          "longitude" : -21.54617367564569,
+          "name" : "Stedjl: A Goblet On One Thin Foot",
+          "notes" : "",
+          "type" : "Activity"
         }
       ],
       "deletedEventIDs" : [
@@ -3006,7 +3024,7 @@
         "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
       ],
-      "gpsPointCount" : 7119,
+      "gpsPointCount" : 7121,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -6063,10 +6081,10 @@
           "ts" : "2026-07-21T11:20:15Z"
         },
         {
-          "acc" : 5.554433588164054,
-          "lat" : 64.35991316915712,
-          "lng" : -21.546145038177468,
-          "ts" : "2026-07-21T11:23:21Z"
+          "acc" : 180.395014,
+          "lat" : 64.3599154233842,
+          "lng" : -21.54617298362101,
+          "ts" : "2026-07-21T11:24:36Z"
         }
       ],
       "hikes" : [
