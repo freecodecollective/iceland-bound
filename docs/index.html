@@ -1091,7 +1091,7 @@ function getPhotos(key) {
       if (adminDeletedEvents.indexOf(evId) !== -1) return false;
     }
     return true;
-  });
+  }).sort(function(a, b) { return photoTime(a) - photoTime(b); });
 }
 
 function renderStars(rating) {
@@ -1725,19 +1725,8 @@ function setPhotoSize(size, btn) {
   renderPhotos();
 }
 
-function schedulePos(day, parsed) {
-  if (!day.schedule) return 999;
-  var name = '';
-  if (parsed.activity) name = parsed.activity.name;
-  else if (parsed.food) name = parsed.food.name;
-  else if (parsed.stay) return -1;
-  else if (parsed.schedule) name = parsed.schedule.title;
-  else if (parsed.customName) name = parsed.customName;
-  if (!name) return 999;
-  for (var i = 0; i < day.schedule.length; i++) {
-    if (day.schedule[i].title === name) return i;
-  }
-  return 999;
+function photoTime(p) {
+  return Date.parse(p.timestamp) || 0;
 }
 
 function renderPhotos() {
@@ -1783,8 +1772,21 @@ function renderPhotos() {
     const dayPhotos = photosByDay[day.id];
     if (!dayPhotos || dayPhotos.length === 0) continue;
 
+    // Keep each event's photos together even when some were added later:
+    // order groups by their earliest photo, then photos by time within.
+    var groupEarliest = {};
+    for (var gi = 0; gi < dayPhotos.length; gi++) {
+      var gp = dayPhotos[gi].photo;
+      var gt = photoTime(gp);
+      if (!(gp.key in groupEarliest) || gt < groupEarliest[gp.key]) groupEarliest[gp.key] = gt;
+    }
     dayPhotos.sort(function(a, b) {
-      return schedulePos(day, a.parsed) - schedulePos(day, b.parsed);
+      if (a.photo.key !== b.photo.key) {
+        var ga = groupEarliest[a.photo.key], gb = groupEarliest[b.photo.key];
+        if (ga !== gb) return ga - gb;
+        return a.photo.key < b.photo.key ? -1 : 1;
+      }
+      return photoTime(a.photo) - photoTime(b.photo);
     });
 
     const photoBadge = day.id < 1 ? '&#9992;' : day.id;
