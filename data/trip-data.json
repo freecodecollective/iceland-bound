@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-21T23:00:36Z",
+  "lastUpdated" : "2026-07-21T23:01:16Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -2452,6 +2452,20 @@
       "filename" : "92913280-D764-4B6B-81A3-063905825B9E.jpg",
       "key" : "d10-a2",
       "timestamp" : "2026-07-21T22:58:57Z"
+    },
+    {
+      "activityName" : "Dinner at Matarlist",
+      "dayID" : 9,
+      "filename" : "7A663969-4528-4C8D-9AE9-4D9023975218.jpg",
+      "key" : "d9-f1",
+      "timestamp" : "2026-07-21T23:00:49Z"
+    },
+    {
+      "activityName" : "Dinner at Matarlist",
+      "dayID" : 9,
+      "filename" : "4A9DF467-E90D-4C51-893E-1F7AA93F59D2.jpg",
+      "key" : "d9-f1",
+      "timestamp" : "2026-07-21T23:00:49Z"
     }
   ],
   "travelers" : [
@@ -3289,7 +3303,7 @@
         "hike-D12612E1-CE43-487D-9069-93D95A96BFF5",
         "72F18AEC-99EF-4D55-B498-448DE505E501"
       ],
-      "gpsPointCount" : 8000,
+      "gpsPointCount" : 8001,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -6292,10 +6306,10 @@
           "ts" : "2026-07-21T18:53:02Z"
         },
         {
-          "acc" : 5.241471795136438,
-          "lat" : 64.7664244013911,
-          "lng" : -23.63183518737786,
-          "ts" : "2026-07-21T23:00:17Z"
+          "acc" : 8.009258468557434,
+          "lat" : 64.7664226011935,
+          "lng" : -23.63183335218657,
+          "ts" : "2026-07-21T23:00:49Z"
         }
       ],
       "hikes" : [
