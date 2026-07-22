@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-22T16:54:32Z",
+  "lastUpdated" : "2026-07-22T16:59:32Z",
   "localEdits" : {
     "custom-22291616-5CF2-40CC-A4AA-2AAC56722A1F" : {
       "editedAt" : 806427634.574104,
@@ -1099,6 +1099,13 @@
     }
   },
   "photos" : [
+    {
+      "activityName" : "Flight Boston to Reykjavík",
+      "dayID" : 0,
+      "filename" : "204A3A71-7600-4E93-8896-A5B3FCA6E6EF.jpg",
+      "key" : "d0-a0",
+      "timestamp" : "2026-07-13T02:25:38Z"
+    },
     {
       "activityName" : "Flight Boston to Reykjavík",
       "dayID" : 0,
@@ -3228,7 +3235,7 @@
         "5D703179-6A84-453A-89FD-42202043885F",
         "hike-D12612E1-CE43-487D-9069-93D95A96BFF5"
       ],
-      "gpsPointCount" : 9774,
+      "gpsPointCount" : 9784,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -6321,10 +6328,10 @@
           "ts" : "2026-07-22T16:50:44Z"
         },
         {
-          "acc" : 4.855686759027922,
-          "lat" : 64.14431631419217,
-          "lng" : -21.929973980635438,
-          "ts" : "2026-07-22T16:54:24Z"
+          "acc" : 3.878647562029355,
+          "lat" : 64.1382884863875,
+          "lng" : -21.923645929789775,
+          "ts" : "2026-07-22T16:59:30Z"
         }
       ],
       "hikes" : [
