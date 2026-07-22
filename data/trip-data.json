@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-22T12:42:48Z",
+  "lastUpdated" : "2026-07-22T12:43:49Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -1703,6 +1703,41 @@
       "filename" : "13EACF5A-AF7C-4494-A1B1-AA92E28F4D0E.jpg",
       "key" : "d10-a2",
       "timestamp" : "2026-07-22T11:53:58Z"
+    },
+    {
+      "activityName" : "Arnarstapi Cliffs & Bárður",
+      "dayID" : 10,
+      "filename" : "76D5C035-A36D-474E-B6CB-6838A439FCB4.jpg",
+      "key" : "custom-F4C8E765-7193-4767-9E9C-0B5F08BD21B7",
+      "timestamp" : "2026-07-22T12:43:38Z"
+    },
+    {
+      "activityName" : "Arnarstapi Cliffs & Bárður",
+      "dayID" : 10,
+      "filename" : "52502920-9045-4942-82D8-F18E751F003A.jpg",
+      "key" : "custom-F4C8E765-7193-4767-9E9C-0B5F08BD21B7",
+      "timestamp" : "2026-07-22T12:43:38Z"
+    },
+    {
+      "activityName" : "Arnarstapi Cliffs & Bárður",
+      "dayID" : 10,
+      "filename" : "D8F719FA-F760-48A5-85D6-A4B30364A6A6.jpg",
+      "key" : "custom-F4C8E765-7193-4767-9E9C-0B5F08BD21B7",
+      "timestamp" : "2026-07-22T12:43:38Z"
+    },
+    {
+      "activityName" : "Arnarstapi Cliffs & Bárður",
+      "dayID" : 10,
+      "filename" : "82A0B6F2-64F5-42EB-B792-C87357E14FBB.jpg",
+      "key" : "custom-F4C8E765-7193-4767-9E9C-0B5F08BD21B7",
+      "timestamp" : "2026-07-22T12:43:38Z"
+    },
+    {
+      "activityName" : "Arnarstapi Cliffs & Bárður",
+      "dayID" : 10,
+      "filename" : "AB440EEE-11B5-48B6-867E-E0361AFE58CA.jpg",
+      "key" : "custom-F4C8E765-7193-4767-9E9C-0B5F08BD21B7",
+      "timestamp" : "2026-07-22T12:43:38Z"
     },
     {
       "activityName" : "Flight Boston to Reykjavík",
@@ -3377,6 +3412,14 @@
           "name" : "Drive Into A Crater!",
           "notes" : "",
           "scheduleAfterIndex" : 0,
+          "type" : "Sightseeing"
+        },
+        {
+          "createdBy" : "Becah",
+          "dayID" : 10,
+          "id" : "F4C8E765-7193-4767-9E9C-0B5F08BD21B7",
+          "name" : "Arnarstapi Cliffs & Bárður",
+          "notes" : "",
           "type" : "Sightseeing"
         }
       ],
