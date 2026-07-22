@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-22T11:47:16Z",
+  "lastUpdated" : "2026-07-22T11:50:23Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -572,6 +572,9 @@
       "desc" : "The last turf house church",
       "editedAt" : 806017676.173765,
       "sortOrder" : 10
+    },
+    "custom-565DD48C-D34C-418E-85D3-B5CFCE38BE1A" : {
+      "editedAt" : 806413310.944628
     },
     "custom-5D1EAA69-A560-461B-8310-A144F6AF5F0F" : {
       "editedAt" : 806368222.897202,
@@ -634,7 +637,7 @@
       "sortOrder" : 28
     },
     "custom-FABE43F1-BEEB-495E-9509-E81217EA709D" : {
-      "editedAt" : 806368222.897413,
+      "editedAt" : 806413678.888274,
       "sortOrder" : 38
     },
     "custom-hike-423A5DE5-66C0-4445-9F57-2F56A021559F" : {
@@ -674,10 +677,10 @@
       "editedAt" : 806257399.018601
     },
     "d10-a1" : {
-      "editedAt" : 806274462.675381
+      "editedAt" : 806401408.632377
     },
     "d10-a2" : {
-      "editedAt" : 806368525.045319,
+      "editedAt" : 806413710.050116,
       "movedToDayID" : 9,
       "sortOrder" : 32
     },
@@ -880,7 +883,7 @@
       "sortOrder" : 20
     },
     "d9-a0" : {
-      "editedAt" : 806274400.687201,
+      "editedAt" : 806401372.319536,
       "movedToDayID" : 10,
       "sortOrder" : 24
     },
@@ -1027,13 +1030,6 @@
     }
   },
   "photos" : [
-    {
-      "activityName" : "Flight Boston to Reykjavík",
-      "dayID" : 0,
-      "filename" : "204A3A71-7600-4E93-8896-A5B3FCA6E6EF.jpg",
-      "key" : "d0-a0",
-      "timestamp" : "2026-07-13T02:25:38Z"
-    },
     {
       "activityName" : "Flight Boston to Reykjavík",
       "dayID" : 0,
@@ -2533,13 +2529,6 @@
       "timestamp" : "2026-07-21T23:03:41Z"
     },
     {
-      "activityName" : "Svörtuloft Lighthouse Skálasnagaviti við Svörtuloft",
-      "dayID" : 9,
-      "filename" : "B6262238-49D4-48FB-B8F5-67B507FA796F.jpg",
-      "key" : "custom-FABE43F1-BEEB-495E-9509-E81217EA709D",
-      "timestamp" : "2026-07-21T23:03:41Z"
-    },
-    {
       "activityName" : "Murals of Hellissandur",
       "dayID" : 9,
       "filename" : "D3BA9D5E-3F7E-4521-A94E-369EB0422BE7.jpg",
@@ -3441,7 +3430,7 @@
         "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
         "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
       ],
-      "gpsPointCount" : 9429,
+      "gpsPointCount" : 9435,
       "gpsTrack" : [
         {
           "acc" : 135.12671105200525,
@@ -6588,10 +6577,16 @@
           "ts" : "2026-07-22T11:33:25Z"
         },
         {
-          "acc" : 3.4883482989214283,
-          "lat" : 64.75212030146115,
-          "lng" : -23.711344202399367,
-          "ts" : "2026-07-22T11:47:05Z"
+          "acc" : 2.2316165874807985,
+          "lat" : 64.76443821320808,
+          "lng" : -23.6612930422704,
+          "ts" : "2026-07-22T11:49:06Z"
+        },
+        {
+          "acc" : 1.9999986650104793,
+          "lat" : 64.77191710524826,
+          "lng" : -23.642031430337198,
+          "ts" : "2026-07-22T11:50:07Z"
         }
       ],
       "hikes" : [
