@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-22T13:57:46Z",
+  "lastUpdated" : "2026-07-22T15:38:47Z",
   "localEdits" : {
     "custom-22291616-5CF2-40CC-A4AA-2AAC56722A1F" : {
       "editedAt" : 806416491.707861,
@@ -649,6 +649,9 @@
       "editedAt" : 806413678.888274,
       "sortOrder" : 38
     },
+    "custom-FEF4A851-70D3-47A3-B6CD-91B82F2BF2D3" : {
+      "editedAt" : 806421478.871109
+    },
     "custom-hike-423A5DE5-66C0-4445-9F57-2F56A021559F" : {
       "editedAt" : 806084059.865871,
       "sortOrder" : 10
@@ -706,6 +709,9 @@
     "d10-f2" : {
       "editedAt" : 806417098.736781,
       "sortOrder" : 24
+    },
+    "d2-f5" : {
+      "editedAt" : 806421492.261912
     },
     "d3-a3" : {
       "editedAt" : 805931404.646975,
@@ -3500,18 +3506,18 @@
         }
       ],
       "deletedEventIDs" : [
-        "hike-7FF83750-8D70-4F19-BFE7-85F6ECA6FF6C",
+        "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
         "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
+        "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
+        "hike-7FF83750-8D70-4F19-BFE7-85F6ECA6FF6C",
+        "72F18AEC-99EF-4D55-B498-448DE505E501",
+        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
+        "54A846B9-6D87-40D2-995B-E807631D15DF",
         "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
         "5D703179-6A84-453A-89FD-42202043885F",
-        "54A846B9-6D87-40D2-995B-E807631D15DF",
-        "72F18AEC-99EF-4D55-B498-448DE505E501",
         "hike-D12612E1-CE43-487D-9069-93D95A96BFF5",
         "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
-        "hike-A469A451-1F74-4BAE-9270-3434A5D8EDC5",
-        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
-        "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
-        "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0"
+        "hike-A469A451-1F74-4BAE-9270-3434A5D8EDC5"
       ],
       "gpsPointCount" : 20,
       "gpsTrack" : [
