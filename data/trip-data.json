@@ -549,7 +549,7 @@
       "title" : "Snæfellsnes North & Home"
     }
   ],
-  "lastUpdated" : "2026-07-22T12:31:15Z",
+  "lastUpdated" : "2026-07-22T12:41:50Z",
   "localEdits" : {
     "custom-28600F5C-1A53-466D-AAF0-491C85652217" : {
       "editedAt" : 805976301.135915,
@@ -898,7 +898,7 @@
       "sortOrder" : 28
     },
     "d9-a3" : {
-      "editedAt" : 806257478.878025,
+      "editedAt" : 806414060.440633,
       "sortOrder" : 30
     },
     "d9-a5" : {
@@ -1030,6 +1030,680 @@
     }
   },
   "photos" : [
+    {
+      "activityName" : "Fly Boston to Iceland",
+      "dayID" : -1,
+      "filename" : "0C313879-463C-4704-9536-B47CD974FD5F.jpg",
+      "key" : "d-1-a2",
+      "timestamp" : "2026-07-13T01:18:40Z"
+    },
+    {
+      "activityName" : "Bridge Between Continents",
+      "dayID" : 1,
+      "filename" : "9D2849FE-87EC-43F4-818E-CA374B1FCB60.jpg",
+      "key" : "d1-a0",
+      "timestamp" : "2026-07-13T10:26:12Z"
+    },
+    {
+      "activityName" : "Bridge Between Continents",
+      "dayID" : 1,
+      "filename" : "CDDE779E-3153-4908-B2D4-F13FF9628C23.jpg",
+      "key" : "d1-a0",
+      "timestamp" : "2026-07-13T10:26:12Z"
+    },
+    {
+      "activityName" : "Bridge Between Continents",
+      "dayID" : 1,
+      "filename" : "AF747D64-8CB2-4D4B-8E00-01179AC84CC5.jpg",
+      "key" : "d1-a0",
+      "timestamp" : "2026-07-13T10:26:12Z"
+    },
+    {
+      "activityName" : "Bridge Between Continents",
+      "dayID" : 1,
+      "filename" : "F60C5890-01CF-4DF1-8F4C-2ED0ADB9AA23.jpg",
+      "key" : "d1-a0",
+      "timestamp" : "2026-07-13T10:26:12Z"
+    },
+    {
+      "activityName" : "Bridge Between Continents",
+      "dayID" : 1,
+      "filename" : "8C958C4E-4AC4-4644-B75F-511BC3663AB6.jpg",
+      "key" : "d1-a0",
+      "timestamp" : "2026-07-13T10:26:12Z"
+    },
+    {
+      "activityName" : "Bridge Between Continents",
+      "dayID" : 1,
+      "filename" : "254F9D2F-ED9B-4A08-A62A-5BFB48202111.jpg",
+      "key" : "d1-a0",
+      "timestamp" : "2026-07-13T10:26:12Z"
+    },
+    {
+      "activityName" : "Blue Lagoon & LAVA Restaurant",
+      "dayID" : 1,
+      "filename" : "BDC85D04-C030-4523-9C6C-8DC62FBB7017.jpg",
+      "key" : "d1-a5",
+      "timestamp" : "2026-07-13T20:38:17Z"
+    },
+    {
+      "activityName" : "Blue Lagoon & LAVA Restaurant",
+      "dayID" : 1,
+      "filename" : "1C4CACAE-0281-4736-AF11-A42FAD8D1479.jpg",
+      "key" : "d1-a5",
+      "timestamp" : "2026-07-13T20:38:17Z"
+    },
+    {
+      "activityName" : "Þingvellir National Park",
+      "dayID" : 2,
+      "filename" : "5A3B165E-D359-49C4-AB79-03AE3E0F7350.jpg",
+      "key" : "d2-a1",
+      "timestamp" : "2026-07-14T13:35:53Z"
+    },
+    {
+      "activityName" : "Þingvellir National Park",
+      "dayID" : 2,
+      "filename" : "BD716492-887E-45A7-BB00-C451CF9FD739.jpg",
+      "key" : "d2-a1",
+      "timestamp" : "2026-07-14T13:35:53Z"
+    },
+    {
+      "activityName" : "Þingvellir National Park",
+      "dayID" : 2,
+      "filename" : "C072BA8A-431B-43A5-B90F-8A44C185840B.jpg",
+      "key" : "d2-a1",
+      "timestamp" : "2026-07-14T13:35:53Z"
+    },
+    {
+      "activityName" : "Lunch",
+      "dayID" : 3,
+      "filename" : "B1B86CBF-2660-4546-974F-7FFA9F836476.jpg",
+      "key" : "d3-f1",
+      "timestamp" : "2026-07-15T15:06:24Z"
+    },
+    {
+      "activityName" : "Lunch",
+      "dayID" : 3,
+      "filename" : "5B4DE382-D062-4EDA-A142-474AC3CE3B30.jpg",
+      "key" : "d3-f1",
+      "timestamp" : "2026-07-15T15:06:24Z"
+    },
+    {
+      "activityName" : "Lunch",
+      "dayID" : 3,
+      "filename" : "78633897-1D8D-4961-8084-8A7967B315EF.jpg",
+      "key" : "d3-f1",
+      "timestamp" : "2026-07-15T15:06:24Z"
+    },
+    {
+      "activityName" : "Lunch",
+      "dayID" : 3,
+      "filename" : "14444E96-1BA5-45C3-B9EA-04645B51FFFC.jpg",
+      "key" : "d3-f1",
+      "timestamp" : "2026-07-15T15:06:24Z"
+    },
+    {
+      "activityName" : "Lunch",
+      "dayID" : 3,
+      "filename" : "8853B21A-3214-48AE-BD72-255F43FA549A.jpg",
+      "key" : "d3-f1",
+      "timestamp" : "2026-07-15T15:06:24Z"
+    },
+    {
+      "activityName" : "Gljúfrabúi",
+      "dayID" : 3,
+      "filename" : "D938BB0A-D4A1-4EE7-84CF-559CAC14D969.jpg",
+      "key" : "d3-a1",
+      "timestamp" : "2026-07-15T16:29:05Z"
+    },
+    {
+      "activityName" : "Gljúfrabúi",
+      "dayID" : 3,
+      "filename" : "D70512B6-D109-4832-B1F2-5FA1C205ABEC.jpg",
+      "key" : "d3-a1",
+      "timestamp" : "2026-07-15T16:29:05Z"
+    },
+    {
+      "activityName" : "Gljúfrabúi",
+      "dayID" : 3,
+      "filename" : "1A4F6644-F6FE-4CC2-9EF6-99C1C0009756.jpg",
+      "key" : "d3-a1",
+      "timestamp" : "2026-07-15T16:29:06Z"
+    },
+    {
+      "activityName" : "Gljúfrabúi",
+      "dayID" : 3,
+      "filename" : "05DA50F2-DEBC-412F-A315-EBDEDD45F187.jpg",
+      "key" : "d3-a1",
+      "timestamp" : "2026-07-15T16:29:06Z"
+    },
+    {
+      "activityName" : "Gljúfrabúi",
+      "dayID" : 3,
+      "filename" : "95A82FA0-4CD9-456E-8416-105392F06890.jpg",
+      "key" : "d3-a1",
+      "timestamp" : "2026-07-15T16:29:06Z"
+    },
+    {
+      "activityName" : "Skógafoss",
+      "dayID" : 4,
+      "filename" : "99440430-9FCE-42D7-9300-8FD714A106C3.jpg",
+      "key" : "d3-a3",
+      "timestamp" : "2026-07-16T10:05:46Z"
+    },
+    {
+      "activityName" : "Dyrhólaey",
+      "dayID" : 4,
+      "filename" : "226E53E5-F9D6-4568-AC34-0B3CCE096A2F_thumb.jpg",
+      "key" : "d4-a2",
+      "timestamp" : "2026-07-16T21:05:43Z",
+      "videoFilename" : "226E53E5-F9D6-4568-AC34-0B3CCE096A2F.mov"
+    },
+    {
+      "activityName" : "Dyrhólaey",
+      "dayID" : 4,
+      "filename" : "12A2B70A-F01C-4F4F-BE7E-7F1A11055E45.jpg",
+      "key" : "d4-a2",
+      "timestamp" : "2026-07-16T21:05:43Z"
+    },
+    {
+      "activityName" : "Þakgil–Mælifell hike",
+      "dayID" : 4,
+      "filename" : "566AFC89-1E33-40DB-9BEE-0AEBF0558309.jpg",
+      "key" : "d4-a0",
+      "timestamp" : "2026-07-16T21:07:34Z"
+    },
+    {
+      "activityName" : "Þakgil–Mælifell hike",
+      "dayID" : 4,
+      "filename" : "98D3811C-B607-4EAC-A0CD-FB6727202644.jpg",
+      "key" : "d4-a0",
+      "timestamp" : "2026-07-16T21:07:34Z"
+    },
+    {
+      "activityName" : "Þakgil–Mælifell hike",
+      "dayID" : 4,
+      "filename" : "34D8676D-6C17-4748-A814-055D762FEAA4.jpg",
+      "key" : "d4-a0",
+      "timestamp" : "2026-07-16T21:07:34Z"
+    },
+    {
+      "activityName" : "Þakgil–Mælifell hike",
+      "dayID" : 4,
+      "filename" : "CBC8EC6C-F4DE-4627-8D8D-41FD9778C71E.jpg",
+      "key" : "d4-a0",
+      "timestamp" : "2026-07-16T21:07:34Z"
+    },
+    {
+      "activityName" : "Þakgil–Mælifell hike",
+      "dayID" : 4,
+      "filename" : "0B789C53-D39B-4F76-8823-9ACC86064EEA.jpg",
+      "key" : "d4-a0",
+      "timestamp" : "2026-07-16T21:07:34Z"
+    },
+    {
+      "activityName" : "Þakgil–Mælifell hike",
+      "dayID" : 4,
+      "filename" : "4D9D5E16-0D8D-48FA-A04F-5EC4B7D1E503.jpg",
+      "key" : "d4-a0",
+      "timestamp" : "2026-07-16T21:07:34Z"
+    },
+    {
+      "activityName" : "Skógafoss",
+      "dayID" : 4,
+      "filename" : "16DD5297-951B-4745-BBE3-6EB133398D26.jpg",
+      "key" : "d3-a3",
+      "timestamp" : "2026-07-16T21:50:39Z"
+    },
+    {
+      "activityName" : "Skógafoss",
+      "dayID" : 4,
+      "filename" : "2E5B16CA-AEEE-445D-BC64-2291A41580D1.jpg",
+      "key" : "d3-a3",
+      "timestamp" : "2026-07-16T21:50:39Z"
+    },
+    {
+      "activityName" : "Skógafoss",
+      "dayID" : 4,
+      "filename" : "77BEC3BE-B0B2-464E-8921-62FF8F768EC0.jpg",
+      "key" : "d3-a3",
+      "timestamp" : "2026-07-16T21:50:39Z"
+    },
+    {
+      "activityName" : "Skógafoss",
+      "dayID" : 4,
+      "filename" : "886A95A9-5F9D-4B72-8182-EF905A7E4C34.jpg",
+      "key" : "d3-a3",
+      "timestamp" : "2026-07-16T21:50:39Z"
+    },
+    {
+      "activityName" : "Skógafoss",
+      "dayID" : 4,
+      "filename" : "5BB6815D-3AD7-4BFC-BA20-08CBD19AB10C.jpg",
+      "key" : "d3-a3",
+      "timestamp" : "2026-07-16T21:50:39Z"
+    },
+    {
+      "activityName" : "Skógafoss",
+      "dayID" : 4,
+      "filename" : "46BA7D06-D3DC-4DC8-89EE-7BCF63D4B785.jpg",
+      "key" : "d3-a3",
+      "timestamp" : "2026-07-16T21:50:39Z"
+    },
+    {
+      "activityName" : "Skógafoss",
+      "dayID" : 4,
+      "filename" : "9169ADDC-EC51-4809-BA57-7064C38AD585.jpg",
+      "key" : "d3-a3",
+      "timestamp" : "2026-07-16T21:50:39Z"
+    },
+    {
+      "activityName" : "Volcano Exhibit At The Paxi Bakery",
+      "dayID" : 4,
+      "filename" : "278105AF-BC78-48AA-BEA0-82E0FFD924D4.jpg",
+      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
+      "timestamp" : "2026-07-16T21:51:58Z"
+    },
+    {
+      "activityName" : "Volcano Exhibit At The Paxi Bakery",
+      "dayID" : 4,
+      "filename" : "22E0F6B0-DFC7-40AA-91F9-079AFBA51296.jpg",
+      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
+      "timestamp" : "2026-07-16T21:51:58Z"
+    },
+    {
+      "activityName" : "Volcano Exhibit At The Paxi Bakery",
+      "dayID" : 4,
+      "filename" : "4F510AA5-4FFD-4720-8BC7-75F9E6FFB8D3.jpg",
+      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
+      "timestamp" : "2026-07-16T21:51:58Z"
+    },
+    {
+      "activityName" : "Volcano Exhibit At The Paxi Bakery",
+      "dayID" : 4,
+      "filename" : "47941344-FA77-4FA7-86D6-A206819A5315.jpg",
+      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
+      "timestamp" : "2026-07-16T21:51:58Z"
+    },
+    {
+      "activityName" : "Volcano Exhibit At The Paxi Bakery",
+      "dayID" : 4,
+      "filename" : "777CADE5-2A32-46D9-B5B0-629E021805F0.jpg",
+      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
+      "timestamp" : "2026-07-16T21:51:58Z"
+    },
+    {
+      "activityName" : "Volcano Exhibit At The Paxi Bakery",
+      "dayID" : 4,
+      "filename" : "D2BF70B5-B7F4-49C5-8929-9AE9101787ED.jpg",
+      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
+      "timestamp" : "2026-07-16T21:51:58Z"
+    },
+    {
+      "activityName" : "Volcano Exhibit At The Paxi Bakery",
+      "dayID" : 4,
+      "filename" : "DDBE0ABC-2F12-4DE6-B698-8861992A91D2.jpg",
+      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
+      "timestamp" : "2026-07-16T21:51:58Z"
+    },
+    {
+      "activityName" : "Volcano Exhibit At The Paxi Bakery",
+      "dayID" : 4,
+      "filename" : "A98B0B38-41F0-47A6-B8AA-256B942FD9C8.jpg",
+      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
+      "timestamp" : "2026-07-16T21:51:58Z"
+    },
+    {
+      "activityName" : "Volcano Exhibit At The Paxi Bakery",
+      "dayID" : 4,
+      "filename" : "AD16543E-DBF2-41EA-90D1-5709BAF65260.jpg",
+      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
+      "timestamp" : "2026-07-16T21:51:58Z"
+    },
+    {
+      "activityName" : "Volcano Exhibit At The Paxi Bakery",
+      "dayID" : 4,
+      "filename" : "8DA0061D-B0F2-4FBA-85ED-CB4F433FA763.jpg",
+      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
+      "timestamp" : "2026-07-16T21:51:58Z"
+    },
+    {
+      "activityName" : "Volcano Exhibit At The Paxi Bakery",
+      "dayID" : 4,
+      "filename" : "90638297-7528-4B90-A35A-7811FFE16793.jpg",
+      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
+      "timestamp" : "2026-07-16T21:51:58Z"
+    },
+    {
+      "activityName" : "Volcano Exhibit At The Paxi Bakery",
+      "dayID" : 4,
+      "filename" : "E536C19F-883D-4DD4-A1E1-0C4987CE3E0D.jpg",
+      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
+      "timestamp" : "2026-07-16T21:51:58Z"
+    },
+    {
+      "activityName" : "Volcano Exhibit At The Paxi Bakery",
+      "dayID" : 4,
+      "filename" : "47569953-C9AF-4599-BEAE-30132D24FD8B.jpg",
+      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
+      "timestamp" : "2026-07-16T21:51:58Z"
+    },
+    {
+      "activityName" : "Volcano Exhibit At The Paxi Bakery",
+      "dayID" : 4,
+      "filename" : "F9B06F74-1D4B-451A-BBF6-7DD28537F1A9.jpg",
+      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
+      "timestamp" : "2026-07-16T21:51:58Z"
+    },
+    {
+      "activityName" : "Volcano Exhibit At The Paxi Bakery",
+      "dayID" : 4,
+      "filename" : "1ACCA8EC-3F90-4C49-A7D4-5FF3562AE97E.jpg",
+      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
+      "timestamp" : "2026-07-16T21:51:58Z"
+    },
+    {
+      "activityName" : "Volcano Exhibit At The Paxi Bakery",
+      "dayID" : 4,
+      "filename" : "7AA45919-FD15-4CB9-A3C0-8362FC765A29.jpg",
+      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
+      "timestamp" : "2026-07-16T21:51:58Z"
+    },
+    {
+      "activityName" : "Volcano Exhibit At The Paxi Bakery",
+      "dayID" : 4,
+      "filename" : "A210D72C-C584-49FE-85BB-603687514B7E.jpg",
+      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
+      "timestamp" : "2026-07-16T21:51:58Z"
+    },
+    {
+      "activityName" : "Volcano Exhibit At The Paxi Bakery",
+      "dayID" : 4,
+      "filename" : "2B5D2C40-645A-4565-ABC3-FF042A243F4D.jpg",
+      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
+      "timestamp" : "2026-07-16T21:51:58Z"
+    },
+    {
+      "activityName" : "Volcano Exhibit At The Paxi Bakery",
+      "dayID" : 4,
+      "filename" : "B3CBF66A-ED07-4C74-BEF0-D2EAF9E37432.jpg",
+      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
+      "timestamp" : "2026-07-16T21:51:58Z"
+    },
+    {
+      "activityName" : "Hjörleifshöfði \/ Yoda Cave",
+      "dayID" : 4,
+      "filename" : "56DEDBD8-A603-4341-8835-8A5DA13264EC.jpg",
+      "key" : "d4-a3",
+      "timestamp" : "2026-07-17T10:16:30Z"
+    },
+    {
+      "activityName" : "Hjörleifshöfði \/ Yoda Cave",
+      "dayID" : 4,
+      "filename" : "61CE08BE-B92B-4DFC-BD3A-1DE27FCB98DF.jpg",
+      "key" : "d4-a3",
+      "timestamp" : "2026-07-17T10:16:30Z"
+    },
+    {
+      "activityName" : "Hjörleifshöfði \/ Yoda Cave",
+      "dayID" : 4,
+      "filename" : "24F78707-94C4-499A-914C-6265F15F9F0D.jpg",
+      "key" : "d4-a3",
+      "timestamp" : "2026-07-17T10:16:30Z"
+    },
+    {
+      "activityName" : "Hjörleifshöfði \/ Yoda Cave",
+      "dayID" : 4,
+      "filename" : "D8BD60F5-3043-486F-A6F0-0F32FB33CDE3.jpg",
+      "key" : "d4-a3",
+      "timestamp" : "2026-07-17T10:16:30Z"
+    },
+    {
+      "activityName" : "Hjörleifshöfði \/ Yoda Cave",
+      "dayID" : 4,
+      "filename" : "51CA465D-0808-4437-B48C-DC19C0B3635C.jpg",
+      "key" : "d4-a3",
+      "timestamp" : "2026-07-17T10:16:30Z"
+    },
+    {
+      "activityName" : "Reyniskirkja church",
+      "dayID" : 4,
+      "filename" : "75E6EFEF-E112-4F7C-9589-986DDA773EE6.jpg",
+      "key" : "d4-a4",
+      "timestamp" : "2026-07-17T10:17:46Z"
+    },
+    {
+      "activityName" : "Reyniskirkja church",
+      "dayID" : 4,
+      "filename" : "A21C0F60-EF3D-46FA-8CBD-7972F3A38FC6.jpg",
+      "key" : "d4-a4",
+      "timestamp" : "2026-07-17T10:17:46Z"
+    },
+    {
+      "activityName" : "Diamond Beach lookout",
+      "dayID" : 6,
+      "filename" : "B8A222A8-868E-4472-AC97-52B9EE5879A1.jpg",
+      "key" : "custom-806D63B0-0465-4A87-9580-E7D7087AFE89",
+      "timestamp" : "2026-07-18T12:00:04Z"
+    },
+    {
+      "activityName" : "Diamond Beach lookout",
+      "dayID" : 6,
+      "filename" : "011FFF06-13DB-479C-B56D-E44E8856ED31.jpg",
+      "key" : "custom-806D63B0-0465-4A87-9580-E7D7087AFE89",
+      "timestamp" : "2026-07-18T12:00:04Z"
+    },
+    {
+      "activityName" : "Diamond Beach lookout",
+      "dayID" : 6,
+      "filename" : "C4F96DE3-DE74-4D97-98EF-568127AD610B.jpg",
+      "key" : "custom-806D63B0-0465-4A87-9580-E7D7087AFE89",
+      "timestamp" : "2026-07-18T12:00:04Z"
+    },
+    {
+      "activityName" : "Diamond Beach lookout",
+      "dayID" : 6,
+      "filename" : "1593CC37-FE47-4FF0-BF89-362837D2AFE8.jpg",
+      "key" : "custom-806D63B0-0465-4A87-9580-E7D7087AFE89",
+      "timestamp" : "2026-07-18T12:00:04Z"
+    },
+    {
+      "activityName" : "Diamond Beach lookout",
+      "dayID" : 6,
+      "filename" : "F180B75D-7932-44E1-9B26-51178346650B.jpg",
+      "key" : "custom-806D63B0-0465-4A87-9580-E7D7087AFE89",
+      "timestamp" : "2026-07-18T12:00:04Z"
+    },
+    {
+      "activityName" : "Diamond Beach lookout",
+      "dayID" : 6,
+      "filename" : "295B251E-84CA-4A87-806A-EB714C1E9185.jpg",
+      "key" : "custom-806D63B0-0465-4A87-9580-E7D7087AFE89",
+      "timestamp" : "2026-07-18T12:00:04Z"
+    },
+    {
+      "activityName" : "Diamond Beach lookout",
+      "dayID" : 6,
+      "filename" : "869BFEEB-8551-4DF0-B439-61C8BBA9601D.jpg",
+      "key" : "custom-806D63B0-0465-4A87-9580-E7D7087AFE89",
+      "timestamp" : "2026-07-18T12:00:05Z"
+    },
+    {
+      "activityName" : "Diamond Beach lookout",
+      "dayID" : 6,
+      "filename" : "6AE97BF3-C2E6-442D-8BB1-98386A7F9C5C.jpg",
+      "key" : "custom-806D63B0-0465-4A87-9580-E7D7087AFE89",
+      "timestamp" : "2026-07-18T12:00:05Z"
+    },
+    {
+      "activityName" : "Diamond Beach lookout",
+      "dayID" : 6,
+      "filename" : "DDA2A7BA-CEBE-4D26-A6F8-3593E87A818D.jpg",
+      "key" : "custom-806D63B0-0465-4A87-9580-E7D7087AFE89",
+      "timestamp" : "2026-07-18T12:00:05Z"
+    },
+    {
+      "activityName" : "Drive Into A Crater!",
+      "dayID" : 10,
+      "filename" : "0054C53B-9B97-4A8B-AC2D-6A1569BF8131_thumb.jpg",
+      "key" : "custom-565DD48C-D34C-418E-85D3-B5CFCE38BE1A",
+      "timestamp" : "2026-07-22T11:41:58Z",
+      "videoFilename" : "0054C53B-9B97-4A8B-AC2D-6A1569BF8131.mov"
+    },
+    {
+      "activityName" : "Svörtuloft Lighthouse Skálasnagaviti við Svörtuloft",
+      "dayID" : 9,
+      "filename" : "FFCF9898-9A7B-45EC-BBBD-D7566BC067B3.jpg",
+      "key" : "custom-FABE43F1-BEEB-495E-9509-E81217EA709D",
+      "timestamp" : "2026-07-22T11:48:09Z"
+    },
+    {
+      "activityName" : "Kirkjufell + Kirkjufellsfoss",
+      "dayID" : 9,
+      "filename" : "41F5611B-DCD7-4A79-8EAE-A1AAEFD5FE56.jpg",
+      "key" : "d10-a2",
+      "timestamp" : "2026-07-22T11:49:35Z"
+    },
+    {
+      "activityName" : "Kirkjufell + Kirkjufellsfoss",
+      "dayID" : 9,
+      "filename" : "F6201F75-77D3-4652-B9F0-AC730A803FF4.jpg",
+      "key" : "d10-a2",
+      "timestamp" : "2026-07-22T11:49:35Z"
+    },
+    {
+      "activityName" : "Kirkjufell + Kirkjufellsfoss",
+      "dayID" : 9,
+      "filename" : "13C46832-D33C-41B6-B977-CA94E4172DC6.jpg",
+      "key" : "d10-a2",
+      "timestamp" : "2026-07-22T11:49:35Z"
+    },
+    {
+      "activityName" : "Kirkjufell + Kirkjufellsfoss",
+      "dayID" : 9,
+      "filename" : "5A400A89-4848-4958-B3C7-9CF78008BF1E.jpg",
+      "key" : "d10-a2",
+      "timestamp" : "2026-07-22T11:49:35Z"
+    },
+    {
+      "activityName" : "Kirkjufell + Kirkjufellsfoss",
+      "dayID" : 9,
+      "filename" : "3054160E-0252-45FF-9ED1-1D1E22EF7991.jpg",
+      "key" : "d10-a2",
+      "timestamp" : "2026-07-22T11:49:35Z"
+    },
+    {
+      "activityName" : "Dinner at Matarlist",
+      "dayID" : 9,
+      "filename" : "6344529C-DADE-432E-8040-08928E2C8497.jpg",
+      "key" : "d9-f1",
+      "timestamp" : "2026-07-22T11:50:16Z"
+    },
+    {
+      "activityName" : "Dinner at Matarlist",
+      "dayID" : 9,
+      "filename" : "12128988-750F-4865-92E3-2790516AEC2F.jpg",
+      "key" : "d9-f1",
+      "timestamp" : "2026-07-22T11:50:16Z"
+    },
+    {
+      "activityName" : "Dinner at Matarlist",
+      "dayID" : 9,
+      "filename" : "A77E19CD-9B42-43F0-92EE-01162C5F52A4.jpg",
+      "key" : "d9-f1",
+      "timestamp" : "2026-07-22T11:50:16Z"
+    },
+    {
+      "activityName" : "Dinner at Matarlist",
+      "dayID" : 9,
+      "filename" : "4B319DDA-3970-4B89-B909-0FE8F03EC135.jpg",
+      "key" : "d9-f1",
+      "timestamp" : "2026-07-22T11:50:16Z"
+    },
+    {
+      "activityName" : "Dinner at Matarlist",
+      "dayID" : 9,
+      "filename" : "1B465591-B11C-4455-94B0-D628F7768A4B.jpg",
+      "key" : "d9-f1",
+      "timestamp" : "2026-07-22T11:50:16Z"
+    },
+    {
+      "activityName" : "Dinner at Matarlist",
+      "dayID" : 9,
+      "filename" : "F9504776-FB49-4C84-A41F-4CBA104CE927.jpg",
+      "key" : "d9-f1",
+      "timestamp" : "2026-07-22T11:50:16Z"
+    },
+    {
+      "activityName" : "Dinner at Matarlist",
+      "dayID" : 9,
+      "filename" : "4F305360-6012-49C7-8B93-D915104FA4BA.jpg",
+      "key" : "d9-f1",
+      "timestamp" : "2026-07-22T11:50:16Z"
+    },
+    {
+      "activityName" : "Murals of Hellissandur",
+      "dayID" : 9,
+      "filename" : "649E43E5-FE94-4D37-BDF5-559F6979CAD8.jpg",
+      "key" : "custom-5D1EAA69-A560-461B-8310-A144F6AF5F0F",
+      "timestamp" : "2026-07-22T11:52:55Z"
+    },
+    {
+      "activityName" : "Murals of Hellissandur",
+      "dayID" : 9,
+      "filename" : "4F25ACFE-C7B5-41B5-BD60-B8AEA80D45A6.jpg",
+      "key" : "custom-5D1EAA69-A560-461B-8310-A144F6AF5F0F",
+      "timestamp" : "2026-07-22T11:52:55Z"
+    },
+    {
+      "activityName" : "Murals of Hellissandur",
+      "dayID" : 9,
+      "filename" : "981E1A66-5D5A-4255-9FEB-A85242813A39.jpg",
+      "key" : "custom-5D1EAA69-A560-461B-8310-A144F6AF5F0F",
+      "timestamp" : "2026-07-22T11:52:55Z"
+    },
+    {
+      "activityName" : "Murals of Hellissandur",
+      "dayID" : 9,
+      "filename" : "D7D05310-8A62-4546-81AE-2C066BAEDC25.jpg",
+      "key" : "custom-5D1EAA69-A560-461B-8310-A144F6AF5F0F",
+      "timestamp" : "2026-07-22T11:52:55Z"
+    },
+    {
+      "activityName" : "Murals of Hellissandur",
+      "dayID" : 9,
+      "filename" : "96DFC269-79B1-48CC-B233-F9EEA955ED73.jpg",
+      "key" : "custom-5D1EAA69-A560-461B-8310-A144F6AF5F0F",
+      "timestamp" : "2026-07-22T11:52:55Z"
+    },
+    {
+      "activityName" : "Murals of Hellissandur",
+      "dayID" : 9,
+      "filename" : "DD92EB60-726E-4D3F-A92F-59F01059EAEF.jpg",
+      "key" : "custom-5D1EAA69-A560-461B-8310-A144F6AF5F0F",
+      "timestamp" : "2026-07-22T11:52:55Z"
+    },
+    {
+      "activityName" : "Murals of Hellissandur",
+      "dayID" : 9,
+      "filename" : "0FA1C281-63F7-4186-8192-D28828517422.jpg",
+      "key" : "custom-5D1EAA69-A560-461B-8310-A144F6AF5F0F",
+      "timestamp" : "2026-07-22T11:52:55Z"
+    },
+    {
+      "activityName" : "Dinner at Matarlist",
+      "dayID" : 9,
+      "filename" : "57669AC2-220D-4663-A25A-92393FFE2A0D.jpg",
+      "key" : "d9-f1",
+      "timestamp" : "2026-07-22T11:53:20Z"
+    },
+    {
+      "activityName" : "Kirkjufell + Kirkjufellsfoss",
+      "dayID" : 9,
+      "filename" : "13EACF5A-AF7C-4494-A1B1-AA92E28F4D0E.jpg",
+      "key" : "d10-a2",
+      "timestamp" : "2026-07-22T11:53:58Z"
+    },
     {
       "activityName" : "Flight Boston to Reykjavík",
       "dayID" : 0,
@@ -2576,683 +3250,292 @@
       "filename" : "6879D06A-E160-419A-AF30-7E71B463A60A.jpg",
       "key" : "d10-a2",
       "timestamp" : "2026-07-21T23:15:34Z"
-    },
-    {
-      "activityName" : "Fly Boston to Iceland",
-      "dayID" : -1,
-      "filename" : "0C313879-463C-4704-9536-B47CD974FD5F.jpg",
-      "key" : "d-1-a2",
-      "timestamp" : "2026-07-13T01:18:40Z"
-    },
-    {
-      "activityName" : "Bridge Between Continents",
-      "dayID" : 1,
-      "filename" : "9D2849FE-87EC-43F4-818E-CA374B1FCB60.jpg",
-      "key" : "d1-a0",
-      "timestamp" : "2026-07-13T10:26:12Z"
-    },
-    {
-      "activityName" : "Bridge Between Continents",
-      "dayID" : 1,
-      "filename" : "CDDE779E-3153-4908-B2D4-F13FF9628C23.jpg",
-      "key" : "d1-a0",
-      "timestamp" : "2026-07-13T10:26:12Z"
-    },
-    {
-      "activityName" : "Bridge Between Continents",
-      "dayID" : 1,
-      "filename" : "AF747D64-8CB2-4D4B-8E00-01179AC84CC5.jpg",
-      "key" : "d1-a0",
-      "timestamp" : "2026-07-13T10:26:12Z"
-    },
-    {
-      "activityName" : "Bridge Between Continents",
-      "dayID" : 1,
-      "filename" : "F60C5890-01CF-4DF1-8F4C-2ED0ADB9AA23.jpg",
-      "key" : "d1-a0",
-      "timestamp" : "2026-07-13T10:26:12Z"
-    },
-    {
-      "activityName" : "Bridge Between Continents",
-      "dayID" : 1,
-      "filename" : "8C958C4E-4AC4-4644-B75F-511BC3663AB6.jpg",
-      "key" : "d1-a0",
-      "timestamp" : "2026-07-13T10:26:12Z"
-    },
-    {
-      "activityName" : "Bridge Between Continents",
-      "dayID" : 1,
-      "filename" : "254F9D2F-ED9B-4A08-A62A-5BFB48202111.jpg",
-      "key" : "d1-a0",
-      "timestamp" : "2026-07-13T10:26:12Z"
-    },
-    {
-      "activityName" : "Blue Lagoon & LAVA Restaurant",
-      "dayID" : 1,
-      "filename" : "BDC85D04-C030-4523-9C6C-8DC62FBB7017.jpg",
-      "key" : "d1-a5",
-      "timestamp" : "2026-07-13T20:38:17Z"
-    },
-    {
-      "activityName" : "Blue Lagoon & LAVA Restaurant",
-      "dayID" : 1,
-      "filename" : "1C4CACAE-0281-4736-AF11-A42FAD8D1479.jpg",
-      "key" : "d1-a5",
-      "timestamp" : "2026-07-13T20:38:17Z"
-    },
-    {
-      "activityName" : "Þingvellir National Park",
-      "dayID" : 2,
-      "filename" : "5A3B165E-D359-49C4-AB79-03AE3E0F7350.jpg",
-      "key" : "d2-a1",
-      "timestamp" : "2026-07-14T13:35:53Z"
-    },
-    {
-      "activityName" : "Þingvellir National Park",
-      "dayID" : 2,
-      "filename" : "BD716492-887E-45A7-BB00-C451CF9FD739.jpg",
-      "key" : "d2-a1",
-      "timestamp" : "2026-07-14T13:35:53Z"
-    },
-    {
-      "activityName" : "Þingvellir National Park",
-      "dayID" : 2,
-      "filename" : "C072BA8A-431B-43A5-B90F-8A44C185840B.jpg",
-      "key" : "d2-a1",
-      "timestamp" : "2026-07-14T13:35:53Z"
-    },
-    {
-      "activityName" : "Lunch",
-      "dayID" : 3,
-      "filename" : "B1B86CBF-2660-4546-974F-7FFA9F836476.jpg",
-      "key" : "d3-f1",
-      "timestamp" : "2026-07-15T15:06:24Z"
-    },
-    {
-      "activityName" : "Lunch",
-      "dayID" : 3,
-      "filename" : "5B4DE382-D062-4EDA-A142-474AC3CE3B30.jpg",
-      "key" : "d3-f1",
-      "timestamp" : "2026-07-15T15:06:24Z"
-    },
-    {
-      "activityName" : "Lunch",
-      "dayID" : 3,
-      "filename" : "78633897-1D8D-4961-8084-8A7967B315EF.jpg",
-      "key" : "d3-f1",
-      "timestamp" : "2026-07-15T15:06:24Z"
-    },
-    {
-      "activityName" : "Lunch",
-      "dayID" : 3,
-      "filename" : "14444E96-1BA5-45C3-B9EA-04645B51FFFC.jpg",
-      "key" : "d3-f1",
-      "timestamp" : "2026-07-15T15:06:24Z"
-    },
-    {
-      "activityName" : "Lunch",
-      "dayID" : 3,
-      "filename" : "8853B21A-3214-48AE-BD72-255F43FA549A.jpg",
-      "key" : "d3-f1",
-      "timestamp" : "2026-07-15T15:06:24Z"
-    },
-    {
-      "activityName" : "Gljúfrabúi",
-      "dayID" : 3,
-      "filename" : "D938BB0A-D4A1-4EE7-84CF-559CAC14D969.jpg",
-      "key" : "d3-a1",
-      "timestamp" : "2026-07-15T16:29:05Z"
-    },
-    {
-      "activityName" : "Gljúfrabúi",
-      "dayID" : 3,
-      "filename" : "D70512B6-D109-4832-B1F2-5FA1C205ABEC.jpg",
-      "key" : "d3-a1",
-      "timestamp" : "2026-07-15T16:29:05Z"
-    },
-    {
-      "activityName" : "Gljúfrabúi",
-      "dayID" : 3,
-      "filename" : "1A4F6644-F6FE-4CC2-9EF6-99C1C0009756.jpg",
-      "key" : "d3-a1",
-      "timestamp" : "2026-07-15T16:29:06Z"
-    },
-    {
-      "activityName" : "Gljúfrabúi",
-      "dayID" : 3,
-      "filename" : "05DA50F2-DEBC-412F-A315-EBDEDD45F187.jpg",
-      "key" : "d3-a1",
-      "timestamp" : "2026-07-15T16:29:06Z"
-    },
-    {
-      "activityName" : "Gljúfrabúi",
-      "dayID" : 3,
-      "filename" : "95A82FA0-4CD9-456E-8416-105392F06890.jpg",
-      "key" : "d3-a1",
-      "timestamp" : "2026-07-15T16:29:06Z"
-    },
-    {
-      "activityName" : "Skógafoss",
-      "dayID" : 4,
-      "filename" : "99440430-9FCE-42D7-9300-8FD714A106C3.jpg",
-      "key" : "d3-a3",
-      "timestamp" : "2026-07-16T10:05:46Z"
-    },
-    {
-      "activityName" : "Dyrhólaey",
-      "dayID" : 4,
-      "filename" : "226E53E5-F9D6-4568-AC34-0B3CCE096A2F_thumb.jpg",
-      "key" : "d4-a2",
-      "timestamp" : "2026-07-16T21:05:43Z",
-      "videoFilename" : "226E53E5-F9D6-4568-AC34-0B3CCE096A2F.mov"
-    },
-    {
-      "activityName" : "Dyrhólaey",
-      "dayID" : 4,
-      "filename" : "12A2B70A-F01C-4F4F-BE7E-7F1A11055E45.jpg",
-      "key" : "d4-a2",
-      "timestamp" : "2026-07-16T21:05:43Z"
-    },
-    {
-      "activityName" : "Þakgil–Mælifell hike",
-      "dayID" : 4,
-      "filename" : "566AFC89-1E33-40DB-9BEE-0AEBF0558309.jpg",
-      "key" : "d4-a0",
-      "timestamp" : "2026-07-16T21:07:34Z"
-    },
-    {
-      "activityName" : "Þakgil–Mælifell hike",
-      "dayID" : 4,
-      "filename" : "98D3811C-B607-4EAC-A0CD-FB6727202644.jpg",
-      "key" : "d4-a0",
-      "timestamp" : "2026-07-16T21:07:34Z"
-    },
-    {
-      "activityName" : "Þakgil–Mælifell hike",
-      "dayID" : 4,
-      "filename" : "34D8676D-6C17-4748-A814-055D762FEAA4.jpg",
-      "key" : "d4-a0",
-      "timestamp" : "2026-07-16T21:07:34Z"
-    },
-    {
-      "activityName" : "Þakgil–Mælifell hike",
-      "dayID" : 4,
-      "filename" : "CBC8EC6C-F4DE-4627-8D8D-41FD9778C71E.jpg",
-      "key" : "d4-a0",
-      "timestamp" : "2026-07-16T21:07:34Z"
-    },
-    {
-      "activityName" : "Þakgil–Mælifell hike",
-      "dayID" : 4,
-      "filename" : "0B789C53-D39B-4F76-8823-9ACC86064EEA.jpg",
-      "key" : "d4-a0",
-      "timestamp" : "2026-07-16T21:07:34Z"
-    },
-    {
-      "activityName" : "Þakgil–Mælifell hike",
-      "dayID" : 4,
-      "filename" : "4D9D5E16-0D8D-48FA-A04F-5EC4B7D1E503.jpg",
-      "key" : "d4-a0",
-      "timestamp" : "2026-07-16T21:07:34Z"
-    },
-    {
-      "activityName" : "Skógafoss",
-      "dayID" : 4,
-      "filename" : "16DD5297-951B-4745-BBE3-6EB133398D26.jpg",
-      "key" : "d3-a3",
-      "timestamp" : "2026-07-16T21:50:39Z"
-    },
-    {
-      "activityName" : "Skógafoss",
-      "dayID" : 4,
-      "filename" : "2E5B16CA-AEEE-445D-BC64-2291A41580D1.jpg",
-      "key" : "d3-a3",
-      "timestamp" : "2026-07-16T21:50:39Z"
-    },
-    {
-      "activityName" : "Skógafoss",
-      "dayID" : 4,
-      "filename" : "77BEC3BE-B0B2-464E-8921-62FF8F768EC0.jpg",
-      "key" : "d3-a3",
-      "timestamp" : "2026-07-16T21:50:39Z"
-    },
-    {
-      "activityName" : "Skógafoss",
-      "dayID" : 4,
-      "filename" : "886A95A9-5F9D-4B72-8182-EF905A7E4C34.jpg",
-      "key" : "d3-a3",
-      "timestamp" : "2026-07-16T21:50:39Z"
-    },
-    {
-      "activityName" : "Skógafoss",
-      "dayID" : 4,
-      "filename" : "5BB6815D-3AD7-4BFC-BA20-08CBD19AB10C.jpg",
-      "key" : "d3-a3",
-      "timestamp" : "2026-07-16T21:50:39Z"
-    },
-    {
-      "activityName" : "Skógafoss",
-      "dayID" : 4,
-      "filename" : "46BA7D06-D3DC-4DC8-89EE-7BCF63D4B785.jpg",
-      "key" : "d3-a3",
-      "timestamp" : "2026-07-16T21:50:39Z"
-    },
-    {
-      "activityName" : "Skógafoss",
-      "dayID" : 4,
-      "filename" : "9169ADDC-EC51-4809-BA57-7064C38AD585.jpg",
-      "key" : "d3-a3",
-      "timestamp" : "2026-07-16T21:50:39Z"
-    },
-    {
-      "activityName" : "Volcano Exhibit At The Paxi Bakery",
-      "dayID" : 4,
-      "filename" : "278105AF-BC78-48AA-BEA0-82E0FFD924D4.jpg",
-      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
-      "timestamp" : "2026-07-16T21:51:58Z"
-    },
-    {
-      "activityName" : "Volcano Exhibit At The Paxi Bakery",
-      "dayID" : 4,
-      "filename" : "22E0F6B0-DFC7-40AA-91F9-079AFBA51296.jpg",
-      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
-      "timestamp" : "2026-07-16T21:51:58Z"
-    },
-    {
-      "activityName" : "Volcano Exhibit At The Paxi Bakery",
-      "dayID" : 4,
-      "filename" : "4F510AA5-4FFD-4720-8BC7-75F9E6FFB8D3.jpg",
-      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
-      "timestamp" : "2026-07-16T21:51:58Z"
-    },
-    {
-      "activityName" : "Volcano Exhibit At The Paxi Bakery",
-      "dayID" : 4,
-      "filename" : "47941344-FA77-4FA7-86D6-A206819A5315.jpg",
-      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
-      "timestamp" : "2026-07-16T21:51:58Z"
-    },
-    {
-      "activityName" : "Volcano Exhibit At The Paxi Bakery",
-      "dayID" : 4,
-      "filename" : "777CADE5-2A32-46D9-B5B0-629E021805F0.jpg",
-      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
-      "timestamp" : "2026-07-16T21:51:58Z"
-    },
-    {
-      "activityName" : "Volcano Exhibit At The Paxi Bakery",
-      "dayID" : 4,
-      "filename" : "D2BF70B5-B7F4-49C5-8929-9AE9101787ED.jpg",
-      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
-      "timestamp" : "2026-07-16T21:51:58Z"
-    },
-    {
-      "activityName" : "Volcano Exhibit At The Paxi Bakery",
-      "dayID" : 4,
-      "filename" : "DDBE0ABC-2F12-4DE6-B698-8861992A91D2.jpg",
-      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
-      "timestamp" : "2026-07-16T21:51:58Z"
-    },
-    {
-      "activityName" : "Volcano Exhibit At The Paxi Bakery",
-      "dayID" : 4,
-      "filename" : "A98B0B38-41F0-47A6-B8AA-256B942FD9C8.jpg",
-      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
-      "timestamp" : "2026-07-16T21:51:58Z"
-    },
-    {
-      "activityName" : "Volcano Exhibit At The Paxi Bakery",
-      "dayID" : 4,
-      "filename" : "AD16543E-DBF2-41EA-90D1-5709BAF65260.jpg",
-      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
-      "timestamp" : "2026-07-16T21:51:58Z"
-    },
-    {
-      "activityName" : "Volcano Exhibit At The Paxi Bakery",
-      "dayID" : 4,
-      "filename" : "8DA0061D-B0F2-4FBA-85ED-CB4F433FA763.jpg",
-      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
-      "timestamp" : "2026-07-16T21:51:58Z"
-    },
-    {
-      "activityName" : "Volcano Exhibit At The Paxi Bakery",
-      "dayID" : 4,
-      "filename" : "90638297-7528-4B90-A35A-7811FFE16793.jpg",
-      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
-      "timestamp" : "2026-07-16T21:51:58Z"
-    },
-    {
-      "activityName" : "Volcano Exhibit At The Paxi Bakery",
-      "dayID" : 4,
-      "filename" : "E536C19F-883D-4DD4-A1E1-0C4987CE3E0D.jpg",
-      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
-      "timestamp" : "2026-07-16T21:51:58Z"
-    },
-    {
-      "activityName" : "Volcano Exhibit At The Paxi Bakery",
-      "dayID" : 4,
-      "filename" : "47569953-C9AF-4599-BEAE-30132D24FD8B.jpg",
-      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
-      "timestamp" : "2026-07-16T21:51:58Z"
-    },
-    {
-      "activityName" : "Volcano Exhibit At The Paxi Bakery",
-      "dayID" : 4,
-      "filename" : "F9B06F74-1D4B-451A-BBF6-7DD28537F1A9.jpg",
-      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
-      "timestamp" : "2026-07-16T21:51:58Z"
-    },
-    {
-      "activityName" : "Volcano Exhibit At The Paxi Bakery",
-      "dayID" : 4,
-      "filename" : "1ACCA8EC-3F90-4C49-A7D4-5FF3562AE97E.jpg",
-      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
-      "timestamp" : "2026-07-16T21:51:58Z"
-    },
-    {
-      "activityName" : "Volcano Exhibit At The Paxi Bakery",
-      "dayID" : 4,
-      "filename" : "7AA45919-FD15-4CB9-A3C0-8362FC765A29.jpg",
-      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
-      "timestamp" : "2026-07-16T21:51:58Z"
-    },
-    {
-      "activityName" : "Volcano Exhibit At The Paxi Bakery",
-      "dayID" : 4,
-      "filename" : "A210D72C-C584-49FE-85BB-603687514B7E.jpg",
-      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
-      "timestamp" : "2026-07-16T21:51:58Z"
-    },
-    {
-      "activityName" : "Volcano Exhibit At The Paxi Bakery",
-      "dayID" : 4,
-      "filename" : "2B5D2C40-645A-4565-ABC3-FF042A243F4D.jpg",
-      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
-      "timestamp" : "2026-07-16T21:51:58Z"
-    },
-    {
-      "activityName" : "Volcano Exhibit At The Paxi Bakery",
-      "dayID" : 4,
-      "filename" : "B3CBF66A-ED07-4C74-BEF0-D2EAF9E37432.jpg",
-      "key" : "custom-B2C52987-0F31-4633-BD86-AA9BB671891F",
-      "timestamp" : "2026-07-16T21:51:58Z"
-    },
-    {
-      "activityName" : "Hjörleifshöfði \/ Yoda Cave",
-      "dayID" : 4,
-      "filename" : "56DEDBD8-A603-4341-8835-8A5DA13264EC.jpg",
-      "key" : "d4-a3",
-      "timestamp" : "2026-07-17T10:16:30Z"
-    },
-    {
-      "activityName" : "Hjörleifshöfði \/ Yoda Cave",
-      "dayID" : 4,
-      "filename" : "61CE08BE-B92B-4DFC-BD3A-1DE27FCB98DF.jpg",
-      "key" : "d4-a3",
-      "timestamp" : "2026-07-17T10:16:30Z"
-    },
-    {
-      "activityName" : "Hjörleifshöfði \/ Yoda Cave",
-      "dayID" : 4,
-      "filename" : "24F78707-94C4-499A-914C-6265F15F9F0D.jpg",
-      "key" : "d4-a3",
-      "timestamp" : "2026-07-17T10:16:30Z"
-    },
-    {
-      "activityName" : "Hjörleifshöfði \/ Yoda Cave",
-      "dayID" : 4,
-      "filename" : "D8BD60F5-3043-486F-A6F0-0F32FB33CDE3.jpg",
-      "key" : "d4-a3",
-      "timestamp" : "2026-07-17T10:16:30Z"
-    },
-    {
-      "activityName" : "Hjörleifshöfði \/ Yoda Cave",
-      "dayID" : 4,
-      "filename" : "51CA465D-0808-4437-B48C-DC19C0B3635C.jpg",
-      "key" : "d4-a3",
-      "timestamp" : "2026-07-17T10:16:30Z"
-    },
-    {
-      "activityName" : "Reyniskirkja church",
-      "dayID" : 4,
-      "filename" : "75E6EFEF-E112-4F7C-9589-986DDA773EE6.jpg",
-      "key" : "d4-a4",
-      "timestamp" : "2026-07-17T10:17:46Z"
-    },
-    {
-      "activityName" : "Reyniskirkja church",
-      "dayID" : 4,
-      "filename" : "A21C0F60-EF3D-46FA-8CBD-7972F3A38FC6.jpg",
-      "key" : "d4-a4",
-      "timestamp" : "2026-07-17T10:17:46Z"
-    },
-    {
-      "activityName" : "Diamond Beach lookout",
-      "dayID" : 6,
-      "filename" : "B8A222A8-868E-4472-AC97-52B9EE5879A1.jpg",
-      "key" : "custom-806D63B0-0465-4A87-9580-E7D7087AFE89",
-      "timestamp" : "2026-07-18T12:00:04Z"
-    },
-    {
-      "activityName" : "Diamond Beach lookout",
-      "dayID" : 6,
-      "filename" : "011FFF06-13DB-479C-B56D-E44E8856ED31.jpg",
-      "key" : "custom-806D63B0-0465-4A87-9580-E7D7087AFE89",
-      "timestamp" : "2026-07-18T12:00:04Z"
-    },
-    {
-      "activityName" : "Diamond Beach lookout",
-      "dayID" : 6,
-      "filename" : "C4F96DE3-DE74-4D97-98EF-568127AD610B.jpg",
-      "key" : "custom-806D63B0-0465-4A87-9580-E7D7087AFE89",
-      "timestamp" : "2026-07-18T12:00:04Z"
-    },
-    {
-      "activityName" : "Diamond Beach lookout",
-      "dayID" : 6,
-      "filename" : "1593CC37-FE47-4FF0-BF89-362837D2AFE8.jpg",
-      "key" : "custom-806D63B0-0465-4A87-9580-E7D7087AFE89",
-      "timestamp" : "2026-07-18T12:00:04Z"
-    },
-    {
-      "activityName" : "Diamond Beach lookout",
-      "dayID" : 6,
-      "filename" : "F180B75D-7932-44E1-9B26-51178346650B.jpg",
-      "key" : "custom-806D63B0-0465-4A87-9580-E7D7087AFE89",
-      "timestamp" : "2026-07-18T12:00:04Z"
-    },
-    {
-      "activityName" : "Diamond Beach lookout",
-      "dayID" : 6,
-      "filename" : "295B251E-84CA-4A87-806A-EB714C1E9185.jpg",
-      "key" : "custom-806D63B0-0465-4A87-9580-E7D7087AFE89",
-      "timestamp" : "2026-07-18T12:00:04Z"
-    },
-    {
-      "activityName" : "Diamond Beach lookout",
-      "dayID" : 6,
-      "filename" : "869BFEEB-8551-4DF0-B439-61C8BBA9601D.jpg",
-      "key" : "custom-806D63B0-0465-4A87-9580-E7D7087AFE89",
-      "timestamp" : "2026-07-18T12:00:05Z"
-    },
-    {
-      "activityName" : "Diamond Beach lookout",
-      "dayID" : 6,
-      "filename" : "6AE97BF3-C2E6-442D-8BB1-98386A7F9C5C.jpg",
-      "key" : "custom-806D63B0-0465-4A87-9580-E7D7087AFE89",
-      "timestamp" : "2026-07-18T12:00:05Z"
-    },
-    {
-      "activityName" : "Diamond Beach lookout",
-      "dayID" : 6,
-      "filename" : "DDA2A7BA-CEBE-4D26-A6F8-3593E87A818D.jpg",
-      "key" : "custom-806D63B0-0465-4A87-9580-E7D7087AFE89",
-      "timestamp" : "2026-07-18T12:00:05Z"
-    },
-    {
-      "activityName" : "Drive Into A Crater!",
-      "dayID" : 10,
-      "filename" : "0054C53B-9B97-4A8B-AC2D-6A1569BF8131_thumb.jpg",
-      "key" : "custom-565DD48C-D34C-418E-85D3-B5CFCE38BE1A",
-      "timestamp" : "2026-07-22T11:41:58Z",
-      "videoFilename" : "0054C53B-9B97-4A8B-AC2D-6A1569BF8131.mov"
-    },
-    {
-      "activityName" : "Svörtuloft Lighthouse Skálasnagaviti við Svörtuloft",
-      "dayID" : 9,
-      "filename" : "FFCF9898-9A7B-45EC-BBBD-D7566BC067B3.jpg",
-      "key" : "custom-FABE43F1-BEEB-495E-9509-E81217EA709D",
-      "timestamp" : "2026-07-22T11:48:09Z"
-    },
-    {
-      "activityName" : "Kirkjufell + Kirkjufellsfoss",
-      "dayID" : 9,
-      "filename" : "41F5611B-DCD7-4A79-8EAE-A1AAEFD5FE56.jpg",
-      "key" : "d10-a2",
-      "timestamp" : "2026-07-22T11:49:35Z"
-    },
-    {
-      "activityName" : "Kirkjufell + Kirkjufellsfoss",
-      "dayID" : 9,
-      "filename" : "F6201F75-77D3-4652-B9F0-AC730A803FF4.jpg",
-      "key" : "d10-a2",
-      "timestamp" : "2026-07-22T11:49:35Z"
-    },
-    {
-      "activityName" : "Kirkjufell + Kirkjufellsfoss",
-      "dayID" : 9,
-      "filename" : "13C46832-D33C-41B6-B977-CA94E4172DC6.jpg",
-      "key" : "d10-a2",
-      "timestamp" : "2026-07-22T11:49:35Z"
-    },
-    {
-      "activityName" : "Kirkjufell + Kirkjufellsfoss",
-      "dayID" : 9,
-      "filename" : "5A400A89-4848-4958-B3C7-9CF78008BF1E.jpg",
-      "key" : "d10-a2",
-      "timestamp" : "2026-07-22T11:49:35Z"
-    },
-    {
-      "activityName" : "Kirkjufell + Kirkjufellsfoss",
-      "dayID" : 9,
-      "filename" : "3054160E-0252-45FF-9ED1-1D1E22EF7991.jpg",
-      "key" : "d10-a2",
-      "timestamp" : "2026-07-22T11:49:35Z"
-    },
-    {
-      "activityName" : "Dinner at Matarlist",
-      "dayID" : 9,
-      "filename" : "6344529C-DADE-432E-8040-08928E2C8497.jpg",
-      "key" : "d9-f1",
-      "timestamp" : "2026-07-22T11:50:16Z"
-    },
-    {
-      "activityName" : "Dinner at Matarlist",
-      "dayID" : 9,
-      "filename" : "12128988-750F-4865-92E3-2790516AEC2F.jpg",
-      "key" : "d9-f1",
-      "timestamp" : "2026-07-22T11:50:16Z"
-    },
-    {
-      "activityName" : "Dinner at Matarlist",
-      "dayID" : 9,
-      "filename" : "A77E19CD-9B42-43F0-92EE-01162C5F52A4.jpg",
-      "key" : "d9-f1",
-      "timestamp" : "2026-07-22T11:50:16Z"
-    },
-    {
-      "activityName" : "Dinner at Matarlist",
-      "dayID" : 9,
-      "filename" : "4B319DDA-3970-4B89-B909-0FE8F03EC135.jpg",
-      "key" : "d9-f1",
-      "timestamp" : "2026-07-22T11:50:16Z"
-    },
-    {
-      "activityName" : "Dinner at Matarlist",
-      "dayID" : 9,
-      "filename" : "1B465591-B11C-4455-94B0-D628F7768A4B.jpg",
-      "key" : "d9-f1",
-      "timestamp" : "2026-07-22T11:50:16Z"
-    },
-    {
-      "activityName" : "Dinner at Matarlist",
-      "dayID" : 9,
-      "filename" : "F9504776-FB49-4C84-A41F-4CBA104CE927.jpg",
-      "key" : "d9-f1",
-      "timestamp" : "2026-07-22T11:50:16Z"
-    },
-    {
-      "activityName" : "Dinner at Matarlist",
-      "dayID" : 9,
-      "filename" : "4F305360-6012-49C7-8B93-D915104FA4BA.jpg",
-      "key" : "d9-f1",
-      "timestamp" : "2026-07-22T11:50:16Z"
-    },
-    {
-      "activityName" : "Murals of Hellissandur",
-      "dayID" : 9,
-      "filename" : "649E43E5-FE94-4D37-BDF5-559F6979CAD8.jpg",
-      "key" : "custom-5D1EAA69-A560-461B-8310-A144F6AF5F0F",
-      "timestamp" : "2026-07-22T11:52:55Z"
-    },
-    {
-      "activityName" : "Murals of Hellissandur",
-      "dayID" : 9,
-      "filename" : "4F25ACFE-C7B5-41B5-BD60-B8AEA80D45A6.jpg",
-      "key" : "custom-5D1EAA69-A560-461B-8310-A144F6AF5F0F",
-      "timestamp" : "2026-07-22T11:52:55Z"
-    },
-    {
-      "activityName" : "Murals of Hellissandur",
-      "dayID" : 9,
-      "filename" : "981E1A66-5D5A-4255-9FEB-A85242813A39.jpg",
-      "key" : "custom-5D1EAA69-A560-461B-8310-A144F6AF5F0F",
-      "timestamp" : "2026-07-22T11:52:55Z"
-    },
-    {
-      "activityName" : "Murals of Hellissandur",
-      "dayID" : 9,
-      "filename" : "D7D05310-8A62-4546-81AE-2C066BAEDC25.jpg",
-      "key" : "custom-5D1EAA69-A560-461B-8310-A144F6AF5F0F",
-      "timestamp" : "2026-07-22T11:52:55Z"
-    },
-    {
-      "activityName" : "Murals of Hellissandur",
-      "dayID" : 9,
-      "filename" : "96DFC269-79B1-48CC-B233-F9EEA955ED73.jpg",
-      "key" : "custom-5D1EAA69-A560-461B-8310-A144F6AF5F0F",
-      "timestamp" : "2026-07-22T11:52:55Z"
-    },
-    {
-      "activityName" : "Murals of Hellissandur",
-      "dayID" : 9,
-      "filename" : "DD92EB60-726E-4D3F-A92F-59F01059EAEF.jpg",
-      "key" : "custom-5D1EAA69-A560-461B-8310-A144F6AF5F0F",
-      "timestamp" : "2026-07-22T11:52:55Z"
-    },
-    {
-      "activityName" : "Murals of Hellissandur",
-      "dayID" : 9,
-      "filename" : "0FA1C281-63F7-4186-8192-D28828517422.jpg",
-      "key" : "custom-5D1EAA69-A560-461B-8310-A144F6AF5F0F",
-      "timestamp" : "2026-07-22T11:52:55Z"
-    },
-    {
-      "activityName" : "Dinner at Matarlist",
-      "dayID" : 9,
-      "filename" : "57669AC2-220D-4663-A25A-92393FFE2A0D.jpg",
-      "key" : "d9-f1",
-      "timestamp" : "2026-07-22T11:53:20Z"
-    },
-    {
-      "activityName" : "Kirkjufell + Kirkjufellsfoss",
-      "dayID" : 9,
-      "filename" : "13EACF5A-AF7C-4494-A1B1-AA92E28F4D0E.jpg",
-      "key" : "d10-a2",
-      "timestamp" : "2026-07-22T11:53:58Z"
     }
   ],
   "travelers" : [
+    {
+      "checkIns" : [
+        {
+          "dayID" : 0,
+          "itemName" : "custom-565DD48C-D34C-418E-85D3-B5CFCE38BE1A",
+          "key" : "custom-565DD48C-D34C-418E-85D3-B5CFCE38BE1A",
+          "timestamp" : "2026-07-22T11:41:52Z"
+        },
+        {
+          "dayID" : 0,
+          "itemName" : "custom-806D63B0-0465-4A87-9580-E7D7087AFE89",
+          "key" : "custom-806D63B0-0465-4A87-9580-E7D7087AFE89",
+          "timestamp" : "2026-07-18T11:59:28Z"
+        },
+        {
+          "dayID" : 0,
+          "itemName" : "custom-FABE43F1-BEEB-495E-9509-E81217EA709D",
+          "key" : "custom-FABE43F1-BEEB-495E-9509-E81217EA709D",
+          "timestamp" : "2026-07-22T11:48:11Z"
+        },
+        {
+          "dayID" : -1,
+          "itemName" : "Fly Boston to Iceland",
+          "key" : "d-1-a2",
+          "latitude" : 42.37031915384049,
+          "longitude" : -71.0212835110328,
+          "timestamp" : "2026-07-13T01:18:43Z"
+        },
+        {
+          "dayID" : 1,
+          "itemName" : "Bridge Between Continents",
+          "key" : "d1-a0",
+          "latitude" : 42.36838063719323,
+          "longitude" : -71.01702794099985,
+          "timestamp" : "2026-07-13T10:23:08Z"
+        },
+        {
+          "dayID" : 1,
+          "itemName" : "Gunnuhver geothermal",
+          "key" : "d1-a1",
+          "latitude" : 42.36838063719323,
+          "longitude" : -71.01702794099985,
+          "timestamp" : "2026-07-13T11:41:40Z"
+        },
+        {
+          "dayID" : 1,
+          "itemName" : "Brimketill lava pool",
+          "key" : "d1-a4",
+          "latitude" : 42.36838063719323,
+          "longitude" : -71.01702794099985,
+          "timestamp" : "2026-07-13T11:41:36Z"
+        },
+        {
+          "dayID" : 1,
+          "itemName" : "Blue Lagoon & LAVA Restaurant",
+          "key" : "d1-a5",
+          "timestamp" : "2026-07-13T20:38:15Z"
+        },
+        {
+          "dayID" : 1,
+          "itemName" : "Pickup Land Cruiser",
+          "key" : "d1-a6",
+          "latitude" : 42.36838063719323,
+          "longitude" : -71.01702794099985,
+          "timestamp" : "2026-07-13T09:34:55Z"
+        },
+        {
+          "dayID" : 2,
+          "itemName" : "Silfra fissure snorkeling",
+          "key" : "d2-a0",
+          "timestamp" : "2026-07-14T11:08:02Z"
+        },
+        {
+          "dayID" : 2,
+          "itemName" : "Þingvellir National Park",
+          "key" : "d2-a1",
+          "timestamp" : "2026-07-14T13:34:55Z"
+        },
+        {
+          "dayID" : 2,
+          "itemName" : "Geysir & Strokkur",
+          "key" : "d2-a2",
+          "timestamp" : "2026-07-14T15:18:23Z"
+        },
+        {
+          "dayID" : 3,
+          "itemName" : "Gljúfrabúi",
+          "key" : "d3-a1",
+          "timestamp" : "2026-07-15T16:28:34Z"
+        },
+        {
+          "dayID" : 3,
+          "itemName" : "Seljalandsfoss",
+          "key" : "d3-a2",
+          "timestamp" : "2026-07-15T16:28:24Z"
+        },
+        {
+          "dayID" : 3,
+          "itemName" : "Skógafoss",
+          "key" : "d3-a3",
+          "timestamp" : "2026-07-16T10:05:36Z"
+        },
+        {
+          "dayID" : 4,
+          "itemName" : "Hjörleifshöfði \/ Yoda Cave",
+          "key" : "d4-a3",
+          "timestamp" : "2026-07-17T10:16:02Z"
+        },
+        {
+          "dayID" : 5,
+          "itemName" : "Jökulsárlón glacier lagoon",
+          "key" : "d5-a3",
+          "timestamp" : "2026-07-18T11:56:51Z"
+        }
+      ],
+      "colorHex" : "#3180A8",
+      "customEvents" : [
+        {
+          "createdBy" : "Becah",
+          "dayID" : 10,
+          "id" : "565DD48C-D34C-418E-85D3-B5CFCE38BE1A",
+          "name" : "Drive Into A Crater!",
+          "notes" : "",
+          "scheduleAfterIndex" : 0,
+          "type" : "Sightseeing"
+        }
+      ],
+      "deletedEventIDs" : [
+        "72F18AEC-99EF-4D55-B498-448DE505E501",
+        "54A846B9-6D87-40D2-995B-E807631D15DF",
+        "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
+        "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
+        "hike-7FF83750-8D70-4F19-BFE7-85F6ECA6FF6C",
+        "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
+        "5D703179-6A84-453A-89FD-42202043885F",
+        "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
+        "hike-D12612E1-CE43-487D-9069-93D95A96BFF5",
+        "hike-A469A451-1F74-4BAE-9270-3434A5D8EDC5",
+        "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
+        "hike-7666B985-19D6-4937-8B38-1659089A4DB0"
+      ],
+      "gpsPointCount" : 20,
+      "gpsTrack" : [
+        {
+          "acc" : 14.403975080018844,
+          "lat" : 42.66683791096425,
+          "lng" : -71.58970040148347,
+          "ts" : "2026-07-12T22:44:31Z"
+        },
+        {
+          "acc" : 14.403975080018844,
+          "lat" : 42.66683791096425,
+          "lng" : -71.58970040148347,
+          "ts" : "2026-07-12T22:44:31Z"
+        },
+        {
+          "acc" : 14.495014000000001,
+          "lat" : 42.66683791096425,
+          "lng" : -71.58970040148347,
+          "ts" : "2026-07-12T22:44:31Z"
+        },
+        {
+          "acc" : 5,
+          "lat" : 42.68065866666667,
+          "lng" : -71.46312083333333,
+          "ts" : "2026-07-12T23:43:45Z"
+        },
+        {
+          "acc" : 5,
+          "lat" : 42.660296833333334,
+          "lng" : -71.42981033333334,
+          "ts" : "2026-07-12T23:48:45Z"
+        },
+        {
+          "acc" : 5,
+          "lat" : 42.60048633333334,
+          "lng" : -71.32224933333333,
+          "ts" : "2026-07-12T23:55:20Z"
+        },
+        {
+          "acc" : 5,
+          "lat" : 42.60023066666666,
+          "lng" : -71.32203249999999,
+          "ts" : "2026-07-12T23:55:20Z"
+        },
+        {
+          "acc" : 12.716531199847996,
+          "lat" : 42.36943356519872,
+          "lng" : -71.01985340144938,
+          "ts" : "2026-07-13T00:45:41Z"
+        },
+        {
+          "acc" : 24.103136304273907,
+          "lat" : 42.370315087542686,
+          "lng" : -71.02146461764768,
+          "ts" : "2026-07-13T01:18:14Z"
+        },
+        {
+          "acc" : 24.103136304273907,
+          "lat" : 42.370315087542686,
+          "lng" : -71.02146461764768,
+          "ts" : "2026-07-13T01:18:14Z"
+        },
+        {
+          "acc" : 32.395013999999996,
+          "lat" : 42.37032172711337,
+          "lng" : -71.02140949173017,
+          "ts" : "2026-07-13T01:18:14Z"
+        },
+        {
+          "acc" : 28.116654311464284,
+          "lat" : 42.37031915384049,
+          "lng" : -71.0212835110328,
+          "ts" : "2026-07-13T01:18:14Z"
+        },
+        {
+          "acc" : 26.144316495522666,
+          "lat" : 42.36871587825384,
+          "lng" : -71.018626070631,
+          "ts" : "2026-07-13T01:25:38Z"
+        },
+        {
+          "acc" : 26.144316495522666,
+          "lat" : 42.36871587825384,
+          "lng" : -71.018626070631,
+          "ts" : "2026-07-13T01:25:39Z"
+        },
+        {
+          "acc" : 84.93166318885092,
+          "lat" : 42.36838066428436,
+          "lng" : -71.01702793940191,
+          "ts" : "2026-07-13T02:42:20Z"
+        },
+        {
+          "acc" : 84.93166318885092,
+          "lat" : 42.36838066428436,
+          "lng" : -71.01702793940191,
+          "ts" : "2026-07-13T02:42:20Z"
+        },
+        {
+          "acc" : 84.9193528748747,
+          "lat" : 42.36838063699888,
+          "lng" : -71.01702794065915,
+          "ts" : "2026-07-13T02:42:20Z"
+        },
+        {
+          "acc" : 84.9193528748747,
+          "lat" : 42.36838063699888,
+          "lng" : -71.01702794065915,
+          "ts" : "2026-07-13T02:42:20Z"
+        },
+        {
+          "acc" : 84.91936511818614,
+          "lat" : 42.36838063719323,
+          "lng" : -71.01702794099985,
+          "ts" : "2026-07-13T02:42:20Z"
+        },
+        {
+          "acc" : 84.91936562582717,
+          "lat" : 42.36838063719323,
+          "lng" : -71.01702794099985,
+          "ts" : "2026-07-13T02:42:20Z"
+        }
+      ],
+      "hikes" : [
+
+      ],
+      "hikesCompleted" : 0,
+      "name" : "Becah",
+      "notes" : [
+
+      ],
+      "ratings" : [
+        {
+          "dayID" : 1,
+          "itemName" : "Bridge Between Continents",
+          "key" : "d1-a0",
+          "rating" : 5
+        }
+      ],
+      "totalHikeDistanceKm" : 0,
+      "waterfallsVisited" : 11
+    },
     {
       "checkIns" : [
         {
@@ -7654,289 +7937,6 @@
       ],
       "totalHikeDistanceKm" : 27.1,
       "waterfallsVisited" : 13
-    },
-    {
-      "checkIns" : [
-        {
-          "dayID" : 0,
-          "itemName" : "custom-565DD48C-D34C-418E-85D3-B5CFCE38BE1A",
-          "key" : "custom-565DD48C-D34C-418E-85D3-B5CFCE38BE1A",
-          "timestamp" : "2026-07-22T11:41:52Z"
-        },
-        {
-          "dayID" : 0,
-          "itemName" : "custom-806D63B0-0465-4A87-9580-E7D7087AFE89",
-          "key" : "custom-806D63B0-0465-4A87-9580-E7D7087AFE89",
-          "timestamp" : "2026-07-18T11:59:28Z"
-        },
-        {
-          "dayID" : 0,
-          "itemName" : "custom-FABE43F1-BEEB-495E-9509-E81217EA709D",
-          "key" : "custom-FABE43F1-BEEB-495E-9509-E81217EA709D",
-          "timestamp" : "2026-07-22T11:48:11Z"
-        },
-        {
-          "dayID" : -1,
-          "itemName" : "Fly Boston to Iceland",
-          "key" : "d-1-a2",
-          "latitude" : 42.37031915384049,
-          "longitude" : -71.0212835110328,
-          "timestamp" : "2026-07-13T01:18:43Z"
-        },
-        {
-          "dayID" : 1,
-          "itemName" : "Bridge Between Continents",
-          "key" : "d1-a0",
-          "latitude" : 42.36838063719323,
-          "longitude" : -71.01702794099985,
-          "timestamp" : "2026-07-13T10:23:08Z"
-        },
-        {
-          "dayID" : 1,
-          "itemName" : "Gunnuhver geothermal",
-          "key" : "d1-a1",
-          "latitude" : 42.36838063719323,
-          "longitude" : -71.01702794099985,
-          "timestamp" : "2026-07-13T11:41:40Z"
-        },
-        {
-          "dayID" : 1,
-          "itemName" : "Brimketill lava pool",
-          "key" : "d1-a4",
-          "latitude" : 42.36838063719323,
-          "longitude" : -71.01702794099985,
-          "timestamp" : "2026-07-13T11:41:36Z"
-        },
-        {
-          "dayID" : 1,
-          "itemName" : "Blue Lagoon & LAVA Restaurant",
-          "key" : "d1-a5",
-          "timestamp" : "2026-07-13T20:38:15Z"
-        },
-        {
-          "dayID" : 1,
-          "itemName" : "Pickup Land Cruiser",
-          "key" : "d1-a6",
-          "latitude" : 42.36838063719323,
-          "longitude" : -71.01702794099985,
-          "timestamp" : "2026-07-13T09:34:55Z"
-        },
-        {
-          "dayID" : 2,
-          "itemName" : "Silfra fissure snorkeling",
-          "key" : "d2-a0",
-          "timestamp" : "2026-07-14T11:08:02Z"
-        },
-        {
-          "dayID" : 2,
-          "itemName" : "Þingvellir National Park",
-          "key" : "d2-a1",
-          "timestamp" : "2026-07-14T13:34:55Z"
-        },
-        {
-          "dayID" : 2,
-          "itemName" : "Geysir & Strokkur",
-          "key" : "d2-a2",
-          "timestamp" : "2026-07-14T15:18:23Z"
-        },
-        {
-          "dayID" : 3,
-          "itemName" : "Gljúfrabúi",
-          "key" : "d3-a1",
-          "timestamp" : "2026-07-15T16:28:34Z"
-        },
-        {
-          "dayID" : 3,
-          "itemName" : "Seljalandsfoss",
-          "key" : "d3-a2",
-          "timestamp" : "2026-07-15T16:28:24Z"
-        },
-        {
-          "dayID" : 3,
-          "itemName" : "Skógafoss",
-          "key" : "d3-a3",
-          "timestamp" : "2026-07-16T10:05:36Z"
-        },
-        {
-          "dayID" : 4,
-          "itemName" : "Hjörleifshöfði \/ Yoda Cave",
-          "key" : "d4-a3",
-          "timestamp" : "2026-07-17T10:16:02Z"
-        },
-        {
-          "dayID" : 5,
-          "itemName" : "Jökulsárlón glacier lagoon",
-          "key" : "d5-a3",
-          "timestamp" : "2026-07-18T11:56:51Z"
-        }
-      ],
-      "colorHex" : "#3180A8",
-      "customEvents" : [
-        {
-          "createdBy" : "Becah",
-          "dayID" : 10,
-          "id" : "565DD48C-D34C-418E-85D3-B5CFCE38BE1A",
-          "name" : "Drive Into A Crater!",
-          "notes" : "",
-          "scheduleAfterIndex" : 0,
-          "type" : "Sightseeing"
-        }
-      ],
-      "deletedEventIDs" : [
-        "hike-D12612E1-CE43-487D-9069-93D95A96BFF5",
-        "hike-A469A451-1F74-4BAE-9270-3434A5D8EDC5",
-        "hike-A81B1EE0-ED1E-4E9F-BDF7-E18C21F863EE",
-        "hike-7FF83750-8D70-4F19-BFE7-85F6ECA6FF6C",
-        "hike-A28E698E-519E-4C42-85BC-43DA700A8CF0",
-        "5D703179-6A84-453A-89FD-42202043885F",
-        "A1FA3647-B0AE-4B53-B589-B9F10A0B035D",
-        "DA7494B6-485B-406D-8AA3-68DD6D0B24CE",
-        "hike-7666B985-19D6-4937-8B38-1659089A4DB0",
-        "72F18AEC-99EF-4D55-B498-448DE505E501",
-        "9AFBE53F-E79A-4105-9E91-89F7A2AF3B1A",
-        "54A846B9-6D87-40D2-995B-E807631D15DF"
-      ],
-      "gpsPointCount" : 20,
-      "gpsTrack" : [
-        {
-          "acc" : 14.403975080018844,
-          "lat" : 42.66683791096425,
-          "lng" : -71.58970040148347,
-          "ts" : "2026-07-12T22:44:31Z"
-        },
-        {
-          "acc" : 14.403975080018844,
-          "lat" : 42.66683791096425,
-          "lng" : -71.58970040148347,
-          "ts" : "2026-07-12T22:44:31Z"
-        },
-        {
-          "acc" : 14.495014000000001,
-          "lat" : 42.66683791096425,
-          "lng" : -71.58970040148347,
-          "ts" : "2026-07-12T22:44:31Z"
-        },
-        {
-          "acc" : 5,
-          "lat" : 42.68065866666667,
-          "lng" : -71.46312083333333,
-          "ts" : "2026-07-12T23:43:45Z"
-        },
-        {
-          "acc" : 5,
-          "lat" : 42.660296833333334,
-          "lng" : -71.42981033333334,
-          "ts" : "2026-07-12T23:48:45Z"
-        },
-        {
-          "acc" : 5,
-          "lat" : 42.60048633333334,
-          "lng" : -71.32224933333333,
-          "ts" : "2026-07-12T23:55:20Z"
-        },
-        {
-          "acc" : 5,
-          "lat" : 42.60023066666666,
-          "lng" : -71.32203249999999,
-          "ts" : "2026-07-12T23:55:20Z"
-        },
-        {
-          "acc" : 12.716531199847996,
-          "lat" : 42.36943356519872,
-          "lng" : -71.01985340144938,
-          "ts" : "2026-07-13T00:45:41Z"
-        },
-        {
-          "acc" : 24.103136304273907,
-          "lat" : 42.370315087542686,
-          "lng" : -71.02146461764768,
-          "ts" : "2026-07-13T01:18:14Z"
-        },
-        {
-          "acc" : 24.103136304273907,
-          "lat" : 42.370315087542686,
-          "lng" : -71.02146461764768,
-          "ts" : "2026-07-13T01:18:14Z"
-        },
-        {
-          "acc" : 32.395013999999996,
-          "lat" : 42.37032172711337,
-          "lng" : -71.02140949173017,
-          "ts" : "2026-07-13T01:18:14Z"
-        },
-        {
-          "acc" : 28.116654311464284,
-          "lat" : 42.37031915384049,
-          "lng" : -71.0212835110328,
-          "ts" : "2026-07-13T01:18:14Z"
-        },
-        {
-          "acc" : 26.144316495522666,
-          "lat" : 42.36871587825384,
-          "lng" : -71.018626070631,
-          "ts" : "2026-07-13T01:25:38Z"
-        },
-        {
-          "acc" : 26.144316495522666,
-          "lat" : 42.36871587825384,
-          "lng" : -71.018626070631,
-          "ts" : "2026-07-13T01:25:39Z"
-        },
-        {
-          "acc" : 84.93166318885092,
-          "lat" : 42.36838066428436,
-          "lng" : -71.01702793940191,
-          "ts" : "2026-07-13T02:42:20Z"
-        },
-        {
-          "acc" : 84.93166318885092,
-          "lat" : 42.36838066428436,
-          "lng" : -71.01702793940191,
-          "ts" : "2026-07-13T02:42:20Z"
-        },
-        {
-          "acc" : 84.9193528748747,
-          "lat" : 42.36838063699888,
-          "lng" : -71.01702794065915,
-          "ts" : "2026-07-13T02:42:20Z"
-        },
-        {
-          "acc" : 84.9193528748747,
-          "lat" : 42.36838063699888,
-          "lng" : -71.01702794065915,
-          "ts" : "2026-07-13T02:42:20Z"
-        },
-        {
-          "acc" : 84.91936511818614,
-          "lat" : 42.36838063719323,
-          "lng" : -71.01702794099985,
-          "ts" : "2026-07-13T02:42:20Z"
-        },
-        {
-          "acc" : 84.91936562582717,
-          "lat" : 42.36838063719323,
-          "lng" : -71.01702794099985,
-          "ts" : "2026-07-13T02:42:20Z"
-        }
-      ],
-      "hikes" : [
-
-      ],
-      "hikesCompleted" : 0,
-      "name" : "Becah",
-      "notes" : [
-
-      ],
-      "ratings" : [
-        {
-          "dayID" : 1,
-          "itemName" : "Bridge Between Continents",
-          "key" : "d1-a0",
-          "rating" : 5
-        }
-      ],
-      "totalHikeDistanceKm" : 0,
-      "waterfallsVisited" : 11
     }
   ]
 }
